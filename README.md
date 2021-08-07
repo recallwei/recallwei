@@ -6,7 +6,7 @@
 
 ![recallwei's github stats](https://github-readme-stats.vercel.app/api?username=recallwei&show_icons=true&theme=dracula&count_private=true&include_all_commits)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=recallwei&repo=daily)]
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=recallwei&repo=daily)](https://github.com/recallwei/daily)
 
 <!---
 recallwei/recallwei is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
