@@ -77,9 +77,9 @@ repository 常用语言 layout=compact（紧凑布局）
 
 ---
 
-<!--START_SECTION:Waka Readme-->
+<!--START_SECTION:waka-->
 
-<!--END_SECTION:Waka Readme-->
+<!--END_SECTION:waka-->
 
 <!---
 recallwei/recallwei is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
