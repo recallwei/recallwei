@@ -41,6 +41,13 @@ Languages and Tools:
 <img height="32" width="32" src="https://simpleicons.org/icons/markdown.svg"/>
 
 ----------------------------------------------------------------
+Read recently:
+
+<img height="200" width="150" src="https://img9.doubanio.com/view/subject/s/public/s27283822.jpg"/>
+<img height="200" width="150" src="https://img9.doubanio.com/view/subject/l/public/s33524212.jpg"/>
+<img height="200" width="150" src="https://img9.doubanio.com/view/subject/m/public/s33460221.jpg"/>
+
+----------------------------------------------------------------
 ![recallwei's github stats](https://github-readme-stats.vercel.app/api?username=recallwei&show_icons=true&theme=dracula&count_private=true&include_all_commits)
 <!---
 repository 卡片
