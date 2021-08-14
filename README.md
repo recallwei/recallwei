@@ -82,9 +82,9 @@ repository 常用语言 layout=compact（紧凑布局）
 
 **🐱 My Github Data** 
 
-> 🏆 50 Contributions in the Year 2021
+> 🏆 53 Contributions in the Year 2021
  > 
-> 📦 105.8 kB Used in Github's Storage 
+> 📦 106.2 kB Used in Github's Storage 
  > 
 > 🚫 Not Opted to Hire
  > 
