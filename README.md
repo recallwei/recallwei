@@ -52,8 +52,7 @@
 
 ---
 
-<details>
-  <summary>📈GitHub Stats</summary>
+### 📈GitHub Stats
 
 ![recallwei's github stats](https://github-readme-stats.vercel.app/api?username=recallwei&show_icons=true&theme=dracula&count_private=true&include_all_commits)
 <!---
@@ -64,18 +63,10 @@ repository 卡片
 repository 常用语言 layout=compact（紧凑布局）
 --->
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=recallwei&layout=compact&theme=dracula)](https://github.com/recallwei/daily)
-  
-</details>
-<details>
-  <summary>⚡️GitHub Activities</summary>
-  
-<!--START_SECTION:activity-->
-
-<!--END_SECTION:activity-->
-
-</details>
 
 ---
+  
+### ⚡️GitHub Activities
 
 <!--START_SECTION:waka-->
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-417-blue)
