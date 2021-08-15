@@ -149,7 +149,8 @@ JavaScript               2 repos             ███████████�
 
  Last Updated on 15/08/2021
 <!--END_SECTION:waka-->
-
+<!--START_SECTION:Activity-->
+<!--END_SECTION:Activity-->
 <!---
 recallwei/recallwei is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
