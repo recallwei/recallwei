@@ -68,6 +68,10 @@ repository 常用语言 layout=compact（紧凑布局）
   
 ### ⚡️GitHub Activities
 
+<!--START_SECTION:Activity-->
+
+<!--END_SECTION:Activity-->
+
 <!--START_SECTION:waka-->
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-460-blue)
 
@@ -149,8 +153,6 @@ JavaScript               2 repos             ███████████�
 
  Last Updated on 16/08/2021
 <!--END_SECTION:waka-->
-<!--START_SECTION:Activity-->
-<!--END_SECTION:Activity-->
 <!---
 recallwei/recallwei is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
