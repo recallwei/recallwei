@@ -72,6 +72,10 @@ repository 常用语言 layout=compact（紧凑布局）
 
 <!--END_SECTION:activity-->
 
+---
+
+### 💻Code Time
+
 <!--START_SECTION:waka-->
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-460-blue)
 
