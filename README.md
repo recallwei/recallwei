@@ -90,13 +90,13 @@ repository 常用语言 layout=compact（紧凑布局）
 
 **🐱 My Github Data** 
 
-> 🏆 66 Contributions in the Year 2021
+> 🏆 67 Contributions in the Year 2021
  > 
-> 📦 106.8 kB Used in Github's Storage 
+> 📦 106.7 kB Used in Github's Storage 
  > 
 > 🚫 Not Opted to Hire
  > 
-> 📜 7 Public Repositories 
+> 📜 8 Public Repositories 
  > 
 > 🔑 2 Private Repositories  
  > 
