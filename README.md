@@ -86,13 +86,13 @@ repository 常用语言 layout=compact（紧凑布局）
 ### 💻Code Time
 
 <!--START_SECTION:waka-->
-![Profile Views](http://img.shields.io/badge/Profile%20Views-163-blue)
+![Profile Views](http://img.shields.io/badge/Profile%20Views-170-blue)
 
 **🐱 My Github Data** 
 
 > 🏆 66 Contributions in the Year 2021
  > 
-> 📦 595 Bytes Used in Github's Storage 
+> 📦 106.8 kB Used in Github's Storage 
  > 
 > 🚫 Not Opted to Hire
  > 
@@ -152,7 +152,7 @@ Mac                      2 hrs 1 min         ██░░░░░░░░░�
 **I Mostly Code in JavaScript** 
 
 ```text
-JavaScript               1 repo              █████████████████████████   100.0%
+JavaScript               2 repos             █████████████████████████   100.0%
 
 ```
 
