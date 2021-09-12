@@ -155,9 +155,8 @@ Mac                      1 hr 22 mins        █░░░░░░░░░░�
 **I Mostly Code in JavaScript** 
 
 ```text
-JavaScript               2 repos             ████████████░░░░░░░░░░░░░   50.0% 
-C#                       1 repo              ██████░░░░░░░░░░░░░░░░░░░   25.0% 
-HTML                     1 repo              ██████░░░░░░░░░░░░░░░░░░░   25.0%
+JavaScript               3 repos             ██████████████████░░░░░░░   75.0% 
+C#                       1 repo              ██████░░░░░░░░░░░░░░░░░░░   25.0%
 
 ```
 
@@ -167,7 +166,7 @@ HTML                     1 repo              ██████░░░░░�
 ![Chart not found](https://raw.githubusercontent.com/recallwei/recallwei/main/charts/bar_graph.png) 
 
 
- Last Updated on 11/09/2021
+ Last Updated on 12/09/2021
 <!--END_SECTION:waka-->
 <!---
 recallwei/recallwei is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
