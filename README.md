@@ -90,13 +90,13 @@ repository 常用语言 layout=compact（紧凑布局）
 
 **🐱 My Github Data** 
 
-> 🏆 85 Contributions in the Year 2021
+> 🏆 86 Contributions in the Year 2021
  > 
 > 📦 106.7 kB Used in Github's Storage 
  > 
 > 🚫 Not Opted to Hire
  > 
-> 📜 12 Public Repositories 
+> 📜 13 Public Repositories 
  > 
 > 🔑 2 Private Repositories  
  > 
@@ -129,21 +129,16 @@ Sunday       20 commits     ███████░░░░░░░░░░�
 ⌚︎ Time Zone: Asia/Shanghai
 
 💬 Programming Languages: 
-JavaScript               42 mins             █████████████████░░░░░░░░   70.48% 
-C#                       17 mins             ███████░░░░░░░░░░░░░░░░░░   29.38% 
-Other                    0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   0.14%
+No Activity Tracked This Week
 
 🔥 Editors: 
-VS Code                  42 mins             █████████████████░░░░░░░░   70.62% 
-Visual Studio            17 mins             ███████░░░░░░░░░░░░░░░░░░   29.38%
+No Activity Tracked This Week
 
 🐱‍💻 Projects: 
-LearnJavaScript          42 mins             █████████████████░░░░░░░░   70.62% 
-HMediaCore               17 mins             ███████░░░░░░░░░░░░░░░░░░   29.38%
+No Activity Tracked This Week
 
 💻 Operating System: 
-Mac                      42 mins             █████████████████░░░░░░░░   70.62% 
-Windows                  17 mins             ███████░░░░░░░░░░░░░░░░░░   29.38%
+No Activity Tracked This Week
 
 ```
 
@@ -161,7 +156,7 @@ C#                       1 repo              ██████░░░░░�
 ![Chart not found](https://raw.githubusercontent.com/recallwei/recallwei/main/charts/bar_graph.png) 
 
 
- Last Updated on 20/09/2021
+ Last Updated on 22/09/2021
 <!--END_SECTION:waka-->
 <!---
 recallwei/recallwei is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
