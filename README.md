@@ -129,16 +129,16 @@ Sunday       20 commits     ███████░░░░░░░░░░�
 ⌚︎ Time Zone: Asia/Shanghai
 
 💬 Programming Languages: 
-No Activity Tracked This Week
+JavaScript               0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   0%
 
 🔥 Editors: 
-No Activity Tracked This Week
+VS Code                  0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   0%
 
 🐱‍💻 Projects: 
-No Activity Tracked This Week
+LearnJavaScript          0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   0%
 
 💻 Operating System: 
-No Activity Tracked This Week
+Mac                      0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   0%
 
 ```
 
@@ -156,7 +156,7 @@ C#                       1 repo              ██████░░░░░�
 ![Chart not found](https://raw.githubusercontent.com/recallwei/recallwei/main/charts/bar_graph.png) 
 
 
- Last Updated on 23/10/2021
+ Last Updated on 24/10/2021
 <!--END_SECTION:waka-->
 <!---
 recallwei/recallwei is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
