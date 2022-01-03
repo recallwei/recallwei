@@ -86,13 +86,13 @@ repository 常用语言 layout=compact（紧凑布局）
 ### 💻Code Time
 
 <!--START_SECTION:waka-->
-![Profile Views](http://img.shields.io/badge/Profile%20Views-4-blue)
+![Profile Views](http://img.shields.io/badge/Profile%20Views-0-blue)
 
 **🐱 My GitHub Data** 
 
 > 🏆 0 Contributions in the Year 2022
  > 
-> 📦 898 Bytes Used in GitHub's Storage 
+> 📦 901 Bytes Used in GitHub's Storage 
  > 
 > 🚫 Not Opted to Hire
  > 
@@ -129,14 +129,14 @@ Sunday       17 commits     ██████░░░░░░░░░░░�
 ⌚︎ Time Zone: Asia/Shanghai
 
 💬 Programming Languages: 
-JavaScript               41 hrs 29 mins      ███████████████████████░░   93.4% 
+JavaScript               41 hrs 28 mins      ███████████████████████░░   93.4% 
 JSON                     2 hrs 39 mins       █░░░░░░░░░░░░░░░░░░░░░░░░   6.0% 
 CSS                      7 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   0.28% 
 C#                       6 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   0.26% 
 TypeScript               1 min               ░░░░░░░░░░░░░░░░░░░░░░░░░   0.05%
 
 🔥 Editors: 
-VS Code                  44 hrs 25 mins      █████████████████████████   100.0%
+VS Code                  44 hrs 24 mins      █████████████████████████   100.0%
 
 🐱‍💻 Projects: 
 repoBruce                32 hrs 13 mins      ██████████████████░░░░░░░   72.55% 
@@ -161,7 +161,7 @@ JavaScript               2 repos             ███████████�
 ![Chart not found](https://raw.githubusercontent.com/recallwei/recallwei/main/charts/bar_graph.png) 
 
 
- Last Updated on 02/01/2022
+ Last Updated on 03/01/2022
 <!--END_SECTION:waka-->
 <!---
 recallwei/recallwei is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
