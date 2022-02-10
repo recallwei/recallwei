@@ -92,7 +92,7 @@ repository 常用语言 layout=compact（紧凑布局）
 
 > 🏆 1 Contributions in the Year 2022
  > 
-> 📦 983 Bytes Used in GitHub's Storage 
+> 📦 985 Bytes Used in GitHub's Storage 
  > 
 > 🚫 Not Opted to Hire
  > 
@@ -129,16 +129,18 @@ Sunday       17 commits     ██████░░░░░░░░░░░�
 ⌚︎ Time Zone: Asia/Shanghai
 
 💬 Programming Languages: 
-No Activity Tracked This Week
+JavaScript               9 hrs 53 mins       ███████████████████████░░   91.99% 
+JSON                     51 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   7.96% 
+CSS                      0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   0.05%
 
 🔥 Editors: 
-No Activity Tracked This Week
+VS Code                  10 hrs 44 mins      █████████████████████████   100.0%
 
 🐱‍💻 Projects: 
-No Activity Tracked This Week
+repoBruce                10 hrs 44 mins      █████████████████████████   100.0%
 
 💻 Operating System: 
-No Activity Tracked This Week
+Windows                  10 hrs 44 mins      █████████████████████████   100.0%
 
 ```
 
@@ -155,7 +157,7 @@ JavaScript               2 repos             ███████████�
 ![Chart not found](https://raw.githubusercontent.com/recallwei/recallwei/main/charts/bar_graph.png) 
 
 
- Last Updated on 09/02/2022 06:04:32 UTC
+ Last Updated on 10/02/2022 06:05:42 UTC
 <!--END_SECTION:waka-->
 <!---
 recallwei/recallwei is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
