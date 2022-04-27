@@ -5,7 +5,7 @@
 - 🌱 I’m currently learning C# and ReactJS 🚀
 - 💞️ I’m looking to collaborate on Web Application 🕸️ 
 - 📫 You can contact me with my email recall4056@gmail.com 📮
-- 📖 My YUQUE docs: [语雀文档](https://www.yuque.com/books/share/8603c585-6683-41b2-8645-a4edd05e7925?#%20%E3%80%8AC#/.NET%E5%BC%80%E5%8F%91%E3%80%8B "语雀文档")🌲
+- 📖 My blog website : https://blog-app-recallwei.vercel.app/
 
 ---
 
