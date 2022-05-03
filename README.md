@@ -5,7 +5,7 @@
 - 🌱 I’m currently learning C# and ReactJS 🚀
 - 💞️ I’m looking to collaborate on Web Application 🕸️ 
 - 📫 You can contact me with my email recall4056@gmail.com 📮
-- 📖 My blog website : https://blog-app-recallwei.vercel.app
+- 📖 My blog website : https://bruce-wiki.vercel.app
 
 ---
 
