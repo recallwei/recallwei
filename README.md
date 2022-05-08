@@ -11,8 +11,7 @@
 
 ### ☎️Contact with me
 
-<img height="32" width="32" src="https://simpleicons.org/icons/wechat.svg"/>
-<img height="32" width="32" src="https://simpleicons.org/icons/tencentqq.svg"/>
+<img height="32" width="32" src="https://simpleicons.org/icons/wechat.svg"/><img height="32" width="32" src="https://simpleicons.org/icons/tencentqq.svg"/>
 <img height="32" width="32" src="https://simpleicons.org/icons/twitter.svg"/>
 <img height="32" width="32" src="https://simpleicons.org/icons/youtube.svg"/>
 <img height="32" width="32" src="https://simpleicons.org/icons/google.svg"/>
@@ -23,8 +22,7 @@
 
 ### 🚀Languages and Tools
 
-<img height="32" width="32" src="https://simpleicons.org/icons/microsoft.svg"/>
-<img height="32" width="32" src="https://simpleicons.org/icons/microsoftazure.svg"/>
+<img height="32" width="32" src="https://simpleicons.org/icons/microsoft.svg"/><img height="32" width="32" src="https://simpleicons.org/icons/microsoftazure.svg"/>
 <img height="32" width="32" src="https://simpleicons.org/icons/azuredevops.svg"/>
 <img height="32" width="32" src="https://simpleicons.org/icons/visualstudio.svg"/>
 <img height="32" width="32" src="https://simpleicons.org/icons/visualstudiocode.svg"/>
