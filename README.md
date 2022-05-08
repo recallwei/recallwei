@@ -11,14 +11,10 @@
 
 ### ☎️Contact with me
 
+<img height="32" width="32" src="/img/google.png"/>&nbsp;
+<img height="32" width="32" src="/img/reddit.png"/>&nbsp;
+<img height="32" width="32" src="/img/facebook.png"/>&nbsp;
 <img height="32" width="32" src="/img/wechat.png"/>&nbsp;
-<img height="32" width="32" src="https://simpleicons.org/icons/wechat.svg"/>&nbsp;
-<img height="32" width="32" src="https://simpleicons.org/icons/tencentqq.svg"/>&nbsp;
-<img height="32" width="32" src="https://simpleicons.org/icons/twitter.svg"/>&nbsp;
-<img height="32" width="32" src="https://simpleicons.org/icons/youtube.svg"/>&nbsp;
-<img height="32" width="32" src="https://simpleicons.org/icons/google.svg"/>&nbsp;
-<img height="32" width="32" src="https://simpleicons.org/icons/microsoftoutlook.svg"/>&nbsp;
-<img height="32" width="32" src="https://simpleicons.org/icons/microsoftteams.svg"/>&nbsp;
 
 ---
 
