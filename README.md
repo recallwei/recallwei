@@ -11,6 +11,7 @@
 
 ### ☎️Contact with me
 
+<img height="32" width="32" src="/img/wechat.png"/>&nbsp;
 <img height="32" width="32" src="https://simpleicons.org/icons/wechat.svg"/>&nbsp;
 <img height="32" width="32" src="https://simpleicons.org/icons/tencentqq.svg"/>&nbsp;
 <img height="32" width="32" src="https://simpleicons.org/icons/twitter.svg"/>&nbsp;
