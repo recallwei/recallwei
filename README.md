@@ -22,7 +22,7 @@
 
 ### 🚀Languages and Tools
 
-<a href="https://bruce-wiki.vercel.app/docs/front-end/html" taget="_blank" rel="noreferrer noopener"><img height="32" width="32" src="/img/html.png"/></a>&nbsp;
+<a href="https://bruce-wiki.vercel.app/docs/front-end/html" target="_blank" rel="noreferrer noopener"><img height="32" width="32" src="/img/html.png"/></a>&nbsp;
 <img height="32" width="32" src="/img/css.png"/>&nbsp;
 <img height="32" width="32" src="/img/javascript.png"/>&nbsp;
 <img height="32" width="32" src="/img/react.png"/>&nbsp;
