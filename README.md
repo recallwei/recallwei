@@ -13,34 +13,38 @@
 
 <img height="32" width="32" src="/img/google.png"/>&nbsp;
 <img height="32" width="32" src="/img/reddit.png"/>&nbsp;
+<img height="32" width="32" src="/img/twitter.png"/>&nbsp;
 <img height="32" width="32" src="/img/facebook.png"/>&nbsp;
 <img height="32" width="32" src="/img/wechat.png"/>&nbsp;
+<img height="32" width="32" src="/img/zhihu.png"/>&nbsp;
 
 ---
 
 ### 🚀Languages and Tools
 
-<img height="32" width="32" src="https://simpleicons.org/icons/microsoft.svg"/>&nbsp;
+<img height="32" width="32" src="/img/html.png"/>&nbsp;
+<img height="32" width="32" src="/img/css.png"/>&nbsp;
+<img height="32" width="32" src="/img/javascript.png"/>&nbsp;
+<img height="32" width="32" src="/img/react.png"/>&nbsp;
+<img height="32" width="32" src="/img/chrome.png"/>&nbsp;
+<img height="32" width="32" src="/img/csharp.png"/>&nbsp;
+<img height="32" width="32" src="/img/git.png"/>&nbsp;
+<img height="32" width="32" src="/img/markdown.png"/>&nbsp;
+
+<!-- <img height="32" width="32" src="https://simpleicons.org/icons/microsoft.svg"/>&nbsp;
 <img height="32" width="32" src="https://simpleicons.org/icons/microsoftazure.svg"/>&nbsp;
 <img height="32" width="32" src="https://simpleicons.org/icons/azuredevops.svg"/>&nbsp;
 <img height="32" width="32" src="https://simpleicons.org/icons/visualstudio.svg"/>&nbsp;
 <img height="32" width="32" src="https://simpleicons.org/icons/visualstudiocode.svg"/>&nbsp;
 <img height="32" width="32" src="https://simpleicons.org/icons/dotnet.svg"/>&nbsp;
-<img height="32" width="32" src="https://simpleicons.org/icons/csharp.svg"/>&nbsp;
 <img height="32" width="32" src="https://simpleicons.org/icons/microsoftsqlserver.svg"/>&nbsp;
-<img height="32" width="32" src="https://simpleicons.org/icons/javascript.svg"/>&nbsp;
-<img height="32" width="32" src="https://simpleicons.org/icons/html5.svg"/>&nbsp;
-<img height="32" width="32" src="https://simpleicons.org/icons/css3.svg"/>&nbsp;
 <img height="32" width="32" src="https://simpleicons.org/icons/nodedotjs.svg"/>&nbsp;
 <img height="32" width="32" src="https://simpleicons.org/icons/npm.svg"/>&nbsp;
 <img height="32" width="32" src="https://simpleicons.org/icons/webpack.svg"/>&nbsp;
 <img height="32" width="32" src="https://simpleicons.org/icons/swagger.svg"/>&nbsp;
-<img height="32" width="32" src="https://simpleicons.org/icons/react.svg"/>&nbsp;
 <img height="32" width="32" src="https://simpleicons.org/icons/bootstrap.svg"/>&nbsp;
 <img height="32" width="32" src="https://simpleicons.org/icons/jest.svg">&nbsp;
-<img height="32" width="32" src="https://simpleicons.org/icons/github.svg"/>&nbsp;
-<img height="32" width="32" src="https://simpleicons.org/icons/git.svg"/>&nbsp;
-<img height="32" width="32" src="https://simpleicons.org/icons/markdown.svg"/>&nbsp;
+<img height="32" width="32" src="https://simpleicons.org/icons/github.svg"/>&nbsp; -->
 
 ---
 
