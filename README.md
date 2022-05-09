@@ -26,6 +26,9 @@
 <a href="https://bruce-wiki.vercel.app/docs/front-end/css" target="_blank" rel="noreferrer noopener"><img height="32" width="32" src="/img/css.png"/></a>&nbsp;
 <a href="https://bruce-wiki.vercel.app/docs/front-end/javascript" target="_blank" rel="noreferrer noopener"><img height="32" width="32" src="/img/javascript.png"/></a>&nbsp;
 <a href="https://bruce-wiki.vercel.app/docs/front-end/react" target="_blank" rel="noreferrer noopener"><img height="32" width="32" src="/img/react.png"/></a>&nbsp;
+<a href="https://bruce-wiki.vercel.app/docs/front-end/react" target="_blank" rel="noreferrer noopener">
+<img height="32" width="32" src="/img/docusaurus.png"/>
+</a>&nbsp;
 <img height="32" width="32" src="/img/chrome.png"/>&nbsp;
 <img height="32" width="32" src="/img/csharp.png"/>&nbsp;
 <img height="32" width="32" src="/img/git.png"/>&nbsp;
