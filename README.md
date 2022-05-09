@@ -23,13 +23,13 @@
 ### 🚀Languages and Tools
 
 <a href="https://bruce-wiki.vercel.app/docs/front-end/html" target="_blank" rel="noreferrer noopener"><img height="32" width="32" src="/img/html.png"/></a>&nbsp;
-<img height="32" width="32" src="/img/css.png"/>&nbsp;
-<img height="32" width="32" src="/img/javascript.png"/>&nbsp;
-<img height="32" width="32" src="/img/react.png"/>&nbsp;
+<a href="https://bruce-wiki.vercel.app/docs/front-end/css" target="_blank" rel="noreferrer noopener"><img height="32" width="32" src="/img/css.png"/></a>&nbsp;
+<a href="https://bruce-wiki.vercel.app/docs/front-end/javascript" target="_blank" rel="noreferrer noopener"><img height="32" width="32" src="/img/javascript.png"/></a>&nbsp;
+<a href="https://bruce-wiki.vercel.app/docs/front-end/react" target="_blank" rel="noreferrer noopener"><img height="32" width="32" src="/img/react.png"/></a>&nbsp;
 <img height="32" width="32" src="/img/chrome.png"/>&nbsp;
 <img height="32" width="32" src="/img/csharp.png"/>&nbsp;
 <img height="32" width="32" src="/img/git.png"/>&nbsp;
-<img height="32" width="32" src="/img/markdown.png"/>&nbsp;
+<a href="https://bruce-wiki.vercel.app/docs/front-end/markdown" target="_blank" rel="noreferrer noopener"><img height="32" width="32" src="/img/markdown.png"/></a>&nbsp;
 
 <!-- <img height="32" width="32" src="https://simpleicons.org/icons/microsoft.svg"/>&nbsp;
 <img height="32" width="32" src="https://simpleicons.org/icons/microsoftazure.svg"/>&nbsp;
