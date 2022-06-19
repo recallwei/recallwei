@@ -15,6 +15,7 @@
 <img height="32" width="32" src="/img/reddit.png"/>&nbsp;
 <img height="32" width="32" src="/img/twitter.png"/>&nbsp;
 <img height="32" width="32" src="/img/facebook.png"/>&nbsp;
+<a href="https://t.me/recallwei" target="_blank" rel="noreferrer noopener"><img height="32" width="32" src="/img/telegram.png"/></a>&nbsp;
 <img height="32" width="32" src="/img/wechat.png"/>&nbsp;
 <img height="32" width="32" src="/img/zhihu.png"/>&nbsp;
 
@@ -31,21 +32,6 @@
 <img height="32" width="32" src="/img/csharp.png"/>&nbsp;
 <img height="32" width="32" src="/img/git.png"/>&nbsp;
 <a href="https://bruce-wiki.vercel.app/docs/front-end/markdown" target="_blank" rel="noreferrer noopener"><img height="32" width="32" src="/img/markdown.png"/></a>&nbsp;
-
-<!-- <img height="32" width="32" src="https://simpleicons.org/icons/microsoft.svg"/>&nbsp;
-<img height="32" width="32" src="https://simpleicons.org/icons/microsoftazure.svg"/>&nbsp;
-<img height="32" width="32" src="https://simpleicons.org/icons/azuredevops.svg"/>&nbsp;
-<img height="32" width="32" src="https://simpleicons.org/icons/visualstudio.svg"/>&nbsp;
-<img height="32" width="32" src="https://simpleicons.org/icons/visualstudiocode.svg"/>&nbsp;
-<img height="32" width="32" src="https://simpleicons.org/icons/dotnet.svg"/>&nbsp;
-<img height="32" width="32" src="https://simpleicons.org/icons/microsoftsqlserver.svg"/>&nbsp;
-<img height="32" width="32" src="https://simpleicons.org/icons/nodedotjs.svg"/>&nbsp;
-<img height="32" width="32" src="https://simpleicons.org/icons/npm.svg"/>&nbsp;
-<img height="32" width="32" src="https://simpleicons.org/icons/webpack.svg"/>&nbsp;
-<img height="32" width="32" src="https://simpleicons.org/icons/swagger.svg"/>&nbsp;
-<img height="32" width="32" src="https://simpleicons.org/icons/bootstrap.svg"/>&nbsp;
-<img height="32" width="32" src="https://simpleicons.org/icons/jest.svg">&nbsp;
-<img height="32" width="32" src="https://simpleicons.org/icons/github.svg"/>&nbsp; -->
 
 ---
 
@@ -88,90 +74,90 @@ repository 常用语言 layout=compact（紧凑布局）
 ### 💻Code Time
 
 <!--START_SECTION:waka-->
+
 ![Code Time](http://img.shields.io/badge/Code%20Time-0%20secs-blue)
 
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-3-blue)
 
-**🐱 My GitHub Data** 
+**🐱 My GitHub Data**
 
 > 🏆 341 Contributions in the Year 2022
- > 
-> 📦 10.9 kB Used in GitHub's Storage 
- > 
+>
+> 📦 10.9 kB Used in GitHub's Storage
+>
 > 🚫 Not Opted to Hire
- > 
-> 📜 3 Public Repositories 
- > 
-> 🔑 0 Private Repositories  
- > 
-**I'm a Night 🦉** 
+>
+> 📜 3 Public Repositories
+>
+> 🔑 0 Private Repositories
+>
+> **I'm a Night 🦉**
 
 ```text
-🌞 Morning    33 commits     ████░░░░░░░░░░░░░░░░░░░░░   18.86% 
-🌆 Daytime    9 commits      █░░░░░░░░░░░░░░░░░░░░░░░░   5.14% 
-🌃 Evening    67 commits     █████████░░░░░░░░░░░░░░░░   38.29% 
+🌞 Morning    33 commits     ████░░░░░░░░░░░░░░░░░░░░░   18.86%
+🌆 Daytime    9 commits      █░░░░░░░░░░░░░░░░░░░░░░░░   5.14%
+🌃 Evening    67 commits     █████████░░░░░░░░░░░░░░░░   38.29%
 🌙 Night      66 commits     █████████░░░░░░░░░░░░░░░░   37.71%
 
 ```
-📅 **I'm Most Productive on Saturday** 
+
+📅 **I'm Most Productive on Saturday**
 
 ```text
-Monday       33 commits     ████░░░░░░░░░░░░░░░░░░░░░   18.86% 
-Tuesday      9 commits      █░░░░░░░░░░░░░░░░░░░░░░░░   5.14% 
-Wednesday    18 commits     ██░░░░░░░░░░░░░░░░░░░░░░░   10.29% 
-Thursday     8 commits      █░░░░░░░░░░░░░░░░░░░░░░░░   4.57% 
-Friday       16 commits     ██░░░░░░░░░░░░░░░░░░░░░░░   9.14% 
-Saturday     49 commits     ███████░░░░░░░░░░░░░░░░░░   28.0% 
+Monday       33 commits     ████░░░░░░░░░░░░░░░░░░░░░   18.86%
+Tuesday      9 commits      █░░░░░░░░░░░░░░░░░░░░░░░░   5.14%
+Wednesday    18 commits     ██░░░░░░░░░░░░░░░░░░░░░░░   10.29%
+Thursday     8 commits      █░░░░░░░░░░░░░░░░░░░░░░░░   4.57%
+Friday       16 commits     ██░░░░░░░░░░░░░░░░░░░░░░░   9.14%
+Saturday     49 commits     ███████░░░░░░░░░░░░░░░░░░   28.0%
 Sunday       42 commits     ██████░░░░░░░░░░░░░░░░░░░   24.0%
 
 ```
 
-
-📊 **This Week I Spent My Time On** 
+📊 **This Week I Spent My Time On**
 
 ```text
 ⌚︎ Time Zone: Asia/Shanghai
 
-💬 Programming Languages: 
-JavaScript               12 hrs 4 mins       █████████░░░░░░░░░░░░░░░░   35.75% 
-MDX                      10 hrs 40 mins      ████████░░░░░░░░░░░░░░░░░   31.61% 
-C#                       5 hrs 34 mins       ████░░░░░░░░░░░░░░░░░░░░░   16.5% 
-JSON                     3 hrs 1 min         ██░░░░░░░░░░░░░░░░░░░░░░░   8.96% 
+💬 Programming Languages:
+JavaScript               12 hrs 4 mins       █████████░░░░░░░░░░░░░░░░   35.75%
+MDX                      10 hrs 40 mins      ████████░░░░░░░░░░░░░░░░░   31.61%
+C#                       5 hrs 34 mins       ████░░░░░░░░░░░░░░░░░░░░░   16.5%
+JSON                     3 hrs 1 min         ██░░░░░░░░░░░░░░░░░░░░░░░   8.96%
 CSS                      1 hr 7 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   3.35%
 
-🔥 Editors: 
-VS Code                  21 hrs 50 mins      ████████████████░░░░░░░░░   64.65% 
-Rider                    7 hrs 24 mins       █████░░░░░░░░░░░░░░░░░░░░   21.95% 
+🔥 Editors:
+VS Code                  21 hrs 50 mins      ████████████████░░░░░░░░░   64.65%
+Rider                    7 hrs 24 mins       █████░░░░░░░░░░░░░░░░░░░░   21.95%
 WebStorm                 4 hrs 31 mins       ███░░░░░░░░░░░░░░░░░░░░░░   13.4%
 
-🐱‍💻 Projects: 
-wiki                     12 hrs 51 mins      █████████░░░░░░░░░░░░░░░░   38.08% 
-repoBruce                8 hrs 49 mins       ██████░░░░░░░░░░░░░░░░░░░   26.11% 
-HMediaCore               7 hrs 24 mins       █████░░░░░░░░░░░░░░░░░░░░   21.94% 
-website                  4 hrs 1 min         ███░░░░░░░░░░░░░░░░░░░░░░   11.91% 
+🐱‍💻 Projects:
+wiki                     12 hrs 51 mins      █████████░░░░░░░░░░░░░░░░   38.08%
+repoBruce                8 hrs 49 mins       ██████░░░░░░░░░░░░░░░░░░░   26.11%
+HMediaCore               7 hrs 24 mins       █████░░░░░░░░░░░░░░░░░░░░   21.94%
+website                  4 hrs 1 min         ███░░░░░░░░░░░░░░░░░░░░░░   11.91%
 Unknown Project          24 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   1.2%
 
-💻 Operating System: 
-Mac                      21 hrs 9 mins       ███████████████░░░░░░░░░░   62.66% 
+💻 Operating System:
+Mac                      21 hrs 9 mins       ███████████████░░░░░░░░░░   62.66%
 Windows                  12 hrs 36 mins      █████████░░░░░░░░░░░░░░░░   37.34%
 
 ```
 
-**I Mostly Code in JavaScript** 
+**I Mostly Code in JavaScript**
 
 ```text
-JavaScript               1 repo              ████████████░░░░░░░░░░░░░   50.0% 
+JavaScript               1 repo              ████████████░░░░░░░░░░░░░   50.0%
 Go                       1 repo              ████████████░░░░░░░░░░░░░   50.0%
 
 ```
 
-
 **Timeline**
 
-![Chart not found](https://raw.githubusercontent.com/recallwei/recallwei/main/charts/bar_graph.png) 
+![Chart not found](https://raw.githubusercontent.com/recallwei/recallwei/main/charts/bar_graph.png)
 
+Last Updated on 19/06/2022 06:08:36 UTC
 
- Last Updated on 19/06/2022 06:08:36 UTC
 <!--END_SECTION:waka-->
 <!---
 recallwei/recallwei is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
