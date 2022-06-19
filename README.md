@@ -15,8 +15,7 @@
 <img height="32" width="32" src="/img/reddit.png"/>&nbsp;
 <img height="32" width="32" src="/img/twitter.png"/>&nbsp;
 <img height="32" width="32" src="/img/facebook.png"/>&nbsp;
-<a href="https://t.me/recallwei" target="_blank" rel="noreferrer noopener"><img height="32" width="32" src="/img/telegram.png"/></a>&nbsp;
-[![Telegram](/img/telegram.png)](https://t.me/recallwei){:target="\_blank"}
+<a href="https://t.me/recallwei" target="_blank" rel="noreferrer noopener"><img height="32" width="32" src="/img/telegram.png"/></a>&nbsp;<https://t.me/recallwei>{:target="_blank"}
 <img height="32" width="32" src="/img/wechat.png"/>&nbsp;
 <img height="32" width="32" src="/img/zhihu.png"/>&nbsp;
 
