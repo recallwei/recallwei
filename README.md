@@ -1,4 +1,6 @@
-### 🦁️Profile
+# Bruce
+
+## 🦁️ Profile
 
 - 👋 Hi, I’m Bruce Song 🦁️
 - 👀 I’m interested in reading different books 📖
@@ -9,7 +11,7 @@
 
 ---
 
-### ☎️Contact with me
+## ☎️ Contact with me
 
 <img height="32" width="32" src="/img/google.png"/>&nbsp;
 <img height="32" width="32" src="/img/reddit.png"/>&nbsp;
@@ -21,7 +23,7 @@
 
 ---
 
-### 🚀Languages and Tools
+## 🚀 Languages and Tools
 
 <a href="https://bruce-wiki.vercel.app/docs/html" target="_blank" rel="noreferrer noopener"><img height="32" width="32" src="/img/html.png"/></a>&nbsp;
 <a href="https://bruce-wiki.vercel.app/docs/css" target="_blank" rel="noreferrer noopener"><img height="32" width="32" src="/img/css.png"/></a>&nbsp;
@@ -35,7 +37,7 @@
 
 ---
 
-### 📖Read recently:
+## 📖 Read recently
 
 <img height="200" width="150" src="https://img9.doubanio.com/view/subject/s/public/s27283822.jpg"/>&nbsp;
 <img height="200" width="150" src="https://img9.doubanio.com/view/subject/l/public/s33524212.jpg"/>&nbsp;
@@ -47,7 +49,7 @@
 
 ---
 
-### 📈GitHub Stats
+## 📈GitHub Stats
 
 ![recallwei's github stats](https://github-readme-stats.vercel.app/api?username=recallwei&show_icons=true&theme=dracula&count_private=true&include_all_commits)
 
@@ -65,7 +67,7 @@ repository 常用语言 layout=compact（紧凑布局）
 
 ---
 
-### ⚡️GitHub Activities
+## ⚡️ GitHub Activities
 
 <!--START_SECTION:activity-->
 
@@ -73,7 +75,7 @@ repository 常用语言 layout=compact（紧凑布局）
 
 ---
 
-### 💻Code Time
+## 💻 Code Time
 
 <!--START_SECTION:waka-->
 
