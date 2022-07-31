@@ -4,36 +4,10 @@
 
 - 👋 Hi, I’m Bruce Song 🦁️
 - 👀 I’m interested in reading different books 📖
-- 🌱 I’m currently learning C# and ReactJS 🚀
+- 🌱 I’m currently learning Node.js and React 🚀
 - 💞️ I’m looking to collaborate on Web Application 🕸️
 - 📫 You can contact me with my email recall4056@gmail.com 📮
 - 📖 My blog website : https://wiki.bruceworld.top/ 🏠
-
----
-
-## ☎️ Contact with me
-
-<img height="32" width="32" src="/img/google.png"/>&nbsp;
-<img height="32" width="32" src="/img/reddit.png"/>&nbsp;
-<img height="32" width="32" src="/img/twitter.png"/>&nbsp;
-<img height="32" width="32" src="/img/facebook.png"/>&nbsp;
-<a href="https://t.me/recallwei" target="_blank" rel="noreferrer noopener"><img height="32" width="32" src="/img/telegram.png"/></a>&nbsp;
-<img height="32" width="32" src="/img/wechat.png"/>&nbsp;
-<img height="32" width="32" src="/img/zhihu.png"/>&nbsp;
-
----
-
-## 🚀 Languages and Tools
-
-<a href="https://wiki.bruceworld.top/docs/html" target="_blank" rel="noreferrer noopener"><img height="32" width="32" src="/img/html.png"/></a>&nbsp;
-<a href="https://wiki.bruceworld.top/docs/css" target="_blank" rel="noreferrer noopener"><img height="32" width="32" src="/img/css.png"/></a>&nbsp;
-<a href="https://wiki.bruceworld.top/docs/javascript" target="_blank" rel="noreferrer noopener"><img height="32" width="32" src="/img/javascript.png"/></a>&nbsp;
-<a href="https://wiki.bruceworld.top/docs/react" target="_blank" rel="noreferrer noopener"><img height="32" width="32" src="/img/react.png"/></a>&nbsp;
-<a href="https://wiki.bruceworld.top/docs/docusaurus" target="_blank" rel="noreferrer noopener"><img height="32" width="32" src="/img/docusaurus.png"/></a>&nbsp;
-<img height="32" width="32" src="/img/chrome.png"/>&nbsp;
-<a href="https://wiki.bruceworld.top/docs/csharp" target="_blank" rel="noreferrer noopener"><img height="32" width="32" src="/img/csharp.png"/></a>&nbsp;
-<img height="32" width="32" src="/img/git.png"/>&nbsp;
-<a href="https://wiki.bruceworld.top/docs/markdown" target="_blank" rel="noreferrer noopener"><img height="32" width="32" src="/img/markdown.png"/></a>&nbsp;
 
 ---
 
