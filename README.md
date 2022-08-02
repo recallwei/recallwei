@@ -1,5 +1,3 @@
-# Bruce
-
 ## 🦁️ Profile
 
 - 👋 Hi, I’m Bruce Song 🦁️
