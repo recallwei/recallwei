@@ -3,7 +3,7 @@
 - 🌱 I’m currently learning Node.js and React 🚀
 - 💞️ I’m looking to collaborate on Web Application 🕸️
 - 📫 You can contact me with my email recall4056@gmail.com 📮
-- 📖 My blog website : https://wiki.bruceworld.top/ 🏠
+- 📖 My wiki website : https://wiki.bruceworld.top/ 🏠
 
 ---
 
