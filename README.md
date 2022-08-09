@@ -4,7 +4,7 @@
 - 💞️ I’m looking to collaborate on Web Application 🕸️
 - 📫 You can contact me with my email recall4056@gmail.com 📮
 - 📖 My wiki website : https://wiki.bruceworld.top/ 🏠
-- ✅ My todo&tasks application : https://taskward.bruceworld.top/ ✅
+- ✅ My todo&tasks application (still in development) : https://taskward.bruceworld.top/ ✅
 
 ---
 
