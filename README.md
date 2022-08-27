@@ -5,7 +5,7 @@
 - 📫 You can contact me with my email recall4056@gmail.com 📮
 - 📖 My wiki website : https://wiki.bruceworld.top/ 🏠
 - ✅ My todo&tasks application (still in development) : https://taskward.bruceworld.top/ ✅
-
+- 😊 Please contact me if you want to work on a React project together
 ---
 
 ## 📈GitHub Stats
