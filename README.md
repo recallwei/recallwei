@@ -4,8 +4,3 @@
 - 💞️ I’m looking to collaborate on the web application
 - 📫 You can contact me with my email **recall4056@gmail.com**
 - 😊 Please contact me if you want to work on a React/Vue project together
-
----
-
-![recallwei's GitHub stats](https://github-readme-stats.vercel.app/api?username=recallwei&show_icons=true&theme=dracula&count_private=true&include_all_commits)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=recallwei&layout=compact&theme=dracula)
