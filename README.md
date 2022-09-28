@@ -9,6 +9,6 @@
 
 ![recallwei's GitHub stats](https://github-readme-stats.vercel.app/api?username=recallwei&show_icons=true&theme=dracula&count_private=true&include_all_commits)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=recallwei&repo=recallwei&theme=dracula)](https://github.com/recallwei/daily)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=recallwei&repo=taskward&theme=dracula)](https://github.com/recallwei/daily)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=recallwei&layout=compact&theme=dracula)](https://github.com/recallwei/daily)
