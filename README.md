@@ -1,5 +1,3 @@
-# Profile
-
 - 👋 Hi, I’m **Bruce Song**
 - 📖 I’m interested in reading different books
 - 🌱 I’m currently learning **Vue.js** and **TypeScript**
