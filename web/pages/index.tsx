@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from "@styles/Home.module.css";
 
 const Home: NextPage = () => {
-  const TITLE = "Bruce Song's Blog";
+  const TITLE = "Bruce Song";
   return (
     <div className={styles.container}>
       <Head>
