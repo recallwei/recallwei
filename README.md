@@ -7,4 +7,4 @@
 ---
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=recallwei&layout=compact&theme=react)](https://github.com/recallwei)
-![recallwei's GitHub stats](https://github-readme-stats.vercel.app/api?username=recallwei&count_private=true&theme=react&hide=contribs)
+![recallwei's GitHub stats](https://github-readme-stats.vercel.app/api?username=recallwei&count_private=true&theme=react)
