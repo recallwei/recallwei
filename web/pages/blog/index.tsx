@@ -6,7 +6,7 @@ const Blog: NextPage = () => {
     <>
       <Head>
         <title>{"Blog"}</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="/taskward.png" />
       </Head>
       <main></main>
     </>

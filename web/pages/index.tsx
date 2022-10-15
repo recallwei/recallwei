@@ -13,7 +13,7 @@ const Home: NextPage = () => {
           name="description"
           content="Bruce Song's personal blog to record problems and solution in daily development."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="/taskward.png" />
       </Head>
 
       <main className={styles.main}>
