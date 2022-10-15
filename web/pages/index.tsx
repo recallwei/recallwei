@@ -1,12 +1,15 @@
-import type { NextPage } from "next";
+import type { ReactElement } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "@styles/Home.module.css";
+import type { NextPageWithLayout } from "./_app";
+import { Layout } from "@components";
 
-const Home: NextPage = () => {
+const Home: NextPageWithLayout = () => {
   const TITLE = "Bruce Song";
+
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>{TITLE}</title>
       </Head>
@@ -18,8 +21,12 @@ const Home: NextPage = () => {
       </main>
 
       <footer className={styles.footer}></footer>
-    </div>
+    </>
   );
+};
+
+Home.getLayout = function getLayout(page: ReactElement) {
+  return <Layout>{page}</Layout>;
 };
 
 export default Home;
