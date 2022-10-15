@@ -9,11 +9,6 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <Head>
         <title>{TITLE}</title>
-        <meta
-          name="description"
-          content="Bruce Song's personal blog to record problems and solution in daily development."
-        />
-        <link rel="icon" type="image/svg+xml" href="/taskward.png" />
       </Head>
 
       <main className={styles.main}>
