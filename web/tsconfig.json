@@ -16,8 +16,11 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
+      // Not used
+      // "@public/*": ["./public/*"],
       "@styles/*": ["./styles/*"],
       "@components": ["./components"],
+      "@constants": ["./constants"],
       "@hooks": ["./hooks"],
       "@interfaces": ["./interfaces"],
       "@utils": ["./utils"]
