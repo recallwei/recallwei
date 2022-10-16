@@ -4,12 +4,6 @@ import { Navbar, Text, Link, Button, Image } from "@nextui-org/react";
 import { AppConfig } from "@constants";
 
 export default function (): JSX.Element {
-  const [buttonType, setButtonType] = useState<any>(null);
-
-  useEffect(() => {
-    setButtonType(Link);
-  }, []);
-
   return (
     <Navbar isBordered variant="floating" shouldHideOnScroll>
       <Navbar.Brand css={{ gap: "$4" }}>

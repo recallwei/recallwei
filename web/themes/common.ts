@@ -20,6 +20,8 @@ export const commonTheme = createTheme({
       link: "#5E1DAD",
     },
     space: {},
-    fonts: {},
+    fonts: {
+      cursive: "'Kalam', cursive",
+    },
   },
 });
