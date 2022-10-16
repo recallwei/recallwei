@@ -9,13 +9,13 @@ export default function (): JSX.Element {
       <Navbar.Brand css={{ gap: "$4" }}>
         <Image
           src="/favicon.png"
-          alt={AppConfig.name}
+          alt={AppConfig.info.name}
           width={AppConfig.brand.imageWidth}
           height={AppConfig.brand.imageHeight}
           showSkeleton={AppConfig.brand.showSkeleton}
         />
-        <Text b size="$lg" hideIn="xs">
-          {AppConfig.name}
+        <Text b size="$lg" hideIn="xs" css={{ fontFamily: "$cursive" }}>
+          {AppConfig.info.name}
         </Text>
       </Navbar.Brand>
       <Navbar.Content variant="highlight">

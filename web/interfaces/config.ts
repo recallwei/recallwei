@@ -1,6 +1,12 @@
 type AppConfigType = {
-  name: string;
+  info: InfoConfig;
   brand: BrandConfig;
+};
+
+type InfoConfig = {
+  name: string;
+  description: string;
+  motto: string;
 };
 
 type BrandConfig = {
