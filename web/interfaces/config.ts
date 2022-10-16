@@ -1,6 +1,7 @@
 type AppConfigType = {
   info: InfoConfig;
   brand: BrandConfig;
+  navbar: NavbarConfig;
 };
 
 type InfoConfig = {
@@ -14,5 +15,7 @@ type BrandConfig = {
   imageHeight: number;
   showSkeleton: boolean;
 };
+
+type NavbarConfig = { shouldHideOnScroll: boolean };
 
 export type { AppConfigType };

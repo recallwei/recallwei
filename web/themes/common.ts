@@ -1,7 +1,7 @@
 import { createTheme } from "@nextui-org/react";
 
 export const commonTheme = createTheme({
-  type: "dark",
+  type: "light",
   theme: {
     colors: {
       // brand colors

@@ -11,6 +11,9 @@ const AppConfig: AppConfigType = {
     imageHeight: 36,
     showSkeleton: true,
   },
+  navbar: {
+    shouldHideOnScroll: true,
+  },
 };
 
 export { AppConfig };
