@@ -4,6 +4,8 @@ import type { AppProps } from "next/app";
 import type { ReactElement, ReactNode } from "react";
 import { NextUIProvider } from "@nextui-org/react";
 
+import { commonTheme } from "@themes";
+
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => ReactNode;
 };
@@ -15,7 +17,9 @@ type AppPropsWithLayout = AppProps & {
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? ((page) => page);
   return (
-    <NextUIProvider>{getLayout(<Component {...pageProps} />)}</NextUIProvider>
+    <NextUIProvider theme={commonTheme}>
+      {getLayout(<Component {...pageProps} />)}
+    </NextUIProvider>
   );
 }
 

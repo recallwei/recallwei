@@ -23,6 +23,7 @@
       "@constants": ["./constants"],
       "@hooks": ["./hooks"],
       "@interfaces": ["./interfaces"],
+      "@themes": ["./themes"],
       "@utils": ["./utils"]
     }
   },
