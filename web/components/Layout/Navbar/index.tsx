@@ -26,7 +26,7 @@ export default function (): JSX.Element {
           {AppConfig.info.name}
         </Text>
       </Navbar.Brand>
-      <Navbar.Content variant="highlight" enableCursorHighlight hideIn="xs">
+      <Navbar.Content variant="underline" enableCursorHighlight hideIn="xs">
         {BuiltInRouters.map((routerItem: RouterType) => {
           return (
             <Navbar.Link
