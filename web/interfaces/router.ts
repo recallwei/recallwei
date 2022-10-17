@@ -5,6 +5,8 @@ type RouterConfigType = {
 type Title = {
   home: string;
   blog: string;
+  code: string;
+  download: string;
 };
 
 type RouterType = {
