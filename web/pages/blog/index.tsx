@@ -1,9 +1,11 @@
-import type { NextPage } from "next";
+import type { ReactElement } from "react";
 import Head from "next/head";
+import type { NextPageWithLayout } from "@interfaces";
 
+import { Layout } from "@components";
 import { RouterConfig } from "@constants";
 
-const Blog: NextPage = () => {
+const Blog: NextPageWithLayout = () => {
   return (
     <>
       <Head>
@@ -12,6 +14,10 @@ const Blog: NextPage = () => {
       <main></main>
     </>
   );
+};
+
+Blog.getLayout = function getLayout(page: ReactElement) {
+  return <Layout>{page}</Layout>;
 };
 
 export default Blog;

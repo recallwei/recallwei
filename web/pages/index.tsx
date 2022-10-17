@@ -1,10 +1,10 @@
 import type { ReactElement } from "react";
 import Head from "next/head";
 import styles from "./index.module.scss";
-import type { NextPageWithLayout } from "./_app";
 
 import { Layout } from "@components";
 import { AppConfig, RouterConfig } from "@constants";
+import type { NextPageWithLayout } from "@interfaces";
 
 const Home: NextPageWithLayout = () => {
   return (
