@@ -1,10 +1,12 @@
-import { useEffect, useState } from "react";
 import { Navbar, Text, Link, Image } from "@nextui-org/react";
+import { useRouter } from "next/router";
 
 import { AppConfig, BuiltInRouters } from "@constants";
 import type { RouterType } from "@interfaces";
 
 export default function (): JSX.Element {
+  const router = useRouter();
+
   return (
     <Navbar
       isBordered
@@ -25,19 +27,23 @@ export default function (): JSX.Element {
         </Text>
       </Navbar.Brand>
       <Navbar.Content variant="highlight" enableCursorHighlight hideIn="xs">
-        {BuiltInRouters.map((router: RouterType) => {
+        {BuiltInRouters.map((routerItem: RouterType) => {
           return (
-            <Navbar.Link isActive href={router.to} key={router.name}>
-              {router.name}
+            <Navbar.Link
+              isActive={router.pathname === routerItem.to}
+              href={routerItem.to}
+              key={routerItem.name}
+            >
+              {routerItem.name}
             </Navbar.Link>
           );
         })}
       </Navbar.Content>
       <Navbar.Collapse>
-        {BuiltInRouters.map((router: RouterType) => {
+        {BuiltInRouters.map((routerItem: RouterType) => {
           return (
-            <Navbar.CollapseItem key={router.name}>
-              <Link href={router.to}>{router.name}</Link>
+            <Navbar.CollapseItem key={routerItem.name}>
+              <Link href={routerItem.to}>{routerItem.name}</Link>
             </Navbar.CollapseItem>
           );
         })}
