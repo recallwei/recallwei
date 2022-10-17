@@ -1,5 +1,6 @@
 import { Navbar, Text, Link, Image } from "@nextui-org/react";
 import { useRouter } from "next/router";
+import styles from "./index.module.scss";
 
 import { AppConfig, BuiltInRouters } from "@constants";
 import type { RouterType } from "@interfaces";
@@ -14,7 +15,7 @@ export default function (): JSX.Element {
       shouldHideOnScroll={AppConfig.navbar.shouldHideOnScroll}
     >
       <Navbar.Brand css={{ gap: "$4" }}>
-        <Navbar.Toggle aria-label="toggle navigation" showIn="xs" />
+        <Navbar.Toggle showIn="xs" />
         <Image
           src="/favicon.png"
           alt={AppConfig.info.name}
@@ -22,11 +23,16 @@ export default function (): JSX.Element {
           height={AppConfig.brand.imageHeight}
           showSkeleton={AppConfig.brand.showSkeleton}
         />
-        <Text b size="$lg" css={{ fontFamily: "$cursive" }}>
+        <Text
+          b
+          size="$xl"
+          css={{ fontFamily: "$cursive" }}
+          className={styles.brandText}
+        >
           {AppConfig.info.name}
         </Text>
       </Navbar.Brand>
-      <Navbar.Content variant="underline" enableCursorHighlight hideIn="xs">
+      <Navbar.Content variant="highlight" enableCursorHighlight hideIn="xs">
         {BuiltInRouters.map((routerItem: RouterType) => {
           return (
             <Navbar.Link

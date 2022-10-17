@@ -12,8 +12,8 @@ const RouterConfig: RouterConfigType = {
 const BuiltInRouters: RouterType[] = [
   { name: "Home", to: "/" },
   { name: "Blog", to: "/blog" },
-  { name: "Code Snippets", to: "/code" },
-  { name: "Download Files", to: "/download" },
+  { name: "Code", to: "/code" },
+  { name: "Download", to: "/download" },
 ];
 
 export { RouterConfig, BuiltInRouters };
