@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import type { NextPage } from "next";
 import type { AppProps } from "next/app";
 import type { ReactElement, ReactNode } from "react";
+import { RecoilRoot } from "recoil";
 import { NextUIProvider } from "@nextui-org/react";
 
 import { commonTheme } from "@themes";
@@ -17,9 +18,11 @@ type AppPropsWithLayout = AppProps & {
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? ((page) => page);
   return (
-    <NextUIProvider theme={commonTheme}>
-      {getLayout(<Component {...pageProps} />)}
-    </NextUIProvider>
+    <RecoilRoot>
+      <NextUIProvider theme={commonTheme}>
+        {getLayout(<Component {...pageProps} />)}
+      </NextUIProvider>
+    </RecoilRoot>
   );
 }
 
