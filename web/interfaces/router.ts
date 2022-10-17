@@ -7,4 +7,9 @@ type Title = {
   blog: string;
 };
 
-export type { RouterConfigType };
+type RouterType = {
+  name: string;
+  to: string;
+};
+
+export type { RouterConfigType, RouterType };

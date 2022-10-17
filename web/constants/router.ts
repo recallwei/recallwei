@@ -1,4 +1,4 @@
-import type { RouterConfigType } from "@interfaces";
+import type { RouterConfigType, RouterType } from "@interfaces";
 
 const RouterConfig: RouterConfigType = {
   title: {
@@ -7,4 +7,11 @@ const RouterConfig: RouterConfigType = {
   },
 };
 
-export { RouterConfig };
+const BuiltInRouters: RouterType[] = [
+  { name: "Home", to: "/" },
+  { name: "Blog", to: "/blog" },
+  { name: "Code Snippets", to: "/code-snippets" },
+  { name: "Download Files", to: "/download-files" },
+];
+
+export { RouterConfig, BuiltInRouters };

@@ -1,2 +1,2 @@
 export type { AppConfigType } from "./config";
-export type { RouterConfigType } from "./router";
+export type { RouterConfigType, RouterType } from "./router";
