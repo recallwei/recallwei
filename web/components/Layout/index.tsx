@@ -10,7 +10,7 @@ export default function ({
   return (
     <>
       <Navbar />
-      <Container fluid css={{ minHeight: "100vh", padding: "$8" }}>
+      <Container lg css={{ minHeight: "100vh", padding: "$8" }}>
         {children}
       </Container>
     </>
