@@ -1,4 +1,5 @@
 import type { RouterConfigType, RouterType } from "@interfaces";
+import { BuiltInRouter } from "@interfaces";
 
 const RouterConfig: RouterConfigType = {
   title: {
@@ -10,10 +11,10 @@ const RouterConfig: RouterConfigType = {
 };
 
 const BuiltInRouters: RouterType[] = [
-  { name: "Home", to: "/" },
-  { name: "Blog", to: "/blog" },
-  { name: "Code", to: "/code" },
-  { name: "Download", to: "/download" },
+  { name: BuiltInRouter.Home, to: "/" },
+  { name: BuiltInRouter.Blog, to: "/blog" },
+  { name: BuiltInRouter.Code, to: "/code" },
+  { name: BuiltInRouter.Download, to: "/download" },
 ];
 
 export { RouterConfig, BuiltInRouters };
