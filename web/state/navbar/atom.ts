@@ -2,9 +2,9 @@ import { atom } from "recoil";
 
 import { BuiltInRouter } from "@interfaces";
 
-const activeSidebar = atom<BuiltInRouter>({
-  key: "activeSidebar",
+const activeNavbarItemState = atom<BuiltInRouter>({
+  key: "activeNavbarItem",
   default: BuiltInRouter.Home,
 });
 
-export { activeSidebar };
+export { activeNavbarItemState };

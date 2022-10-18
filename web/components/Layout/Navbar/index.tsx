@@ -1,12 +1,26 @@
-import { Navbar, Text, Link, Image } from "@nextui-org/react";
+import { useEffect } from "react";
 import { useRouter } from "next/router";
+import { useRecoilState } from "recoil";
+import { Navbar, Text, Link, Image } from "@nextui-org/react";
 import styles from "./index.module.scss";
 
 import { AppConfig, BuiltInRouters } from "@constants";
-import type { RouterType } from "@interfaces";
+import type { BuiltInRouter, RouterType } from "@interfaces";
+import { activeNavbarItemState } from "@state";
+import { convertPathToActiveNavbarItem } from "@utils";
 
 export default function (): JSX.Element {
   const router = useRouter();
+
+  const [activeNavbarItem, setActiveNavbarItem] = useRecoilState(
+    activeNavbarItemState
+  );
+
+  useEffect(() => {
+    setActiveNavbarItem(
+      convertPathToActiveNavbarItem(router.pathname) as BuiltInRouter
+    );
+  }, []);
 
   return (
     <Navbar
@@ -38,7 +52,10 @@ export default function (): JSX.Element {
             <Navbar.Link
               key={routerItem.name}
               href={routerItem.to}
-              isActive={router.pathname === routerItem.to}
+              isActive={activeNavbarItem === routerItem.name}
+              onClick={() => {
+                setActiveNavbarItem(routerItem.name as BuiltInRouter);
+              }}
             >
               {routerItem.name}
             </Navbar.Link>

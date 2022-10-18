@@ -24,7 +24,7 @@
       "@hooks": ["./hooks"],
       "@interfaces": ["./interfaces"],
       "@themes": ["./themes"],
-      "@recoil": ["./recoil"],
+      "@state": ["./state"],
       "@utils": ["./utils"]
     }
   },
