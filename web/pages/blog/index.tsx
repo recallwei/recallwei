@@ -1,8 +1,9 @@
+import type { NextPage } from "next";
 import Head from "next/head";
 
 import { RouterConfig } from "@constants";
 
-const Blog = () => {
+const Blog: NextPage = () => {
   return (
     <>
       <Head>
