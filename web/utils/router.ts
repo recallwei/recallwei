@@ -1,7 +1,10 @@
 import { BuiltInRouters } from "@constants";
 
 function convertPathToActiveNavbarItem(pathname: string): string | undefined {
-  const matchedRouterItem = BuiltInRouters.find((item) => item.to === pathname);
+  const firstLevelPathname = "/" + pathname.split("/")[1];
+  const matchedRouterItem = BuiltInRouters.find(
+    (item) => item.to === firstLevelPathname
+  );
   return matchedRouterItem?.name;
 }
 

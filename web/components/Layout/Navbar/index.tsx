@@ -27,6 +27,7 @@ export default function (): JSX.Element {
       isBordered
       variant="floating"
       shouldHideOnScroll={AppConfig.navbar.shouldHideOnScroll}
+      maxWidth="lg"
     >
       <Navbar.Brand css={{ gap: "$4" }}>
         <Navbar.Toggle showIn="xs" />
@@ -66,7 +67,14 @@ export default function (): JSX.Element {
         {BuiltInRouters.map((routerItem: RouterType) => {
           return (
             <Navbar.CollapseItem key={routerItem.name}>
-              <Link href={routerItem.to}>{routerItem.name}</Link>
+              <Link
+                href={routerItem.to}
+                onClick={() => {
+                  setActiveNavbarItem(routerItem.name as BuiltInRouter);
+                }}
+              >
+                {routerItem.name}
+              </Link>
             </Navbar.CollapseItem>
           );
         })}
