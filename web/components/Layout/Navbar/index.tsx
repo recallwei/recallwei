@@ -36,9 +36,9 @@ export default function (): JSX.Element {
         {BuiltInRouters.map((routerItem: RouterType) => {
           return (
             <Navbar.Link
-              isActive={router.pathname === routerItem.to}
-              href={routerItem.to}
               key={routerItem.name}
+              href={routerItem.to}
+              isActive={router.pathname === routerItem.to}
             >
               {routerItem.name}
             </Navbar.Link>

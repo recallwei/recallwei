@@ -1,26 +1,19 @@
-import "../styles/globals.css";
-import type { NextPage } from "next";
 import type { AppProps } from "next/app";
-import type { ReactElement, ReactNode } from "react";
+import "../styles/globals.css";
+
 import { RecoilRoot } from "recoil";
 import { NextUIProvider } from "@nextui-org/react";
 
 import { commonTheme } from "@themes";
+import { Layout } from "@components";
 
-export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
-  getLayout?: (page: ReactElement) => ReactNode;
-};
-
-type AppPropsWithLayout = AppProps & {
-  Component: NextPageWithLayout;
-};
-
-function MyApp({ Component, pageProps }: AppPropsWithLayout) {
-  const getLayout = Component.getLayout ?? ((page) => page);
+function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <RecoilRoot>
       <NextUIProvider theme={commonTheme}>
-        {getLayout(<Component {...pageProps} />)}
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </NextUIProvider>
     </RecoilRoot>
   );
