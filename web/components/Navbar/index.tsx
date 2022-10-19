@@ -40,7 +40,7 @@ export default function (): JSX.Element {
           height={AppConfig.brand.imageHeight}
           showSkeleton={AppConfig.brand.showSkeleton}
         />
-        <Text b size="$lg" className={clsx(styles.brandText, "cursive")}>
+        <Text b size="$lg" className={clsx(styles.brandText, "fontCursive")}>
           {AppConfig.info.name}
         </Text>
       </Navbar.Brand>
