@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 import { useRecoilState } from "recoil";
 import { Navbar, Text, Link, Image } from "@nextui-org/react";
+import clsx from "clsx";
 import styles from "./index.module.scss";
 
 import { AppConfig, BuiltInRouters } from "@constants";
@@ -39,12 +40,7 @@ export default function (): JSX.Element {
           height={AppConfig.brand.imageHeight}
           showSkeleton={AppConfig.brand.showSkeleton}
         />
-        <Text
-          b
-          size="$lg"
-          css={{ fontFamily: "$cursive" }}
-          className={styles.brandText}
-        >
+        <Text b size="$lg" className={clsx(styles.brandText, "cursive")}>
           {AppConfig.info.name}
         </Text>
       </Navbar.Brand>

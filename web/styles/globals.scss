@@ -18,6 +18,10 @@ p {
   box-sizing: border-box;
 }
 
+.fontCursive {
+  font-family: "Kalam", cursive;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
