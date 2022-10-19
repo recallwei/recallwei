@@ -28,7 +28,7 @@ export default class MyDocument extends Document {
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Noto+Sans+SC:wght@100;300;400;500;700;900&family=Signika+Negative:wght@300;400;500;600;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Noto+Sans+SC:wght@100;300;400;500;700;900&family=Signika+Negative:wght@300;400;500;600;700&display=optional"
             rel="stylesheet"
           />
           <link rel="icon" type="image/svg+xml" href="/favicon.png" />
