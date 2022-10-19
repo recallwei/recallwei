@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
 import { Container } from "@nextui-org/react";
-import { default as Navbar } from "./Navbar";
+import { default as Navbar } from "../Navbar";
 
 export default function ({
   children,
