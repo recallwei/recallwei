@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { useRouter } from "next/router";
+import Image from "next/image";
 import { useRecoilState } from "recoil";
-import { Navbar, Text, Link, Image } from "@nextui-org/react";
+import { Navbar, Text, Link } from "@nextui-org/react";
 import clsx from "clsx";
 import styles from "./index.module.scss";
 
@@ -38,7 +39,7 @@ export default function (): JSX.Element {
           alt={AppConfig.info.name}
           width={AppConfig.brand.imageWidth}
           height={AppConfig.brand.imageHeight}
-          showSkeleton={AppConfig.brand.showSkeleton}
+          priority
         />
         <Text b size="$lg" className={clsx(styles.brandText, "fontCursive")}>
           {AppConfig.info.name}

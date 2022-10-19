@@ -13,7 +13,6 @@ type InfoConfig = {
 type BrandConfig = {
   imageWidth: number;
   imageHeight: number;
-  showSkeleton: boolean;
 };
 
 type NavbarConfig = {
