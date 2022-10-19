@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import styles from "./index.module.scss";
+import styles from "./index.module.sass";
 
 import { AppConfig, RouterConfig } from "@constants";
 

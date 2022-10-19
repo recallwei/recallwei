@@ -1,5 +1,7 @@
 import type { ReactElement } from "react";
 import { Container } from "@nextui-org/react";
+import styles from "./index.module.sass";
+
 import { default as Navbar } from "../Navbar";
 
 export default function ({
@@ -10,7 +12,7 @@ export default function ({
   return (
     <>
       <Navbar />
-      <Container lg css={{ minHeight: "100vh", padding: "$8" }}>
+      <Container lg className={styles.container}>
         {children}
       </Container>
     </>
