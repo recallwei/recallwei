@@ -9,7 +9,7 @@ const AppConfig: AppConfigType = {
   brand: {
     imageWidth: 32,
     imageHeight: 32,
-    showSkeleton: true,
+    showSkeleton: false,
   },
   navbar: {
     isBordered: true,
