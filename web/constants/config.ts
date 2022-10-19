@@ -7,11 +7,13 @@ const AppConfig: AppConfigType = {
     motto: "信じて諦めなければ、夢は必ずかなう",
   },
   brand: {
-    imageWidth: 36,
-    imageHeight: 36,
+    imageWidth: 32,
+    imageHeight: 32,
     showSkeleton: true,
   },
   navbar: {
+    isBordered: true,
+    isCompact: true,
     shouldHideOnScroll: true,
   },
 };

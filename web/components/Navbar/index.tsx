@@ -24,7 +24,8 @@ export default function (): JSX.Element {
 
   return (
     <Navbar
-      isBordered
+      isBordered={AppConfig.navbar.isBordered}
+      isCompact={AppConfig.navbar.isCompact}
       variant="floating"
       shouldHideOnScroll={AppConfig.navbar.shouldHideOnScroll}
       maxWidth="lg"
@@ -40,7 +41,7 @@ export default function (): JSX.Element {
         />
         <Text
           b
-          size="$xl"
+          size="$lg"
           css={{ fontFamily: "$cursive" }}
           className={styles.brandText}
         >

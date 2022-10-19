@@ -16,6 +16,10 @@ type BrandConfig = {
   showSkeleton: boolean;
 };
 
-type NavbarConfig = { shouldHideOnScroll: boolean };
+type NavbarConfig = {
+  isBordered: boolean;
+  isCompact: boolean;
+  shouldHideOnScroll: boolean;
+};
 
 export type { AppConfigType };
