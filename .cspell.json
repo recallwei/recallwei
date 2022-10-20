@@ -1,6 +1,14 @@
 {
   "version": "0.2",
   "language": "en",
-  "words": ["Nabla", "nextui", "recallwei", "taskward", "Kalam", "rehype"],
+  "words": [
+    "clsx",
+    "Kalam",
+    "Nabla",
+    "nextui",
+    "recallwei",
+    "rehype",
+    "taskward"
+  ],
   "flagWords": []
 }

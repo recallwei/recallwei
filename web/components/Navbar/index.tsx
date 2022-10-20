@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import NextLink from "next/link";
 import { useRecoilState } from "recoil";
 import { Navbar, Text, Link } from "@nextui-org/react";
 import clsx from "clsx";
@@ -48,16 +49,17 @@ export default function (): JSX.Element {
       <Navbar.Content variant="highlight" enableCursorHighlight hideIn="xs">
         {BuiltInRouters.map((routerItem: RouterType) => {
           return (
-            <Navbar.Link
-              key={routerItem.name}
-              href={routerItem.to}
-              isActive={activeNavbarItem === routerItem.name}
-              onClick={() => {
-                setActiveNavbarItem(routerItem.name as BuiltInRouter);
-              }}
-            >
-              {routerItem.name}
-            </Navbar.Link>
+            <NextLink href={routerItem.to}>
+              <Navbar.Link
+                key={routerItem.name}
+                isActive={activeNavbarItem === routerItem.name}
+                onClick={() => {
+                  setActiveNavbarItem(routerItem.name as BuiltInRouter);
+                }}
+              >
+                {routerItem.name}
+              </Navbar.Link>
+            </NextLink>
           );
         })}
       </Navbar.Content>
@@ -65,14 +67,15 @@ export default function (): JSX.Element {
         {BuiltInRouters.map((routerItem: RouterType) => {
           return (
             <Navbar.CollapseItem key={routerItem.name}>
-              <Link
-                href={routerItem.to}
-                onClick={() => {
-                  setActiveNavbarItem(routerItem.name as BuiltInRouter);
-                }}
-              >
-                {routerItem.name}
-              </Link>
+              <NextLink href={routerItem.to}>
+                <Link
+                  onClick={() => {
+                    setActiveNavbarItem(routerItem.name as BuiltInRouter);
+                  }}
+                >
+                  {routerItem.name}
+                </Link>
+              </NextLink>
             </Navbar.CollapseItem>
           );
         })}
