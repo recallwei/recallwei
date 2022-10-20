@@ -5,7 +5,7 @@ import NextLink from "next/link";
 import { useRecoilState } from "recoil";
 import { Navbar, Text, Link } from "@nextui-org/react";
 import clsx from "clsx";
-import styles from "./index.module.scss";
+import styles from "./index.module.sass";
 
 import { AppConfig, BuiltInRouters } from "@constants";
 import type { BuiltInRouter, RouterType } from "@interfaces";
@@ -34,24 +34,34 @@ export default function (): JSX.Element {
       maxWidth="lg"
     >
       <Navbar.Brand css={{ gap: "$4" }}>
-        <Navbar.Toggle showIn="xs" />
-        <Image
-          src="/favicon.png"
-          alt={AppConfig.info.name}
-          width={AppConfig.brand.imageWidth}
-          height={AppConfig.brand.imageHeight}
-          priority
-        />
-        <Text b size="$lg" className={clsx(styles.brandText, "fontCursive")}>
-          {AppConfig.info.name}
-        </Text>
+        <Navbar.Toggle showIn="xs" className={styles.brandHoverLink} />
+        <NextLink href="/">
+          <Image
+            src="/favicon.png"
+            alt={AppConfig.info.name}
+            width={AppConfig.brand.imageWidth}
+            height={AppConfig.brand.imageHeight}
+          />
+        </NextLink>
+        <NextLink href="/">
+          <Text
+            b
+            size="$lg"
+            className={clsx(
+              styles.brandText,
+              styles.brandHoverLink,
+              "fontCursive"
+            )}
+          >
+            {AppConfig.info.name}
+          </Text>
+        </NextLink>
       </Navbar.Brand>
       <Navbar.Content variant="highlight" enableCursorHighlight hideIn="xs">
         {BuiltInRouters.map((routerItem: RouterType) => {
           return (
-            <NextLink href={routerItem.to}>
+            <NextLink href={routerItem.to} key={routerItem.name}>
               <Navbar.Link
-                key={routerItem.name}
                 isActive={activeNavbarItem === routerItem.name}
                 onClick={() => {
                   setActiveNavbarItem(routerItem.name as BuiltInRouter);
