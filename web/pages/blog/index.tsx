@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 
 import { RouterConfig } from "@constants";
 
@@ -9,7 +10,9 @@ const Blog: NextPage = () => {
       <Head>
         <title>{RouterConfig.title.blog}</title>
       </Head>
-      <main></main>
+      <main>
+        <Link href="/front-end/file-structure">测试</Link>
+      </main>
     </>
   );
 };

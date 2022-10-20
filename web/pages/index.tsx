@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import clsx from "clsx";
 import styles from "./index.module.sass";
 
 import { AppConfig, RouterConfig } from "@constants";
@@ -12,7 +11,7 @@ const Home: NextPage = () => {
         <title>{RouterConfig.title.home}</title>
       </Head>
 
-      <main className={clsx(styles.main, "fontCursive")}>
+      <main className={styles.main}>
         <div className={styles.hero_title}>{AppConfig.info.name}</div>
         <div className={styles.description}>{AppConfig.info.description}</div>
       </main>

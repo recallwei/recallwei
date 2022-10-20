@@ -33,8 +33,8 @@ export default function (): JSX.Element {
       shouldHideOnScroll={AppConfig.navbar.shouldHideOnScroll}
       maxWidth="lg"
     >
-      <Navbar.Brand css={{ gap: "$4" }}>
-        <Navbar.Toggle showIn="xs" className={styles.brandHoverLink} />
+      <Navbar.Brand css={{ gap: "$4" }} className={styles.brandHoverLink}>
+        <Navbar.Toggle showIn="xs" />
         <NextLink href="/">
           <Image
             src="/favicon.png"
