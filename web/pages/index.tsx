@@ -4,7 +4,7 @@ import styles from "./index.module.sass";
 
 import { AppConfig, RouterConfig } from "@constants";
 
-const Home: NextPage = () => {
+const HomePage: NextPage = () => {
   return (
     <>
       <Head>
@@ -21,4 +21,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default HomePage;

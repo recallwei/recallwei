@@ -3,7 +3,7 @@ import Head from "next/head";
 
 import { RouterConfig } from "@constants";
 
-const Code: NextPage = () => {
+const CodePage: NextPage = () => {
   return (
     <>
       <Head>
@@ -14,4 +14,4 @@ const Code: NextPage = () => {
   );
 };
 
-export default Code;
+export default CodePage;

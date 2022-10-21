@@ -3,7 +3,7 @@ import Head from "next/head";
 
 import { RouterConfig } from "@constants";
 
-const Download: NextPage = () => {
+const DownloadPage: NextPage = () => {
   return (
     <>
       <Head>
@@ -14,4 +14,4 @@ const Download: NextPage = () => {
   );
 };
 
-export default Download;
+export default DownloadPage;

@@ -36,12 +36,14 @@ export default function (): JSX.Element {
       <Navbar.Brand css={{ gap: "$4" }} className={styles.brandHoverLink}>
         <Navbar.Toggle showIn="xs" />
         <NextLink href="/">
-          <Image
-            src="/favicon.png"
-            alt={AppConfig.info.name}
-            width={AppConfig.brand.imageWidth}
-            height={AppConfig.brand.imageHeight}
-          />
+          <div className={styles.brandImageWrapper}>
+            <Image
+              src="/favicon.png"
+              alt={AppConfig.info.name}
+              width={AppConfig.brand.imageWidth}
+              height={AppConfig.brand.imageHeight}
+            />
+          </div>
         </NextLink>
         <NextLink href="/">
           <Text
