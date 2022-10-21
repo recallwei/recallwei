@@ -1,0 +1,31 @@
+# 前端工程化
+
+## 提交代码的规范
+
+ESLint
+
+## 提交信息的规范
+
+## 提交代码的影响
+
+## 工具
+
+### Husky - 操作 Git Hook
+
+### lint-staged - 本地暂存代码检查
+
+yarn add -D lint-staged
+
+在 pre-commit 中添加 `npx lint-staged`
+
+```json title=".lintstagedrc.json"
+{
+  "*.{js,jsx,ts,tsx,vue}": ["eslint --fix"]
+}
+```
+
+### commitlint - 校验 Commit 信息
+
+yarn add -D commitlint @commitlint/config-conventional
+
+### commitizen - 辅助输入 Commit 信息
