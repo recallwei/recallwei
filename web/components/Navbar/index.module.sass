@@ -1,11 +1,15 @@
-.brandHoverLink
+@mixin center()
+  display: flex
+  justify-content: center
+  align-items: center
+
+.brandImageWrapper
+  @include center
   &:hover
     cursor: pointer
 
-  .brandImageWrapper
-    display: flex
-    justify-content: center
-    align-items: center
-
-  .brandText
-    user-select: none
+.brandTextWrapper
+  @include center
+  user-select: none
+  &:hover
+    cursor: pointer

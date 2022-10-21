@@ -33,7 +33,7 @@ export default function (): JSX.Element {
       shouldHideOnScroll={AppConfig.navbar.shouldHideOnScroll}
       maxWidth="lg"
     >
-      <Navbar.Brand css={{ gap: "$4" }} className={styles.brandHoverLink}>
+      <Navbar.Brand css={{ gap: "$4" }}>
         <Navbar.Toggle showIn="xs" />
         <NextLink href="/">
           <div className={styles.brandImageWrapper}>
@@ -46,17 +46,11 @@ export default function (): JSX.Element {
           </div>
         </NextLink>
         <NextLink href="/">
-          <Text
-            b
-            size="$lg"
-            className={clsx(
-              styles.brandText,
-              styles.brandHoverLink,
-              "fontCursive"
-            )}
-          >
-            {AppConfig.info.name}
-          </Text>
+          <div className={clsx(styles.brandTextWrapper, "fontCursive")}>
+            <Text b size="$lg">
+              {AppConfig.info.name}
+            </Text>
+          </div>
         </NextLink>
       </Navbar.Brand>
       <Navbar.Content variant="highlight" enableCursorHighlight hideIn="xs">
