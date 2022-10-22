@@ -6,7 +6,14 @@ import { RecoilRoot } from "recoil";
 import { NextUIProvider } from "@nextui-org/react";
 
 import { commonTheme } from "@themes";
-import { Layout, Heading } from "@components";
+import {
+  Layout,
+  Heading,
+  Paragraph,
+  Pre,
+  InlineCode,
+  Image,
+} from "@components";
 
 const markdownComponents = {
   h1: Heading.H1,
@@ -15,6 +22,10 @@ const markdownComponents = {
   h4: Heading.H4,
   h5: Heading.H5,
   h6: Heading.H6,
+  p: Paragraph,
+  pre: Pre,
+  code: InlineCode,
+  img: Image,
 };
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
