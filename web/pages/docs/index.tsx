@@ -15,11 +15,12 @@ const DocsPage: NextPage = () => {
       <main>
         <div className={styles.listWrapper}>
           {AppConfig.docs.items.map((item) => {
-            return (
-              <Link key={item.id} href={item.id}>
-                {item.title}
-              </Link>
-            );
+            if (!item.draft)
+              return (
+                <Link key={item.id} href={item.id}>
+                  {item.title}
+                </Link>
+              );
           })}
         </div>
       </main>

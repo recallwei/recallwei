@@ -30,6 +30,7 @@ export default function (): JSX.Element {
       variant="floating"
       shouldHideOnScroll={AppConfig.navbar.shouldHideOnScroll}
       maxWidth="lg"
+      css={{ margin: 0 }}
     >
       <Navbar.Brand css={{ gap: "$4" }}>
         <Navbar.Toggle showIn="xs" />

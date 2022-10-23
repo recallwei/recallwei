@@ -13,6 +13,11 @@ const DocsItems: Array<DocType | DocChannelType> = [
     id: "/docs/react/project",
     title: "搭建 React 项目",
   },
+  {
+    id: "/docs/nextjs/why-choose-nextjs",
+    title: "为什么选择 Next.js",
+    draft: true,
+  },
 ];
 
 export { DocsItems };
