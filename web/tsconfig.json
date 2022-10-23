@@ -16,7 +16,6 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      // Not used
       // "@public/*": ["./public/*"],
       "@styles/*": ["./styles/*"],
       "@components": ["./components"],
@@ -25,7 +24,8 @@
       "@interfaces": ["./interfaces"],
       "@themes": ["./themes"],
       "@state": ["./state"],
-      "@utils": ["./utils"]
+      "@utils": ["./utils"],
+      "@config": ["./config.ts"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

@@ -2,13 +2,14 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "./index.module.sass";
 
-import { AppConfig, RouterConfig } from "@constants";
+import { AppConfig } from "@config";
+import { getTitleByRouterId } from "@utils";
 
 const HomePage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{RouterConfig.title.home}</title>
+        <title>{getTitleByRouterId("home")}</title>
       </Head>
 
       <main className={styles.main}>

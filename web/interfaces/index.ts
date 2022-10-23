@@ -1,4 +1,12 @@
-export type { AppConfigType } from "./config";
+// Config
+export type {
+  AppConfigType,
+  RouterType,
+  RouterIdType,
+  DocType,
+  DocChannelType,
+} from "./config";
+export { BuiltInNavbarRouter } from "./config";
 
-export type { RouterConfigType, RouterType } from "./router";
-export { BuiltInRouter } from "./router";
+// Components
+export type { BackButtonProps } from "./components";

@@ -1,6 +1,18 @@
+import { BackButtonWithLink } from "@components";
+
 export const meta = {
   author: "Bruce",
 };
+
+<BackButtonWithLink
+  href="/"
+  shadow
+  handleOnClick={() => {
+    console.log(1);
+  }}
+>
+  返回
+</BackButtonWithLink>
 
 # 测试
 
@@ -61,4 +73,4 @@ function A() {
 }
 ```
 
-`code`
+`code `

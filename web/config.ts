@@ -1,4 +1,5 @@
 import type { AppConfigType } from "@interfaces";
+import { NavbarItems, DocsItems } from "@constants";
 
 const AppConfig: AppConfigType = {
   info: {
@@ -14,6 +15,10 @@ const AppConfig: AppConfigType = {
     isBordered: true,
     isCompact: true,
     shouldHideOnScroll: true,
+    items: NavbarItems,
+  },
+  docs: {
+    items: DocsItems,
   },
 };
 

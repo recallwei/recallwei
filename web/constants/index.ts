@@ -1,2 +1,3 @@
-export { AppConfig } from "./config";
-export { RouterConfig, BuiltInRouters } from "./router";
+export { NavbarItems } from "./navbar";
+
+export { DocsItems } from "./docs";

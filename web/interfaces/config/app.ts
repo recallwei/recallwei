@@ -1,7 +1,10 @@
+import type { RouterType, DocType, DocChannelType } from "@interfaces";
+
 type AppConfigType = {
   info: InfoConfig;
   brand: BrandConfig;
   navbar: NavbarConfig;
+  docs: DocsConfig;
 };
 
 type InfoConfig = {
@@ -19,6 +22,11 @@ type NavbarConfig = {
   isBordered: boolean;
   isCompact: boolean;
   shouldHideOnScroll: boolean;
+  items: Array<RouterType>;
+};
+
+type DocsConfig = {
+  items: Array<DocType | DocChannelType>;
 };
 
 export type { AppConfigType };

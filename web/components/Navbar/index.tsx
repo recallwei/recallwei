@@ -7,8 +7,9 @@ import { Navbar, Text, Link } from "@nextui-org/react";
 import clsx from "clsx";
 import styles from "./index.module.sass";
 
-import { AppConfig, BuiltInRouters } from "@constants";
-import type { BuiltInRouter, RouterType } from "@interfaces";
+import { AppConfig } from "@config";
+import type { RouterType } from "@interfaces";
+import { BuiltInNavbarRouter } from "@interfaces";
 import { activeNavbarItemState } from "@state";
 import { convertPathToActiveNavbarItem } from "@utils";
 
@@ -21,7 +22,7 @@ export default function (): JSX.Element {
 
   useEffect(() => {
     setActiveNavbarItem(
-      convertPathToActiveNavbarItem(router.pathname) as BuiltInRouter
+      convertPathToActiveNavbarItem(router.pathname) as BuiltInNavbarRouter
     );
   }, []);
 
@@ -54,13 +55,13 @@ export default function (): JSX.Element {
         </NextLink>
       </Navbar.Brand>
       <Navbar.Content variant="highlight" enableCursorHighlight hideIn="xs">
-        {BuiltInRouters.map((routerItem: RouterType) => {
+        {AppConfig.navbar.items.map((routerItem: RouterType) => {
           return (
             <NextLink href={routerItem.to} key={routerItem.name}>
               <Navbar.Link
                 isActive={activeNavbarItem === routerItem.name}
                 onClick={() => {
-                  setActiveNavbarItem(routerItem.name as BuiltInRouter);
+                  setActiveNavbarItem(routerItem.name as BuiltInNavbarRouter);
                 }}
               >
                 {routerItem.name}
@@ -70,13 +71,13 @@ export default function (): JSX.Element {
         })}
       </Navbar.Content>
       <Navbar.Collapse>
-        {BuiltInRouters.map((routerItem: RouterType) => {
+        {AppConfig.navbar.items.map((routerItem: RouterType) => {
           return (
             <Navbar.CollapseItem key={routerItem.name}>
               <NextLink href={routerItem.to}>
                 <Link
                   onClick={() => {
-                    setActiveNavbarItem(routerItem.name as BuiltInRouter);
+                    setActiveNavbarItem(routerItem.name as BuiltInNavbarRouter);
                   }}
                 >
                   {routerItem.name}
