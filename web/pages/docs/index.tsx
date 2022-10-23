@@ -10,7 +10,7 @@ const DocsPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{getTitleByRouterId("docs")}</title>
+        <title>{getTitleByRouterId("DOCS")}</title>
       </Head>
       <main>
         <div className={styles.listWrapper}>

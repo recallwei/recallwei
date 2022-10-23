@@ -9,7 +9,7 @@ const HomePage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{getTitleByRouterId("home")}</title>
+        <title>{getTitleByRouterId("HOME")}</title>
       </Head>
 
       <main className={styles.main}>

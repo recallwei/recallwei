@@ -9,9 +9,8 @@ import styles from "./index.module.sass";
 
 import { AppConfig } from "@config";
 import type { RouterType } from "@interfaces";
-import { BuiltInNavbarRouter } from "@interfaces";
 import { activeNavbarItemState } from "@state";
-import { convertPathToActiveNavbarItem } from "@utils";
+import { getActiveNavbarItemIdByRoute } from "@utils";
 
 export default function (): JSX.Element {
   const router = useRouter();
@@ -21,9 +20,7 @@ export default function (): JSX.Element {
   );
 
   useEffect(() => {
-    setActiveNavbarItem(
-      convertPathToActiveNavbarItem(router.pathname) as BuiltInNavbarRouter
-    );
+    setActiveNavbarItem(getActiveNavbarItemIdByRoute(router.pathname));
   }, []);
 
   return (
@@ -37,7 +34,12 @@ export default function (): JSX.Element {
       <Navbar.Brand css={{ gap: "$4" }}>
         <Navbar.Toggle showIn="xs" />
         <NextLink href="/">
-          <div className={styles.brandImageWrapper}>
+          <div
+            className={styles.brandImageWrapper}
+            onClick={() => {
+              setActiveNavbarItem("HOME");
+            }}
+          >
             <Image
               src="/favicon.png"
               alt={AppConfig.info.name}
@@ -47,7 +49,12 @@ export default function (): JSX.Element {
           </div>
         </NextLink>
         <NextLink href="/">
-          <div className={clsx(styles.brandTextWrapper, "fontCursive")}>
+          <div
+            className={clsx(styles.brandTextWrapper, "fontCursive")}
+            onClick={() => {
+              setActiveNavbarItem("HOME");
+            }}
+          >
             <Text b size="$lg">
               {AppConfig.info.name}
             </Text>
@@ -59,9 +66,9 @@ export default function (): JSX.Element {
           return (
             <NextLink href={routerItem.to} key={routerItem.name}>
               <Navbar.Link
-                isActive={activeNavbarItem === routerItem.name}
+                isActive={activeNavbarItem === routerItem.id}
                 onClick={() => {
-                  setActiveNavbarItem(routerItem.name as BuiltInNavbarRouter);
+                  setActiveNavbarItem(routerItem.id);
                 }}
               >
                 {routerItem.name}
@@ -77,7 +84,7 @@ export default function (): JSX.Element {
               <NextLink href={routerItem.to}>
                 <Link
                   onClick={() => {
-                    setActiveNavbarItem(routerItem.name as BuiltInNavbarRouter);
+                    setActiveNavbarItem(routerItem.id);
                   }}
                 >
                   {routerItem.name}

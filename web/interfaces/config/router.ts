@@ -1,4 +1,4 @@
-type RouterIdType = "home" | "docs";
+type RouterIdType = "HOME" | "DOCS";
 
 type RouterType = {
   id: RouterIdType;
@@ -6,10 +6,4 @@ type RouterType = {
   to: string;
 };
 
-enum BuiltInNavbarRouter {
-  "Home" = "主页",
-  "Docs" = "博客",
-}
-
 export type { RouterType, RouterIdType };
-export { BuiltInNavbarRouter };

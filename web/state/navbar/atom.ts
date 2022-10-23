@@ -1,10 +1,10 @@
 import { atom } from "recoil";
 
-import { BuiltInNavbarRouter } from "@interfaces";
+import { RouterIdType } from "@interfaces";
 
-const activeNavbarItemState = atom<BuiltInNavbarRouter>({
+const activeNavbarItemState = atom<RouterIdType>({
   key: "activeNavbarItem",
-  default: BuiltInNavbarRouter.Home,
+  default: "HOME",
 });
 
 export { activeNavbarItemState };

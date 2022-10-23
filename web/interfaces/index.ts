@@ -6,7 +6,6 @@ export type {
   DocType,
   DocChannelType,
 } from "./config";
-export { BuiltInNavbarRouter } from "./config";
 
 // Components
 export type { BackButtonProps } from "./components";

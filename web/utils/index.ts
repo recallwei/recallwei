@@ -1,3 +1,3 @@
-export { convertPathToActiveNavbarItem, getTitleByRouterId } from "./router";
+export { getActiveNavbarItemIdByRoute, getTitleByRouterId } from "./router";
 
 export { getDocItem, getDocChannelItem } from "./docs";
