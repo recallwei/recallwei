@@ -17,9 +17,13 @@ const DocsPage: NextPage = () => {
           {AppConfig.docs.items.map((item) => {
             if (!item.draft)
               return (
-                <Link key={item.id} href={item.id}>
-                  {item.title}
-                </Link>
+                <div key={item.id} className={styles.card}>
+                  <Link href={item.id} passHref>
+                    <a className={styles.title}>{item.title}</a>
+                  </Link>
+                  <div className={styles.description}>{item.description}</div>
+                  <div className={styles.time}>{item.finishedAt}</div>
+                </div>
               );
           })}
         </div>
