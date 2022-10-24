@@ -12,3 +12,7 @@
 - Food
 - Travel
 - Musics & Movies
+
+## Components
+
+- NextHead: 封装 Next/Head，用于显示 Document Title。
