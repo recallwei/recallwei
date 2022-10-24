@@ -8,4 +8,4 @@ export type {
 } from "./config";
 
 // Components
-export type { BackButtonProps } from "./components";
+export type { BackButtonProps, NextHeadProps } from "./components";
