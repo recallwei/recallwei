@@ -19,10 +19,8 @@ export default function BackButton({
         auto
         onClick={handleOnClick}
       >
-        <div>
-          <Link href={href} className={styles.link}>
-            {children}
-          </Link>
+        <div className={styles.linkWrapper}>
+          <Link href={href}>{children}</Link>
         </div>
       </Button>
     );
