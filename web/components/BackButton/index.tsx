@@ -12,15 +12,29 @@ export default function BackButton({
 }: BackButtonProps): JSX.Element {
   if (href) {
     return (
-      <Button size="sm" shadow={shadow} auto onClick={handleOnClick}>
-        <Link href={href} className={styles.link}>
-          {children}
-        </Link>
+      <Button
+        size="sm"
+        color="primary"
+        shadow={shadow}
+        auto
+        onClick={handleOnClick}
+      >
+        <div>
+          <Link href={href} className={styles.link}>
+            {children}
+          </Link>
+        </div>
       </Button>
     );
   } else {
     return (
-      <Button size="sm" shadow={shadow} auto onClick={handleOnClick}>
+      <Button
+        size="sm"
+        color="primary"
+        shadow={shadow}
+        auto
+        onClick={handleOnClick}
+      >
         {children}
       </Button>
     );
