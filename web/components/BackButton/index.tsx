@@ -1,43 +1,28 @@
-import { forwardRef } from "react";
 import Link from "next/link";
 import { Button } from "@nextui-org/react";
+import styles from "./index.module.sass";
 
 import { BackButtonProps } from "@interfaces";
 
-export const BackButton = forwardRef(
-  ({
-    children,
-    shadow = false,
-    handleOnClick,
-    ref,
-  }: BackButtonProps): JSX.Element => {
+export default function BackButton({
+  children,
+  shadow = false,
+  href,
+  handleOnClick,
+}: BackButtonProps): JSX.Element {
+  if (href) {
     return (
-      <Button
-        ref={ref}
-        size="sm"
-        color="gradient"
-        shadow={shadow}
-        auto
-        onClick={handleOnClick}
-      >
+      <Button size="sm" shadow={shadow} auto onClick={handleOnClick}>
+        <Link href={href} className={styles.link}>
+          {children}
+        </Link>
+      </Button>
+    );
+  } else {
+    return (
+      <Button size="sm" shadow={shadow} auto onClick={handleOnClick}>
         {children}
       </Button>
     );
   }
-);
-
-export function BackButtonWithLink({
-  href,
-  handleOnClick,
-  children,
-}): JSX.Element {
-  return (
-    <Link href={href} passHref>
-      <a>
-        <BackButton shadow handleOnClick={handleOnClick}>
-          {children}
-        </BackButton>
-      </a>
-    </Link>
-  );
 }

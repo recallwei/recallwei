@@ -1,6 +1,6 @@
 import type { AppProps } from "next/app";
 import { MDXProvider } from "@mdx-js/react";
-import "../styles/globals.sass";
+import "../styles/global.sass";
 
 import { RecoilRoot } from "recoil";
 import { NextUIProvider } from "@nextui-org/react";

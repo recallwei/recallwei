@@ -1,4 +1,4 @@
-import { BackButtonWithLink, NextHead } from "@components";
+import { BackButton, NextHead } from "@components";
 
 export const meta = {
   title: "Test",
@@ -7,15 +7,9 @@ export const meta = {
 
 <NextHead title={meta.title} />
 
-<BackButtonWithLink
-  href="/"
-  shadow
-  handleOnClick={() => {
-    console.log(1);
-  }}
->
+<BackButton href="/docs" shadow>
   返回
-</BackButtonWithLink>
+</BackButton>
 
 # First Heading
 
