@@ -1,13 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import { RouterConfig } from "@constants";
+import { getTitleByRouterId } from "@utils";
 
 const CodePage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{RouterConfig.title.code}</title>
+        <title>{getTitleByRouterId("HOME")}</title>
       </Head>
       <main></main>
     </>
