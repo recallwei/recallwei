@@ -1,10 +1,11 @@
 import { BackButtonWithLink, NextHead } from "@components";
 
 export const meta = {
+  title: "Test",
   author: "Bruce",
 };
 
-<NextHead title="Test" />
+<NextHead title={meta.title} />
 
 <BackButtonWithLink
   href="/"

@@ -21,7 +21,12 @@ const DocsItems: Array<DocType | DocChannelType> = [
     id: "/docs/nextjs/why-choose-nextjs",
     title: "为什么选择 Next.js",
     finishedAt: "2022-10-24",
-    draft: true,
+  },
+  {
+    id: "/docs/sass",
+    title: "Sass",
+    description: "Sass: Syntactically Awesome Style Sheet",
+    finishedAt: "2022-10-24",
   },
 ];
 
