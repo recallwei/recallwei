@@ -1,6 +1,5 @@
-import Link from "next/link";
+import { useRouter } from "next/router";
 import { Button } from "@nextui-org/react";
-import styles from "./index.module.sass";
 
 import { BackButtonProps } from "@interfaces";
 
@@ -8,8 +7,9 @@ export default function BackButton({
   children,
   shadow = false,
   href,
-  handleOnClick,
+  handleOnClick = () => {},
 }: BackButtonProps): JSX.Element {
+  const router = useRouter();
   if (href) {
     return (
       <Button
@@ -17,11 +17,12 @@ export default function BackButton({
         color="primary"
         shadow={shadow}
         auto
-        onClick={handleOnClick}
+        onClick={() => {
+          handleOnClick();
+          router.push(href);
+        }}
       >
-        <div className={styles.link}>
-          <Link href={href}>{children}</Link>
-        </div>
+        {children}
       </Button>
     );
   } else {
