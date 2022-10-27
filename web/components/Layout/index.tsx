@@ -1,8 +1,5 @@
 import type { ReactElement } from "react";
-import { Container } from "@nextui-org/react";
-import styles from "./index.module.sass";
-
-import { default as Navbar } from "../Navbar";
+import { Navbar, Container } from "@components";
 
 export default function ({
   children,
@@ -12,9 +9,7 @@ export default function ({
   return (
     <>
       <Navbar />
-      <Container lg className={styles.container}>
-        {children}
-      </Container>
+      <Container>{children}</Container>
     </>
   );
 }

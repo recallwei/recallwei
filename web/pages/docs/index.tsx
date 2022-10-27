@@ -18,8 +18,8 @@ const DocsPage: NextPage = () => {
             if (!item.draft)
               return (
                 <div key={item.id} className={styles.card}>
-                  <Link href={item.id} passHref>
-                    <a className={styles.title}>{item.title}</a>
+                  <Link href={item.id} className={styles.title}>
+                    {item.title}
                   </Link>
                   <div className={styles.description}>{item.description}</div>
                   <div className={styles.time}>{item.finishedAt}</div>

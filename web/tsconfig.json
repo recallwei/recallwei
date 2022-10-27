@@ -23,7 +23,7 @@
       "@hooks": ["./hooks"],
       "@interfaces": ["./interfaces"],
       "@themes": ["./themes"],
-      "@state": ["./state"],
+      "@store": ["./store"],
       "@utils": ["./utils"],
       "@config": ["./config.ts"]
     }

@@ -1,11 +1,6 @@
 import type { AppProps } from "next/app";
 import { MDXProvider } from "@mdx-js/react";
 import "../styles/global.sass";
-
-import { RecoilRoot } from "recoil";
-import { NextUIProvider } from "@nextui-org/react";
-
-import { commonTheme } from "@themes";
 import {
   Layout,
   Heading,
@@ -14,6 +9,8 @@ import {
   InlineCode,
   Image,
 } from "@components";
+import { store } from "@store";
+import { Provider as ReduxStoreProvider } from "react-redux";
 
 const markdownComponents = {
   h1: Heading.H1,
@@ -30,15 +27,13 @@ const markdownComponents = {
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
-    <RecoilRoot>
-      <NextUIProvider theme={commonTheme}>
-        <Layout>
-          <MDXProvider components={markdownComponents}>
-            <Component {...pageProps} />
-          </MDXProvider>
-        </Layout>
-      </NextUIProvider>
-    </RecoilRoot>
+    <ReduxStoreProvider store={store}>
+      <Layout>
+        <MDXProvider components={markdownComponents}>
+          <Component {...pageProps} />
+        </MDXProvider>
+      </Layout>
+    </ReduxStoreProvider>
   );
 }
 

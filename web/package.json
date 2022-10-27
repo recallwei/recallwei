@@ -12,17 +12,18 @@
     "@mdx-js/loader": "^2.1.5",
     "@mdx-js/react": "^2.1.5",
     "@next/mdx": "^12.3.1",
-    "@nextui-org/react": "^1.0.0-beta.10",
+    "@reduxjs/toolkit": "^1.8.6",
     "clsx": "^1.2.1",
-    "next": "12.3.1",
+    "next": "13",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "recoil": "^0.7.6"
+    "react-redux": "^8.0.4"
   },
   "devDependencies": {
     "@types/node": "18.11.0",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
+    "@types/react-redux": "^7.1.24",
     "cspell": "^6.11.1",
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1",

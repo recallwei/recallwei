@@ -6,7 +6,6 @@ import Document, {
   DocumentContext,
   DocumentInitialProps,
 } from "next/document";
-import { CssBaseline } from "@nextui-org/react";
 import { Children } from "react";
 
 export default class MyDocument extends Document {
@@ -14,7 +13,6 @@ export default class MyDocument extends Document {
     ctx: DocumentContext
   ): Promise<DocumentInitialProps> {
     const initialProps = await Document.getInitialProps(ctx);
-
     return {
       ...initialProps,
       styles: Children.toArray([initialProps.styles]),
@@ -36,7 +34,6 @@ export default class MyDocument extends Document {
             name="description"
             content="Bruce Song's personal blog to record problems and solution in daily development."
           />
-          {CssBaseline.flush()}
         </Head>
         <body>
           <Main />
