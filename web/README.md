@@ -10,7 +10,7 @@ I am Bruce Song, this is my personal website.
 
 ## Library
 
-- Recoil
+- React Redux Toolkit
 - Sass
 
 ## Others
