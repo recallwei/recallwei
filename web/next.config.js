@@ -3,6 +3,13 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
+  // Experimental feature
+  experimental: {
+    appDir: true,
+    fontLoaders: [
+      { loader: "@next/font/google", options: { subsets: ["latin"] } },
+    ],
+  },
 };
 
 const withMDX = require("@next/mdx")({

@@ -1,16 +1,10 @@
 import type { AppProps } from "next/app";
 import { MDXProvider } from "@mdx-js/react";
-import "../styles/global.sass";
-import {
-  Layout,
-  Heading,
-  Paragraph,
-  Pre,
-  InlineCode,
-  Image,
-} from "@components";
-import { store } from "@store";
 import { Provider as ReduxStoreProvider } from "react-redux";
+import "../styles/global.sass";
+
+import { store } from "@store";
+import { Heading, Paragraph, Pre, InlineCode, Image } from "@components";
 
 const markdownComponents = {
   h1: Heading.H1,
@@ -25,16 +19,14 @@ const markdownComponents = {
   img: Image,
 };
 
-function MyApp({ Component, pageProps }: AppProps): JSX.Element {
+function App({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <ReduxStoreProvider store={store}>
-      <Layout>
-        <MDXProvider components={markdownComponents}>
-          <Component {...pageProps} />
-        </MDXProvider>
-      </Layout>
+      <MDXProvider components={markdownComponents}>
+        <Component {...pageProps} />
+      </MDXProvider>
     </ReduxStoreProvider>
   );
 }
 
-export default MyApp;
+export default App;
