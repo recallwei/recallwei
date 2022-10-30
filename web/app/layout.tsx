@@ -1,4 +1,5 @@
 import { Inter } from "@next/font/google";
+import "../styles/global.sass";
 
 const inter = Inter();
 
