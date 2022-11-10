@@ -10,7 +10,8 @@
     "recallwei",
     "reduxjs",
     "rehype",
-    "taskward"
+    "taskward",
+    "Nuxt"
   ],
   "flagWords": []
 }
