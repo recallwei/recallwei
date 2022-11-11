@@ -1,3 +1,11 @@
+<script setup lang="ts">
+import type { Layout } from "@interfaces";
+
+const layout = ref<Layout>("default");
+</script>
+
 <template>
-  <NuxtPage />
+  <NuxtLayout :name="layout">
+    <NuxtPage />
+  </NuxtLayout>
 </template>

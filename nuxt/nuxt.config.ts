@@ -3,4 +3,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {},
   },
+  typescript: {
+    strict: true,
+  },
 });
