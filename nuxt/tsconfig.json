@@ -4,8 +4,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@components": ["./components/*"],
-      "@interfaces": ["./interfaces"]
+      "@components/*": ["./components/*"],
+      "@interfaces/*": ["./interfaces/*"],
+      "@styles/*": ["./styles/*"]
     }
   }
 }
