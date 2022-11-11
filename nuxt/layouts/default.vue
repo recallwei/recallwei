@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import "../styles/global.scss";
+import "../assets/global.scss";
 </script>
 
 <template>
