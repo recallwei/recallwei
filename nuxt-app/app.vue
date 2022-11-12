@@ -9,3 +9,16 @@ const layout = ref<Layout>("default");
     <NuxtPage />
   </NuxtLayout>
 </template>
+
+<style lang="scss" scoped>
+// 页面切换过渡样式
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+</style>

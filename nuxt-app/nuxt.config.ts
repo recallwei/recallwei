@@ -6,4 +6,8 @@ export default defineNuxtConfig({
   typescript: {
     strict: true,
   },
+  app: {
+    pageTransition: { name: "page", mode: "out-in" },
+  },
+  // css: ["@/assets/css/theme.scss"], // Scss 全局变量
 });
