@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   typescript: {
     strict: true,
   },
+  modules: ["@nuxt/content"],
   app: {
     pageTransition: { name: "page", mode: "out-in" },
   },

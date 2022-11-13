@@ -7,11 +7,12 @@
     "Nabla",
     "nextjs",
     "nextui",
+    "Nuxt",
+    "nuxtjs",
     "recallwei",
     "reduxjs",
     "rehype",
-    "taskward",
-    "Nuxt"
+    "taskward"
   ],
   "flagWords": []
 }
