@@ -9,7 +9,7 @@ export default function Layout({
   return (
     <div className={styles.container}>
       <Navbar />
-      {children}
+      <div className={styles.contentContainer}>{children}</div>
     </div>
   );
 }

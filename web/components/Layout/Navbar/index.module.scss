@@ -1,10 +1,14 @@
 .navbarWrapper {
   padding: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   .navbar {
     height: 60px;
     width: auto;
     padding: 12px 18px;
     // background-color: $primary-color;
+    background-color: wheat;
     border: 1.5px solid whitesmoke;
     border-radius: 8px;
     display: flex;
