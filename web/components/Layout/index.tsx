@@ -1,3 +1,4 @@
+import { Container } from "@components";
 import Navbar from "./Navbar";
 import styles from "./index.module.scss";
 
@@ -7,9 +8,9 @@ export default function Layout({
   children: React.ReactNode;
 }): JSX.Element {
   return (
-    <div className={styles.container}>
+    <Container size="xl">
       <Navbar />
-      <div className={styles.contentContainer}>{children}</div>
-    </div>
+      <div>{children}</div>
+    </Container>
   );
 }
