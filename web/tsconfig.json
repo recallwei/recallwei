@@ -22,6 +22,8 @@
     "baseUrl": ".",
     "paths": {
       "@components": ["./components"],
+      "@constants": ["./constants"],
+      "@hooks": ["./hooks"],
       "@interfaces": ["./interfaces"],
       "@utils": ["./utils"]
     }
