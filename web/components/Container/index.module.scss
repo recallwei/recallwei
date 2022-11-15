@@ -1,3 +1,5 @@
+$container-padding: 10px;
+
 .container-default,
 .container-sm,
 .container-md,
@@ -6,6 +8,8 @@
 .container-xxl,
 .container-fluid {
   width: 100%;
+  padding-right: $container-padding;
+  padding-left: $container-padding;
   margin-right: auto;
   margin-left: auto;
 }
