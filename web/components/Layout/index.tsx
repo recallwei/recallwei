@@ -10,7 +10,7 @@ export default function Layout({
   return (
     <Container size="xl">
       <Navbar />
-      <div>{children}</div>
+      <div style={{ height: "2000px" }}>{children}</div>
     </Container>
   );
 }
