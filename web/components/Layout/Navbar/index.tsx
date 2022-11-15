@@ -10,13 +10,11 @@ export default function Navbar(): JSX.Element {
     <div className={styles.navbarWrapper}>
       <div className={styles.navbar}>
         <div className={styles.navItems}>
-          {appConfig.navbar.items.map((navItem, index) => {
-            return (
-              <Link href={navItem.href} key={index} className={styles.navItem}>
-                {navItem.text}
-              </Link>
-            );
-          })}
+          {appConfig.navbar.items.map((navItem, index) => (
+            <Link href={navItem.href} key={index} className={styles.navItem}>
+              {navItem.text}
+            </Link>
+          ))}
         </div>
       </div>
     </div>

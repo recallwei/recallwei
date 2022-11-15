@@ -15,7 +15,11 @@
 
 ## Components
 
-- NextHead: 封装 Next/Head，用于显示 Document Title。
+- Container 容器
+- Layout 布局
+  - Navbar 导航栏
+  - Sidebar 侧边栏
+  - footer 页脚
 
 ## Doc
 
