@@ -1,5 +1,5 @@
-import { Layout } from "@components";
 import "./globals.scss";
+import { Layout } from "@components";
 
 export default function RootLayout({
   children,
