@@ -12,7 +12,8 @@
     "recallwei",
     "reduxjs",
     "rehype",
-    "taskward"
+    "taskward",
+    "contentlayer"
   ],
   "flagWords": []
 }
