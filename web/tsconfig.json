@@ -26,7 +26,7 @@
       "@hooks": ["./hooks"],
       "@interfaces": ["./interfaces"],
       "@utils": ["./utils"],
-      "contentlayer/generated": ["./.contentlayer/generated"] // content-layer required
+      "@contentlayer": ["./.contentlayer/generated"] // content-layer required
     }
   },
   "include": [

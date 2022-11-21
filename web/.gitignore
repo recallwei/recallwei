@@ -40,3 +40,6 @@ next-env.d.ts
 
 # turbo
 .turbo
+
+# Contentlayer
+.contentlayer

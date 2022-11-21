@@ -11,9 +11,14 @@ export const Doc = defineDocumentType(() => ({
       required: true,
     },
     date: {
-      type: "date",
+      type: "string",
       description: "The date of the doc.",
       required: true,
+    },
+    language: {
+      type: "string",
+      description: "The language of the doc.",
+      required: false,
     },
   },
   computedFields: {
