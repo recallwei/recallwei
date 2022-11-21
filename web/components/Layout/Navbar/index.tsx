@@ -42,8 +42,12 @@ export default function Navbar(): JSX.Element {
   return (
     <div className={styles.navbarWrapper}>
       <div className={styles.navbar}>
-        <Link className={styles.icon} href={appConfig.navbar.icon.href ?? "/"}>
+        <Link
+          className={styles.iconWrapper}
+          href={appConfig.navbar.icon.href ?? "/"}
+        >
           <Image
+            className={styles.icon}
             src={appConfig.navbar.icon.src}
             alt={appConfig.navbar.icon.alt ?? ""}
             width={appConfig.navbar.icon.width ?? 32}
