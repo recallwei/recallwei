@@ -1,5 +1,5 @@
 import type { Doc } from "@contentlayer";
-import DocCard from "./DocCard";
+import { DocCard } from "@components";
 
 type DocListProps = {
   data?: Doc[];

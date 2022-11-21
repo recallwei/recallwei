@@ -1,6 +1,6 @@
 import Link from "next/link";
-import type { Doc } from "@contentlayer";
 import styles from "./index.module.scss";
+import type { Doc } from "@contentlayer";
 
 type DocCardProps = {
   metaData: DocMetaData;
