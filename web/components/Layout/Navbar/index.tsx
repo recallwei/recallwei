@@ -24,6 +24,7 @@ export default function Navbar(): JSX.Element {
           href={navItem.href}
           key={index}
           className={styles.navIconItemWrapper}
+          title={navItem.text}
         >
           <Image
             className={styles.navIconItem}
