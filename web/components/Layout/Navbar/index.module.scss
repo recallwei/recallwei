@@ -12,12 +12,13 @@
     box-shadow: 0px 0px 2px 1px rgb(0 0 0 / 0.1);
     display: flex;
     align-items: center;
-    gap: 36px;
+    gap: 48px;
 
     .icon {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
+      user-select: none;
 
       .text {
         font-weight: 500;
@@ -43,7 +44,10 @@
         gap: 18px;
       }
 
-      .navItem {
+      .navLinkItem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         transition-property: all;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 300ms;
@@ -57,6 +61,27 @@
 
         &:active {
           color: rgba(2, 255, 61, 0.1);
+        }
+      }
+
+      .navIconItemWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .navIconItem {
+          transition-property: all;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-duration: 300ms;
+          opacity: 1;
+
+          &:hover {
+            opacity: 0.5;
+          }
+
+          &:active {
+            opacity: 0.25;
+          }
         }
       }
     }

@@ -10,19 +10,25 @@ export type Navbar = {
 };
 
 export type NavbarIcon = {
-  text: string;
+  text?: string;
   src: string;
-  width: number;
-  height: number;
-  alt: string;
+  href?: string;
+  width?: number;
+  height?: number;
+  alt?: string;
 };
 
 export type NavbarItem = {
   text: string;
   href: string;
   type: NavbarItemType;
-  position: NavbarItemPosition;
+  position?: NavbarItemPosition;
+  // type === "icon" only
+  src?: string;
+  width?: number;
+  height?: number;
+  alt?: string;
 };
 
-export type NavbarItemType = "link" | "outside-link" | "icon";
+export type NavbarItemType = "link" | "icon";
 export type NavbarItemPosition = "left" | "right";
