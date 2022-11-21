@@ -17,6 +17,23 @@
   dependencies:
     regenerator-runtime "^0.13.10"
 
+"@contentlayer/cli@0.2.9":
+  version "0.2.9"
+  resolved "https://registry.yarnpkg.com/@contentlayer/cli/-/cli-0.2.9.tgz#3e57f9752758649a808810f329f5f999e11c3649"
+  integrity sha512-JGPFZNNyBm0wicc5V+F1wlenkojdXAOv/m6dqAxvJRK8rsCzuQ0jZUMx44LvQxgLxq1MRHQ4NeQaD5xKMm9x+g==
+  dependencies:
+    "@contentlayer/core" "0.2.9"
+    "@contentlayer/utils" "0.2.9"
+    clipanion "^3.2.0-rc.13"
+    typanion "^3.12.1"
+
+"@contentlayer/client@0.2.9":
+  version "0.2.9"
+  resolved "https://registry.yarnpkg.com/@contentlayer/client/-/client-0.2.9.tgz#1bfddbbfc64790166ac5288a6fb80f56617d714f"
+  integrity sha512-/ItWk2Cs3KbMLJnh9hkUav88yYS158nqRaVKiNX6NJLlT0LLnhYkfqEHQzAug1mmPy3Q4zh4ouW8kgBYgK2xVA==
+  dependencies:
+    "@contentlayer/core" "0.2.9"
+
 "@contentlayer/core@0.2.9":
   version "0.2.9"
   resolved "https://registry.yarnpkg.com/@contentlayer/core/-/core-0.2.9.tgz#764d61bffa4a5d3b60b00469f6685f5397db0b70"
@@ -35,6 +52,23 @@
     source-map-support "^0.5.21"
     type-fest "^3.2.0"
     unified "^10.1.2"
+
+"@contentlayer/source-files@0.2.9":
+  version "0.2.9"
+  resolved "https://registry.yarnpkg.com/@contentlayer/source-files/-/source-files-0.2.9.tgz#24713ab0f0878d8a019f65229901d1df3002c326"
+  integrity sha512-5EqF4vHm7OsZAFxbqXVvLSob258bSql1JkJeVOF56SFP1eKbWdlm+SKA0D7e5ofd+P2h4V2TU2ZE7kQViuehsw==
+  dependencies:
+    "@contentlayer/core" "0.2.9"
+    "@contentlayer/utils" "0.2.9"
+    chokidar "^3.5.3"
+    fast-glob "^3.2.12"
+    gray-matter "^4.0.3"
+    imagescript "^1.2.9"
+    micromatch "^4.0.5"
+    ts-pattern "^4.0.5"
+    unified "^10.1.2"
+    yaml "^1.10.2"
+    zod "^3.19.1"
 
 "@contentlayer/utils@0.2.9":
   version "0.2.9"
@@ -891,6 +925,13 @@ client-only@0.0.1:
   resolved "https://registry.yarnpkg.com/client-only/-/client-only-0.0.1.tgz#38bba5d403c41ab150bff64a95c85013cf73bca1"
   integrity sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==
 
+clipanion@^3.2.0-rc.13:
+  version "3.2.0-rc.14"
+  resolved "https://registry.yarnpkg.com/clipanion/-/clipanion-3.2.0-rc.14.tgz#d98154a74ae533a940de1af041e6246ba9725f0e"
+  integrity sha512-lj5zydbH786t6gpXe6oNX7CM5YKhd0CDhcXG8pKyRa2Nz5cgj1yhnNKxDi/MyPYwjyvAG5oVBeDdYCGUAgD8lQ==
+  dependencies:
+    typanion "^3.8.0"
+
 cliui@^7.0.2:
   version "7.0.4"
   resolved "https://registry.yarnpkg.com/cliui/-/cliui-7.0.4.tgz#a0265ee655476fc807aea9df3df8df7783808b4f"
@@ -937,6 +978,17 @@ concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==
+
+contentlayer@^0.2.9:
+  version "0.2.9"
+  resolved "https://registry.yarnpkg.com/contentlayer/-/contentlayer-0.2.9.tgz#a96fda4d63c706602a06a279be7576fa9d7ad80b"
+  integrity sha512-VC2l7g2EaxCrndfE1vOvVNQbqO+xp1rt33gP48XzRA8PFi71UXkSAfvMZGTati8qIZuH/lQBJ6h/rxsZBTFKww==
+  dependencies:
+    "@contentlayer/cli" "0.2.9"
+    "@contentlayer/client" "0.2.9"
+    "@contentlayer/core" "0.2.9"
+    "@contentlayer/source-files" "0.2.9"
+    "@contentlayer/utils" "0.2.9"
 
 core-js-pure@^3.25.1:
   version "3.26.1"
@@ -1522,7 +1574,7 @@ fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
   integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
 
-fast-glob@^3.2.9:
+fast-glob@^3.2.12, fast-glob@^3.2.9:
   version "3.2.12"
   resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.2.12.tgz#7f39ec99c2e6ab030337142da9e0c18f37afae80"
   integrity sha512-DVj4CQIYYow0BlaelwK1pHl5n5cRSJfM60UA0zK891sVInoPri2Ekj7+e1CT3/3qxXenpI+nBBmQAcJPJgaj4w==
@@ -1841,6 +1893,11 @@ ignore@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.2.0.tgz#6d3bac8fa7fe0d45d9f9be7bac2fc279577e345a"
   integrity sha512-CmxgYGiEPCLhfLnpPp1MoRmifwEIOgjcHXxOBjv7mY96c+eWScsOP9c112ZyLdWHi0FxHjI+4uVhKYp/gcdRmQ==
+
+imagescript@^1.2.9:
+  version "1.2.9"
+  resolved "https://registry.yarnpkg.com/imagescript/-/imagescript-1.2.9.tgz#11332b5f1e21d469471cab5cece354c88c41a0b5"
+  integrity sha512-xPMxxTxKfURedWNF5WlC4iM+p/RQrqY5mLQTbZVGquUchhDwh3C6paxtITCXn6qTxcWnM224EhNpJXPWjbB+4w==
 
 immutable@^4.0.0:
   version "4.1.0"
@@ -2633,7 +2690,7 @@ micromark@^3.0.0:
     micromark-util-types "^1.0.1"
     uvu "^0.5.0"
 
-micromatch@^4.0.4:
+micromatch@^4.0.4, micromatch@^4.0.5:
   version "4.0.5"
   resolved "https://registry.yarnpkg.com/micromatch/-/micromatch-4.0.5.tgz#bc8999a7cbbf77cdc89f132f6e467051b49090c6"
   integrity sha512-DMy+ERcEW2q8Z2Po+WNXuw3c5YaUSFjAO5GsJqfEl7UjvtIuFKO6ZrKvcItdy98dwFI2N1tg3zNIdKaQT+aNdA==
@@ -3452,6 +3509,11 @@ turbo@^1.6.3:
     turbo-windows-64 "1.6.3"
     turbo-windows-arm64 "1.6.3"
 
+typanion@^3.12.1, typanion@^3.8.0:
+  version "3.12.1"
+  resolved "https://registry.yarnpkg.com/typanion/-/typanion-3.12.1.tgz#d33deb130aba23ef6f2a3c69e7fb28148dd9089a"
+  integrity sha512-3SJF/czpzqq6G3lprGFLa6ps12yb1uQ1EmitNnep2fDMNh1aO/Zbq9sWY+3lem0zYb2oHJnQWyabTGUZ+L1ScQ==
+
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/type-check/-/type-check-0.4.0.tgz#07b8203bfa7056c0657050e3ccd2c37730bab8f1"
@@ -3665,6 +3727,11 @@ yallist@^4.0.0:
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-4.0.0.tgz#9bb92790d9c0effec63be73519e11a35019a3a72"
   integrity sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==
 
+yaml@^1.10.2:
+  version "1.10.2"
+  resolved "https://registry.yarnpkg.com/yaml/-/yaml-1.10.2.tgz#2301c5ffbf12b467de8da2333a459e29e7920e4b"
+  integrity sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==
+
 yargs-parser@^20.2.2:
   version "20.2.9"
   resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-20.2.9.tgz#2eb7dc3b0289718fc295f362753845c41a0c94ee"
@@ -3687,6 +3754,11 @@ yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
+
+zod@^3.19.1:
+  version "3.19.1"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.19.1.tgz#112f074a97b50bfc4772d4ad1576814bd8ac4473"
+  integrity sha512-LYjZsEDhCdYET9ikFu6dVPGp2YH9DegXjdJToSzD9rO6fy4qiRYFoyEYwps88OseJlPyl2NOe2iJuhEhL7IpEA==
 
 zwitch@^2.0.0:
   version "2.0.4"
