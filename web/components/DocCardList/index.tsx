@@ -12,9 +12,11 @@ export default function DocCardList({
 }: DocCardListProps): JSX.Element {
   return (
     <div className={wrapperClassName}>
-      {data.map((doc: Doc) => {
-        return <DocCard key={doc._id} metaData={doc} />;
-      })}
+      {data
+        .filter((doc: Doc) => !doc.draft)
+        .map((doc: Doc) => {
+          return <DocCard key={doc._id} metaData={doc} />;
+        })}
     </div>
   );
 }
