@@ -1,8 +1,6 @@
 import type { AppConfig } from "@interfaces";
 export const appConfig: AppConfig = {
-  // App 名称
   appName: "Bruce Song",
-  // 导航栏
   navbar: {
     icon: {
       text: "Bruce Song",

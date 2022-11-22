@@ -1,4 +1,4 @@
-import { appConfig } from "@constants";
+import { appConfig } from "@config";
 import type { AppConfig } from "@interfaces";
 
 export default function useAppConfig(): AppConfig {

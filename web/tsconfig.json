@@ -26,6 +26,7 @@
       "@hooks": ["./hooks"],
       "@interfaces": ["./interfaces"],
       "@utils": ["./utils"],
+      "@config": ["./app.config"],
       "@contentlayer": ["./.contentlayer/generated"] // content-layer required
     }
   },
