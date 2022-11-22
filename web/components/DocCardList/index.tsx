@@ -1,15 +1,15 @@
 import type { Doc } from "@contentlayer";
 import { DocCard } from "@components";
 
-type DocListProps = {
+type DocCardListProps = {
   data?: Doc[];
   wrapperClassName?: string;
 };
 
-export default function DocList({
+export default function DocCardList({
   data = [],
   wrapperClassName,
-}: DocListProps): JSX.Element {
+}: DocCardListProps): JSX.Element {
   return (
     <div className={wrapperClassName}>
       {data.map((doc: Doc) => {

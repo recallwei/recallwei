@@ -2,12 +2,19 @@
 
 ## File Structure
 
-- `config.ts` 配置文档信息
+- `docs` 文档目录
+- `constants`
+  - `configs`
+    - `appConfig.ts` App 配置文件
 
 ## Module
 
-- Docs
+- Docs 文档
+- DocChannels 文档频道
+- Blogs 博客
+- BlogChannels 博客频道
 - Files
+- Links
 - Code snippets
 - Food
 - Travel
@@ -16,15 +23,9 @@
 ## Components
 
 - Container 容器
+- DocCard 文档卡片
+- DocList 文档卡片列表
 - Layout 布局
   - Navbar 导航栏
   - Sidebar 侧边栏
   - footer 页脚
-
-## Doc
-
-博客文章
-
-## DocChannel
-
-博客文章频道

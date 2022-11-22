@@ -1,11 +1,11 @@
 import styles from "./page.module.scss";
 import { allDocs } from "@contentlayer";
-import { DocList } from "@components";
+import { DocCardList } from "@components";
 
 export default function Docs() {
   return (
     <div>
-      <DocList data={allDocs} wrapperClassName={styles.docListWrapper} />
+      <DocCardList data={allDocs} wrapperClassName={styles.docListWrapper} />
     </div>
   );
 }
