@@ -1,6 +1,12 @@
 import styles from "./page.module.scss";
 
-export default function Home(): JSX.Element {
+const getData = async () => {
+  console.log("🎉 Built by Bruce Song!");
+  return null;
+};
+
+export default async function Home(): Promise<JSX.Element> {
+  await getData();
   return (
     <div className={styles.container}>
       <main className={styles.main}></main>
