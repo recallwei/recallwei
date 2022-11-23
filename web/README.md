@@ -11,6 +11,7 @@ I am Bruce Song, this is my personal website.
 - clsx
 - moment
 - content-layer
+- Jest
 
 ## Others
 
