@@ -9,6 +9,8 @@ I am Bruce Song, this is my personal website.
 - TypeScript
 - Sass
 - clsx
+- moment
+- content-layer
 
 ## Others
 

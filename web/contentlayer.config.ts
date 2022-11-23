@@ -16,7 +16,7 @@ export const Doc = defineDocumentType(() => ({
       required: false,
     },
     date: {
-      type: "string",
+      type: "date",
       description: "The date of the doc.",
       required: false,
     },
@@ -43,11 +43,7 @@ export const Doc = defineDocumentType(() => ({
     },
     slug: {
       type: "list",
-      resolve: (doc) => {
-        const res = doc._raw.flattenedPath.split("/");
-        res.shift();
-        return res;
-      },
+      resolve: (doc) => doc._raw.flattenedPath.split("/"),
     },
   },
 }));
