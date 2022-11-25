@@ -1,3 +1,3 @@
 export { orderBy, orderByDesc, orderFc } from "./array";
 
-export { formatTime } from "./time";
+export { formatDate, formatTime } from "./time";
