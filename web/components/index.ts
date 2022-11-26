@@ -1,6 +1,6 @@
 import Container from "./Container";
-import DocCard from "./DocCard";
-import DocCardList from "./DocCardList";
+import DocCategoryCard from "./DocCategoryCard";
+import DocCategoryList from "./DocCategoryList";
 import Layout from "./Layout";
 
-export { Container, DocCard, DocCardList, Layout };
+export { Container, DocCategoryCard, DocCategoryList, Layout };

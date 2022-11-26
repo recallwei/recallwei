@@ -43,7 +43,24 @@ export const Doc = defineDocumentType(() => ({
     },
     slug: {
       type: "list",
-      resolve: (doc) => doc._raw.flattenedPath.split("/"),
+      resolve: (doc) => {
+        const slugWithPrefix = doc._raw.flattenedPath.split("/");
+        slugWithPrefix.shift(); // Remove the docs prefix
+        return slugWithPrefix;
+      },
+    },
+    // Compute the file whether is a category.
+    // The category must be the `index.mdx` file.
+    isCategory: {
+      type: "boolean",
+      resolve: (doc) =>
+        doc._raw.flattenedPath.split("/").length === 2 &&
+        doc._raw.sourceFileName === "index.mdx",
+    },
+    // Compute the file whether is a doc.
+    isDoc: {
+      type: "boolean",
+      resolve: (doc) => doc._raw.flattenedPath.split("/").length > 2,
     },
   },
 }));

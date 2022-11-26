@@ -1,11 +1,16 @@
 import styles from "./page.module.scss";
-import { allDocs } from "@contentlayer";
-import { DocCardList } from "@components";
+import { DocCategoryList } from "@components";
+import { DocsContent } from "@constants";
 
-export default function Docs() {
+const DocCategoryListPage = (): JSX.Element => {
   return (
     <div>
-      <DocCardList data={allDocs} wrapperClassName={styles.docListWrapper} />
+      <DocCategoryList
+        data={DocsContent.docCategoryList}
+        wrapperClassName={styles.docListWrapper}
+      />
     </div>
   );
-}
+};
+
+export default DocCategoryListPage;

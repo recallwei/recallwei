@@ -1,4 +1,4 @@
-export default function Head() {
+const Head = (): JSX.Element => {
   return (
     <>
       <title>Bruce Song</title>
@@ -10,4 +10,6 @@ export default function Head() {
       <link rel="icon" href="/favicon.png" />
     </>
   );
-}
+};
+
+export default Head;

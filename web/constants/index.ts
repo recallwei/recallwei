@@ -1,1 +1,1 @@
-export {};
+export { DocsContent } from "./docs";

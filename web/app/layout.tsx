@@ -1,11 +1,11 @@
 import "./globals.scss";
 import { Layout } from "@components";
 
-export default function RootLayout({
+const RootLayout = ({
   children,
 }: {
   children: React.ReactNode;
-}) {
+}): JSX.Element => {
   return (
     <html lang="en">
       <head />
@@ -14,4 +14,6 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;

@@ -3,13 +3,15 @@ import styles from "./index.module.scss";
 import type { Doc } from "@contentlayer";
 import { formatDate } from "@utils";
 
-type DocCardProps = {
+type DocCategoryCardProps = {
   metaData: DocMetaData;
 };
 
 type DocMetaData = Doc;
 
-export default function DocCard({ metaData }: DocCardProps): JSX.Element {
+export default function DocCategoryCard({
+  metaData,
+}: DocCategoryCardProps): JSX.Element {
   return (
     <Link className={styles.card} href={metaData.url}>
       <div className={styles.title}>{metaData.title}</div>
