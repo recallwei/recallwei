@@ -9,9 +9,8 @@ export async function generateStaticParams() {
 
 const MyButton = () => <button>Click me</button>;
 
-const DocPage = ({ params }): JSX.Element => {
-  const { slug } = params;
-  console.log(slug);
+const DocPage = (params): JSX.Element => {
+  console.log(params);
 
   //const MDXContent = useMDXComponent(allDocs[0].body.code);
   //const MDXComponents = { MyButton };

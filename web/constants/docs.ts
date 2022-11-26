@@ -12,6 +12,7 @@ const docStaticParams = allDocs
   .filter((doc: Doc) => doc.isDoc)
   .map((doc: Doc) => {
     return {
+      categorySlug: doc.slug[0],
       slug: doc.slug,
     };
   });
