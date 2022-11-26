@@ -6,10 +6,10 @@ type DocCategoryListProps = {
   wrapperClassName?: string;
 };
 
-export default function DocCategoryList({
+const DocCategoryList = ({
   data = [],
   wrapperClassName,
-}: DocCategoryListProps): JSX.Element {
+}: DocCategoryListProps): JSX.Element => {
   return (
     <div className={wrapperClassName}>
       {data.map((doc: Doc, index) => (
@@ -17,4 +17,6 @@ export default function DocCategoryList({
       ))}
     </div>
   );
-}
+};
+
+export default DocCategoryList;

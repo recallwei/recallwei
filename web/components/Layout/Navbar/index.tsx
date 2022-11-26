@@ -5,7 +5,7 @@ import styles from "./index.module.scss";
 import { useAppConfig } from "@hooks";
 import type { AppConfig, NavbarItem } from "@interfaces";
 
-export default function Navbar(): JSX.Element {
+const Navbar = (): JSX.Element => {
   const appConfig: AppConfig = useAppConfig();
 
   const getItemNode = (
@@ -41,7 +41,7 @@ export default function Navbar(): JSX.Element {
   };
 
   return (
-    <div className={styles.navbarWrapper}>
+    <header className={styles.navbarWrapper}>
       <div className={styles.navbar}>
         <Link
           className={styles.iconWrapper}
@@ -71,6 +71,8 @@ export default function Navbar(): JSX.Element {
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
-}
+};
+
+export default Navbar;

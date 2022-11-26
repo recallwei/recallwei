@@ -9,9 +9,7 @@ type DocCategoryCardProps = {
 
 type DocMetaData = Doc;
 
-export default function DocCategoryCard({
-  metaData,
-}: DocCategoryCardProps): JSX.Element {
+const DocCategoryCard = ({ metaData }: DocCategoryCardProps): JSX.Element => {
   return (
     <Link className={styles.card} href={metaData.url}>
       <div className={styles.title}>{metaData.title}</div>
@@ -19,4 +17,6 @@ export default function DocCategoryCard({
       <div className={styles.language}>{metaData.language}</div>
     </Link>
   );
-}
+};
+
+export default DocCategoryCard;

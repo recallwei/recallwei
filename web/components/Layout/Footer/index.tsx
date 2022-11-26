@@ -1,5 +1,7 @@
 import styles from "./index.module.scss";
 
-export default function Footer(): JSX.Element {
+const Footer = (): JSX.Element => {
   return <></>;
-}
+};
+
+export default Footer;

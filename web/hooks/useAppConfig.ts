@@ -1,6 +1,8 @@
 import { appConfig } from "@config";
 import type { AppConfig } from "@interfaces";
 
-export default function useAppConfig(): AppConfig {
+const useAppConfig = (): AppConfig => {
   return appConfig;
-}
+};
+
+export default useAppConfig;

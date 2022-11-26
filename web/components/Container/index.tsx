@@ -5,9 +5,8 @@ type Container = {
   children?: React.ReactNode;
 };
 
-export default function Container({
-  size = "default",
-  children,
-}: Container): JSX.Element {
+const Container = ({ size = "default", children }: Container): JSX.Element => {
   return <div className={styles[`container-${size}`]}>{children}</div>;
-}
+};
+
+export default Container;
