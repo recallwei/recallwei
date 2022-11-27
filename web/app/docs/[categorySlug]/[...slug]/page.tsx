@@ -20,7 +20,7 @@ const DocPage = ({ params }: DocPageProps): JSX.Element => {
   const MDXComponents = {};
 
   return (
-    <div>
+    <div className={styles.mdxContent}>
       <MDXContent components={MDXComponents} />
     </div>
   );
