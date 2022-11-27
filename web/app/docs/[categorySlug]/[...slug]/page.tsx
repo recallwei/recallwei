@@ -2,15 +2,9 @@ import { notFound } from "next/navigation";
 import { useMDXComponent } from "next-contentlayer/hooks";
 import { DocsContent } from "@constants";
 import styles from "./page.module.scss";
+import { DocPageProps } from "./interface";
 
 export const generateStaticParams = async () => DocsContent.docStaticParams;
-
-type DocPageProps = {
-  params: {
-    categorySlug: string;
-    slug: string[];
-  };
-};
 
 const DocPage = ({ params }: DocPageProps): JSX.Element => {
   const doc = DocsContent.docList.find(
