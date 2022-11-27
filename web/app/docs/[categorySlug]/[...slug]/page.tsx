@@ -1,20 +1,35 @@
-import styles from "./page.module.scss";
+import { notFound } from "next/navigation";
 import { useMDXComponent } from "next-contentlayer/hooks";
 import { DocsContent } from "@constants";
-import { useAppConfig } from "@hooks";
+import styles from "./page.module.scss";
 
-export async function generateStaticParams() {
-  return DocsContent.docStaticParams;
-}
+export const generateStaticParams = async () => DocsContent.docStaticParams;
 
-const MyButton = () => <button>Click me</button>;
+type DocPageProps = {
+  params: {
+    categorySlug: string;
+    slug: string[];
+  };
+};
 
-const DocPage = (params): JSX.Element => {
-  console.log(params);
+const DocPage = ({ params }: DocPageProps): JSX.Element => {
+  const doc = DocsContent.docList.find(
+    (doc) =>
+      doc.slug.join("/") === `${params.categorySlug}/${params.slug.join("/")}`
+  );
 
-  //const MDXContent = useMDXComponent(allDocs[0].body.code);
-  //const MDXComponents = { MyButton };
-  return <div>{/* <MDXContent components={MDXComponents} /> */}</div>;
+  if (!doc) {
+    notFound();
+  }
+
+  const MDXContent = useMDXComponent(doc.body.code);
+  const MDXComponents = {};
+
+  return (
+    <div>
+      <MDXContent components={MDXComponents} />
+    </div>
+  );
 };
 
 export default DocPage;

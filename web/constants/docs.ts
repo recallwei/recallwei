@@ -5,6 +5,7 @@ import { orderFc } from "@utils";
 type DocsContent = {
   docStaticParams: { slug: string[] }[];
   docCategoryStaticParams: { categorySlug: string }[];
+  docList: Doc[];
   docCategoryList: Doc[];
 };
 
@@ -26,6 +27,10 @@ const docCategoryStaticParams = allDocs
     };
   });
 
+const docList = allDocs
+  .filter((doc) => doc.isDoc)
+  .filter((doc) => process.env.NODE_ENV === "development" || !doc.draft);
+
 const docCategoryList = allDocs
   .filter((doc) => doc.isCategory)
   .filter((doc) => process.env.NODE_ENV === "development" || !doc.draft)
@@ -40,5 +45,6 @@ const docCategoryList = allDocs
 export const DocsContent: DocsContent = {
   docStaticParams,
   docCategoryStaticParams,
+  docList,
   docCategoryList,
 };
