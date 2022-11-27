@@ -5,7 +5,7 @@ const Layout = ({ children }: { children: React.ReactNode }): JSX.Element => {
   return (
     <Container size="xl">
       <Navbar />
-      <div style={{ height: "2000px" }}>{children}</div>
+      <div>{children}</div>
     </Container>
   );
 };

@@ -65,10 +65,13 @@ export const orderFc = <T>(
             return 0;
           }
         } else if (thenOrderByModel.type === "string") {
-          return leftVal[thenOrderByModel.thenOrderBy].localeCompare(
-            rightVal[thenOrderByModel.thenOrderBy],
-            "en"
-          );
+          const detectedLeftVal = leftVal[
+            thenOrderByModel.thenOrderBy
+          ] as string;
+          const detectedRightVal = rightVal[
+            thenOrderByModel.thenOrderBy
+          ] as string;
+          return detectedLeftVal.localeCompare(detectedRightVal, "en");
         }
       } else {
         if (leftVal[orderByModel.orderBy] > rightVal[orderByModel.orderBy]) {
@@ -102,16 +105,20 @@ export const orderFc = <T>(
             return 0;
           }
         } else if (thenOrderByModel.type === "string") {
-          return leftVal[thenOrderByModel.thenOrderBy].localeCompare(
-            rightVal[thenOrderByModel.thenOrderBy],
-            "en"
-          );
+          const detectedLeftVal = leftVal[
+            thenOrderByModel.thenOrderBy
+          ] as string;
+          const detectedRightVal = rightVal[
+            thenOrderByModel.thenOrderBy
+          ] as string;
+          return detectedLeftVal.localeCompare(detectedRightVal, "en");
         }
       } else {
-        return leftVal[orderByModel.orderBy].localeCompare(
-          rightVal[orderByModel.orderBy],
-          "en"
-        );
+        const detectedLeftVal = leftVal[thenOrderByModel.thenOrderBy] as string;
+        const detectedRightVal = rightVal[
+          thenOrderByModel.thenOrderBy
+        ] as string;
+        return detectedLeftVal.localeCompare(detectedRightVal, "en");
       }
     }
     return 0;
@@ -119,13 +126,13 @@ export const orderFc = <T>(
 };
 
 type OrderByModel<T> = {
-  orderBy: keyof T & String;
+  orderBy: keyof T;
   type?: OrderType;
   desc?: boolean;
 };
 
 type ThenOrderByModel<T> = {
-  thenOrderBy: keyof T & String;
+  thenOrderBy: keyof T;
   type?: OrderType;
   desc?: boolean;
 };
