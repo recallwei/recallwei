@@ -48,3 +48,18 @@ console.log(
   arrA.length === arrB.length && arrA.filter((item) => !arrB.includes(item)) // expected: true
 );
 ```
+
+## 修改数组元素
+
+### 移除末尾元素
+
+#### `Array.length`
+
+直接缩小数组长度，可以移除数组末尾的元素。
+
+```javascript
+const arr = [1, 2, 3];
+arr.length--;
+console.log(arr);
+// expected: [1, 2]
+```
