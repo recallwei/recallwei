@@ -6,5 +6,3 @@ export type {
   NavbarItemType,
   NavbarItemPosition,
 } from "./configs";
-
-export { DocType } from "./document";
