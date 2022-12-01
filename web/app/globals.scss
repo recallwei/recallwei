@@ -12,8 +12,13 @@ a {
   text-decoration: none;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
 }
 
 @media (prefers-color-scheme: dark) {
