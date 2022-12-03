@@ -1,20 +1,6 @@
 {
   "version": "0.2",
   "language": "en",
-  "words": [
-    "clsx",
-    "Kalam",
-    "Nabla",
-    "nextjs",
-    "nextui",
-    "Nuxt",
-    "nuxtjs",
-    "recallwei",
-    "reduxjs",
-    "rehype",
-    "taskward",
-    "contentlayer",
-    "commitlint"
-  ],
+  "words": ["clsx", "commitlint", "nextjs", "nuxtjs", "recallwei", "taskward"],
   "flagWords": []
 }
