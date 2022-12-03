@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "cd .. && husky install web/.husky"
   },
   "dependencies": {
     "clsx": "^1.2.1",
@@ -19,6 +20,8 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-angular": "^17.3.0",
     "@next/eslint-plugin-next": "^13.0.5",
     "@types/jest": "^29.2.3",
     "@types/node": "18.11.9",
@@ -31,6 +34,7 @@
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-next": "13.0.5",
     "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.2",
     "jest": "^29.3.1",
     "sass": "^1.56.1",
     "ts-jest": "^29.0.3",

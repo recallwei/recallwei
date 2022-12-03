@@ -13,7 +13,8 @@
     "reduxjs",
     "rehype",
     "taskward",
-    "contentlayer"
+    "contentlayer",
+    "commitlint"
   ],
   "flagWords": []
 }
