@@ -1,6 +1,14 @@
 {
   "version": "0.2",
   "language": "en",
-  "words": ["clsx", "commitlint", "nextjs", "nuxtjs", "recallwei", "taskward"],
+  "words": [
+    "clsx",
+    "commitlint",
+    "nextjs",
+    "nuxtjs",
+    "recallwei",
+    "stylelint",
+    "taskward"
+  ],
   "flagWords": []
 }
