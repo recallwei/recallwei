@@ -13,7 +13,7 @@
     "build-only": "vite build",
     "check:type": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
     "check:spell": "npx spell '**'",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "check:eslint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "prepare": "husky install"
   },
   "dependencies": {
