@@ -25,7 +25,8 @@ module.exports = {
     "vue/multi-word-component-names": ["error", { ignores: ["index"] }],
     "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
     "import/extensions": "off",
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "import/newline-after-import": "off"
   },
   settings: {
     "import/resolver": {
