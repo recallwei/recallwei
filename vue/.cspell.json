@@ -12,13 +12,17 @@
     }
   ],
   "ignorePaths": [
+    "./dist",
     "src/main.ts",
+    "public/*",
+    "src/assets/*",
     "node_modules",
     "package.json",
     ".cspell.json",
     ".commitlintrc.json",
-    ".prettierrc.json",
     ".eslintrc.js",
+    ".prettierrc.json",
+    ".stylelintrc.json",
     "pnpm-lock.yaml",
     "README.md",
     "custom-words.txt"
