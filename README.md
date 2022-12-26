@@ -10,10 +10,5 @@ Personal Info:
 
 ---
 
-My Open Source Contribution:
-- ...
-
----
-
 ![recallwei's GitHub stats](https://github-readme-stats.vercel.app/api?username=recallwei&count_private=true&theme=react)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=recallwei&layout=compact&theme=react)](https://github.com/recallwei)
