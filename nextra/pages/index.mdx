@@ -1,11 +1,20 @@
 # Introduction
- 
-Welcome to Nextra! This is a basic docs template. You can use it as a starting point for your own project :)
 
-## What is Nextra?
+import { StarCount } from "../components"
 
-A **simple**, **powerful** and **flexible** site generation framework with everything you love from Next.js.
+export const getStaticProps = async () => {
+  const res = await fetch("https://api.github.com/repos/recallwei/recallwei")
+  const data = await res.json()
+  return {
+    props: {
+      ssg: {
+        starCount: data.stargazers_count
+      }
+    },
+    revalidate: 60
+  }
+}
 
-## Documentation
-
-The documentation is available at [https://nextra.site](https://nextra.site).
+<div className="p-4 border border-gray-200 dark:border-gray-900 rounded mt-6">
+  My blog has 🌟 <StarCount /> stars on GitHub!
+</div>
