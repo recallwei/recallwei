@@ -1,9 +1,23 @@
 # Background Image Transition
 
 ```css showLineNumbers
-
+.bg-image {
+  background-image: url("");
+  transition: background-image 1s ease;
+}
 ```
 
-## Reference
+import React from "react"
 
-[张鑫旭：颠覆，原来 background-image 也是支持 CSS 动画的](https://www.zhangxinxu.com/wordpress/2020/08/background-image-animation/)
+export const BgImageShowCase = () => {
+  return (
+    <div
+      style={{
+        backgroundImage: "url(/public/images/wallpaper1.jpg)",
+        width: "100%"
+      }}
+    />
+  )
+}
+
+<BgImageShowCase />
