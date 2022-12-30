@@ -1,9 +1,11 @@
 # Background Image Transition
 
-```css showLineNumbers
+```css showLineNumbers copy
 .bg-image {
-  background-image: url("/images/wallpaper1.jpg");
-  transition: background-image 1s ease;
+  background-image: url(/images/wallpaper1.jpg);
+  backgroundrepeat: no-repeat;
+  backgroundsize: cover;
+  transition: background-image 2s ease;
 }
 ```
 
@@ -12,27 +14,30 @@ import wallpaper1 from "public/images/wallpaper1.jpg"
 import wallpaper2 from "public/images/wallpaper2.jpg"
 
 export const BgImageShowCase = () => {
-  const [src, setSrc] = React.useState({
-    backgroundImage: "url('/images/wallpaper1.jpg')",
-    transition: "background-image 1s ease",
+  const [styleFlag, setStyleFlag] = React.useState(true)
+  const loading = React.useRef(false)
+  const getStyle = (type) => ({
+    backgroundImage: `url(/images/wallpaper${type}.jpg)`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
+    transition: "background-image 2s ease",
+    cursor: "pointer",
     width: "100%",
-    height: "400px"
+    height: "400px",
+    borderRadius: "0.75rem"
   })
-  const toggleBgImage = () =>
-    setSrc({
-      backgroundImage: "url('/images/wallpaper2.jpg')",
-      transition: "background-image 1s ease",
-      backgroundRepeat: "no-repeat",
-      backgroundSize: "cover",
-      width: "100%",
-      height: "400px"
-    })
+  const onClickImage = () => {
+    if (loading.current) return
+    loading.current = true
+    setTimeout(() => {
+      loading.current = false
+    }, 2000)
+    setStyleFlag(!styleFlag)
+  }
   return (
     <div
-      style={src}
-      onClick={toggleBgImage}
+      style={getStyle(styleFlag ? 1 : 2)}
+      onClick={onClickImage}
     />
   )
 }
