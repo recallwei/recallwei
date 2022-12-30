@@ -2,7 +2,7 @@
 
 ```css showLineNumbers
 .bg-image {
-  background-image: url("");
+  background-image: url("/images/wallpaper1.jpg");
   transition: background-image 1s ease;
 }
 ```
@@ -13,8 +13,10 @@ export const BgImageShowCase = () => {
   return (
     <div
       style={{
-        backgroundImage: "url(/public/images/wallpaper1.jpg)",
-        width: "100%"
+        backgroundImage: "url('/images/wallpaper1.jpg')",
+        transition: "background-image 1s ease",
+        width: "100%",
+        height: "400px"
       }}
     />
   )

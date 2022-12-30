@@ -1,14 +1,14 @@
 {
-  "index": "Introduction",
+  "index": "Get Started",
   "css": "CSS",
-  "about": {
-    "title": "About",
+  "about-me": {
+    "title": "About Me",
     "type": "page"
   },
-  "contact": {
-    "title": "Contact ↗",
+  "taskward": {
+    "title": "Taskward",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://taskward.bruceworld.top",
     "newWindow": true
   }
 }
