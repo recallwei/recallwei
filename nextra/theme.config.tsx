@@ -6,9 +6,9 @@ const config: DocsThemeConfig = {
   project: {
     link: "https://github.com/recallwei/recallwei"
   },
-  chat: {
-    link: "https://discord.com"
-  },
+  // chat: {
+  //   link: "https://discord.com"
+  // },
   docsRepositoryBase: "https://github.com/recallwei/recallwei",
   footer: {
     text: "Bruce Song"

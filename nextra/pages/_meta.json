@@ -1,7 +1,6 @@
 {
   "index": "Introduction",
   "css": "CSS",
-  "advanced": "Advanced (A Folder)",
   "about": {
     "title": "About",
     "type": "page"
