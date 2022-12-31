@@ -23,12 +23,7 @@ export const BgImageShowCase = () => {
   const [loading, setLoading] = useState(false)
   const getStyle = (type) => ({
     backgroundImage: `url(/images/wallpaper${type}.jpg)`,
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    transition: "background-image 2s ease",
-    width: "100%",
-    height: "400px",
-    borderRadius: "0.75rem"
+    transition: "background-image 2s ease"
   })
   const onClickImage = () => {
     if (loading) return
@@ -39,6 +34,7 @@ export const BgImageShowCase = () => {
   return (
     <div
       style={{ ...getStyle(styleFlag ? 1 : 2), cursor: loading ? "wait" : "pointer" }}
+      class="rounded-xl h-96 mt-4 w-full bg-cover bg-no-repeat"
       onClick={onClickImage}
     />
   )

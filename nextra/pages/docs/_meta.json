@@ -1,10 +1,16 @@
 {
   "index": "Get Started",
-  "-- Web Tech --": {
+  "-- Web Tech Related --": {
     "type": "separator",
-    "title": "Web Tech"
+    "title": "Web Tech Related"
   },
   "html": "HTML",
   "css": "CSS",
-  "javascript": "JavaScript"
+  "-- JavaScript Related --": {
+    "type": "separator",
+    "title": "JavaScript Related"
+  },
+  "javascript": "JavaScript",
+  "typescript": "TypeScript",
+  "packages": "Packages"
 }
