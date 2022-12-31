@@ -1,28 +1,26 @@
-# Get Started 🌈
-
-## Welcome To My Wiki 🎉
+# Welcome To My Wiki
 
 import { StarCount } from "../components"
 
 export const getStaticProps = async () => {
-  const res = await fetch("https://api.github.com/repos/recallwei/recallwei")
-  const data = await res.json()
-  return {
-    props: {
-      ssg: {
-        starCount: data.stargazers_count
-      }
-    },
-    revalidate: 60
+  const propsModel = { props: { ssg: { starCount: 0 } }, revalidate: 60 }
+  try {
+    const res = await fetch("https://api.github.com/repos/recallwei/recallwei")
+    const data = await res.json()
+    propsModel.props.ssg.starCount = data.stargazers_count
+    return propsModel
+  } catch {
+    return propsModel
   }
 }
 
-This is my personal wiki website, has <StarCount /> stars 🌟 on GitHub! I want to record anything, not limited to code, books, music, movies, food, travel, etc.  
+This is my personal wiki website, has <StarCount /> stars 🌟 on GitHub! I want to record anything, not limited to code, books, music, movies, food, travel, etc.
+
 To know me more: [My Info](/about-me)
 
 ---
 
-## Recent Target 🚀
+## Recent Target
 
 - SSR / SSG
 - pnpm workspace / monorepo
