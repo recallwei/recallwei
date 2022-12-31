@@ -22,11 +22,13 @@
     "next": "^13.1.1",
     "nextra": "2.0.1",
     "nextra-theme-docs": "2.0.1",
+    "nprogress": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/node": "18.11.18",
+    "@types/nprogress": "^0.2.0",
     "@types/react": "^18.0.26",
     "autoprefixer": "^10.4.13",
     "cspell": "^6.18.0",

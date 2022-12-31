@@ -16,7 +16,12 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
+      "@components": ["./components"],
       "@components/*": ["./components/*"],
+      "@modules": ["./modules"],
+      "@modules/*": ["./modules/*"],
+      "@hooks": ["./hooks"],
+      "@hooks/*": ["./hooks/*"],
       "@style/*": ["./style/*"]
     }
   },

@@ -1,6 +1,6 @@
 # Welcome To My Wiki
 
-import { StarCount } from "../components"
+import { StarCount } from "@components"
 
 export const getStaticProps = async () => {
   const propsModel = { props: { ssg: { starCount: 0 } }, revalidate: 60 }
