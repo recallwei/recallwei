@@ -1,3 +1,4 @@
 nextra
 flexsearch
+tailwindcss
 taskward
