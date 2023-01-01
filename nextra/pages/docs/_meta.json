@@ -12,5 +12,10 @@
   },
   "javascript": "JavaScript",
   "typescript": "TypeScript",
-  "packages": "Packages"
+  "packages": "Packages",
+  "-- Developer Skills": {
+    "type": "separator",
+    "title": "Developer Skills"
+  },
+  "git": "Git"
 }
