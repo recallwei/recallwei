@@ -17,5 +17,6 @@
     "type": "separator",
     "title": "Developer Skills"
   },
-  "git": "Git"
+  "git": "Git",
+  "operating-system": "OS"
 }
