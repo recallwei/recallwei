@@ -1,6 +1,8 @@
 {
-  "index": { "title": "Home", "type": "page" },
-  "docs": { "title": "Documentation", "type": "page" },
+  "index": { "title": "主页", "type": "page" },
+  "docs": { "title": "文档", "type": "page" },
+  "frequently-use": { "title": "常用", "type": "page" },
+  "link": { "title": "链接", "type": "page" },
   "about-me": { "title": "About Me", "type": "page" },
   "taskward": {
     "title": "Taskward",
