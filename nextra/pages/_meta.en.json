@@ -1,0 +1,14 @@
+{
+  "*": { "type": "page" },
+  "index": "Home",
+  "docs": "Documentation",
+  "frequently-use": "Frequently Use",
+  "link": "Link",
+  "project": "Project",
+  "about-me": "About Me",
+  "old-version": {
+    "title": "Wiki",
+    "href": "https://wiki.bruceworld.top",
+    "newWindow": true
+  }
+}

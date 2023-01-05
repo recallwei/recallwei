@@ -1,0 +1,14 @@
+{
+  "*": { "type": "page" },
+  "index": "首页",
+  "docs": "文档",
+  "frequently-use": "常用",
+  "link": "链接",
+  "project": "项目",
+  "about-me": "关于我",
+  "old-version": {
+    "title": "Wiki",
+    "href": "https://wiki.bruceworld.top",
+    "newWindow": true
+  }
+}
