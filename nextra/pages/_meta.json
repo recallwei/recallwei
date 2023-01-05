@@ -3,11 +3,12 @@
   "docs": { "title": "文档", "type": "page" },
   "frequently-use": { "title": "常用", "type": "page" },
   "link": { "title": "链接", "type": "page" },
+  "project": { "title": "项目", "type": "page" },
   "about-me": { "title": "About Me", "type": "page" },
-  "taskward": {
-    "title": "Taskward",
+  "old-version": {
+    "title": "Wiki",
     "type": "page",
-    "href": "https://taskward.bruceworld.top",
+    "href": "https://wiki.bruceworld.top",
     "newWindow": true
   }
 }
