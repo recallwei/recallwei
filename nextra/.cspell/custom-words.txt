@@ -3,3 +3,4 @@ flexsearch
 tailwindcss
 nprogress
 taskward
+esbuild

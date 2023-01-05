@@ -13,6 +13,11 @@
   "javascript": "JavaScript",
   "typescript": "TypeScript",
   "packages": "Packages",
+  "-- Vue Related --": {
+    "type": "separator",
+    "title": "Vue Related"
+  },
+  "vite": "Vite",
   "-- Developer Skills": {
     "type": "separator",
     "title": "Developer Skills"

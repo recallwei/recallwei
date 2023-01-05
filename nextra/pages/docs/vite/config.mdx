@@ -1,0 +1,15 @@
+---
+title: Config
+---
+
+# Config
+
+## 在 build 时移除 `console` 和 `debugger`
+
+```javascript filename="vite.config.js" showLineNumbers {3}
+export default defineConfig({
+  esbuild: {
+    drop: ["console", "debugger"]
+  }
+})
+```
