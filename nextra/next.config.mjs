@@ -12,9 +12,10 @@ const withNextra = nextra({
 })
 
 export default withNextra({
-  reactStrictMode: true,
-  i18n:{
-    locales: ['en', 'zh-cn'],
-    defaultLocale: 'en',
-  }
+  reactStrictMode: true
+  /** i18n disabled, reason: too hard to maintain */
+  // i18n:{
+  //   locales: ['en', 'zh-cn'],
+  //   defaultLocale: 'en',
+  // }
 })

@@ -38,11 +38,12 @@ const config: DocsThemeConfig = {
     )
   },
   sidebar: { defaultMenuCollapseLevel: 0 },
-  footer: { text: "Bruce Song" },
-  i18n: [
-    { locale: "en", text: "English" },
-    { locale: "zh-cn", text: "中文" }
-  ]
+  footer: { text: "Bruce Song" }
+  /** i18n disabled, reason: too hard to maintain */
+  // i18n: [
+  //   { locale: "en", text: "English" },
+  //   { locale: "zh-cn", text: "中文" }
+  // ]
 }
 
 export default config
