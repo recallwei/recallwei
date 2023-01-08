@@ -1,4 +1,5 @@
 {
   "config": "配置",
-  "flow": "工作流"
+  "workflow": "工作流",
+  "crlf-and-lf-conflict": "CRLF 和 LF 冲突"
 }
