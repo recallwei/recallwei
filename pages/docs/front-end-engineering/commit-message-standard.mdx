@@ -1,38 +1,30 @@
 ---
-title: 前端工程化
+title: 提交信息规范
 ---
 
-# 前端工程化
+# 提交信息规范
 
-## 提交代码的规范
+## Husky 操作 Git Hook
 
-ESLint
+## lint-staged 检查本地暂存区代码
 
-## 提交信息的规范
-
-## 提交代码的影响
-
-## 工具
-
-### Husky - 操作 Git Hook
-
-### lint-staged - 本地暂存代码检查
-
+```bash filename="Bash"
+npm install -D lint-staged
 yarn add -D lint-staged
+pnpm add -D lint-staged
+```
 
-在 pre-commit 中添加 `npx lint-staged`
-
-```json title=".lintstagedrc.json"
+```json filename=".lintstagedrc.json"
 {
   "*.{js,jsx,ts,tsx,vue}": ["eslint --fix"]
 }
 ```
 
-### commitlint - 校验 Commit 信息
+## commitlint - 校验 Commit 信息
 
 yarn add -D commitlint @commitlint/config-conventional
 
-### commitizen - 辅助输入 Commit 信息
+## commitizen - 辅助输入 Commit 信息
 
 [什么是前端工程化？](https://juejin.cn/post/6917447582985748493)
 
