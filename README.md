@@ -1,7 +1,7 @@
 # 🦁 Bruce Song
 
-## 🥷 Profile
-- 👋 Hi, I'm _**`Bruce Song`**_, a _**`Web Developer`**_ and _**`open source enthusiast`**_.
+## 🍗 Profile
+- 👋 Hi, I'm _**`Bruce Song`**_, a _**`Web Developer`**_ and _**`open-source enthusiast`**_.
 - 📖 I'm interested in reading different books and making something amazing.
 - 🌱 I'm currently focusing on _**`Vue`**_, _**`TypeScript`**_ and _**`Next.js`**_.
 - 💞️ I'm looking to collaborate on a _**`React/Vue`**_ project.
@@ -19,8 +19,12 @@
 - _**[Resume Generator](https://resume.bruceworld.top)**_ : _**`🚧 In Development`**_ Use markdown to write your resume. Based on _**`Vue 3`**_, _**`TypeScript`**_. 
 - _**[QRCode Generator](https://qrcode.bruceworld.top)**_ : _**`🚀 In maintenance`**_ Generate QRCodes more easily by specific templates. Based on _**`Vue 3`**_, _**`TypeScript`**_.
 - _**[lidebiji](https://lidebiji-demo.bruceworld.top/media)**_ : A demo of the official website customized for **LiDeBiJi**. Based on _**`React`**_, _**`Gatsby`**_.
-- _**[Vue Startup Project](https://github.com/recallwei/vue-startup-project)**_ : A _**`Vue 3`**_, _**`TypeScript`**_ template project.
+- _**[Vue Start-up Project](https://github.com/recallwei/vue-startup-project)**_ : A _**`Vue 3`**_, _**`TypeScript`**_ template project.
 - _**[VSCode Settings](https://github.com/recallwei/vscode-settings)**_ : My custom VSCode _**`settings`**_, _**`code snippets`**_, _**`extensions`**_.
+
+## Organizations
+
+- _**🥷 [Pixel Cyber Ninja](https://github.com/pixel-cyber-ninja)**_ : A start-up open-source team focused on _**`React`**_ and _**`Golang`**_ for building modern web applications.
 
 ---
 
