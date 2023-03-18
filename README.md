@@ -11,7 +11,7 @@
 - 📫 You can also contact me with my email _**`recall4056@gmail.com`**_.
 - 💪 My tech stacks: _**`JavaScript`**_ | _**`TypeScript`**_ | _**`React`**_ | _**`Vue`**_ | _**`Next.js`**_ | _**`Node.js`**_ | _**`HTML`**_ | _**`CSS`**_ | _**`SCSS`**_ | _**`Gatsby`**_
 
-## 🕹️ Projects
+## 🦄 Projects
 
 - _**[Wiki](https://wiki.bruceworld.top)**_ : _**`🚧 Temporarily offline`**_ Used to record various questions and knowledge points. Archived in the Show Case of _**`Docusaurus`**_.
 - _**[Blog](https://bruceworld.top)**_ : _**`🚧 In Development`**_ My personal blog to record something what I want. Based on _**`Next.js`**_.
@@ -22,7 +22,7 @@
 - _**[Vue Start-up Project](https://github.com/recallwei/vue-startup-project)**_ : A _**`Vue 3`**_, _**`TypeScript`**_ template project.
 - _**[VSCode Settings](https://github.com/recallwei/vscode-settings)**_ : My custom VSCode _**`settings`**_, _**`code snippets`**_, _**`extensions`**_.
 
-## Organizations
+## 🕹️ Organizations
 
 - _**🥷 [Pixel Cyber Ninja](https://github.com/pixel-cyber-ninja)**_ : A start-up open-source team focused on _**`React`**_ and _**`Golang`**_ for building modern web applications.
 
