@@ -18,7 +18,7 @@
 - _**[Taskward](https://taskward.bruceworld.top)**_ : _**`🚧 Temporarily Out Of Service`**_ A Todo&Tasks web application. Based on _**`React`**_, _**`TypeScript`**_.
 - _**[Resume Generator](https://resume.bruceworld.top)**_ : _**`🚧 In Development`**_ Use markdown to write your resume. Based on _**`Vue 3`**_, _**`TypeScript`**_. 
 - _**[QRCode Generator](https://qrcode.bruceworld.top)**_ : _**`🚀 In maintenance`**_ Generate QRCodes more easily by specific templates. Based on _**`Vue 3`**_, _**`TypeScript`**_.
-- _**[lidebiji](https://lidebiji-demo.bruceworld.top)**_ : A demo of the official website customized for **LiDeBiJi**. Based on _**`React`**_, _**`Gatsby`**_.
+- _**[lidebiji](https://lidebiji-demo.bruceworld.top/media)**_ : A demo of the official website customized for **LiDeBiJi**. Based on _**`React`**_, _**`Gatsby`**_.
 - _**[Vue Startup Project](https://github.com/recallwei/vue-startup-project)**_ : A _**`Vue 3`**_, _**`TypeScript`**_ template project.
 - _**[VSCode Settings](https://github.com/recallwei/vscode-settings)**_ : My custom VSCode _**`settings`**_, _**`code snippets`**_, _**`extensions`**_.
 
