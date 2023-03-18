@@ -22,6 +22,8 @@
 - _**[Vue Start-up Project](https://github.com/recallwei/vue-startup-project)**_ : A _**`Vue 3`**_, _**`TypeScript`**_ template project.
 - _**[VSCode Settings](https://github.com/recallwei/vscode-settings)**_ : My custom VSCode _**`settings`**_, _**`code snippets`**_, _**`extensions`**_.
 
+> _If my project helped you or you appreciate them, you can give me a star~ ⭐_
+
 ## 🕹️ Organizations
 
 - _**🥷 [Pixel Cyber Ninja](https://github.com/pixel-cyber-ninja)**_ : A start-up open-source team focused on _**`React`**_ and _**`Golang`**_ for building modern web applications.
