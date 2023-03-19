@@ -22,6 +22,7 @@
 - _**[lidebiji](https://lidebiji-demo.bruceworld.top/media)**_ : A demo of the official website customized for **LiDeBiJi**. Based on _**`React`**_, _**`Gatsby`**_.
 - _**[Vue Start-up Project](https://github.com/recallwei/vue-startup-project)**_ : A _**`Vue 3`**_, _**`TypeScript`**_ template project.
 - _**[VSCode Settings](https://github.com/recallwei/vscode-settings)**_ : My custom VSCode _**`settings`**_, _**`code snippets`**_, _**`extensions`**_.
+- _**[Code Magician](https://github.com/recallwei/code-magician)**_ : _**`🪄 VSCode Extension`**_  _**`JavaScript`**_, _**`React`**_, _**`Vue`**_ code snippets, out of box.
 
 > _If my project helped you or you appreciate them, you can give me a star~ ⭐_
 
