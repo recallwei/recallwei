@@ -1,6 +1,3 @@
-nextra
-flexsearch
 tailwindcss
 nprogress
 taskward
-esbuild

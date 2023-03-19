@@ -1,8 +1,5 @@
 {
-  "line-length": {
-    "line_length": 120,
-    "code_block_line_length": 120
-  },
+  "line-length": false,
   "no-bare-urls": false,
   "first-line-heading": false
 }

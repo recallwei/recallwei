@@ -11,12 +11,5 @@
       "addWords": true
     }
   ],
-  "ignorePaths": [
-    ".next/*",
-    "node_modules",
-    "package.json",
-    "pnpm-lock.yaml",
-    "README.md",
-    "custom-words.txt"
-  ]
+  "ignorePaths": [".next/*", "node_modules", "pnpm-lock.yaml", "README.md"]
 }
