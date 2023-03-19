@@ -1,3 +1,7 @@
 tailwindcss
 nprogress
 taskward
+clsx
+espree
+daisyui
+reduxjs
