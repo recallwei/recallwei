@@ -1,7 +1,8 @@
+'use client'
 import Header from '../Header'
 import { useAppSelector } from '@/hooks'
 
-const StoreProvider = ({ children }: { children: React.ReactNode }): JSX.Element => {
+const Layout = ({ children }: { children: React.ReactNode }): JSX.Element => {
   const themeMode = useAppSelector((state) => state.header.themeMode)
   return (
     <html
@@ -16,4 +17,4 @@ const StoreProvider = ({ children }: { children: React.ReactNode }): JSX.Element
   )
 }
 
-export default StoreProvider
+export default Layout

@@ -1,3 +1,4 @@
+'use client'
 import { ChangeEvent } from 'react'
 import { useAppSelector, useAppDispatch } from '@/hooks'
 import { headerAction } from '@/store'
