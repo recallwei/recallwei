@@ -1,10 +1,13 @@
-'use client'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
 import Image from 'next/image'
 import type { Metadata } from 'next'
 
 const inter = Inter({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] })
+
+export const metadata: Metadata = {
+  title: 'Projects'
+}
 
 export default function Projects(): JSX.Element {
   return (
@@ -24,8 +27,4 @@ export default function Projects(): JSX.Element {
       </Link>
     </main>
   )
-}
-
-export const metadata: Metadata = {
-  title: 'Projects | Bruce Song'
 }

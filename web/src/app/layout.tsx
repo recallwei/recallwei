@@ -1,7 +1,8 @@
 'use client'
 // TODO: Try to remove `use client`
 // import { Router } from 'next/router'
-// import NProgress from 'nprogress'
+// import NProgress from 'nprogress'\
+import type { Metadata } from 'next'
 import { StoreProvider, Layout } from '@/components'
 import './globals.css'
 import 'nprogress/nprogress.css'
@@ -12,8 +13,11 @@ import 'nprogress/nprogress.css'
 // Router.events.on('routeChangeComplete', NProgress.done)
 // Router.events.on('routeChangeError', NProgress.done)
 
-export const metadata = {
-  title: 'Bruce Song',
+export const metadata: Metadata = {
+  title: {
+    default: 'Bruce Song',
+    template: '%s | Bruce Song'
+  },
   description: 'My personal blog.'
 }
 

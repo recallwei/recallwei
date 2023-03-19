@@ -5,6 +5,10 @@ import type { Metadata } from 'next'
 
 const inter = Inter({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] })
 
+export const metadata: Metadata = {
+  description: 'This is my home page.'
+}
+
 export default function Home() {
   const WELCOME_TEXT = '🎉 欢迎来到我的博客 🎉'
   return (
@@ -23,8 +27,4 @@ export default function Home() {
       </Link>
     </main>
   )
-}
-
-export const metadata: Metadata = {
-  title: 'Bruce Song'
 }
