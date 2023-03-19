@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google'
 import Link from 'next/link'
 import Image from 'next/image'
 import type { Metadata } from 'next'
+import { ActionButton } from './components'
 
 const inter = Inter({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] })
 
@@ -23,8 +24,9 @@ export default function Home() {
         href="/projects"
         className={inter.className}
       >
-        <button className="btn-primary btn-sm btn"> {'开始'} </button>
+        <button className="btn-primary btn-sm btn">{'开始'}</button>
       </Link>
+      <ActionButton />
     </main>
   )
 }
