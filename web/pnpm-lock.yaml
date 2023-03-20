@@ -28,8 +28,8 @@ specifiers:
   postcss: ^8.4.21
   prettier: ^2.8.4
   prettier-plugin-tailwindcss: ^0.2.5
-  react: 18.2.0
-  react-dom: 18.2.0
+  react: ^18.2.0
+  react-dom: ^18.2.0
   react-redux: ^8.0.5
   redux: ^4.2.1
   stylelint: ^15.3.0
