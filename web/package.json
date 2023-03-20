@@ -71,6 +71,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.2.0",
     "postcss": "^8.4.21",
+    "sass": "^1.59.3",
     "tailwindcss": "^3.2.7",
     "typescript": "~5.0.2"
   },

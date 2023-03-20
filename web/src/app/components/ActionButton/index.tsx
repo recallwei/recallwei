@@ -12,7 +12,7 @@ import {
 } from 'firebase/firestore'
 import DB, { addData, countData } from '@/firebase'
 
-const ActionButton = (): JSX.Element => {
+export default function ActionButton(): JSX.Element {
   const [starCount, setStarCount] = useState(0)
 
   const [message, setMessage] = useState('')
@@ -103,5 +103,3 @@ const ActionButton = (): JSX.Element => {
     </>
   )
 }
-
-export default ActionButton

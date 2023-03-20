@@ -24,9 +24,15 @@ export default function Home() {
         href="/projects"
         className={inter.className}
       >
-        <button className="btn-primary btn-sm btn">{'开始'}</button>
+        <button className="btn-primary btn-sm btn">开始</button>
       </Link>
-      <ActionButton />
+      <Link
+        href="/blogs"
+        className={inter.className}
+      >
+        <button className="btn-secondary btn-sm btn">测试 Markdown 渲染</button>
+      </Link>
+      {false && <ActionButton />}
     </main>
   )
 }

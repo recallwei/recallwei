@@ -2,8 +2,9 @@
 // import { Router } from 'next/router'
 // import NProgress from 'nprogress'\
 import type { Metadata } from 'next'
-import { StoreProvider, Layout } from '@/components'
-import './globals.css'
+import { StoreProvider } from '@/components'
+import { Layout } from './components'
+import './globals.scss'
 // import 'nprogress/nprogress.css'
 
 // TODO: NProgress Configuration

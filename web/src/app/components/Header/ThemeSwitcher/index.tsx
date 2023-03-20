@@ -1,9 +1,9 @@
 'use client'
-import { ChangeEvent } from 'react'
+import { type ChangeEvent } from 'react'
 import { useAppSelector, useAppDispatch } from '@/hooks'
 import { headerAction } from '@/store'
 
-const ThemeSwitcher = (): JSX.Element => {
+export default function ThemeSwitcher(): JSX.Element {
   const themeMode = useAppSelector((state) => state.header.themeMode)
   const headerDispatcher = useAppDispatch()
 
@@ -14,6 +14,7 @@ const ThemeSwitcher = (): JSX.Element => {
       headerDispatcher(headerAction.changeThemeMOde('dark'))
     }
   }
+
   return (
     <>
       <label className="swap-rotate swap">
@@ -40,5 +41,3 @@ const ThemeSwitcher = (): JSX.Element => {
     </>
   )
 }
-
-export default ThemeSwitcher
