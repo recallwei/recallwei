@@ -10,7 +10,6 @@ import {
   onSnapshot,
   limit
 } from 'firebase/firestore'
-import moment from 'moment'
 import DB, { addData, countData } from '@/firebase'
 
 const ActionButton = (): JSX.Element => {
@@ -39,7 +38,7 @@ const ActionButton = (): JSX.Element => {
   }, [])
 
   const handleClickBtn = async () => {
-    await addData('starCount', moment(new Date()).format('YYYY-MM-DD HH:mm:ss'), {})
+    await addData('starCount', serverTimestamp(), {})
     const { result } = (await countData('starCount')) || {}
     setStarCount(result || 0)
   }
