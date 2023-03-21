@@ -1,4 +1,3 @@
-// TODO: Try to remove `use client`
 // import { Router } from 'next/router'
 // import NProgress from 'nprogress'\
 import type { Metadata } from 'next'

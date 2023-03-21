@@ -6,3 +6,4 @@ espree
 daisyui
 reduxjs
 roboto
+noto

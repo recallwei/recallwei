@@ -2,9 +2,8 @@
 import React from 'react'
 import { Provider } from 'react-redux'
 import { store } from '@/store'
+import type { ReactOnlyChildrenProps } from '@/types'
 
-const StoreProvider = ({ children }: { children: React.ReactNode }): JSX.Element => (
-  <Provider store={store}>{children}</Provider>
-)
-
-export default StoreProvider
+export default function StoreProvider({ children }: ReactOnlyChildrenProps): JSX.Element {
+  return <Provider store={store}>{children}</Provider>
+}
