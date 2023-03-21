@@ -11,7 +11,7 @@ export default function Home() {
   const WELCOME_TEXT = '🎉 欢迎来到我的博客 🎉'
   return (
     <main className="absolute top-0 right-0 bottom-0 left-0 m-auto flex h-1/3 w-1/3 flex-col items-center justify-center space-y-4">
-      <div>{WELCOME_TEXT}</div>
+      <div className="font-bold">{WELCOME_TEXT}</div>
       <div className="mockup-code">
         <pre data-prefix="$">
           <code>cd recallwei</code>

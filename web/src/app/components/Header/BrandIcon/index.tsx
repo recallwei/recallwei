@@ -6,7 +6,7 @@ export default function BrandIcon(): JSX.Element {
   return (
     <Link
       href="/"
-      className="fixed left-8 flex cursor-pointer select-none items-center space-x-4 transition-opacity duration-300 hover:opacity-90 active:opacity-75"
+      className="fixed left-8 flex cursor-pointer select-none items-center space-x-2 transition-opacity duration-300 hover:opacity-90 active:opacity-75"
     >
       <Image
         src="/favicon.png"
@@ -15,7 +15,7 @@ export default function BrandIcon(): JSX.Element {
         height={36}
         priority
       />
-      <div className="text-xl font-bold">{AppData.author}</div>
+      <div className="font-mono text-xl font-bold tracking-tight">{AppData.author}</div>
     </Link>
   )
 }
