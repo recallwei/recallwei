@@ -2,7 +2,12 @@
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx,md,mdx}'],
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        sans: ['var(--font-inter)'],
+        mono: ['var(--font-roboto-mono)']
+      }
+    }
   },
   daisyui: {
     themes: ['light', 'dark']
