@@ -1,9 +1,11 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@formatjs/intl-localematcher': ^0.2.32
   '@next/mdx': ^13.2.4
   '@reduxjs/toolkit': ^1.9.3
   '@types/mdx': ^2.0.3
+  '@types/negotiator': ^0.6.1
   '@types/node': ^18.15.3
   '@types/nprogress': ^0.2.0
   '@types/react': ^18.0.28
@@ -23,6 +25,7 @@ specifiers:
   husky: ^8.0.3
   jsonc-eslint-parser: ^2.2.0
   lint-staged: ^13.2.0
+  negotiator: ^0.6.3
   next: ^13.2.4
   nprogress: ^0.2.0
   postcss: ^8.4.21
@@ -33,6 +36,7 @@ specifiers:
   react-redux: ^8.0.5
   redux: ^4.2.1
   sass: ^1.59.3
+  server-only: ^0.0.1
   stylelint: ^15.3.0
   stylelint-config-prettier: ^9.0.5
   stylelint-config-standard: ^31.0.0
@@ -40,6 +44,7 @@ specifiers:
   typescript: ~5.0.2
 
 dependencies:
+  '@formatjs/intl-localematcher': 0.2.32
   '@next/mdx': 13.2.4
   '@reduxjs/toolkit': 1.9.3_k4ae6lp43ej6mezo3ztvx6pykq
   '@typescript-eslint/parser': 5.55.0_j4766f7ecgqbon3u7zlxn5zszu
@@ -53,6 +58,7 @@ dependencies:
   eslint-plugin-markdown: 3.0.0_eslint@8.36.0
   firebase: 9.18.0
   jsonc-eslint-parser: 2.2.0
+  negotiator: 0.6.3
   next: 13.2.4_dpxg4zawgzznnxdt7it3f5d76m
   nprogress: 0.2.0
   prettier: 2.8.4
@@ -61,12 +67,14 @@ dependencies:
   react-dom: 18.2.0_react@18.2.0
   react-redux: 8.0.5_ctrls2ti7t7iutxbwkm5ipogyy
   redux: 4.2.1
+  server-only: 0.0.1
   stylelint: 15.3.0
   stylelint-config-prettier: 9.0.5_stylelint@15.3.0
   stylelint-config-standard: 31.0.0_stylelint@15.3.0
 
 devDependencies:
   '@types/mdx': 2.0.3
+  '@types/negotiator': 0.6.1
   '@types/node': 18.15.3
   '@types/nprogress': 0.2.0
   '@types/react': 18.0.28
@@ -628,6 +636,12 @@ packages:
     resolution: {integrity: sha512-BpiZLBWdLFw+qFel9p3Zs1jD6QmH7Ii4aTDu6+vx8ShdidChZUXqDhYJly4ZjSgQh54miXbBgBrk0S+jTIh/Qg==}
     dev: false
 
+  /@formatjs/intl-localematcher/0.2.32:
+    resolution: {integrity: sha512-k/MEBstff4sttohyEpXxCmC3MqbUn9VvHGlZ8fauLzkbwXmVrEeyzS+4uhrvAk9DWU9/7otYWxyDox4nT/KVLQ==}
+    dependencies:
+      tslib: 2.5.0
+    dev: false
+
   /@grpc/grpc-js/1.7.3:
     resolution: {integrity: sha512-H9l79u4kJ2PVSxUNA08HMYAnUBLj9v6KjYQ7SQ71hOZcEXhShE/y5iQCesP8+6/Ik/7i2O0a10bPquIcYfufog==}
     engines: {node: ^8.13.0 || >=10.10.0}
@@ -948,6 +962,10 @@ packages:
   /@types/minimist/1.2.2:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
     dev: false
+
+  /@types/negotiator/0.6.1:
+    resolution: {integrity: sha512-c4mvXFByghezQ/eVGN5HvH/jI63vm3B7FiE81BUzDAWmuiohRecCO6ddU60dfq29oKUMiQujsoB2h0JQC7JHKA==}
+    dev: true
 
   /@types/node/18.15.3:
     resolution: {integrity: sha512-p6ua9zBxz5otCmbpb5D3U4B5Nanw6Pk3PPyX05xnxbB/fRv71N7CPmORg7uAD5P70T0xmx1pzAx/FUfa5X+3cw==}
@@ -3079,6 +3097,11 @@ packages:
   /natural-compare/1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
 
+  /negotiator/0.6.3:
+    resolution: {integrity: sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==}
+    engines: {node: '>= 0.6'}
+    dev: false
+
   /next/13.2.4_dpxg4zawgzznnxdt7it3f5d76m:
     resolution: {integrity: sha512-g1I30317cThkEpvzfXujf0O4wtaQHtDCLhlivwlTJ885Ld+eOgcz7r3TGQzeU+cSRoNHtD8tsJgzxVdYojFssw==}
     engines: {node: '>=14.6.0'}
@@ -3852,6 +3875,10 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
+    dev: false
+
+  /server-only/0.0.1:
+    resolution: {integrity: sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==}
     dev: false
 
   /shebang-command/2.0.0:

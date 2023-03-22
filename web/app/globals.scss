@@ -6,17 +6,15 @@
 
 @layer utilities {
   /* TODO: Adjust scrollbar style, make it auto hide. */
-  @variants responsive {
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    .scrollbar::-webkit-scrollbar {
-      display: none;
-    }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 
-    /* Hide scrollbar for IE, Edge and Firefox */
-    .scrollbar {
-      -ms-overflow-style: none; /* IE and Edge */
-      scrollbar-width: none; /* Firefox */
-    }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }
 

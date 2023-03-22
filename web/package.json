@@ -35,6 +35,7 @@
     "prepare": "cd .. && husky install web/.husky"
   },
   "dependencies": {
+    "@formatjs/intl-localematcher": "^0.2.32",
     "@next/mdx": "^13.2.4",
     "@reduxjs/toolkit": "^1.9.3",
     "@typescript-eslint/parser": "^5.55.0",
@@ -48,6 +49,7 @@
     "eslint-plugin-markdown": "^3.0.0",
     "firebase": "^9.18.0",
     "jsonc-eslint-parser": "^2.2.0",
+    "negotiator": "^0.6.3",
     "next": "^13.2.4",
     "nprogress": "^0.2.0",
     "prettier": "^2.8.4",
@@ -56,12 +58,14 @@
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
     "redux": "^4.2.1",
+    "server-only": "^0.0.1",
     "stylelint": "^15.3.0",
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-standard": "^31.0.0"
   },
   "devDependencies": {
     "@types/mdx": "^2.0.3",
+    "@types/negotiator": "^0.6.1",
     "@types/node": "^18.15.3",
     "@types/nprogress": "^0.2.0",
     "@types/react": "^18.0.28",
