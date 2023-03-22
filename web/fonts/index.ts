@@ -1,5 +1,10 @@
 import localFont from 'next/font/local'
 
+export const MicrosoftYaHei = localFont({
+  variable: '--font-yahei-sans',
+  src: [{ path: './MicrosoftYaHei/Microsoft-YaHei.ttf' }]
+})
+
 export const NotoSans = localFont({
   variable: '--font-noto-sans',
   src: [
@@ -60,14 +65,19 @@ export const InputMono = localFont({
       style: 'italic'
     },
     {
-      path: './InputMono/InputMono-ExtraLight.ttf',
-      weight: '200',
+      path: './InputMono/InputMono-Medium.ttf',
+      weight: '500',
       style: 'normal'
     },
     {
-      path: './InputMono/InputMono-ExtraLightItalic.ttf',
-      weight: '200',
+      path: './InputMono/InputMono-MediumItalic.ttf',
+      weight: '500',
       style: 'italic'
+    },
+    {
+      path: './InputMono/InputMono-Regular.ttf',
+      weight: '400',
+      style: 'normal'
     },
     {
       path: './InputMono/InputMono-Italic.ttf',
@@ -85,19 +95,14 @@ export const InputMono = localFont({
       style: 'italic'
     },
     {
-      path: './InputMono/InputMono-Medium.ttf',
-      weight: '500',
+      path: './InputMono/InputMono-ExtraLight.ttf',
+      weight: '200',
       style: 'normal'
     },
     {
-      path: './InputMono/InputMono-MediumItalic.ttf',
-      weight: '500',
+      path: './InputMono/InputMono-ExtraLightItalic.ttf',
+      weight: '200',
       style: 'italic'
-    },
-    {
-      path: './InputMono/InputMono-Regular.ttf',
-      weight: '400',
-      style: 'normal'
     },
     {
       path: './InputMono/InputMono-Thin.ttf',

@@ -14,7 +14,7 @@ export default function Projects(): JSX.Element {
       <progress className="progress progress-primary w-[400px]" />
 
       <Link href="/">
-        <button className="btn-primary btn font-mono normal-case">Back</button>
+        <button className="btn-primary btn normal-case">Back</button>
       </Link>
     </main>
   )

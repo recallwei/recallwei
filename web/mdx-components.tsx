@@ -15,7 +15,7 @@ const H3 = ({ children }: ReactOnlyChildrenProps): JSX.Element => (
 )
 
 const H4 = ({ children }: ReactOnlyChildrenProps): JSX.Element => (
-  <h4 className="my-4 text-lg font-semibold text-primary">{children}</h4>
+  <h4 className="my-4 text-lg font-medium text-primary">{children}</h4>
 )
 
 const H5 = ({ children }: ReactOnlyChildrenProps): JSX.Element => (

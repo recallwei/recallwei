@@ -12,7 +12,7 @@ export default function Home() {
       <div className="text-4xl font-bold">🎉 欢迎来到我的博客 🎉</div>
 
       <div className="w-[700px]">
-        <div className="chat chat-start font-mono">
+        <div className="chat chat-start">
           <div className="chat-image avatar">
             <div className="relative w-10 cursor-pointer rounded-full transition-all duration-300 hover:animate-spin">
               <Image
@@ -23,11 +23,11 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="chat-header mb-1 font-semibold opacity-90">{'Bruce Song <recall4056@gmail.com>'}</div>
-          <div className="chat-bubble w-[230px] whitespace-nowrap">🚀 博客正在搭建中......</div>
+          <div className="chat-header mb-1 opacity-90">{'Bruce Song <recall4056@gmail.com>'}</div>
+          <div className="chat-bubble flex w-[230px] items-center whitespace-nowrap">🚀 博客正在搭建中......</div>
           <div className="chat-footer opacity-50"></div>
         </div>
-        <div className="chat chat-end font-mono">
+        <div className="chat chat-end">
           <div className="chat-image avatar">
             <div className="w-10 cursor-pointer rounded-full transition-all duration-300 hover:animate-spin">
               <Image
@@ -38,8 +38,10 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="chat-header mb-1 font-semibold opacity-90">{'Bruce Song <recall4056@gmail.com>'}</div>
-          <div className="chat-bubble w-[380px] whitespace-nowrap">如果觉得不错，请在 GitHub 上 ⭐ 这个项目！</div>
+          <div className="chat-header mb-1 opacity-90">{'Bruce Song <recall4056@gmail.com>'}</div>
+          <div className="chat-bubble flex w-[380px] items-center whitespace-nowrap">
+            如果觉得不错，请在 GitHub 上 ⭐ 这个项目！
+          </div>
           <div className="chat-footer opacity-50"></div>
         </div>
       </div>
@@ -51,7 +53,7 @@ export default function Home() {
       </div>
 
       <Link href="/projects">
-        <button className="btn-primary btn font-mono normal-case">Get Started</button>
+        <button className="btn-primary btn normal-case">Get Started</button>
       </Link>
     </main>
   )

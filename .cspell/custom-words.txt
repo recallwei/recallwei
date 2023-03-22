@@ -7,4 +7,5 @@ daisyui
 reduxjs
 roboto
 noto
+yahei
 formatjs

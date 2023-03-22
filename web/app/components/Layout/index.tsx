@@ -2,7 +2,7 @@
 import Header from '../Header'
 import { useNProgress, useAppSelector } from '@/hooks'
 import { type ReactOnlyChildrenProps } from '@/types'
-import { NotoSans, InputMono } from '@/fonts'
+import { NotoSans, InputMono, MicrosoftYaHei } from '@/fonts'
 
 export default function Layout({ children }: ReactOnlyChildrenProps): JSX.Element {
   useNProgress()
@@ -13,7 +13,7 @@ export default function Layout({ children }: ReactOnlyChildrenProps): JSX.Elemen
     <html
       lang="en"
       data-theme={themeMode}
-      className={`${NotoSans.variable} ${InputMono.variable} font-sans`}
+      className={`${NotoSans.variable} ${InputMono.variable} ${MicrosoftYaHei.variable}`}
     >
       <body className="scrollbar overflow-x-hidden overflow-y-scroll">
         <Header />
