@@ -2,8 +2,6 @@ import Link from 'next/link'
 import clsx from 'clsx'
 import { NavbarList } from '@/constants'
 
-function NavbarItem() {}
-
 export default function Navbar(): JSX.Element {
   return (
     <div className="flex items-center space-x-8 font-mono text-lg font-semibold tracking-tight">
