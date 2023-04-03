@@ -32,7 +32,7 @@
     "check:eslint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
     "check:stylelint": "npx stylelint '**/*.{html,vue,css,sass,scss}'",
     "format:prettier": "npx prettier --write '**/*.{vue,js,jsx,cjs,mjs,ts,tsx,md,html,css}",
-    "prepare": "husky install web/.husky"
+    "prepare": "husky install .husky"
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.2.32",
