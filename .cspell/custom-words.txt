@@ -9,3 +9,4 @@ roboto
 noto
 yahei
 formatjs
+inconsolata
