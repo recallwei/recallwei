@@ -5,7 +5,7 @@ import { type ReactOnlyChildrenProps } from '@/types'
 import { inconsolata, roboto_mono } from '@/fonts'
 
 export default function Layout({ children }: ReactOnlyChildrenProps): JSX.Element {
-  useNProgress()
+  // useNProgress()
 
   const themeMode = useAppSelector((state) => state.header.themeMode)
 
@@ -15,7 +15,7 @@ export default function Layout({ children }: ReactOnlyChildrenProps): JSX.Elemen
       data-theme={themeMode}
       className={`${inconsolata.variable} ${roboto_mono.variable}`}
     >
-      <body className="scrollbar overflow-x-hidden overflow-y-scroll">
+      <body className="scrollbar overflow-x-hidden overflow-y-scroll text-base">
         <Header />
         {children}
       </body>

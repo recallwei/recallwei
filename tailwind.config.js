@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['var(--font-inconsolata)'],
-        mono: ['var(--font-roboto-mono)'],
+        mono: ['var(--font-inconsolata)'],
       },
     }
   },
