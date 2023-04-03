@@ -4,9 +4,11 @@ module.exports = defineConfig({
   root: true,
   globals: {},
   extends: ['plugin:jsonc/recommended-with-jsonc', 'plugin:markdown/recommended', 'next/core-web-vitals'],
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: 'latest'
   },
+  plugins: ["@typescript-eslint"],
   overrides: [
     {
       files: ['*.js'],

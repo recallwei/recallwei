@@ -2,7 +2,7 @@
 import Header from '../Header'
 import { useNProgress, useAppSelector } from '@/hooks'
 import { type ReactOnlyChildrenProps } from '@/types'
-import { inconsolata, roboto_mono } from '@/fonts'
+import { petrona, open_sans, roboto_mono } from '@/fonts'
 
 export default function Layout({ children }: ReactOnlyChildrenProps): JSX.Element {
   // useNProgress()
@@ -13,9 +13,9 @@ export default function Layout({ children }: ReactOnlyChildrenProps): JSX.Elemen
     <html
       lang="en"
       data-theme={themeMode}
-      className={`${inconsolata.variable} ${roboto_mono.variable}`}
+      className={`${petrona.variable} ${open_sans.variable} ${roboto_mono.variable}`}
     >
-      <body className="scrollbar overflow-x-hidden overflow-y-scroll text-base">
+      <body className="scrollbar overflow-x-hidden overflow-y-scroll font-sans text-base">
         <Header />
         {children}
       </body>

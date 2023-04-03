@@ -1,9 +1,15 @@
-import { Inconsolata, Roboto_Mono } from 'next/font/google'
+import { Petrona, Open_Sans, Roboto_Mono } from 'next/font/google'
 
-export const inconsolata = Inconsolata({
-  variable: '--font-inconsolata',
+export const petrona = Petrona({
+  variable: '--font-petrona',
   display: 'swap',
-  subsets: ['latin'],
+  subsets: ['latin']
+})
+
+export const open_sans = Open_Sans({
+  variable: '--font-open-sans',
+  display: 'swap',
+  subsets: ['latin']
 })
 
 export const roboto_mono = Roboto_Mono({
