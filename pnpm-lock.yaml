@@ -4,6 +4,9 @@ dependencies:
   '@formatjs/intl-localematcher':
     specifier: ^0.2.32
     version: 0.2.32
+  '@next/eslint-plugin-next':
+    specifier: ^13.2.4
+    version: 13.2.4
   '@next/mdx':
     specifier: ^13.2.4
     version: 13.2.4
@@ -25,6 +28,9 @@ dependencies:
   eslint-config-next:
     specifier: ^13.2.4
     version: 13.2.4(eslint@8.37.0)(typescript@5.0.3)
+  eslint-config-prettier:
+    specifier: ^8.8.0
+    version: 8.8.0(eslint@8.37.0)
   eslint-define-config:
     specifier: ^1.17.0
     version: 1.17.0
@@ -1815,6 +1821,15 @@ packages:
     transitivePeerDependencies:
       - eslint-import-resolver-webpack
       - supports-color
+    dev: false
+
+  /eslint-config-prettier@8.8.0(eslint@8.37.0):
+    resolution: {integrity: sha512-wLbQiFre3tdGgpDv67NQKnJuTlcUVYHas3k+DZCc2U2BadthoEY4B7hLPvAxaqdyOGCzuLfii2fqGph10va7oA==}
+    hasBin: true
+    peerDependencies:
+      eslint: '>=7.0.0'
+    dependencies:
+      eslint: 8.37.0
     dev: false
 
   /eslint-define-config@1.17.0:

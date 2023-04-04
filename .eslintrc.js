@@ -6,7 +6,9 @@ module.exports = defineConfig({
   extends: [
     'plugin:jsonc/recommended-with-jsonc',
     'plugin:markdown/recommended',
-    'next/core-web-vitals'
+    'next/core-web-vitals',
+    "plugin:@typescript-eslint/recommended",
+    'prettier'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
