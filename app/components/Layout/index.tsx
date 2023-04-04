@@ -15,9 +15,9 @@ export default function Layout({ children }: ReactOnlyChildrenProps): JSX.Elemen
       data-theme={themeMode}
       className={`${petrona.variable} ${open_sans.variable} ${roboto_mono.variable}`}
     >
-      <body className="scrollbar overflow-x-hidden overflow-y-scroll text-base font-serif">
+      <body className="scrollbar overflow-x-hidden overflow-y-scroll font-serif text-base">
         <Header />
-        {children}
+        <div className="m-4 sm:mx-8 md:mx-16">{children}</div>
       </body>
     </html>
   )
