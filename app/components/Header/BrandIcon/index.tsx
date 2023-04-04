@@ -15,7 +15,7 @@ export default function BrandIcon(): JSX.Element {
         height={36}
         priority
       />
-      <div className="font-mono text-xl">{AppData.author}</div>
+      <div className="text-xl font-semibold">{AppData.author}</div>
     </Link>
   )
 }

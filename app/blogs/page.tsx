@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 import TestMarkdown from './test.mdx'
 
 export const metadata: Metadata = {
-  title: 'Blogs'
+  title: '博客'
 }
 
 export default function Blogs(): JSX.Element {

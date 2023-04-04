@@ -7,7 +7,12 @@ export const NavbarList: NavbarItem[] = [
     type: 'innerLink'
   },
   {
-    text: 'Projects',
+    text: '字体测试',
+    href: '/fonts',
+    type: 'innerLink'
+  },
+  {
+    text: '项目',
     href: '/projects',
     type: 'innerLink'
   },

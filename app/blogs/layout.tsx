@@ -3,8 +3,8 @@ import { MarkdownContentLayout } from './components'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Blog | Bruce Song',
-    template: '%s | Blog'
+    default: '博客 | Bruce Song',
+    template: '%s | 博客'
   },
   description: 'My personal blog.'
 }
