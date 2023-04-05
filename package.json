@@ -2,6 +2,7 @@
   "name": "recallwei",
   "private": true,
   "version": "0.1.0",
+  "type": "module",
   "author": {
     "name": "Bruce Song",
     "email": "recall4056@gmail.com",
@@ -33,7 +34,8 @@
     "check:stylelint": "npx stylelint '**/*.{html,vue,css,sass,scss}'",
     "format:prettier": "npx prettier --write '**/*.{vue,js,jsx,cjs,mjs,ts,tsx,md,html,css}",
     "prepare": "husky install .husky",
-    "format:cspell-dict": "node scripts/orderDictionary.mjs"
+    "format:cspell-dict": "ts-node --esm scripts/orderDictionary.ts",
+    "generate:env": "ts-node --esm scripts/generateEnv.ts"
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.2.32",
@@ -84,6 +86,7 @@
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-standard": "^32.0.0",
     "tailwindcss": "^3.3.1",
+    "ts-node": "^10.9.1",
     "typescript": "~5.0.3"
   },
   "license": "MIT"
