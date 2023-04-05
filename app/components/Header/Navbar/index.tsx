@@ -6,7 +6,7 @@ import { NavbarList } from '@/constants'
 export default function Navbar(): JSX.Element {
   const pathname = usePathname()
   return (
-    <div className="flex items-center space-x-8 text-lg tracking-tight">
+    <div className="hidden items-center space-x-8 text-lg tracking-tight sm:flex">
       {NavbarList.map((navbarItem) => (
         <div
           key={navbarItem.text}

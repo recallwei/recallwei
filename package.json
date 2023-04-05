@@ -32,12 +32,14 @@
     "check:eslint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
     "check:stylelint": "npx stylelint '**/*.{html,vue,css,sass,scss}'",
     "format:prettier": "npx prettier --write '**/*.{vue,js,jsx,cjs,mjs,ts,tsx,md,html,css}",
-    "prepare": "husky install .husky"
+    "prepare": "husky install .husky",
+    "format:cspell-dict": "node scripts/orderDictionary.mjs"
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.2.32",
     "@next/mdx": "^13.2.4",
     "@reduxjs/toolkit": "^1.9.3",
+    "chalk": "^5.2.0",
     "clsx": "^1.2.1",
     "daisyui": "^2.51.5",
     "date-fns": "^2.29.3",
