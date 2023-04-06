@@ -14,7 +14,7 @@ fs.readFile(CSPELL_DICT_DIR, 'utf8', (err, dataStr) => {
       if (err) {
         console.log(customChalk.error + ' ' + customChalk.errorText(err))
       } else {
-        console.log(customChalk.success + ' ' + customChalk.successText('Successfully sorted dictionary'))
+        console.log(customChalk.success + ' ' + customChalk.successText('Sorted dictionary successfully!'))
       }
     })
   }
