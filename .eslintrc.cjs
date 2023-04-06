@@ -11,8 +11,8 @@ module.exports = defineConfig({
     'prettier'
   ],
   rules: {
-    quotes: [ERROR, 'single'],
-    semi: [ERROR, 'never'],
+    'quotes': [ERROR, 'single'],
+    'semi': [ERROR, 'never'],
     'comma-dangle': OFF,
     // 'import/no-extraneous-dependencies': [ERROR, { devDependencies: true }],
     // 'import/extensions': OFF,

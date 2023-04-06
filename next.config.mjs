@@ -1,3 +1,5 @@
+import mdx from '@next/mdx'
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -11,5 +13,5 @@ const nextConfig = {
   }
 }
 
-const withMDX = require('@next/mdx')()
-module.exports = withMDX(nextConfig)
+const withMDX = mdx()
+export default withMDX(nextConfig)
