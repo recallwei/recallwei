@@ -5,6 +5,9 @@ const nextConfig = {
   experimental: {
     appDir: true,
     mdxRs: true
+  },
+  eslint: {
+    dirs: ['app', 'components', 'hooks', 'utils']
   }
 }
 

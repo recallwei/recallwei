@@ -1,49 +1,27 @@
 const { defineConfig } = require('eslint-define-config')
 
+const OFF = 0
+const WARNING = 1
+const ERROR = 2
+
 module.exports = defineConfig({
   root: true,
-  globals: {},
   extends: [
-    'plugin:jsonc/recommended-with-jsonc',
-    'plugin:markdown/recommended',
-    'plugin:@typescript-eslint/recommended',
-    'next',
     'next/core-web-vitals',
     'prettier'
   ],
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true
-    },
-    ecmaVersion: 'latest',
-    sourceType: 'module'
-  },
-  plugins: ['@typescript-eslint'],
-  overrides: [
-    {
-      files: ['*.js'],
-      parser: 'espree',
-      parserOptions: {
-        ecmaVersion: 'latest'
-      }
-    },
-    {
-      files: ['*.json', '*.json5', '*.jsonc'],
-      parser: 'jsonc-eslint-parser'
-    }
-  ],
   rules: {
-    quotes: ['error', 'single'],
-    semi: ['error', 'never'],
-    'comma-dangle': 'off',
-    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
-    'import/extensions': 'off',
-    'import/prefer-default-export': 'off',
-    'import/newline-after-import': 'off',
-    'import/no-absolute-path': 'off', // for import ./public
-    'import/no-unresolved': 'off',
-    'no-unused-vars': 'off', // use @typescript-eslint/no-unused-vars to check.
-    'no-shadow': 'off' // use @typescript-eslint/no-shadow to check.
+    quotes: [ERROR, 'single'],
+    semi: [ERROR, 'never'],
+    'comma-dangle': OFF,
+    // 'import/no-extraneous-dependencies': [ERROR, { devDependencies: true }],
+    // 'import/extensions': OFF,
+    // 'import/prefer-default-export': OFF,
+    // 'import/newline-after-import': OFF,
+    // 'import/no-absolute-path': OFF, // for import ./public
+    // 'import/no-unresolved': OFF,
+    // 'no-unused-vars': OFF, // use @typescript-eslint/no-unused-vars to check
+    // 'no-shadow': OFF, // use @typescript-eslint/no-shadow to check
+    '@next/next/no-html-link-for-pages': [ERROR, 'app'] // use /app dir
   }
 })
