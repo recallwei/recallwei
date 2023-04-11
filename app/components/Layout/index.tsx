@@ -5,7 +5,7 @@ import { type ReactOnlyChildrenProps } from '@/types'
 import { petrona, open_sans, roboto_mono } from '@/fonts'
 
 export default function Layout({ children }: ReactOnlyChildrenProps): JSX.Element {
-  // useNProgress()
+  useNProgress()
 
   const themeMode = useAppSelector((state) => state.header.themeMode)
 
