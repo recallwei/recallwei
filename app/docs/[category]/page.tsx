@@ -2,11 +2,14 @@ import type { Metadata } from 'next'
 import fs from 'fs'
 import { join } from 'path'
 
-type Params = { category: string }
+type Props = {
+  params: {
+    category: string
+  }
+}
 
-export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { category } = params
-  console.log(category)
   return {
     title: category
   }
@@ -20,7 +23,7 @@ async function getMarkdownJSON() {
   // console.log(fileContents)
 }
 
-export default function Category({ params }: { params: Params }): JSX.Element {
+export default function Category({ params }: Props): JSX.Element {
   getMarkdownJSON()
   return <main></main>
 }

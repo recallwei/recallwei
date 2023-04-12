@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import type { ReactOnlyChildrenProps } from '@/types'
 import { MarkdownContentLayout } from './components'
 
 export const metadata: Metadata = {
@@ -8,6 +9,6 @@ export const metadata: Metadata = {
   }
 }
 
-export default function Layout({ children }: { children: React.ReactNode }): JSX.Element {
+export default function Layout({ children }: ReactOnlyChildrenProps): JSX.Element {
   return <MarkdownContentLayout>{children}</MarkdownContentLayout>
 }
