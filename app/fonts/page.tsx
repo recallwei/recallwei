@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 
 export default function Fonts(): JSX.Element {
   return (
-    <main className="absolute bottom-0 left-0 right-0 top-0 m-auto flex w-fit flex-col items-start justify-center space-y-12">
+    <main className="absolute inset-0 m-auto flex w-fit flex-col items-start justify-center space-y-12">
       <div className="text-base">
         <div className="font-sans">Sans: Hello World!</div>
         <div className="font-serif">Sans Serif: Hello World!</div>

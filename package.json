@@ -1,27 +1,4 @@
 {
-  "type": "module",
-  "name": "recallwei",
-  "private": true,
-  "version": "0.0.0",
-  "description": "Personal blog by Bruce Song.",
-  "keywords": [
-    "Bruce Song",
-    "Next.js",
-    "React",
-    "Typescript",
-    "Blog"
-  ],
-  "homepage": "https://bruceworld.top",
-  "bugs": {
-    "url": "https://github.com/recallwei/recallwei/issues",
-    "email": "recall4056@gmail.com"
-  },
-  "license": "MIT",
-  "author": "Bruce Song <recall4056@gmail.com> (https://github.com/recallwei/)",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/recallwei/qrcode-generator.git"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -45,7 +22,7 @@
     "date-fns": "^2.29.3",
     "firebase": "^9.19.1",
     "negotiator": "^0.6.3",
-    "next": "^13.3.0",
+    "next": "^13.2.4",
     "nprogress": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -58,23 +35,23 @@
     "@types/negotiator": "^0.6.1",
     "@types/node": "^18.15.11",
     "@types/nprogress": "^0.2.0",
-    "@types/react": "^18.0.35",
+    "@types/react": "^18.0.32",
     "@types/react-dom": "^18.0.11",
     "@typescript-eslint/eslint-plugin": "^5.58.0",
     "@typescript-eslint/parser": "^5.58.0",
     "autoprefixer": "^10.4.14",
-    "eslint": "^8.38.0",
-    "eslint-config-next": "^13.3.0",
+    "eslint": "^8.37.0",
+    "eslint-config-next": "^13.2.4",
     "eslint-config-prettier": "^8.8.0",
     "eslint-define-config": "^1.17.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-tailwindcss": "^3.11.0",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.1",
+    "lint-staged": "^13.2.0",
     "postcss": "^8.4.21",
     "prettier": "^2.8.7",
-    "sass": "^1.62.0",
+    "sass": "^1.60.0",
     "tailwindcss": "^3.3.1",
-    "typescript": "~5.0.4"
+    "typescript": "~5.0.3"
   }
 }
