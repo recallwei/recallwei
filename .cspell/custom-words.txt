@@ -1,13 +1,1 @@
-clsx
-daisyui
-espree
-formatjs
-inconsolata
-noto
-nprogress
-reduxjs
-roboto
-tailwindcss
-taskward
-yahei
-taskward
+astro

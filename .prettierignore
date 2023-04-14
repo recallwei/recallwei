@@ -1,6 +1,5 @@
+.cspell
+.vscode
 build
 public
 node_modules
-.next
-.vscode
-temp
