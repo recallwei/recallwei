@@ -12,6 +12,6 @@
       "addWords": true
     }
   ],
-  "ignorePaths": [".cspell", "node_modules", "pnpm-lock.yaml", "README.md"],
+  "ignorePaths": [".cspell", "dist", "node_modules", "pnpm-lock.yaml", "README.md"],
   "enableFiletypes": ["astro"]
 }
