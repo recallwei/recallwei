@@ -1,2 +1,5 @@
 astro
+astrojs
+rehype
+shiki
 tsconfigs
