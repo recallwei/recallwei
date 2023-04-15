@@ -6,5 +6,5 @@ build
 public
 node_modules
 pnpm-lock.yaml
-*.md
-*.mdx
+# *.md
+# *.mdx
