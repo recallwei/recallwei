@@ -12,7 +12,7 @@
 - 🌐 I'm also good at building enterprise website with _**`SSR/SSG`**_ framework such as _**`Gatsby`**_, _**`Next.js`**_.
 - 🍀 If you are interested in making open source projects together, please contact me with my WeChat _**`Recall4056`**_.
 - 📫 You can also contact me with my email _**`recall4056@gmail.com`**_.
-- 💪 My tech stacks: _**`JavaScript`**_ | _**`TypeScript`**_ | _**`React`**_ | _**`Vue`**_ | _**`Next.js`**_ | _**`Nuxt.js`**_ | _**`Node.js`**_ | _**`HTML`**_ | _**`CSS`**_ | _**`SCSS`**_ | _**`Gatsby`**_
+- 💪 My tech stacks: _**`JavaScript`**_ | _**`TypeScript`**_ | _**`React`**_ | _**`Vue`**_ | _**`Next.js`**_ | _**`Nuxt.js`**_ | _**`Node.js`**_ | _**`HTML`**_ | _**`CSS`**_ | _**`SCSS`**_ | _**`Gatsby`**_ | _**`Astro`**_
 
 ## 🌱 Recent Activities
 
