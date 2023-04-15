@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config'
 import react from '@astrojs/react'
+import tailwind from '@astrojs/tailwind'
 import mdx from '@astrojs/mdx'
 import { rehypeHeadingIds } from '@astrojs/markdown-remark'
 import remarkToc from 'remark-toc'
@@ -11,6 +12,7 @@ export default defineConfig({
   site: 'https://bruceworld.top',
   integrations: [
     react(),
+    tailwind(),
     mdx({
       syntaxHighlight: 'shiki',
       shikiConfig: {
