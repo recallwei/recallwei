@@ -14,10 +14,14 @@
 - 📫 You can also contact me with my email _**`recall4056@gmail.com`**_.
 - 💪 My tech stacks: _**`JavaScript`**_ | _**`TypeScript`**_ | _**`React`**_ | _**`Vue`**_ | _**`Next.js`**_ | _**`Nuxt.js`**_ | _**`Node.js`**_ | _**`HTML`**_ | _**`CSS`**_ | _**`SCSS`**_ | _**`Gatsby`**_
 
+## 🌱 Recent Activities
+
+- 🚀 Migrate my blog site from Next.js to Astro.
+
 ## 🦄 Projects
 
+- _**[Blog](https://bruceworld.top)**_ : _**`🚧 In Development`**_ My personal blog to record something what I want. Based on _**`Astro`**_.
 - _**[Wiki](https://wiki.bruceworld.top)**_ : _**`🚧 Temporarily offline`**_ Used to record various questions and knowledge points. Archived in the Show Case of _**`Docusaurus`**_.
-- _**[Blog](https://bruceworld.top)**_ : _**`🚧 In Development`**_ My personal blog to record something what I want. Based on _**`Next.js 13`**_.
 - _**[Taskward](https://taskward.bruceworld.top)**_ : _**`🚧 Temporarily Out Of Service`**_ A Todo&Tasks web application. Based on _**`React`**_, _**`TypeScript`**_.
 - _**[Resume Generator](https://resume.bruceworld.top)**_ : _**`🚧 In Development`**_ Use markdown to write your resume. Based on _**`Vue 3`**_, _**`TypeScript`**_.
 - _**[QRCode Generator](https://qrcode.bruceworld.top)**_ : _**`🚀 In maintenance`**_ Generate QRCodes more easily by specific templates. Based on _**`Vue 3`**_, _**`TypeScript`**_.
