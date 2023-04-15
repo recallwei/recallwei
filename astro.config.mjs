@@ -12,7 +12,7 @@ export default defineConfig({
   site: 'https://bruceworld.top',
   trailingSlash: 'always',
   output: 'server',
-  adapter: vercel(),
+  adapter: vercel({ analytics: true }),
   integrations: [
     react(),
     tailwind(),
@@ -25,8 +25,7 @@ export default defineConfig({
       rehypePlugins: rehypePresetMinify.plugins,
       remarkRehype: {
         footnoteLabel: 'Footnotes'
-      },
-      gfm: false
+      }
     })
   ]
 })
