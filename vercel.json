@@ -1,3 +1,10 @@
 {
-  "cleanUrls": false
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/fastify"
+    }
+  ]
 }
