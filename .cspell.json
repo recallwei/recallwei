@@ -12,6 +12,16 @@
       "addWords": true
     }
   ],
-  "ignorePaths": [".cspell", "dist", "node_modules", "pnpm-lock.yaml", "README.md"],
+  "ignorePaths": [
+    ".cspell",
+    ".vscode",
+    ".vercel",
+    "dist",
+    "build",
+    "node_modules",
+    "public",
+    "pnpm-lock.yaml",
+    "README.md"
+  ],
   "enableFiletypes": ["astro"]
 }
