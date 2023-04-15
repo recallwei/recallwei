@@ -10,7 +10,6 @@ import rehypePresetMinify from 'rehype-preset-minify'
 
 export default defineConfig({
   site: 'https://bruceworld.top',
-  trailingSlash: 'always',
   output: 'server',
   adapter: vercel({ analytics: true }),
   integrations: [
