@@ -1,5 +1,7 @@
 # 🦁 Bruce Song
 
+![](https://komarev.com/ghpvc/?username=recallwei&label=PROFILE+VIEWS)
+
 ## 🍗 Profile
 
 - 👋 Hi, I'm _**`Bruce Song`**_, a _**`Web Developer`**_ and _**`open-source enthusiast`**_.
