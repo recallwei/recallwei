@@ -7,10 +7,7 @@ const { title } = Astro.props
 ---
 
 <!DOCTYPE html>
-<html
-  lang="en"
-  class="bg-[#f6f6f6]"
->
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -28,7 +25,7 @@ const { title } = Astro.props
     />
     <title>{title}</title>
   </head>
-  <body>
+  <body class="min-h-screen w-screen bg-[#f6f6f6]">
     <slot />
   </body>
 </html>

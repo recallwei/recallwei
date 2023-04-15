@@ -1,4 +1,5 @@
 import { defineConfig } from 'astro/config'
+import vercel from '@astrojs/vercel/serverless'
 import react from '@astrojs/react'
 import tailwind from '@astrojs/tailwind'
 import mdx from '@astrojs/mdx'
@@ -10,6 +11,9 @@ import rehypePresetMinify from 'rehype-preset-minify'
 // https://astro.build/config
 export default defineConfig({
   site: 'https://bruceworld.top',
+  trailingSlash: 'always',
+  output: 'server',
+  adapter: vercel(),
   integrations: [
     react(),
     tailwind(),

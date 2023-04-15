@@ -8,5 +8,6 @@
     "paths": {
       "@/*": ["src/*"]
     }
-  }
+  },
+  "include": ["./astro.config.ts"]
 }

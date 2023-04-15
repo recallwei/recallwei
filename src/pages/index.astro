@@ -1,9 +1,13 @@
 ---
-import Layout from '../layouts/Layout.astro'
-import Card from '../components/Card.astro'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import Card from '@/components/Card.astro'
+import { siteMetaData } from '@/constants'
+
+const { author } = siteMetaData
+const baseTitle = author
 ---
 
-<Layout title="Welcome to Astro.">
+<BaseLayout title={baseTitle}>
   <main>
     <h1>Welcome to <span class="text-gradient">Astro</span></h1>
     <p class="instructions">
@@ -36,7 +40,7 @@ import Card from '../components/Card.astro'
       />
     </ul>
   </main>
-</Layout>
+</BaseLayout>
 
 <style>
   main {

@@ -1,7 +1,9 @@
 ---
-import Layout from '../layouts/Layout.astro'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+
+const title = '未找到页面'
 ---
 
-<Layout title="Welcome to Astro.">
-  <div>404</div>
-</Layout>
+<BaseLayout title={title}>
+  <div>{title}</div>
+</BaseLayout>
