@@ -1,6 +1,8 @@
 astro
 astrojs
 fastify
+noopener
+noreferrer
 rehype
 shiki
 tsconfigs
