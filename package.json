@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev --host",
     "start": "astro dev",
-    "build": "astro check && tsc --noEmit && astro build",
+    "build": "astro check && astro build",
     "preview": "astro preview --host",
     "astro": "astro",
     "cspell": "cspell **",
@@ -31,7 +31,6 @@
     "@types/react-dom": "^18.0.11",
     "prettier": "^2.8.7",
     "prettier-plugin-astro": "^0.8.0",
-    "prettier-plugin-tailwindcss": "^0.2.7",
-    "typescript": "~5.0.4"
+    "prettier-plugin-tailwindcss": "^0.2.7"
   }
 }
