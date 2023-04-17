@@ -50,7 +50,7 @@ Vercel SSR 必须配置 vercel.json 如下，否则访问不存在的页面不�
 
 ## 添加 NProgress
 
-封装 NProgressProvider 以实现 MPA 的 NProgress。
+利用事件监听器监听 `beforeunload` 和 `DOMContentLoaded` 事件，封装 NProgressProvider 组件以实现 MPA 的 NProgress。
 
 ```tsx
 import React, { useEffect } from 'react'
