@@ -19,6 +19,7 @@
     "@astrojs/tailwind": "^3.1.1",
     "@astrojs/vercel": "^3.2.4",
     "astro": "^2.3.0",
+    "nprogress": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rehype-external-links": "^2.0.1",
@@ -26,6 +27,7 @@
     "tailwindcss": "^3.3.1"
   },
   "devDependencies": {
+    "@types/nprogress": "^0.2.0",
     "@types/react": "^18.0.35",
     "@types/react-dom": "^18.0.11",
     "prettier": "^2.8.7",

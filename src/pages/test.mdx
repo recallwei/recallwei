@@ -48,6 +48,36 @@ Vercel SSR 必须配置 vercel.json 如下，否则访问不存在的页面不�
 
 ## 配置 Markdown Remark Rehype 插件
 
+## 添加 NProgress
+
+封装 NProgressProvider 以实现 MPA 的 NProgress。
+
+```tsx
+import React, { useEffect } from 'react'
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
+
+NProgress.configure({ showSpinner: false })
+
+type Props = {
+  children: React.ReactNode
+}
+
+export default function NProgressProvider({ children }: Props): JSX.Element {
+  useEffect(() => {
+    window.addEventListener('beforeunload', () => NProgress.start())
+    window.addEventListener('DOMContentLoaded ', () => NProgress.done())
+    return () => {
+      window.removeEventListener('beforeunload', () => NProgress.start())
+      window.removeEventListener('DOMContentLoaded', () => NProgress.done())
+    }
+  }, [])
+  return <>{children}</>
+}
+```
+
+---
+
 ## TODO
 
-- [] 添加 Astro Sitemap
+- [ ] 添加 Astro Sitemap
