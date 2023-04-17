@@ -16,7 +16,7 @@
 
 ## 🌱 Recent Activities
 
-- 🚀 Migrate my blog site from Next.js to Astro.
+- 🚀 Migrate my blog site from `Next.js` to `Astro`.
 
 ## 🦄 Projects
 
