@@ -1,5 +1,6 @@
 ---
-import { NProgressProvider } from '@/components'
+import { NProgressProvider, Header, Footer } from '@/components'
+
 export interface Props {
   title: string
 }
@@ -13,7 +14,7 @@ const { title } = Astro.props
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width"
+      content="width=device-width, initial-scale=1.0"
     />
     <link
       rel="icon"
@@ -24,16 +25,36 @@ const { title } = Astro.props
       name="generator"
       content={Astro.generator}
     />
+    <meta
+      name="title"
+      content="Bruce Song's Blog"
+    />
+    <meta
+      name="description"
+      content="Bruce Song's personal blog."
+    />
+    <meta
+      name="author"
+      content="Bruce Song"
+    />
     <title>{title}</title>
   </head>
-  <body class="min-h-screen w-screen bg-[#f6f6f6]">
+  <body class="bg-[#f6f6f6]">
     <NProgressProvider client:only>
-      <slot />
+      <main class="relative min-h-full px-4 py-20">
+        <Header client:only />
+        <slot />
+        <Footer />
+      </main>
     </NProgressProvider>
   </body>
 </html>
 
 <style is:global>
-  :root {
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
   }
 </style>

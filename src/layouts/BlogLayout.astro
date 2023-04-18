@@ -1,0 +1,14 @@
+---
+import { BaseLayout } from '@/layouts'
+export interface Props {
+  title: string
+}
+
+const { title } = Astro.props
+---
+
+<BaseLayout title={title}>
+  <div class="mb-6 h-full max-w-[400px] py-4 lg:max-w-[600px]">
+    <slot />
+  </div>
+</BaseLayout>
