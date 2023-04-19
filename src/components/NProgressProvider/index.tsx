@@ -10,10 +10,10 @@ type Props = {
 
 export default function NProgressProvider({ children }: Props): JSX.Element {
   useEffect(() => {
-    window.addEventListener('beforeunload', () => NProgress.start().inc())
+    window.addEventListener('beforeunload', () => NProgress.start())
     window.addEventListener('DOMContentLoaded ', () => NProgress.done())
     return () => {
-      window.removeEventListener('beforeunload', () => NProgress.start().inc())
+      window.removeEventListener('beforeunload', () => NProgress.start())
       window.removeEventListener('DOMContentLoaded', () => NProgress.done())
     }
   }, [])

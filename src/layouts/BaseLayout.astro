@@ -44,7 +44,7 @@ const { title } = Astro.props
       <main class="relative min-h-full px-4 py-20">
         <Header client:only />
         <slot />
-        <Footer />
+        <Footer client:only />
       </main>
     </NProgressProvider>
   </body>
