@@ -1,9 +1,13 @@
 astro
 astrojs
+clsx
 fastify
+Neue
 noopener
 noreferrer
+Noto
 rehype
+Roboto
 shiki
 tsconfigs
 unplugin

@@ -1,12 +1,13 @@
 import React from 'react'
-import { siteMetaData } from '@/constants'
+import clsx from 'clsx'
+import { SITE_META } from '@/configs'
 
 export default function Header(): JSX.Element {
-  const { author } = siteMetaData
+  const { author } = SITE_META
   return (
-    <header className="absolute left-0 right-0 top-0 z-30 flex h-20 items-center justify-start p-4">
+    <header className={clsx('absolute left-0 right-0 top-0 z-30 flex items-center justify-start p-4', 'sm:p-6')}>
       <a
-        className="text-lg font-semibold"
+        className="text-xl font-bold"
         href="/"
       >
         {author}

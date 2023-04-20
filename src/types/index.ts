@@ -1,1 +1,1 @@
-export * from './siteMeta'
+export {}

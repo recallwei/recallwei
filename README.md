@@ -1,6 +1,6 @@
 # 🦁 Bruce Song
 
-![](https://komarev.com/ghpvc/?username=recallwei&label=PROFILE+VIEWS)
+![PROFILE VIEWS](https://komarev.com/ghpvc/?username=recallwei&label=PROFILE+VIEWS)
 
 ## 🍗 Profile
 
