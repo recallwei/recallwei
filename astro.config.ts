@@ -20,5 +20,10 @@ export default defineConfig({
     remarkRehype: {
       footnoteLabel: 'Footnotes'
     }
+  },
+  vite: {
+    ssr: {
+      noExternal: ['clsx']
+    }
   }
 })
