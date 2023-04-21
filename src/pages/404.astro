@@ -1,9 +1,65 @@
 ---
 import { BaseLayout } from '@/layouts'
 
-const title = '未找到页面'
+const EMOJI_TEXT = '(^-^*)'
+const TITLE_TEXT = '404 - Page Not Found'
+const BUTTON_TEXT = '$ cd /home/'
 ---
 
-<BaseLayout title={title}>
-  <div>{title}</div>
+<BaseLayout title={TITLE_TEXT}>
+  <div class="absolute inset-0 m-auto flex h-fit w-fit flex-col items-center font-semibold">
+    <span class="text-animation text-6xl">{EMOJI_TEXT}</span>
+    <span class="mt-14 text-2xl">{TITLE_TEXT}</span>
+    <a
+      href="/"
+      class="mt-4 text-2xl font-normal text-blue-600 transition-opacity hover:underline active:opacity-70"
+    >
+      {BUTTON_TEXT}
+    </a>
+  </div>
 </BaseLayout>
+
+<style>
+  .text-animation {
+    animation: fall-bounce 2s 0s 1 forwards;
+  }
+
+  @keyframes fall-bounce {
+    0% {
+      transform: translateY(-300px) rotate(0);
+      animation-timing-function: ease-in;
+    }
+    15% {
+      transform: translateY(0) rotate(60deg);
+      animation-timing-function: ease-out;
+    }
+    30% {
+      transform: translateY(-200px) rotate(120deg);
+      animation-timing-function: ease-in;
+    }
+    45% {
+      transform: translateY(0) rotate(180deg);
+      animation-timing-function: ease-out;
+    }
+    60% {
+      transform: translateY(-100px) rotate(240deg);
+      animation-timing-function: ease-in;
+    }
+    70% {
+      transform: translateY(0) rotate(300deg);
+      animation-timing-function: ease-out;
+    }
+    80% {
+      transform: translateY(-40px) rotate(320deg);
+      animation-timing-function: ease-in;
+    }
+    90% {
+      transform: translateY(0) rotate(340deg);
+      animation-timing-function: ease-out;
+    }
+    100% {
+      transform: translateY(0) rotate(360deg);
+      animation-timing-function: ease-out;
+    }
+  }
+</style>
