@@ -84,6 +84,28 @@ export default function NProgressProvider({ children }: Props): JSX.Element {
 - Content
 - Footer
 
+## 配置 Icon
+
+```bash
+pnpm add -D @iconify/json unplugin-icons
+```
+
+```javascript
+// astro.config.mjs
+import { defineConfig } from 'astro/config'
+import Icons from 'unplugin-icons/vite'
+
+export default defineConfig({
+  vite: {
+    plugins: [
+      Icons({
+        compiler: 'astro'
+      })
+    ]
+  }
+})
+```
+
 ---
 
 ## TODO
