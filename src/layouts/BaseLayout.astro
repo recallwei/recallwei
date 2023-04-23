@@ -44,9 +44,9 @@ const { title } = Astro.props
     />
     <title>{title}</title>
   </head>
-  <body>
+  <body class="bg-[#F6F6F6] dark:bg-[#36393F]">
     <NProgressProvider client:only>
-      <main class="relative min-h-full px-4 py-20 font-sans">
+      <main class="relative min-h-full px-4 py-20 font-sans dark:text-white">
         <Header client:only>
           <BlogIcon slot="blogIcon" />
           <ProjectIcon slot="projectIcon" />

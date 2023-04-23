@@ -7,7 +7,7 @@ export default function Footer(): JSX.Element {
   return (
     <footer className="absolute bottom-0 left-0 right-0 h-fit select-none p-4 text-center">
       <a
-        className="cursor-pointer text-gray-500"
+        className="cursor-pointer text-gray-500 dark:text-white"
         href={'mailto:' + email}
         target="_blank"
         rel="noopener noreferrer"
