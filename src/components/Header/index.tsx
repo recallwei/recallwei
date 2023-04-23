@@ -1,24 +1,79 @@
-import React, { useRef } from 'react'
-import clsx from 'clsx'
+import React from 'react'
 import { SITE_META } from '@/configs'
+import type { NavItem } from '@/types'
 
-export default function Header(): JSX.Element {
+interface Props {
+  blogIcon?: astroHTML.JSX.Element
+  projectIcon?: astroHTML.JSX.Element
+  searchIcon?: astroHTML.JSX.Element
+}
+
+export default function Header(props: Props): JSX.Element {
   const { author } = SITE_META
-  const audioRef = useRef<HTMLAudioElement>(new Audio('/audio/button-click.mp3'))
+
+  const navList: NavItem[] = [
+    {
+      title: 'Blogs',
+      href: '/blogs',
+      icon: props.blogIcon
+    },
+    {
+      title: 'Projects',
+      href: '/projects',
+      icon: props.projectIcon
+    },
+    {
+      title: 'Search',
+      href: '/searchIcon',
+      icon: props.searchIcon,
+      onlyIcon: true
+    }
+  ]
+
+  const renderNavItem = (navItem: NavItem): JSX.Element => {
+    if (navItem.onlyIcon) {
+      return (
+        <li
+          key={navItem.title}
+          className="cursor-pointer text-lg text-muted"
+          onClick={() => (window.location.href = navItem.href)}
+        >
+          {navItem.icon}
+        </li>
+      )
+    }
+    return (
+      <div key={navItem.title}>
+        {/* Mobile UI */}
+        <li
+          className="cursor-pointer text-lg text-muted sm:hidden"
+          onClick={() => (window.location.href = navItem.href)}
+        >
+          {navItem.icon}
+        </li>
+        {/* Desktop UI */}
+        <li
+          className="hidden cursor-pointer text-lg text-muted sm:block"
+          onClick={() => (window.location.href = navItem.href)}
+        >
+          <span>{navItem.title}</span>
+        </li>
+      </div>
+    )
+  }
 
   return (
-    <header className={clsx('absolute left-0 right-0 top-0 z-30 flex items-center justify-start p-4', 'sm:p-6')}>
+    <header className="absolute left-0 right-0 top-0 z-30 flex items-center justify-between p-4">
       <div
         className="cursor-pointer text-xl font-bold"
         onClick={() => {
-          audioRef.current.play()
-          audioRef.current.onended = () => {
-            window.location.href = '/'
-          }
+          window.location.href = '/'
         }}
       >
         {author}
       </div>
+
+      <ul className="flex items-center space-x-6">{navList.map((item) => renderNavItem(item))}</ul>
     </header>
   )
 }

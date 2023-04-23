@@ -1,4 +1,7 @@
 ---
+import BlogIcon from '~icons/line-md/edit'
+import ProjectIcon from '~icons/line-md/document-code'
+import SearchIcon from '~icons/line-md/search'
 import { NProgressProvider, Header, Footer } from '@/components'
 
 import '@/styles/base.css'
@@ -44,7 +47,11 @@ const { title } = Astro.props
   <body>
     <NProgressProvider client:only>
       <main class="relative min-h-full px-4 py-20 font-sans">
-        <Header client:only />
+        <Header client:only>
+          <BlogIcon slot="blogIcon" />
+          <ProjectIcon slot="projectIcon" />
+          <SearchIcon slot="searchIcon" />
+        </Header>
         <slot />
         <Footer />
       </main>

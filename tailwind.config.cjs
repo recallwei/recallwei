@@ -8,6 +8,9 @@ module.exports = {
       fontFamily: {
         default: [DEFAULT_FONTS],
         sans: ['Computer Modern Sans', DEFAULT_FONTS]
+      },
+      textColor: {
+        muted: '#1F2937'
       }
     }
   },

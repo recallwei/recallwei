@@ -2,6 +2,7 @@ astro
 astrojs
 clsx
 fastify
+iconify
 Neue
 noopener
 noreferrer

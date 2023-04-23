@@ -3,6 +3,7 @@ import vercel from '@astrojs/vercel/serverless'
 import react from '@astrojs/react'
 import tailwind from '@astrojs/tailwind'
 import mdx from '@astrojs/mdx'
+import Icons from 'unplugin-icons/vite'
 import { remarkPlugins, rehypePlugins } from './plugins'
 
 export default defineConfig({
@@ -20,5 +21,12 @@ export default defineConfig({
     remarkRehype: {
       footnoteLabel: 'Footnotes'
     }
+  },
+  vite: {
+    plugins: [
+      Icons({
+        compiler: 'astro'
+      })
+    ]
   }
 })
