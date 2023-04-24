@@ -17,10 +17,13 @@ export default function ThemeSwitch(): JSX.Element {
   }
 
   useEffect(() => {
-    const currentTheme = localStorage.getItem('theme')
-    if (currentTheme) {
-      currentTheme === 'dark' && selectDarkTheme()
-      currentTheme === 'light' && selectLightTheme()
+    if (
+      localStorage.theme === 'dark' ||
+      (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      selectDarkTheme()
+    } else {
+      selectLightTheme()
     }
   }, [])
 

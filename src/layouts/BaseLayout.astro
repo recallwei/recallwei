@@ -44,7 +44,7 @@ const { title } = Astro.props
     />
     <title>{title}</title>
   </head>
-  <body class="bg-[#F6F6F6] dark:bg-[#36393F]">
+  <body class="dark: bg-[#F6F6F6] dark:bg-[#36393F]">
     <NProgressProvider client:only>
       <main class="relative min-h-full px-4 py-20 font-sans dark:text-white">
         <Header client:only>
@@ -58,3 +58,9 @@ const { title } = Astro.props
     </NProgressProvider>
   </body>
 </html>
+
+<style scoped>
+  .dark {
+    color-scheme: dark;
+  }
+</style>
