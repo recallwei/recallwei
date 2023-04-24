@@ -4,7 +4,7 @@ import type { NavItem } from '@/types'
 import ThemeSwitch from './ThemeSwitch'
 
 interface Props {
-  blogIcon?: astroHTML.JSX.Element
+  postIcon?: astroHTML.JSX.Element
   projectIcon?: astroHTML.JSX.Element
   searchIcon?: astroHTML.JSX.Element
 }
@@ -14,9 +14,9 @@ export default function Header(props: Props): JSX.Element {
 
   const navList: NavItem[] = [
     {
-      title: 'Blogs',
-      href: '/blogs',
-      icon: props.blogIcon
+      title: 'Posts',
+      href: '/posts',
+      icon: props.postIcon
     },
     {
       title: 'Projects',
