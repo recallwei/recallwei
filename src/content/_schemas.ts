@@ -1,7 +1,7 @@
 import { z } from 'astro:content'
 import { SITE_META } from '@/configs'
 
-export const blogSchema = z
+export const postSchema = z
   .object({
     title: z.string(),
     author: z.string().default(SITE_META.author),
@@ -10,4 +10,4 @@ export const blogSchema = z
   })
   .strict()
 
-export type BlogFrontmatter = z.infer<typeof blogSchema>
+export type PostFrontmatter = z.infer<typeof postSchema>
