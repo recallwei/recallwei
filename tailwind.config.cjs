@@ -10,6 +10,7 @@ module.exports = {
         sans: ['Computer Modern Sans', DEFAULT_FONTS]
       },
       textColor: {
+        primary: '#0078D7',
         muted: '#1F2937'
       }
     }

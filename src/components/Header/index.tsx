@@ -25,7 +25,7 @@ export default function Header(props: Props): JSX.Element {
     },
     {
       title: 'Search',
-      href: '/searchIcon',
+      href: '/search',
       icon: props.searchIcon,
       onlyIcon: true
     }
