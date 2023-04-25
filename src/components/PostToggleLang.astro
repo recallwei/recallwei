@@ -1,0 +1,25 @@
+---
+import type { Lang } from '@/types'
+
+export interface Props {
+  lang: Lang
+}
+
+const { lang } = Astro.props
+---
+
+<span class="ml-2 text-xl text-muted">
+  <a
+    href="/posts"
+    class:list={[{ 'text-primary': lang === 'en' }]}
+  >
+    EN
+  </a>
+  /
+  <a
+    href="/posts/zh"
+    class:list={[{ 'text-primary': lang === 'zh' }]}
+  >
+    中文
+  </a>
+</span>

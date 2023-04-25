@@ -1,5 +1,7 @@
 ---
 title: 'Why not use icon font?'
+tags:
+  - 'Icon'
 ---
 
 Why not use icon font?

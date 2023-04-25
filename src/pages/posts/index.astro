@@ -1,9 +1,28 @@
 ---
 import { BaseLayout } from '@/layouts'
+import { PostToggleLang } from '@/components'
+import { getPosts } from '@/utils'
 
 const TITLE_TEXT = 'Posts'
+
+const LANG = 'en'
+
+const posts = await getPosts(LANG)
 ---
 
 <BaseLayout title={TITLE_TEXT}>
-  <div class="mb-4 text-4xl/tight font-bold">{TITLE_TEXT}</div>
+  <div class="mb-4 text-4xl/tight font-bold">
+    {TITLE_TEXT}
+    <PostToggleLang lang={LANG} />
+  </div>
+
+  <ul>
+    {
+      posts.map((item) => (
+        <li>
+          <a href={`/posts/${item.slug}`}>{item.data.title}</a>
+        </li>
+      ))
+    }
+  </ul>
 </BaseLayout>

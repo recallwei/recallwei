@@ -11,7 +11,7 @@ module.exports = {
       },
       textColor: {
         primary: '#2AC2AC',
-        muted: '#1F2937'
+        muted: '#999999'
       },
       backgroundColor: {
         primary: '#2AC2AC'

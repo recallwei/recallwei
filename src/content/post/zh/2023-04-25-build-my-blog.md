@@ -1,5 +1,7 @@
 ---
 title: '构建我的博客'
+tags:
+  - 'Astro'
 ---
 
 ## 建立 Astro 项目
