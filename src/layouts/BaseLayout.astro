@@ -1,8 +1,9 @@
 ---
+import ProfileIcon from '~icons/line-md/account'
 import PostIcon from '~icons/line-md/edit'
 import ProjectIcon from '~icons/line-md/document-code'
 import SearchIcon from '~icons/line-md/search'
-import { NProgressProvider, Header, Footer } from '@/components'
+import { NProgressProvider, Header, Footer, ContentContainer } from '@/components'
 
 import '@/styles/base.css'
 
@@ -11,6 +12,8 @@ export interface Props {
 }
 
 const { title } = Astro.props
+
+const getDocumentTitle = () => `${title} - Bruce Song`
 ---
 
 <!DOCTYPE html>
@@ -42,25 +45,28 @@ const { title } = Astro.props
       name="author"
       content="Bruce Song"
     />
-    <title>{title}</title>
+    <title>{getDocumentTitle()}</title>
   </head>
   <body class="dark: bg-[#F6F6F6] dark:bg-[#36393F]">
     <NProgressProvider client:only>
-      <main class="relative min-h-full px-4 py-20 font-sans dark:text-white">
+      <main class="relative flex min-h-full flex-col px-4 py-20 font-sans dark:text-white">
         <Header client:only>
+          <ProfileIcon slot="profileIcon" />
           <PostIcon slot="postIcon" />
           <ProjectIcon slot="projectIcon" />
           <SearchIcon slot="searchIcon" />
         </Header>
-        <slot />
+        <ContentContainer>
+          <slot />
+        </ContentContainer>
         <Footer />
       </main>
     </NProgressProvider>
   </body>
-</html>
 
-<style scoped>
-  .dark {
-    color-scheme: dark;
-  }
-</style>
+  <style scoped>
+    .dark {
+      color-scheme: dark;
+    }
+  </style>
+</html>

@@ -1,5 +1,5 @@
 ---
-import { PostLayout } from '@/layouts'
+import { BaseLayout } from '@/layouts'
 import { getEntryBySlug } from 'astro:content'
 
 const { slug } = Astro.params
@@ -14,15 +14,13 @@ if (entry === undefined) {
   return Astro.redirect('/404')
 }
 
-console.log(entry)
-
 const { Content } = await entry.render()
 
 const getDate = (id: string) => id.split('/').pop()!.substring(0, 10)
 ---
 
-<PostLayout title={entry.data.title}>
-  <div class="mb-4 text-4xl font-medium tracking-wider">{entry.data.title}</div>
-  <div class="mb-8 font-default text-lg font-medium tracking-wider">{getDate(entry.id)}</div>
+<BaseLayout title={entry.data.title}>
+  <div class="mb-4 text-4xl/tight font-bold">{entry.data.title}</div>
+  <div class="mb-8 font-default text-lg font-medium tracking-wider text-muted dark:text-white">{getDate(entry.id)}</div>
   <Content />
-</PostLayout>
+</BaseLayout>

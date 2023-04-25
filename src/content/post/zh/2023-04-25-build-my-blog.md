@@ -30,6 +30,12 @@ cspell "**"
 
 [Astro 添加 TailwindCSS](https://docs.astro.build/en/guides/integrations-guide/tailwind/)
 
+如何让 VSCode TailwindCSS IntelliSense 支持 Astro？
+
+```json
+{ "tailwindCSS.classAttributes": ["class", "className", "ngClass", "class:list"] }
+```
+
 - 添加黑暗模式
 
 ## 添加 MDX

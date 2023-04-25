@@ -3,8 +3,10 @@ import { BaseLayout } from '@/layouts'
 import { SITE_META } from '@/configs'
 
 const { author } = SITE_META
+
+const TITLE_TEXT = 'Home'
 ---
 
-<BaseLayout title={author}>
-  <div class="h-[1000px]"></div>
+<BaseLayout title={TITLE_TEXT}>
+  <div class="mb-4 text-4xl/tight font-bold">{author}</div>
 </BaseLayout>

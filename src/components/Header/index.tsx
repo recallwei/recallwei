@@ -1,18 +1,24 @@
 import React from 'react'
-import { SITE_META } from '@/configs'
+import clsx from 'clsx'
 import type { NavItem } from '@/types'
 import ThemeSwitch from './ThemeSwitch'
 
 interface Props {
+  profileIcon?: astroHTML.JSX.Element
   postIcon?: astroHTML.JSX.Element
   projectIcon?: astroHTML.JSX.Element
   searchIcon?: astroHTML.JSX.Element
 }
 
 export default function Header(props: Props): JSX.Element {
-  const { author } = SITE_META
+  const HEADER_TEXT = 'Bruce@Stack'
 
   const navList: NavItem[] = [
+    {
+      title: 'Profile',
+      href: '/',
+      icon: props.profileIcon
+    },
     {
       title: 'Posts',
       href: '/posts',
@@ -36,28 +42,34 @@ export default function Header(props: Props): JSX.Element {
       return (
         <li
           key={navItem.title}
-          className="cursor-pointer text-lg text-muted dark:text-white"
+          className="cursor-pointer text-muted dark:text-white"
           onClick={() => (window.location.href = navItem.href)}
         >
           {navItem.icon}
         </li>
       )
     }
+
     return (
       <div key={navItem.title}>
         {/* Mobile UI */}
         <li
-          className="cursor-pointer text-lg text-muted dark:text-white sm:hidden"
+          className="cursor-pointer text-muted dark:text-white sm:hidden"
           onClick={() => (window.location.href = navItem.href)}
         >
           {navItem.icon}
         </li>
         {/* Desktop UI */}
         <li
-          className="hidden cursor-pointer text-lg text-muted dark:text-white sm:block"
+          className={clsx(
+            'hidden cursor-pointer sm:block',
+            window.location.pathname === navItem.href
+              ? 'text-primary underline decoration-wavy underline-offset-4'
+              : 'text-muted dark:text-white'
+          )}
           onClick={() => (window.location.href = navItem.href)}
         >
-          <span>{navItem.title}</span>
+          {navItem.title}
         </li>
       </div>
     )
@@ -75,15 +87,15 @@ export default function Header(props: Props): JSX.Element {
   return (
     <header className="absolute left-0 right-0 top-0 z-30 flex items-center justify-between p-4">
       <div
-        className="cursor-pointer text-xl font-bold"
+        className="mt-1 cursor-pointer text-xl font-bold"
         onClick={() => {
           window.location.href = '/'
         }}
       >
-        {author}
+        {HEADER_TEXT}
       </div>
 
-      <ul className="flex items-center space-x-6">
+      <ul className="flex items-center space-x-4 text-lg sm:space-x-6">
         {navList.map((item) => renderNavItem(item))}
         {renderThemeSwitchIcon()}
       </ul>

@@ -10,8 +10,11 @@ module.exports = {
         sans: ['Computer Modern Sans', DEFAULT_FONTS]
       },
       textColor: {
-        primary: '#0078D7',
+        primary: '#2AC2AC',
         muted: '#1F2937'
+      },
+      backgroundColor: {
+        primary: '#2AC2AC'
       }
     }
   },
