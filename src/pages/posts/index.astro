@@ -20,7 +20,7 @@ const posts = await getPosts(LANG)
     {
       posts.map((item) => (
         <li>
-          <a href={`/posts/${item.slug}`}>{item.data.title}</a>
+          <a href={`/posts/${item.slug.replace('en/', '')}`}>{item.data.title}</a>
         </li>
       ))
     }

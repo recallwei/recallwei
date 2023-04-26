@@ -12,7 +12,7 @@ if (slug === undefined) {
   throw new Error('Slug is required')
 }
 
-const post = await getEntryBySlug('post', 'zh/' + slug)
+const post = await getEntryBySlug('post', 'en/' + slug)
 
 if (post === undefined) {
   return Astro.redirect('/404')
@@ -51,10 +51,17 @@ const lastUpdatedTime = getLastUpdatedTime(post.id)
     <div class="flex w-1/2 items-center justify-end">
       {
         lastUpdatedTime !== 'Invalid Date' && (
-          <span>
-            {lastUpdatedText}
-            {lastUpdatedTime}
-          </span>
+          <>
+            <HistoryIcon
+              height={15}
+              width={15}
+              class=""
+            />
+            <span>
+              {lastUpdatedText}
+              {lastUpdatedTime}
+            </span>
+          </>
         )
       }
     </div>
