@@ -1,6 +1,9 @@
 ---
-import { BaseLayout } from '@/layouts'
+import EditIcon from '~icons/material-symbols/edit-square-outline-rounded'
 import { getEntryBySlug } from 'astro:content'
+import { BaseLayout } from '@/layouts'
+import { THEME_META } from '@/configs'
+import { getLastUpdatedTime } from '@/utils'
 
 const { slug } = Astro.params
 
@@ -8,19 +11,48 @@ if (slug === undefined) {
   throw new Error('Slug is required')
 }
 
-const entry = await getEntryBySlug('post', 'zh/' + slug)
+const post = await getEntryBySlug('post', 'zh/' + slug)
 
-if (entry === undefined) {
+if (post === undefined) {
   return Astro.redirect('/404')
 }
 
-const { Content } = await entry.render()
+const { Content } = await post.render()
 
 const getDate = (id: string) => id.split('/').pop()!.substring(0, 10)
+
+const editURL = THEME_META.editLink.pattern.replace(/:path/g, `/${post.id}`)
+const editLink = THEME_META.editLink.text
+const lastUpdatedText = THEME_META.lastUpdatedText
+const lastUpdatedTime = getLastUpdatedTime(post.id)
 ---
 
-<BaseLayout title={entry.data.title}>
-  <div class="mb-4 text-4xl/tight font-bold">{entry.data.title}</div>
-  <div class="mb-8 font-default text-lg font-medium tracking-wider text-muted dark:text-white">{getDate(entry.id)}</div>
+<BaseLayout title={post.data.title}>
+  <div class="mb-4 text-4xl/tight font-bold">{post.data.title}</div>
+  <div class="mb-8 font-default text-lg font-medium tracking-wider text-muted dark:text-white">{getDate(post.id)}</div>
   <Content />
+  <div class="mt-4 flex">
+    <a
+      href={editURL}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="flex w-1/2 space-x-1 text-primary hover:underline"
+    >
+      <EditIcon
+        height={15}
+        class="mt-1"
+      />
+      {editLink}
+    </a>
+    <div class="flex w-1/2 items-center justify-end">
+      {
+        lastUpdatedTime !== 'Invalid Date' && (
+          <span>
+            {lastUpdatedText}
+            {lastUpdatedTime}
+          </span>
+        )
+      }
+    </div>
+  </div>
 </BaseLayout>

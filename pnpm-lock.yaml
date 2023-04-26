@@ -16,12 +16,21 @@ dependencies:
   '@astrojs/vercel':
     specifier: ^3.2.4
     version: 3.2.4(astro@2.3.0)(react@18.2.0)
+  '@types/cross-spawn':
+    specifier: ^6.0.2
+    version: 6.0.2
   astro:
     specifier: ^2.3.0
     version: 2.3.0
   clsx:
     specifier: ^1.2.1
     version: 1.2.1
+  cross-spawn:
+    specifier: ^7.0.3
+    version: 7.0.3
+  dayjs:
+    specifier: ^1.11.7
+    version: 1.11.7
   nprogress:
     specifier: ^0.2.0
     version: 0.2.0
@@ -45,6 +54,9 @@ devDependencies:
   '@iconify-json/line-md':
     specifier: ^1.1.24
     version: 1.1.24
+  '@iconify-json/material-symbols':
+    specifier: ^1.1.40
+    version: 1.1.40
   '@types/nprogress':
     specifier: ^0.2.0
     version: 0.2.0
@@ -700,6 +712,12 @@ packages:
       '@iconify/types': 2.0.0
     dev: true
 
+  /@iconify-json/material-symbols@1.1.40:
+    resolution: {integrity: sha512-4EvCClUKi/U4HORtiz7yA37e9OKECpMnzPZZPZUMmOhXlb+atr6IikdOqTMA7bqmQtKmKoVTWE9DHbk+66EEHg==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
   /@iconify/types@2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
     dev: true
@@ -908,6 +926,12 @@ packages:
       '@babel/types': 7.21.4
     dev: false
 
+  /@types/cross-spawn@6.0.2:
+    resolution: {integrity: sha512-KuwNhp3eza+Rhu8IFI5HUXRP0LIhqH5cAjubUvGXXthh4YYBuP2ntwEX+Cz8GJoZUHlKo247wPWOfA9LYEq4cw==}
+    dependencies:
+      '@types/node': 18.16.1
+    dev: false
+
   /@types/debug@4.1.7:
     resolution: {integrity: sha512-9AonUzyTjXXhEOa0DnqpzZi6VHlqKMswga9EXjpXnnqxwLtdvPPtlO8evrI5D9S6asFRCQ6v+wpiUKbw+vKqyg==}
     dependencies:
@@ -956,6 +980,10 @@ packages:
     resolution: {integrity: sha512-3TGCfOcy8R8mMQ4CNSNOe3PG66HttvjcLzCoOpvXvDtfWOTi+uT/rxeOKm/qEwbM4SNe1O/PjdiBK2YcTjU4OQ==}
     dependencies:
       '@types/unist': 2.0.6
+    dev: false
+
+  /@types/node@18.16.1:
+    resolution: {integrity: sha512-DZxSZWXxFfOlx7k7Rv4LAyiMroaxa3Ly/7OOzZO8cBNho0YzAi4qlbrx8W27JGqG57IgR/6J7r+nOJWw6kcvZA==}
     dev: false
 
   /@types/nprogress@0.2.0:
@@ -1496,6 +1524,10 @@ packages:
 
   /csstype@3.1.2:
     resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==}
+
+  /dayjs@1.11.7:
+    resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==}
+    dev: false
 
   /debug@4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
