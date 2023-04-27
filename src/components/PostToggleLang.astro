@@ -6,20 +6,23 @@ export interface Props {
 }
 
 const { lang } = Astro.props
+
+const EN_TEXT = 'EN'
+const ZH_TEXT = '中文'
 ---
 
-<span class="ml-2 text-xl text-muted">
+<span class="ml-2 inline-flex space-x-1 text-xl text-muted">
   <a
     href="/posts"
-    class:list={[{ 'text-primary': lang === 'en' }]}
+    class:list={[{ 'text-primary': lang === 'en' }, 'hover:underline']}
   >
-    EN
+    {EN_TEXT}
   </a>
-  /
+  <span>/</span>
   <a
     href="/posts/zh"
-    class:list={[{ 'text-primary': lang === 'zh' }]}
+    class:list={[{ 'text-primary': lang === 'zh' }, 'hover:underline']}
   >
-    中文
+    {ZH_TEXT}
   </a>
 </span>

@@ -28,3 +28,5 @@ export const formatDate = (date: string | Date, type: 0 | 1 | 2 = 0) => {
       return dayjs(date).format('YYYY/MM')
   }
 }
+
+export const getDateByPostId = (id: string) => id.split('/').pop()!.substring(0, 10)

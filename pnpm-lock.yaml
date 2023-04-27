@@ -16,6 +16,9 @@ dependencies:
   '@astrojs/vercel':
     specifier: ^3.2.4
     version: 3.2.4(astro@2.3.0)(react@18.2.0)
+  '@iconify-json/fluent':
+    specifier: ^1.1.19
+    version: 1.1.19
   '@types/cross-spawn':
     specifier: ^6.0.2
     version: 6.0.2
@@ -54,9 +57,6 @@ devDependencies:
   '@iconify-json/line-md':
     specifier: ^1.1.24
     version: 1.1.24
-  '@iconify-json/material-symbols':
-    specifier: ^1.1.40
-    version: 1.1.40
   '@types/nprogress':
     specifier: ^0.2.0
     version: 0.2.0
@@ -706,21 +706,20 @@ packages:
     dev: false
     optional: true
 
+  /@iconify-json/fluent@1.1.19:
+    resolution: {integrity: sha512-kjJ7EF2mQNJGIHwENpL3kADekSRXmEps/t1h3Ff2iWujWvWthFcYtBgYvCaRrcL/fz7GVBfXXMYW79vh+11rgw==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: false
+
   /@iconify-json/line-md@1.1.24:
     resolution: {integrity: sha512-vHQnRZ3ZVDnrFoj8BMU0iTYR9404TrePP4UhCjkfOqkH4gibFoyM6JGO5OiIHv5m/GQvu4nteTICjklsRFUKpA==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
 
-  /@iconify-json/material-symbols@1.1.40:
-    resolution: {integrity: sha512-4EvCClUKi/U4HORtiz7yA37e9OKECpMnzPZZPZUMmOhXlb+atr6IikdOqTMA7bqmQtKmKoVTWE9DHbk+66EEHg==}
-    dependencies:
-      '@iconify/types': 2.0.0
-    dev: true
-
   /@iconify/types@2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
-    dev: true
 
   /@iconify/utils@2.1.5:
     resolution: {integrity: sha512-6MvDI+I6QMvXn5rK9KQGdpEE4mmLTcuQdLZEiX5N+uZB+vc4Yw9K1OtnOgkl8mp4d9X0UrILREyZgF1NUwUt+Q==}

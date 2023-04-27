@@ -1,0 +1,59 @@
+---
+import EditIcon from '~icons/fluent/notepad-edit-16-filled'
+import HistoryIcon from '~icons/fluent/history-16-filled'
+import { getEntryBySlug } from 'astro:content'
+import { BaseLayout } from '@/layouts'
+import { THEME_META } from '@/configs'
+import { getLastUpdatedTime, getDateByPostId } from '@/utils'
+
+const { slug } = Astro.params
+
+const { entryPrefix } = Astro.props
+
+const post = await getEntryBySlug('post', entryPrefix + slug)
+if (post === undefined) {
+  return Astro.redirect('/404')
+}
+const { Content } = await post.render()
+
+const editURL = THEME_META.editLink.pattern.replace(/:path/g, `/${post.id}`)
+const editLink = THEME_META.editLink.text
+const lastUpdatedText = THEME_META.lastUpdatedText
+const lastUpdatedTime = getLastUpdatedTime(post.id)
+---
+
+<BaseLayout title={post.data.title}>
+  <div class="mb-4 text-4xl/tight font-bold">{post.data.title}</div>
+  <div class="mb-8 font-default text-lg font-medium tracking-wider text-muted dark:text-white">
+    {getDateByPostId(post.id)}
+  </div>
+
+  <Content />
+
+  <div class="mt-8 flex flex-wrap items-center space-y-2 sm:space-y-0">
+    <div class="w-full sm:w-1/2">
+      <a
+        href={editURL}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex w-fit space-x-1 text-primary hover:underline"
+      >
+        <EditIcon class="mt-[1px]" />
+        <span>{editLink}</span>
+      </a>
+    </div>
+    <div class="flex w-full items-center justify-start space-x-1 sm:w-1/2 sm:justify-end">
+      {
+        lastUpdatedTime !== 'Invalid Date' && (
+          <>
+            <HistoryIcon />
+            <span>
+              {lastUpdatedText}
+              {lastUpdatedTime}
+            </span>
+          </>
+        )
+      }
+    </div>
+  </div>
+</BaseLayout>

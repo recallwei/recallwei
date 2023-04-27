@@ -1,5 +1,6 @@
 import React from 'react'
 import clsx from 'clsx'
+import { SITE_META } from '@/configs'
 import type { NavItem } from '@/types'
 import ThemeSwitch from './ThemeSwitch'
 
@@ -11,8 +12,6 @@ interface Props {
 }
 
 export default function Header(props: Props): JSX.Element {
-  const HEADER_TEXT = 'Bruce@Stack'
-
   const navList: NavItem[] = [
     {
       title: 'Profile',
@@ -92,7 +91,7 @@ export default function Header(props: Props): JSX.Element {
           window.location.href = '/'
         }}
       >
-        {HEADER_TEXT}
+        {SITE_META.app.name}
       </div>
 
       <ul className="flex items-center space-x-4 text-lg sm:space-x-6">
