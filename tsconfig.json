@@ -12,5 +12,6 @@
       "@/*": ["src/*"]
     },
     "types": ["unplugin-icons/types/astro"]
-  }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.astro", "astro.config.ts"]
 }
