@@ -1,5 +1,5 @@
-import React from 'react'
 import type { SVGProps } from 'react'
+import React from 'react'
 
 export default function Moon(props: SVGProps<SVGSVGElement>): JSX.Element {
   return (

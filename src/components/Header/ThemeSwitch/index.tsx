@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { SunIcon, MoonIcon } from '@/components'
+
+import { MoonIcon, SunIcon } from '@/components'
 
 export default function ThemeSwitch(): JSX.Element {
   const [theme, setTheme] = useState<'light' | 'dark'>('light')
