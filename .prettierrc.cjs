@@ -24,5 +24,9 @@ module.exports = {
       }
     }
   ],
-  plugins: [require.resolve('prettier-plugin-astro'), require.resolve('prettier-plugin-tailwindcss')]
+  plugins: [
+    require.resolve('prettier-plugin-astro')
+    // NOTE: Using ESLint to sort TailwindCSS class name
+    // require.resolve('prettier-plugin-tailwindcss')
+  ]
 }
