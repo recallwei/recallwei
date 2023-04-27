@@ -1,6 +1,6 @@
 {
   "line-length": {
-    "line_length": 120,
+    "line_length": 250,
     "code_block_line_length": 120
   },
   "no-bare-urls": false,
