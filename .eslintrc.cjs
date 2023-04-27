@@ -76,6 +76,7 @@ module.exports = {
             officialSorting: true
           }
         ],
+        'tailwindcss/no-custom-classname': 'off', // TODO: Use custom TailwindCSS class Name
         'simple-import-sort/imports': 'error',
         'simple-import-sort/exports': 'error',
         '@typescript-eslint/no-unused-vars': 'off',
@@ -115,7 +116,7 @@ module.exports = {
         'import/no-unresolved': [
           'error',
           {
-            ignore: ['@/*']
+            ignore: ['@/*', 'astro:content', '~icons/*']
           }
         ],
         'react/jsx-filename-extension': [1, { extensions: ['.astro'] }],
@@ -131,11 +132,13 @@ module.exports = {
             officialSorting: true
           }
         ],
+        'tailwindcss/no-custom-classname': 'off', // TODO: Use custom TailwindCSS class Name
         'simple-import-sort/imports': 'error',
         'simple-import-sort/exports': 'error',
         '@typescript-eslint/no-unused-vars': 'off',
         'unused-imports/no-unused-imports': 'error',
-        'unused-imports/no-unused-vars': ['error', { argsIgnorePattern: '^_' }]
+        'unused-imports/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+        'consistent-return': 'off' // TODO: How to return on the top level of Astro component
       },
       globals: {
         Astro: 'readonly'
