@@ -1,4 +1,5 @@
 import { z } from 'astro:content'
+
 import { SITE_META } from '@/configs'
 
 export const postSchema = z

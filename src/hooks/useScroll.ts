@@ -1,10 +1,16 @@
-import { RefObject, useEffect, useState } from 'react'
+import type { RefObject } from 'react'
+import { useState } from 'react'
 
 type PositionState = {
   x: number
   y: number
 }
 
-const useScroll = (ref: RefObject<HTMLElement>): PositionState => {}
+// TODO: To enhance Header component
+const useScroll = (_ref: RefObject<HTMLElement>): PositionState => {
+  const [position, setPosition] = useState({ x: 0, y: 0 })
+
+  return position
+}
 
 export default useScroll

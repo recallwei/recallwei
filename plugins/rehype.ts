@@ -1,5 +1,5 @@
-import type { RehypePlugins } from 'astro'
 import { rehypeHeadingIds } from '@astrojs/markdown-remark'
+import type { RehypePlugins } from 'astro'
 import rehypeExternalLinks from 'rehype-external-links'
 
 export const rehypePlugins: RehypePlugins = [
