@@ -1,10 +1,11 @@
-import { defineConfig } from 'astro/config'
-import vercel from '@astrojs/vercel/serverless'
+import mdx from '@astrojs/mdx'
 import react from '@astrojs/react'
 import tailwind from '@astrojs/tailwind'
-import mdx from '@astrojs/mdx'
+import vercel from '@astrojs/vercel/serverless'
+import { defineConfig } from 'astro/config'
 import Icons from 'unplugin-icons/vite'
-import { remarkPlugins, rehypePlugins } from './plugins'
+
+import { rehypePlugins, remarkPlugins } from './plugins'
 
 export default defineConfig({
   site: 'https://bruceworld.top',
