@@ -68,7 +68,7 @@ export default function Header(props: Props): JSX.Element {
         <li
           className={clsx(
             'hidden cursor-pointer sm:block',
-            window.location.pathname === navItem.href
+            window.location.pathname === navItem.href || `/${window.location.pathname.split('/')[1]}` === navItem.href
               ? 'text-primary underline decoration-wavy underline-offset-4'
               : 'text-muted dark:text-white'
           )}
@@ -99,7 +99,6 @@ export default function Header(props: Props): JSX.Element {
       >
         {SITE_META.app.name}
       </div>
-
       <ul className="flex items-center space-x-4 text-lg sm:space-x-6">
         {navList.map((item) => renderNavItem(item))}
         {renderThemeSwitchIcon()}
