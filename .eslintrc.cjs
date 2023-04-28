@@ -91,8 +91,8 @@ module.exports = {
       parser: 'astro-eslint-parser',
       parserOptions: {
         parser: '@typescript-eslint/parser',
-        project: './tsconfig.json',
-        extraFileExtensions: ['.astro']
+        extraFileExtensions: ['.astro'],
+        project: './tsconfig.json'
       },
       rules: {
         'prettier/prettier': [

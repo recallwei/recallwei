@@ -22,9 +22,9 @@ export default function ThemeSwitch(): JSX.Element {
       localStorage.theme === 'dark' ||
       (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
     ) {
-      selectDarkTheme()
+      setTheme('dark')
     } else {
-      selectLightTheme()
+      setTheme('light')
     }
   }, [])
 
