@@ -7,7 +7,7 @@ import { fileURLToPath } from 'url'
 const FILENAME = fileURLToPath(import.meta.url)
 const DIRNAME = dirname(FILENAME)
 const FILE_DEV_DIR = '../content/post'
-const FILE_PROD_DIR = '../../../src/content/post'
+const FILE_PROD_DIR = '../../src/content/post'
 
 export const getLastUpdatedTime = (id: string) => {
   const fileDev = resolve(DIRNAME, FILE_DEV_DIR, id)
