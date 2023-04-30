@@ -1,8 +1,9 @@
 import clsx from 'clsx'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
 import { MoonIcon, SunIcon } from '@/components'
 import { SITE_META } from '@/configs'
+import { useTheme } from '@/hooks'
 import type { NavItem } from '@/types'
 
 interface Props {
@@ -37,30 +38,7 @@ export default function Header(props: Props): JSX.Element {
     }
   ]
 
-  const [theme, setTheme] = useState<'light' | 'dark'>('light')
-
-  const selectDarkTheme = () => {
-    setTheme('dark')
-    document.documentElement.classList.add('dark')
-    localStorage.setItem('theme', 'dark')
-  }
-
-  const selectLightTheme = () => {
-    setTheme('light')
-    document.documentElement.classList.remove('dark')
-    localStorage.setItem('theme', 'light')
-  }
-
-  useEffect(() => {
-    if (
-      localStorage.theme === 'dark' ||
-      (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-    ) {
-      setTheme('dark')
-    } else {
-      setTheme('light')
-    }
-  }, [])
+  const { theme, selectDarkTheme, selectLightTheme } = useTheme()
 
   const navTo = (href: string) => {
     window.location.href = href
