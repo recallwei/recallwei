@@ -1,10 +1,9 @@
 import clsx from 'clsx'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
+import { MoonIcon, SunIcon } from '@/components'
 import { SITE_META } from '@/configs'
 import type { NavItem } from '@/types'
-
-import ThemeSwitch from './ThemeSwitch'
 
 interface Props {
   profileIcon?: astroHTML.JSX.Element
@@ -37,6 +36,31 @@ export default function Header(props: Props): JSX.Element {
       onlyIcon: true
     }
   ]
+
+  const [theme, setTheme] = useState<'light' | 'dark'>('light')
+
+  const selectDarkTheme = () => {
+    setTheme('dark')
+    document.documentElement.classList.add('dark')
+    localStorage.setItem('theme', 'dark')
+  }
+
+  const selectLightTheme = () => {
+    setTheme('light')
+    document.documentElement.classList.remove('dark')
+    localStorage.setItem('theme', 'light')
+  }
+
+  useEffect(() => {
+    if (
+      localStorage.theme === 'dark' ||
+      (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      setTheme('dark')
+    } else {
+      setTheme('light')
+    }
+  }, [])
 
   const navTo = (href: string) => {
     window.location.href = href
@@ -85,20 +109,34 @@ export default function Header(props: Props): JSX.Element {
       key="Theme"
       className="text-muted cursor-pointer dark:text-white"
     >
-      <ThemeSwitch />
+      {theme === 'light' ? (
+        <div
+          className="flex items-center justify-center"
+          onClick={() => selectDarkTheme()}
+        >
+          <SunIcon fontSize={21.6} />
+        </div>
+      ) : (
+        <div
+          className="flex items-center justify-center"
+          onClick={() => selectLightTheme()}
+        >
+          <MoonIcon fontSize={21.6} />
+        </div>
+      )}
     </li>
   )
 
   return (
-    <header className="absolute inset-x-0 top-0 z-30 flex items-center justify-between p-4">
-      <div
-        className="mt-1 cursor-pointer text-xl font-bold"
+    <header className="absolute inset-x-0 top-0 z-30 flex h-20 items-center justify-between p-4">
+      <img
+        className="h-10 w-36 cursor-pointer"
         onClick={() => {
           window.location.href = '/'
         }}
-      >
-        {SITE_META.app.name}
-      </div>
+        src={theme === 'light' ? '/images/logo.png' : '/images/logo-dark.png'}
+        alt={SITE_META.author}
+      />
       <ul className="flex items-center space-x-4 text-lg sm:space-x-6">
         {navList.map((item) => renderNavItem(item))}
         {renderThemeSwitchIcon()}
