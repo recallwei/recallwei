@@ -1,26 +1,18 @@
 ---
-import { getEntryBySlug } from 'astro:content'
+import type { CollectionEntry } from 'astro:content'
 
 import { THEME_META } from '@/configs'
 import { BaseLayout } from '@/layouts'
-import type { Lang } from '@/types'
 import { getDateByPostId, getLastUpdatedTime } from '@/utils'
 import HistoryIcon from '~icons/fluent/history-16-filled'
 import EditIcon from '~icons/fluent/notepad-edit-16-filled'
 
 export interface Props {
-  lang: Lang
+  post: CollectionEntry<'post'>
 }
 
-const { slug } = Astro.params
+const { post } = Astro.props
 
-const { lang: entryPrefix } = Astro.props
-
-const post = await getEntryBySlug('post', entryPrefix === 'en' ? (slug as string) : `${entryPrefix}/${slug}`)
-
-if (!post) {
-  return Astro.redirect('/404')
-}
 const { Content } = await post.render()
 
 const editURL = THEME_META.editLink.pattern.replace(/:path/g, `/${post.id}`)

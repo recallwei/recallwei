@@ -1,5 +1,19 @@
 ---
+import { getEntryBySlug } from 'astro:content'
+
 import { Post } from '@/layouts'
+
+const { slug } = Astro.params
+
+if (!slug) {
+  return Astro.redirect('/404')
+}
+
+const post = await getEntryBySlug('post', `zh/${slug}`)
+
+if (!post) {
+  return Astro.redirect('/404')
+}
 ---
 
-<Post lang="zh" />
+<Post post={post} />
