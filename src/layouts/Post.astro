@@ -16,7 +16,7 @@ const { slug } = Astro.params
 
 const { lang: entryPrefix } = Astro.props
 
-const post = await getEntryBySlug('post', entryPrefix === 'en' ? (slug as string) : `${entryPrefix}/${slug}1`)
+const post = await getEntryBySlug('post', entryPrefix === 'en' ? (slug as string) : `${entryPrefix}/${slug}`)
 
 if (!post) {
   return Astro.redirect('/404')
