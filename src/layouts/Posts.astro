@@ -1,0 +1,32 @@
+---
+import { PostToggleLang } from '@/components'
+import { BaseLayout } from '@/layouts'
+import type { Lang } from '@/types'
+import { getPosts } from '@/utils'
+
+export interface Props {
+  title: string
+  lang: Lang
+}
+
+const { title, lang } = Astro.props
+
+const posts = await getPosts(lang)
+---
+
+<BaseLayout title={title}>
+  <div class="mb-4 text-4xl/tight font-bold">
+    {title}
+    <PostToggleLang lang={lang} />
+  </div>
+
+  <ul>
+    {
+      posts.map((item) => (
+        <li>
+          <a href={`/posts/${item.slug}`}>{item.data.title}</a>
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>

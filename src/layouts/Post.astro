@@ -7,6 +7,10 @@ import { getDateByPostId, getLastUpdatedTime } from '@/utils'
 import HistoryIcon from '~icons/fluent/history-16-filled'
 import EditIcon from '~icons/fluent/notepad-edit-16-filled'
 
+export interface Props {
+  entryPrefix: string
+}
+
 const { slug } = Astro.params
 
 const { entryPrefix } = Astro.props
