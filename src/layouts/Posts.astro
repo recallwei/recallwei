@@ -2,7 +2,7 @@
 import { PostToggleLang } from '@/components'
 import { BaseLayout } from '@/layouts'
 import type { Lang } from '@/types'
-import { getPosts } from '@/utils'
+import { formatDate, getDateByPostId, getPosts } from '@/utils'
 
 export interface Props {
   title: string
@@ -12,6 +12,8 @@ export interface Props {
 const { title, lang } = Astro.props
 
 const posts = await getPosts(lang)
+
+const getPostDate = (id: string) => formatDate(getDateByPostId(id), 1)
 ---
 
 <BaseLayout title={title}>
@@ -20,11 +22,17 @@ const posts = await getPosts(lang)
     <PostToggleLang lang={lang} />
   </div>
 
-  <ul>
+  <ul class="space-y-2">
     {
       posts.map((item) => (
-        <li>
-          <a href={`/posts/${item.slug}`}>{item.data.title}</a>
+        <li class="flex items-center space-x-4">
+          <span class="text-muted">{getPostDate(item.id)}</span>
+          <a
+            href={`/posts/${item.slug}`}
+            class="underline-offset-4 hover:underline"
+          >
+            {item.data.title}
+          </a>
         </li>
       ))
     }
