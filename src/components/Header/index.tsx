@@ -106,15 +106,24 @@ export default function Header(props: Props): JSX.Element {
   )
 
   return (
-    <header className="absolute inset-x-0 top-0 z-30 flex h-20 items-center justify-between p-4">
-      <img
-        className="h-10 w-36 cursor-pointer"
+    <header className="absolute inset-x-0 top-0 z-30 flex h-20 select-none items-center justify-between p-4">
+      <div
+        className="flex cursor-pointer items-center space-x-2"
         onClick={() => {
           window.location.href = '/'
         }}
-        src={theme === 'light' ? '/images/logo.png' : '/images/logo-dark.png'}
-        alt={SITE_META.author}
-      />
+      >
+        <img
+          className="h-8"
+          src="/images/logo.png"
+          alt={SITE_META.author}
+          loading="eager"
+        />
+        <span className="font-default hover:text-primary animate-pulse text-lg transition-all active:opacity-75">
+          {SITE_META.author}
+        </span>
+      </div>
+
       <ul className="flex items-center space-x-4 text-lg sm:space-x-6">
         {navList.map((item) => renderNavItem(item))}
         {renderThemeSwitchIcon()}
