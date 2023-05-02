@@ -1,12 +1,43 @@
 ---
+import { ContentTitle, Motto } from '@/components'
 import { SITE_META } from '@/configs'
 import { BaseLayout } from '@/layouts'
 
-const { author } = SITE_META
+const { author, recentTargets } = SITE_META
 
 const TITLE_TEXT = 'Home'
+const CONTENT_TITLE_TEXT = 'About Me'
 ---
 
-<BaseLayout title={TITLE_TEXT}>
-  <div class="mb-4 text-4xl/tight font-bold">{author}</div>
+<BaseLayout
+  title={TITLE_TEXT}
+  contentTitle={CONTENT_TITLE_TEXT}
+>
+  <ul class="space-y-2">
+    <li>👋 Hi, I'm {author}.</li>
+    <li>📖 I'm interested in reading different books.</li>
+    <li>🌱 I'm currently learning Vue and TypeScript.</li>
+    <li>💞️ I'm looking to collaborate on a React/Vue project.</li>
+    <li>📫 You can contact me with my email recall4056@gmail.com.</li>
+    <li>💪 JavaScript | TypeScript | React | Vue | Next.js | Node.js | HTML | CSS.</li>
+    <li>🚀 I'm recently built a web app based on Vue 3, TypeScript and Naive UI.</li>
+  </ul>
+
+  <ContentTitle
+    class="mt-12"
+    fontSize="small"
+  >
+    Motto
+  </ContentTitle>
+  <Motto client:only="react" />
+
+  <ContentTitle
+    class="mt-12"
+    fontSize="small"
+  >
+    Recent Targets
+  </ContentTitle>
+  <ul>
+    {recentTargets.map((item) => <li>{item}</li>)}
+  </ul>
 </BaseLayout>

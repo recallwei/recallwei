@@ -1,5 +1,5 @@
 ---
-import { PostToggleLang } from '@/components'
+import { ContentTitle, PostToggleLang } from '@/components'
 import { BaseLayout } from '@/layouts'
 import type { Lang } from '@/types'
 import { formatDate, getDateByPostId, getPosts } from '@/utils'
@@ -17,10 +17,10 @@ const getPostDate = (id: string) => formatDate(getDateByPostId(id), 'MMM D')
 ---
 
 <BaseLayout title={title}>
-  <div class="mb-4 text-4xl/tight font-bold">
-    {title}
+  <ContentTitle>
+    <span>{title}</span>
     <PostToggleLang lang={lang} />
-  </div>
+  </ContentTitle>
 
   <ul class="space-y-2">
     {

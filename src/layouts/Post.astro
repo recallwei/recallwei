@@ -20,8 +20,10 @@ const editLink = THEME_META.editLink.text
 const lastUpdatedTime = getLastUpdatedTime(post.id)
 ---
 
-<BaseLayout title={post.data.title}>
-  <div class="mb-4 text-4xl/tight font-bold">{post.data.title}</div>
+<BaseLayout
+  title={post.data.title}
+  contentTitle={post.data.title}
+>
   <div class="font-default text-muted mb-8 text-lg font-medium tracking-wider dark:text-white">
     {getDateByPostId(post.id)}
   </div>

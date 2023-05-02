@@ -1,7 +1,7 @@
 ---
 import '@/styles/base.css'
 
-import { ContentContainer, Footer, Header, NProgressProvider } from '@/components'
+import { ContentContainer, ContentTitle, Footer, Header, NProgressProvider } from '@/components'
 import ProfileIcon from '~icons/line-md/account'
 import ProjectIcon from '~icons/line-md/document-code'
 import PostIcon from '~icons/line-md/edit'
@@ -9,9 +9,10 @@ import SearchIcon from '~icons/line-md/search'
 
 export interface Props {
   title: string
+  contentTitle?: string
 }
 
-const { title } = Astro.props
+const { title, contentTitle } = Astro.props
 
 const getDocumentTitle = () => `${title} - Bruce Song`
 ---
@@ -47,6 +48,7 @@ const getDocumentTitle = () => `${title} - Bruce Song`
     />
     <title>{getDocumentTitle()}</title>
   </head>
+
   <script>
     ;(function () {
       if (
@@ -61,6 +63,7 @@ const getDocumentTitle = () => `${title} - Bruce Song`
       }
     })()
   </script>
+
   <body class="dark: bg-[#F6F6F6] dark:bg-[#36393F]">
     <NProgressProvider client:only="react">
       <main class="relative flex min-h-full flex-col px-4 py-20 font-sans dark:text-white">
@@ -71,6 +74,7 @@ const getDocumentTitle = () => `${title} - Bruce Song`
           <SearchIcon slot="searchIcon" />
         </Header>
         <ContentContainer>
+          {contentTitle && <ContentTitle>{contentTitle}</ContentTitle>}
           <slot />
         </ContentContainer>
         <Footer />

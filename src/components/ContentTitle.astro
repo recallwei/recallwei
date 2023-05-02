@@ -1,0 +1,24 @@
+---
+export interface Props {
+  class?: string
+  fontSize?: 'base' | 'small' | 'large'
+}
+
+const { class: className, fontSize } = Astro.props
+
+const getFontSizeClassName = () => {
+  switch (fontSize) {
+    case 'small':
+      return 'text-3xl/tight'
+    case 'large':
+      return 'text-5xl/tight'
+    case 'base':
+    default:
+      return 'text-4xl/tight'
+  }
+}
+---
+
+<div class:list={['mb-4 font-bold', className && className, getFontSizeClassName()]}>
+  <slot />
+</div>
