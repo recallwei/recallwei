@@ -1,17 +1,20 @@
 import React from 'react'
 
 import { SITE_META } from '@/configs'
+import { navigateTo } from '@/utils'
 
 export default function Motto(): JSX.Element {
   const { motto } = SITE_META
 
   // TODO: How to use utils function
   const handleClick = () => {
-    const w: Window | null = window.open('about:blank')
-    if (w) {
-      w.opener = null
-      w.location.href = motto.link
-    }
+    navigateTo(motto.link, 'outer')
+
+    // const w: Window | null = window.open('about:blank')
+    // if (w) {
+    //   w.opener = null
+    //   w.location.href = motto.link
+    // }
   }
 
   return (
