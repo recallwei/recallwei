@@ -13,7 +13,7 @@ const { title, lang } = Astro.props
 
 const posts = await getPosts(lang)
 
-const getPostDate = (id: string) => formatDate(getDateByPostId(id), 1)
+const getPostDate = (id: string) => formatDate(getDateByPostId(id), 'MMM D')
 ---
 
 <BaseLayout title={title}>

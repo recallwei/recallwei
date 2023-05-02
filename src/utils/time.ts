@@ -2,6 +2,8 @@ import { sync } from 'cross-spawn'
 import dayjs from 'dayjs'
 import { resolve } from 'path'
 
+import type { TimeFormatter } from '@/types'
+
 export const getLastUpdatedTime = (id: string) => {
   const file = resolve('src/content/post', id)
   const child = sync('git', ['log', '-1', '--pretty="%ci"', file])
@@ -9,17 +11,6 @@ export const getLastUpdatedTime = (id: string) => {
   return new Date(output).toLocaleString()
 }
 
-export const formatDate = (date: string | Date, type: 0 | 1 | 2 = 0): string => {
-  switch (type) {
-    case 0:
-      return dayjs(date).format('MMM D, YYYY')
-    case 1:
-      return dayjs(date).format('MMM D')
-    case 2:
-      return dayjs(date).format('YYYY/MM')
-    default:
-      return dayjs(date).format('YYYY/MM/DD')
-  }
-}
+export const formatDate = (date: string | Date, formatter: TimeFormatter): string => dayjs(date).format(formatter)
 
 export const getDateByPostId = (id: string) => id.split('/').pop()!.substring(0, 10)
