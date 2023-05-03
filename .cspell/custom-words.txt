@@ -1,6 +1,7 @@
 astro
 astrojs
 beforeunload
+blockquote
 bolditalic
 clsx
 commitlint

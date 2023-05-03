@@ -1,3 +1,2 @@
-export * from './browser'
-export * from './content'
-export * from './time'
+export * from './browser.client'
+export * from './time.client'
