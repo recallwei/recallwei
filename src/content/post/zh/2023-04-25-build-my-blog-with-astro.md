@@ -1,5 +1,5 @@
 ---
-title: '构建我的博客'
+title: '使用 Astro 构建博客'
 tags:
   - 'Astro'
 ---

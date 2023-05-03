@@ -1,10 +1,12 @@
 astro
 astrojs
+autocrlf
 beforeunload
 blockquote
 bolditalic
 clsx
 commitlint
+esbuild
 fastify
 iconify
 keyframes
@@ -17,7 +19,9 @@ Noto
 nprogress
 rehype
 Roboto
+safecrlf
 shiki
 tailwindcss
 tsconfigs
 unplugin
+worktree

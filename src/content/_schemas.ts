@@ -7,6 +7,7 @@ export const postSchema = z
     title: z.string(),
     author: z.string().default(SITE_META.author),
     tags: z.array(z.string()).optional(),
+    top: z.number().optional(),
     draft: z.boolean().default(false)
   })
   .strict()

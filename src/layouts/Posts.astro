@@ -26,8 +26,8 @@ const getPostDate = (id: string) => formatDate(getDateByPostId(id), 'MMM D')
   <ul class="space-y-2">
     {
       posts.map((item) => (
-        <li class="flex items-center space-x-4">
-          <span class="text-muted">{getPostDate(item.id)}</span>
+        <li class="flex items-center space-x-1">
+          <span class="text-muted w-16 text-base">{getPostDate(item.id)}</span>
           <a
             href={`/posts/${item.slug}`}
             class="underline-offset-4 hover:underline"
