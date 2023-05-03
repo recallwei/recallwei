@@ -5,10 +5,12 @@ import { MoonIcon, SunIcon } from '@/components'
 import { SITE_META } from '@/configs'
 import { useTheme } from '@/hooks'
 import type { NavItem } from '@/types'
+import { navigateTo } from '@/utils'
 
 interface Props {
   profileIcon?: astroHTML.JSX.Element
   postIcon?: astroHTML.JSX.Element
+  tagIcon?: astroHTML.JSX.Element
   projectIcon?: astroHTML.JSX.Element
   searchIcon?: astroHTML.JSX.Element
 }
@@ -18,12 +20,18 @@ export default function Header(props: Props): JSX.Element {
     {
       title: 'Profile',
       href: '/',
-      icon: props.profileIcon
+      icon: props.profileIcon,
+      onlyLabel: true
     },
     {
       title: 'Posts',
       href: '/posts',
       icon: props.postIcon
+    },
+    {
+      title: 'Tags',
+      href: '/tags',
+      icon: props.tagIcon
     },
     {
       title: 'Projects',
@@ -40,17 +48,13 @@ export default function Header(props: Props): JSX.Element {
 
   const { theme, selectDarkTheme, selectLightTheme } = useTheme()
 
-  const navTo = (href: string) => {
-    window.location.href = href
-  }
-
   const renderNavItem = (navItem: NavItem): JSX.Element => {
     if (navItem.onlyIcon) {
       return (
         <li
           key={navItem.title}
           className="text-muted cursor-pointer dark:text-white"
-          onClick={() => navTo(navItem.href)}
+          onClick={() => navigateTo(navItem.href)}
         >
           {navItem.icon}
         </li>
@@ -60,12 +64,14 @@ export default function Header(props: Props): JSX.Element {
     return (
       <div key={navItem.title}>
         {/* Mobile UI */}
-        <li
-          className="text-muted cursor-pointer dark:text-white sm:hidden"
-          onClick={() => navTo(navItem.href)}
-        >
-          {navItem.icon}
-        </li>
+        {!navItem.onlyLabel && (
+          <li
+            className="text-muted cursor-pointer dark:text-white sm:hidden"
+            onClick={() => navigateTo(navItem.href)}
+          >
+            {navItem.icon}
+          </li>
+        )}
         {/* Desktop UI */}
         <li
           className={clsx(
@@ -74,7 +80,7 @@ export default function Header(props: Props): JSX.Element {
               ? 'text-primary underline decoration-wavy underline-offset-4'
               : 'text-muted dark:text-white'
           )}
-          onClick={() => navTo(navItem.href)}
+          onClick={() => navigateTo(navItem.href)}
         >
           {navItem.title}
         </li>
@@ -108,20 +114,12 @@ export default function Header(props: Props): JSX.Element {
   return (
     <header className="absolute inset-x-0 top-0 z-30 flex h-20 select-none items-center justify-between p-4">
       <div
-        className="flex cursor-pointer items-center space-x-2"
+        className="flex cursor-pointer items-center"
         onClick={() => {
           window.location.href = '/'
         }}
       >
-        <img
-          className="h-8"
-          src="/images/logo.png"
-          alt={SITE_META.author}
-          loading="eager"
-        />
-        <span className="font-default hover:text-primary animate-pulse text-lg transition-all active:opacity-75">
-          {SITE_META.author}
-        </span>
+        <span className="hover:text-primary text-xl transition-all active:opacity-75">{SITE_META.author}</span>
       </div>
 
       <ul className="flex items-center space-x-4 text-lg sm:space-x-6">

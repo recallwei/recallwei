@@ -4,6 +4,7 @@ import '@/styles/base.css'
 import { ContentContainer, ContentTitle, Footer, Header, NProgressProvider } from '@/components'
 import ProfileIcon from '~icons/line-md/account'
 import ProjectIcon from '~icons/line-md/document-code'
+import TagIcon from '~icons/line-md/document-report'
 import PostIcon from '~icons/line-md/edit'
 import SearchIcon from '~icons/line-md/search'
 
@@ -70,6 +71,7 @@ const getDocumentTitle = () => `${title} - Bruce Song`
         <Header client:only="react">
           <ProfileIcon slot="profileIcon" />
           <PostIcon slot="postIcon" />
+          <TagIcon slot="tagIcon" />
           <ProjectIcon slot="projectIcon" />
           <SearchIcon slot="searchIcon" />
         </Header>

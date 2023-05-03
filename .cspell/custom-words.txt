@@ -8,7 +8,9 @@ commitlint
 fastify
 iconify
 keyframes
+naiveui
 Neue
+Nextjs
 noopener
 noreferrer
 Noto

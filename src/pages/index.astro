@@ -2,8 +2,17 @@
 import { ContentTitle, Motto } from '@/components'
 import { SITE_META } from '@/configs'
 import { BaseLayout } from '@/layouts'
+import AstroIcon from '~icons/logos/astro-icon'
+import JavaScriptIcon from '~icons/logos/javascript'
+import NextjsIcon from '~icons/logos/nextjs-icon'
+import NodejsIcon from '~icons/logos/nodejs-icon'
+import PostgresqlIcon from '~icons/logos/postgresql'
+import PrismaIcon from '~icons/logos/prisma'
+import ReactIcon from '~icons/logos/react'
+import TypeScriptIcon from '~icons/logos/typescript-icon'
+import VueIcon from '~icons/logos/vue'
 
-const { author, recentTargets } = SITE_META
+const { author } = SITE_META
 
 const TITLE_TEXT = 'Home'
 const CONTENT_TITLE_TEXT = 'About Me'
@@ -18,9 +27,8 @@ const CONTENT_TITLE_TEXT = 'About Me'
     <li>📖 I'm interested in reading different books.</li>
     <li>🌱 I'm currently learning Vue and TypeScript.</li>
     <li>💞️ I'm looking to collaborate on a React/Vue project.</li>
+    <li>🚀 I recently built a web app based on Vue 3, TypeScript.</li>
     <li>📫 You can contact me with my email recall4056@gmail.com.</li>
-    <li>💪 JavaScript | TypeScript | React | Vue | Next.js | Node.js | HTML | CSS.</li>
-    <li>🚀 I recently built a web app based on Vue 3, TypeScript and Naive UI.</li>
   </ul>
 
   <ContentTitle
@@ -35,9 +43,17 @@ const CONTENT_TITLE_TEXT = 'About Me'
     class="mt-12"
     fontSize="small"
   >
-    Recent Targets
+    Stack
   </ContentTitle>
-  <ul>
-    {recentTargets.map((item) => <li>{item}</li>)}
-  </ul>
+  <div class="flex items-center space-x-1">
+    <JavaScriptIcon class="w-8" />
+    <TypeScriptIcon class="w-8" />
+    <ReactIcon class="w-8" />
+    <VueIcon class="w-8" />
+    <NextjsIcon class="w-8" />
+    <AstroIcon class="w-8" />
+    <NodejsIcon class="w-8" />
+    <PrismaIcon class="w-8" />
+    <PostgresqlIcon class="w-8" />
+  </div>
 </BaseLayout>
