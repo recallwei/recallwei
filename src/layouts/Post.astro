@@ -3,7 +3,8 @@ import type { CollectionEntry } from 'astro:content'
 
 import { THEME_META } from '@/configs'
 import { BaseLayout } from '@/layouts'
-import { getDateByPostId, getLastUpdatedTime } from '@/utils'
+import { getDateByPostId } from '@/utils'
+import { getLastUpdatedTime } from '@/utils/server'
 import HistoryIcon from '~icons/fluent/history-16-filled'
 import EditIcon from '~icons/fluent/notepad-edit-16-filled'
 

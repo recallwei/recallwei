@@ -2,7 +2,8 @@
 import { ContentTitle, PostToggleLang } from '@/components'
 import { BaseLayout } from '@/layouts'
 import type { Lang } from '@/types'
-import { formatDate, getDateByPostId, getPosts } from '@/utils'
+import { formatDate, getDateByPostId } from '@/utils'
+import { getPosts } from '@/utils/server'
 
 export interface Props {
   title: string
