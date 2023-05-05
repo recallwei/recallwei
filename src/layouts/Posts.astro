@@ -3,7 +3,7 @@ import { ContentTitle, PostToggleLang } from '@/components'
 import { BaseLayout } from '@/layouts'
 import type { Lang } from '@/types'
 import { formatDate, getDateByPostId } from '@/utils'
-import { getPosts } from '@/utils/server'
+import { getPosts, withGroupedByYear } from '@/utils/server'
 
 export interface Props {
   title: string
@@ -12,7 +12,7 @@ export interface Props {
 
 const { title, lang } = Astro.props
 
-const posts = await getPosts(lang)
+const sortedPostByYear = withGroupedByYear(await getPosts(lang))
 
 const getPostDate = (id: string) => formatDate(getDateByPostId(id), 'MMM D')
 ---
@@ -23,19 +23,31 @@ const getPostDate = (id: string) => formatDate(getDateByPostId(id), 'MMM D')
     <PostToggleLang lang={lang} />
   </ContentTitle>
 
-  <ul class="space-y-2">
+  <div class="mt-8 space-y-8">
     {
-      posts.map((item) => (
-        <li class="flex items-center space-x-1">
-          <span class="text-muted w-16 text-base">{getPostDate(item.id)}</span>
-          <a
-            href={`/posts/${item.slug}`}
-            class="underline-offset-4 hover:underline"
-          >
-            {item.data.title}
-          </a>
-        </li>
-      ))
+      Object.keys(sortedPostByYear)
+        .sort((a, b) => b.localeCompare(a))
+        .map((year) => (
+          <div class="space-y-2">
+            <div class="text-2xl font-semibold">{year}</div>
+            <ul class="space-y-2">
+              {sortedPostByYear[year].map((item) => (
+                <li class="flex items-center space-x-2">
+                  <span class="text-muted w-16 text-base">{getPostDate(item.id)}</span>
+                  <a
+                    href={`/posts/${item.slug}`}
+                    class="underline-offset-4 hover:underline"
+                  >
+                    {item.data.title}
+                  </a>
+                  {item.data.draft && (
+                    <span class="text-primary text-sm font-semibold">{lang === 'en' ? '[Draft]' : '【草稿】'}</span>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
     }
-  </ul>
+  </div>
 </BaseLayout>

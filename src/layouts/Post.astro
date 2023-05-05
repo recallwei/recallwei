@@ -3,6 +3,7 @@ import type { CollectionEntry } from 'astro:content'
 
 import { THEME_META } from '@/configs'
 import { BaseLayout } from '@/layouts'
+import type { Lang } from '@/types'
 import { getDateByPostId } from '@/utils'
 import { getLastUpdatedTime } from '@/utils/server'
 import HistoryIcon from '~icons/fluent/history-16-filled'
@@ -10,9 +11,10 @@ import EditIcon from '~icons/fluent/notepad-edit-16-filled'
 
 export interface Props {
   post: CollectionEntry<'post'>
+  lang: Lang
 }
 
-const { post } = Astro.props
+const { post, lang } = Astro.props
 
 const { Content } = await post.render()
 
@@ -25,13 +27,14 @@ const lastUpdatedTime = getLastUpdatedTime(post.id)
   title={post.data.title}
   contentTitle={post.data.title}
 >
-  <div class="font-default text-muted mb-8 text-lg font-medium tracking-wider dark:text-white">
-    {getDateByPostId(post.id)}
+  <div class="text-muted mb-4 space-x-1 text-lg font-medium tracking-wider dark:text-white">
+    <span>{getDateByPostId(post.id)}</span>
+    {post.data.draft && <span class="text-primary">{lang === 'en' ? '[Draft]' : '【草稿】'}</span>}
   </div>
 
   <Content />
 
-  <div class="mt-8 flex flex-wrap items-center space-y-1 text-base sm:space-y-0">
+  <div class="mt-6 flex flex-wrap items-center space-y-1 text-lg sm:space-y-0">
     <div class="w-full sm:w-1/2">
       <a
         href={editURL}
