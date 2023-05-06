@@ -8,6 +8,7 @@ clsx
 commitlint
 esbuild
 fastify
+giscus
 iconify
 keyframes
 naiveui
