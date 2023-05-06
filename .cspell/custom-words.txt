@@ -17,11 +17,15 @@ noopener
 noreferrer
 Noto
 nprogress
+nuxt
 rehype
+Renovamen
 Roboto
 safecrlf
 shiki
 tailwindcss
+Taskward
 tsconfigs
+typeof
 unplugin
 worktree

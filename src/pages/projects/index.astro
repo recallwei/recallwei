@@ -1,4 +1,6 @@
 ---
+import { ProjectCard } from '@/components'
+import { GroupedProjects } from '@/constants'
 import { BaseLayout } from '@/layouts'
 
 const TITLE_TEXT = 'Projects'
@@ -8,5 +10,21 @@ const TITLE_TEXT = 'Projects'
   title={TITLE_TEXT}
   contentTitle={TITLE_TEXT}
 >
-  <span class="text-xl">Projects page is under development!</span>
+  <div class="mt-8 space-y-8">
+    {
+      Object.keys(GroupedProjects).map((groupKey) => (
+        <div class="space-y-2">
+          <div class="text-2xl font-semibold">{GroupedProjects[groupKey].name}</div>
+          <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-2">
+            {GroupedProjects[groupKey].projects.map((project) => (
+              <ProjectCard
+                client:only="react"
+                data={project}
+              />
+            ))}
+          </div>
+        </div>
+      ))
+    }
+  </div>
 </BaseLayout>

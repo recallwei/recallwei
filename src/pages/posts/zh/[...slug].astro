@@ -11,7 +11,7 @@ if (!slug) {
 
 const post = await getEntryBySlug('post', `zh/${slug}`)
 
-if (!post) {
+if (!post || (import.meta.env.PROD && post.data.draft)) {
   return Astro.redirect('/404')
 }
 ---

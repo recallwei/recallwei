@@ -1,6 +1,10 @@
 import { useEffect, useState } from 'react'
 
-const useTheme = () => {
+export default function useTheme(): {
+  theme: 'light' | 'dark'
+  selectDarkTheme: () => void
+  selectLightTheme: () => void
+} {
   const [theme, setTheme] = useState<'light' | 'dark'>('light')
 
   const selectDarkTheme = () => {
@@ -28,5 +32,3 @@ const useTheme = () => {
 
   return { theme, selectDarkTheme, selectLightTheme }
 }
-
-export default useTheme

@@ -5,7 +5,7 @@ import { THEME_META } from '@/configs'
 import { BaseLayout } from '@/layouts'
 import type { Lang } from '@/types'
 import { getDateByPostId } from '@/utils'
-import { getLastUpdatedTime } from '@/utils/server'
+// import { getLastUpdatedTime } from '@/utils/server'
 import HistoryIcon from '~icons/fluent/history-16-filled'
 import EditIcon from '~icons/fluent/notepad-edit-16-filled'
 
@@ -18,9 +18,12 @@ const { post, lang } = Astro.props
 
 const { Content } = await post.render()
 
+const releaseTime = getDateByPostId(post.id)
+
 const editURL = THEME_META.editLink.pattern.replace(/:path/g, `/${post.id}`)
 const editLink = THEME_META.editLink.text
-const lastUpdatedTime = getLastUpdatedTime(post.id)
+const lastUpdatedTime = releaseTime
+// const lastUpdatedTime = getLastUpdatedTime(post.id)
 ---
 
 <BaseLayout
@@ -28,7 +31,7 @@ const lastUpdatedTime = getLastUpdatedTime(post.id)
   contentTitle={post.data.title}
 >
   <div class="text-muted mb-4 space-x-1 text-lg font-medium tracking-wider dark:text-white">
-    <span>{getDateByPostId(post.id)}</span>
+    <span>{releaseTime}</span>
     {post.data.draft && <span class="text-primary">{lang === 'en' ? '[Draft]' : '【草稿】'}</span>}
   </div>
 

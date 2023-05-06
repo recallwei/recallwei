@@ -1,7 +1,7 @@
 import 'nprogress/nprogress.css'
 
 import NProgress from 'nprogress'
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 
 NProgress.configure({ showSpinner: false })
 

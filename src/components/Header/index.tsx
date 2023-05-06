@@ -1,5 +1,4 @@
 import clsx from 'clsx'
-import React from 'react'
 
 import { MoonIcon, SunIcon } from '@/components'
 import { SITE_META } from '@/configs'
@@ -7,7 +6,7 @@ import { useTheme } from '@/hooks'
 import type { NavItem } from '@/types'
 import { navigateTo } from '@/utils'
 
-interface Props {
+type Props = {
   profileIcon?: astroHTML.JSX.Element
   postIcon?: astroHTML.JSX.Element
   tagIcon?: astroHTML.JSX.Element

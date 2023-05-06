@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { SITE_META } from '@/configs'
 
 export default function Footer(): JSX.Element {

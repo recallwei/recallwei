@@ -7,10 +7,8 @@ type PositionState = {
 }
 
 // TODO: To enhance Header component
-const useScroll = (_ref: RefObject<HTMLElement>): PositionState => {
+export default function useScroll(_ref: RefObject<HTMLElement>): PositionState {
   const [position, setPosition] = useState({ x: 0, y: 0 })
 
   return position
 }
-
-export default useScroll
