@@ -1,7 +1,7 @@
 ---
 title: 'Why not use icon font?'
 tags:
-  - 'Icon'
+  - 'SVG'
 ---
 
 Why not use icon font?

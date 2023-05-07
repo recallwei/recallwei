@@ -1,22 +1,22 @@
-const TechList = <const>[
-  'HTML',
+export const TechList = <const>[
+  'Astro',
   'CSS',
-  'SCSS',
-  'JavaScript',
-  'TypeScript',
-  'React',
-  'Vue',
-  'Vite',
-  'Next.js',
-  'Nuxt.js',
   'Docusaurus',
   'Gatsby',
-  'Astro',
+  'HTML',
+  'JavaScript',
   'Naive UI',
-  'TailwindCSS',
+  'Next.js',
   'Node.js',
+  'Nuxt.js',
+  'PostgreSQL',
   'Prisma',
-  'PostgreSQL'
+  'React',
+  'SCSS',
+  'TailwindCSS',
+  'TypeScript',
+  'Vite',
+  'Vue'
 ]
 
 export type Tech = (typeof TechList)[number]
