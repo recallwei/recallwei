@@ -29,6 +29,16 @@ cspell --no-progress --show-suggestions --show-context "**"
 
 ### Husky 操作 Git Hook
 
+### Husky 常见问题
+
+[Hook was ignored because it's not set as executable.](https://github.com/typicode/husky/issues/1177)
+
+为文件添加执行权限
+
+```bash
+chmod ug+x .husky/*
+```
+
 ### lint-staged 检查本地暂存区代码
 
 ```bash
