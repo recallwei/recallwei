@@ -1,6 +1,6 @@
 import { type CollectionEntry, getCollection } from 'astro:content'
 
-import type { Lang } from '@/types'
+import type { Lang, Tag } from '@/types'
 
 const getPostDate = (id: string): string => id.split('/').pop()!.substring(0, 10)
 
@@ -27,5 +27,5 @@ export const withGroupedByYear = (posts: CollectionEntry<'post'>[]): Record<stri
   return map
 }
 
-export const getPostsByTag = (posts: CollectionEntry<'post'>[], tag: string): CollectionEntry<'post'>[] =>
+export const getPostsByTag = (posts: CollectionEntry<'post'>[], tag: Tag): CollectionEntry<'post'>[] =>
   posts.filter((post) => post.data.tags?.includes(tag))
