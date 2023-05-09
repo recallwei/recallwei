@@ -1,5 +1,6 @@
 import { type CollectionEntry, getCollection } from 'astro:content'
 
+import { TagList } from '@/constants'
 import type { Lang, Tag } from '@/types'
 
 const getPostDate = (id: string): string => id.split('/').pop()!.substring(0, 10)
@@ -28,27 +29,16 @@ export const withGroupedByYear = (posts: CollectionEntry<'post'>[]): Record<stri
 }
 
 export const getPostsByTag = (posts: CollectionEntry<'post'>[], tag: Tag): CollectionEntry<'post'>[] =>
-  posts.filter((post) => post.data.tags?.includes(tag))
+  posts.filter((post) => post.data.tags?.includes(tag) && (import.meta.env.PROD ? !post.data.draft : true))
 
 export const getTags = async () => {
   const posts = await getPosts()
-  const postsWithTag = posts.filter((p) => p.data.tags && p.data.tags.length > 0)
   const tags: Partial<Record<Tag, number>> = {}
-  postsWithTag.forEach((p) => {
-    p.data.tags?.forEach((t: Tag) => {
-      if (Object.hasOwn(tags, t)) {
-        tags[t]! += 1
-      } else {
-        tags[t] = 1
-      }
-    })
+  TagList.forEach((t) => {
+    const postNum = getPostsByTag(posts, t).length
+    if (postNum > 0) {
+      tags[t] = postNum
+    }
   })
-  const sortedTags: Partial<Record<Tag, number>> = {}
-  Object.keys(tags)
-    .map((k) => k as Tag)
-    .sort((a, b) => a.localeCompare(b))
-    .forEach((k: Tag) => {
-      sortedTags[k] = tags[k]
-    })
-  return sortedTags
+  return tags
 }
