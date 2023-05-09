@@ -30,31 +30,25 @@ export const withGroupedByYear = (posts: CollectionEntry<'post'>[]): Record<stri
 export const getPostsByTag = (posts: CollectionEntry<'post'>[], tag: Tag): CollectionEntry<'post'>[] =>
   posts.filter((post) => post.data.tags?.includes(tag))
 
-type TagItem = {
-  name: string
-  count: number
-}
-
 export const getTags = async () => {
   const posts = await getPosts()
   const postsWithTag = posts.filter((p) => p.data.tags && p.data.tags.length > 0)
-  const tags: Partial<Record<Tag, TagItem>> = {}
+  const tags: Partial<Record<Tag, number>> = {}
   postsWithTag.forEach((p) => {
-    p.data.tags?.forEach((t) => {
+    p.data.tags?.forEach((t: Tag) => {
       if (Object.hasOwn(tags, t)) {
-        tags[t].count += 1
+        tags[t]! += 1
       } else {
-        tags[t] = {
-          name: t,
-          count: 1
-        }
+        tags[t] = 1
       }
     })
   })
-  const sortedTags = {}
+  const sortedTags: Partial<Record<Tag, number>> = {}
   Object.keys(tags)
+    .map((k) => k as Tag)
     .sort((a, b) => a.localeCompare(b))
-    .forEach((k) => {
+    .forEach((k: Tag) => {
       sortedTags[k] = tags[k]
     })
+  return sortedTags
 }

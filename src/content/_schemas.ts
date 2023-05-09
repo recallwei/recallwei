@@ -1,7 +1,7 @@
 import { z } from 'astro:content'
 
 import { SITE_META } from '@/configs'
-import { TagList } from '@/types'
+import { TagList } from '@/constants'
 
 export const postSchema = z
   .object({

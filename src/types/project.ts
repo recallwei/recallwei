@@ -1,23 +1,4 @@
-export const TechList = <const>[
-  'Astro',
-  'CSS',
-  'Docusaurus',
-  'Gatsby',
-  'HTML',
-  'JavaScript',
-  'Naive UI',
-  'Next.js',
-  'Node.js',
-  'Nuxt.js',
-  'PostgreSQL',
-  'Prisma',
-  'React',
-  'SCSS',
-  'TailwindCSS',
-  'TypeScript',
-  'Vite',
-  'Vue'
-]
+import type { TechList } from '@/base'
 
 export type Tech = (typeof TechList)[number]
 

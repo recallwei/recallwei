@@ -1,0 +1,20 @@
+export const TechList = [
+  'Astro',
+  'CSS',
+  'Docusaurus',
+  'Gatsby',
+  'HTML',
+  'JavaScript',
+  'Naive UI',
+  'Next.js',
+  'Node.js',
+  'Nuxt.js',
+  'PostgreSQL',
+  'Prisma',
+  'React',
+  'SCSS',
+  'TailwindCSS',
+  'TypeScript',
+  'Vite',
+  'Vue'
+] as const

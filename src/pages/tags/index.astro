@@ -1,6 +1,8 @@
 ---
+import { TagHrefMap } from '@/constants'
 import { BaseLayout } from '@/layouts'
 import { getTags } from '@/utils/server'
+import TagIcon from '~icons/fluent/tag-16-regular'
 
 const TITLE_TEXT = 'Tags'
 const tags = await getTags()
@@ -11,5 +13,22 @@ console.log(tags)
   title={TITLE_TEXT}
   contentTitle={TITLE_TEXT}
 >
-  <span class="text-xl">Tags page is under development!</span>
+  <div class="mt-8 flex flex-wrap items-center space-y-1">
+    {
+      Object.keys(tags).map((t) => (
+        <div class="me-2 flex items-center justify-start space-x-1">
+          <TagIcon />
+          <div>
+            <a
+              href={`/posts?tag=${TagHrefMap.get(t)}`}
+              class="inline-block underline-offset-4  hover:underline"
+            >
+              {t}
+            </a>
+            <sup>{tags[t]}</sup>
+          </div>
+        </div>
+      ))
+    }
+  </div>
 </BaseLayout>
