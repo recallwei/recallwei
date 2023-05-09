@@ -1,7 +1,10 @@
 ---
 import { BaseLayout } from '@/layouts'
+import { getTags } from '@/utils/server'
 
 const TITLE_TEXT = 'Tags'
+const tags = await getTags()
+console.log(tags)
 ---
 
 <BaseLayout

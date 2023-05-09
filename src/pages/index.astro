@@ -15,13 +15,19 @@ import VueIcon from '~icons/logos/vue'
 const { author } = SITE_META
 
 const TITLE_TEXT = 'Home'
-const CONTENT_TITLE_TEXT = 'About Me'
+const CONTENT_TITLE_TEXT = 'Profile'
 ---
 
 <BaseLayout
   title={TITLE_TEXT}
   contentTitle={CONTENT_TITLE_TEXT}
 >
+  <ContentTitle
+    class="mt-8"
+    fontSize="small"
+  >
+    About Me
+  </ContentTitle>
   <ul class="space-y-2">
     <li>👋 Hi, I'm {author}.</li>
     <li>📖 I'm interested in reading different books.</li>
