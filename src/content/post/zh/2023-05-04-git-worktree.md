@@ -8,7 +8,7 @@ draft: true
 ## 创建
 
 ```bash
-git worktree add <branch> <path>
+git worktree add <path> <branch>
 ```
 
 ## 修剪
