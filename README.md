@@ -16,7 +16,8 @@
 
 ## 🌱 Recent Activities
 
-- 🚀 Migrate my blog site from `Next.js` to `Astro`. ( Progress: 40% )
+- 🚀 Migrate my blog site from `Next.js` to `Astro`. ( Progress: 70% )
+- 🚀 Refactor Taskward to `v2`. ( Progress: 3% )
 
 ## 🦄 Projects
 
