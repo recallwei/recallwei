@@ -20,7 +20,8 @@ export const TagList = [
   'TailwindCSS',
   'TypeScript',
   'Vite',
-  'Vue'
+  'Vue',
+  'Web Tech'
 ] as const
 
 export const TagHrefMap = new Map([
@@ -45,5 +46,6 @@ export const TagHrefMap = new Map([
   ['TailwindCSS', 'tailwind-css'],
   ['TypeScript', 'typescript'],
   ['Vite', 'vite'],
-  ['Vue', 'vue']
+  ['Vue', 'vue'],
+  ['Web Tech', 'web-tech']
 ])
