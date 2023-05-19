@@ -2,6 +2,7 @@ export const TagList = [
   'Astro',
   'CSS',
   'Docusaurus',
+  'Express',
   'Front-end Engineering',
   'Gatsby',
   'Git',
@@ -24,28 +25,17 @@ export const TagList = [
   'Web Tech'
 ] as const
 
-export const TagHrefMap = new Map([
-  ['Astro', 'astro'],
-  ['CSS', 'css'],
-  ['Docusaurus', 'docusaurus'],
-  ['Front-end Engineering', 'front-end-engineering'],
-  ['Gatsby', 'gatsby'],
-  ['Git', 'git'],
-  ['HTML', 'html'],
-  ['JavaScript', 'javascript'],
-  ['Naive UI', 'naive-ui'],
-  ['Next.js', 'next-js'],
-  ['Node.js', 'node-js'],
-  ['Nuxt.js', 'nuxt-js'],
-  ['PC', 'pc'],
-  ['PostgreSQL', 'postgresql'],
-  ['Prisma', 'prisma'],
-  ['React', 'react'],
-  ['SCSS', 'scss'],
-  ['SVG', 'svg'],
-  ['TailwindCSS', 'tailwind-css'],
-  ['TypeScript', 'typescript'],
-  ['Vite', 'vite'],
-  ['Vue', 'vue'],
-  ['Web Tech', 'web-tech']
-])
+type Tag = (typeof TagList)[number]
+
+const getTagHrefMapItem = (tag: Tag): [Tag, string] => {
+  let tagStr = tag.toLowerCase()
+  if (tagStr.includes(' ')) {
+    tagStr = tagStr.split(' ').join('-')
+  }
+  if (tagStr.includes('.')) {
+    tagStr = tagStr.split('.').join('-')
+  }
+  return [tag, tagStr]
+}
+
+export const TagHrefMap = new Map(TagList.map(getTagHrefMapItem))
