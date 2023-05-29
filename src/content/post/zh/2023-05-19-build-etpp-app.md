@@ -21,6 +21,7 @@ draft: true
 - [ ] controller, router
 - [ ] 封装 server 实例
 - [ ] dotenv
+- [ ] 搭建文件服务
 
 ## 解决跨域问题
 
@@ -46,3 +47,7 @@ app.all('*', (req: Request, res: Response, next: NextFunction) => {
   next()
 })
 ```
+
+## 搭建文件服务
+
+使用 `multer` 来搭建本地文件服务。
