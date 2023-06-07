@@ -16,8 +16,10 @@
 
 ## 🌱 Recent Activities
 
-- 🚀 Migrate my blog site from `Next.js` to `Astro`. ( Progress: 70% )
+- 🚀 Migrate my blog site from `Next.js` to `Astro`. ( Progress: 80% )
 - 🚀 Refactor Taskward to `v2`. ( Progress: 3% )
+- 🚀 Build `React`, `Vue`, `Express` project starter templates. ( Progress: 40% )
+- 🚀 Build `Vue 3` admin template. ( Progress: 0% )
 
 ## 🦄 Projects
 

@@ -1,6 +1,7 @@
 ---
-import type { CollectionEntry } from 'astro:content'
+import { type CollectionEntry, getEntries } from 'astro:content'
 
+import { RelatedPosts } from '@/components'
 import { THEME_META } from '@/configs'
 import { BaseLayout } from '@/layouts'
 import type { Lang } from '@/types'
@@ -24,18 +25,37 @@ const editURL = THEME_META.editLink.pattern.replace(/:path/g, `/${post.id}`)
 const editLink = THEME_META.editLink.text
 const lastUpdatedTime = releaseTime
 // const lastUpdatedTime = getLastUpdatedTime(post.id)
+
+const relatedPosts = []
+try {
+  const getRelatedPosts = await getEntries(post.data.relatedPosts)
+  relatedPosts.push(...getRelatedPosts)
+} catch {
+  //
+}
 ---
 
 <BaseLayout
   title={post.data.title}
   contentTitle={post.data.title}
 >
-  <div class="text-muted mb-4 space-x-1 text-lg font-medium tracking-wider dark:text-white">
+  <div class="mb-4 space-x-1 text-lg font-medium tracking-wider text-muted dark:text-white">
     <span>{releaseTime}</span>
     {post.data.draft && <span class="text-primary">{lang === 'en' ? '[Draft]' : '【草稿】'}</span>}
   </div>
 
   <Content />
+
+  <>
+    {
+      Array.isArray(relatedPosts) && relatedPosts.length > 0 && (
+        <RelatedPosts
+          data={relatedPosts}
+          client:only="react"
+        />
+      )
+    }
+  </>
 
   <div class="mt-6 flex flex-wrap items-center space-y-1 text-lg sm:space-y-0">
     <div class="w-full sm:w-1/2">
@@ -43,7 +63,7 @@ const lastUpdatedTime = releaseTime
         href={editURL}
         target="_blank"
         rel="noopener noreferrer"
-        class="text-primary flex w-fit space-x-1 hover:underline"
+        class="flex w-fit space-x-1 text-primary hover:underline"
       >
         <EditIcon class="mt-[1px]" />
         <span>{editLink}</span>

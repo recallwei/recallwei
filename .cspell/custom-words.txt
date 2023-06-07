@@ -19,6 +19,7 @@ noreferrer
 Noto
 nprogress
 nuxt
+recallwei
 rehype
 Renovamen
 Roboto

@@ -33,7 +33,7 @@ const getPostDate = (id: string) => formatDate(getDateByPostId(id), 'MMM D')
             <ul class="space-y-2">
               {sortedPostByYear[year].map((item) => (
                 <li class="flex items-center space-x-2">
-                  <span class="text-muted w-16 text-base">{getPostDate(item.id)}</span>
+                  <span class="w-16 text-base text-muted">{getPostDate(item.id)}</span>
                   <a
                     href={`/posts/${item.slug}`}
                     class="underline-offset-4 hover:underline"
@@ -41,7 +41,7 @@ const getPostDate = (id: string) => formatDate(getDateByPostId(id), 'MMM D')
                     {item.data.title}
                   </a>
                   {item.data.draft && (
-                    <span class="text-primary text-sm font-semibold">{lang === 'en' ? '[Draft]' : '【草稿】'}</span>
+                    <span class="text-sm font-semibold text-primary">{lang === 'en' ? '[Draft]' : '【草稿】'}</span>
                   )}
                 </li>
               ))}

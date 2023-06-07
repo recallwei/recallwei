@@ -1,5 +1,6 @@
 export const TagList = [
   'Astro',
+  'Axios',
   'CSS',
   'Docusaurus',
   'Express',
