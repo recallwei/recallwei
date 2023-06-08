@@ -29,5 +29,8 @@ export default defineConfig({
         compiler: 'astro'
       })
     ]
+  },
+  server: {
+    port: 4056
   }
 })
