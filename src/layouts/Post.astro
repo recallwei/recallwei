@@ -28,7 +28,7 @@ const lastUpdatedTime = releaseTime
 
 const relatedPosts = []
 try {
-  const getRelatedPosts = await getEntries(post.data.relatedPosts)
+  const getRelatedPosts = await getEntries(post.data.relatedPosts ?? [])
   relatedPosts.push(...getRelatedPosts)
 } catch {
   //
