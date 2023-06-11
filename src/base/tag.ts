@@ -1,4 +1,4 @@
-export const TagList = [
+export const TagList = <const>[
   'Astro',
   'Axios',
   'CSS',
@@ -24,7 +24,7 @@ export const TagList = [
   'Vite',
   'Vue',
   'Web Tech'
-] as const
+]
 
 type Tag = (typeof TagList)[number]
 
