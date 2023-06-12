@@ -21,6 +21,7 @@ export const TagList = <const>[
   'SVG',
   'TailwindCSS',
   'TypeScript',
+  'uni-app',
   'Vite',
   'Vue',
   'Web Tech'
