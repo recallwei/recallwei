@@ -33,15 +33,29 @@ try {
 } catch {
   //
 }
+
+const { title, tags } = post.data
 ---
 
 <BaseLayout
-  title={post.data.title}
-  contentTitle={post.data.title}
+  title={title}
+  contentTitle={title}
 >
-  <div class="mb-4 space-x-1 text-lg font-medium tracking-wider text-muted dark:text-white">
-    <span>{releaseTime}</span>
-    {post.data.draft && <span class="text-primary">{lang === 'en' ? '[Draft]' : '【草稿】'}</span>}
+  <div class="mb-4 text-lg font-medium text-muted dark:text-white">
+    <div class="space-x-1 tracking-wider">
+      <span>{releaseTime}</span>
+      {post.data.draft && <span class="text-primary">{lang === 'en' ? '[Draft]' : '【草稿】'}</span>}
+    </div>
+
+    {
+      Array.isArray(tags) && tags.length > 0 && (
+        <div class="mt-2 space-x-2">
+          {tags.map((tag) => (
+            <span class="rounded-sm bg-primary px-1 py-0.5 text-sm text-gray-950 dark:text-white">{tag}</span>
+          ))}
+        </div>
+      )
+    }
   </div>
 
   <div class="prose max-w-full dark:prose-invert">
