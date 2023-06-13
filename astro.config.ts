@@ -13,6 +13,8 @@ export default defineConfig({
   adapter: vercel({ analytics: true }),
   integrations: [react(), tailwind(), mdx()],
   markdown: {
+    gfm: true,
+    smartypants: true,
     remarkPlugins,
     rehypePlugins,
     syntaxHighlight: 'shiki',
@@ -20,7 +22,8 @@ export default defineConfig({
       theme: 'dracula'
     },
     remarkRehype: {
-      footnoteLabel: 'Footnotes'
+      footnoteLabel: 'Footnotes',
+      footnoteBackLabel: 'Back to content'
     }
   },
   vite: {

@@ -44,7 +44,9 @@ try {
     {post.data.draft && <span class="text-primary">{lang === 'en' ? '[Draft]' : '【草稿】'}</span>}
   </div>
 
-  <Content />
+  <div class="prose max-w-full dark:prose-invert">
+    <Content />
+  </div>
 
   <>
     {
