@@ -15,17 +15,17 @@ const tags = await getTags()
 >
   <div class="mt-8 flex flex-wrap items-center space-y-1">
     {
-      getObjectKeys(tags).map((t) => (
+      getObjectKeys(tags).map((tag) => (
         <div class="me-4 flex items-center justify-start space-x-1">
           <TagIcon />
           <div>
             <a
-              href={`/posts?tag=${TagHrefMap.get(t)}`}
+              href={`/posts?tag=${TagHrefMap.get(tag)}`}
               class="inline-block underline-offset-4  hover:underline"
             >
-              {t}
+              {tag}
             </a>
-            <sup>{tags[t]}</sup>
+            <sup>{tags[tag]}</sup>
           </div>
         </div>
       ))

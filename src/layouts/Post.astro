@@ -3,6 +3,7 @@ import { type CollectionEntry, getEntries } from 'astro:content'
 
 import { RelatedPosts } from '@/components'
 import { THEME_META } from '@/configs'
+import { TagHrefMap } from '@/constants'
 import { BaseLayout } from '@/layouts'
 import type { Lang } from '@/types'
 import { getDateByPostId } from '@/utils'
@@ -49,9 +50,14 @@ const { title, tags } = post.data
 
     {
       Array.isArray(tags) && tags.length > 0 && (
-        <div class="mt-2 space-x-2">
+        <div class="mt-2 flex items-center space-x-2">
           {tags.map((tag) => (
-            <span class="rounded-sm bg-primary px-1 py-0.5 text-sm text-gray-950 dark:text-white">{tag}</span>
+            <a
+              class="block w-fit select-none rounded-sm bg-primary px-1 py-0.5 text-sm text-gray-950 dark:text-white"
+              href={`/posts${lang === 'zh' ? '/zh' : ''}?tag=${TagHrefMap.get(tag)}`}
+            >
+              {tag}
+            </a>
           ))}
         </div>
       )
