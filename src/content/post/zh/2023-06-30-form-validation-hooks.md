@@ -126,6 +126,11 @@ const handleSubmit = async () => {
 </template>
 ```
 
+## 使用 Zod
+
+待完善...
+
 ## 参考
 
-[markdownlint](https://github.com/DavidAnson/markdownlint#readme)
+[yup](https://github.com/jquense/yup#readme)
+[zod](https://zod.dev/)
