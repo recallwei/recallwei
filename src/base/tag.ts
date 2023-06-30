@@ -24,7 +24,7 @@ export const TagList = <const>[
   'uni-app',
   'Vite',
   'Vue',
-  'Web Tech'
+  'Web API'
 ]
 
 type Tag = (typeof TagList)[number]
