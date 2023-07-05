@@ -10,6 +10,7 @@ export const TagList = <const>[
   'HTML',
   'JavaScript',
   'Naive UI',
+  'Network',
   'Next.js',
   'Node.js',
   'Nuxt.js',
