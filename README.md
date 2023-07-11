@@ -38,6 +38,7 @@
 
 ## 🕹️ Organizations
 
+- _**🌊 [Bit Ocean](https://github.com/bit-ocean-studio)**__ : An open-source team dedicate to building anything.
 - _**🥷 [Pixel Cyber Ninja](https://github.com/pixel-cyber-ninja)**_ : A start-up open-source team focused on _**`React`**_ and _**`Golang`**_ for building modern web applications.
 
 ## 💫 Dream
