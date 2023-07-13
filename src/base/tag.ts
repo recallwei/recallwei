@@ -19,6 +19,7 @@ export const TagList = <const>[
   'Prisma',
   'React',
   'SCSS',
+  'Server',
   'SVG',
   'TailwindCSS',
   'TypeScript',
