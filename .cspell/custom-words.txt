@@ -4,6 +4,7 @@ autocrlf
 beforeunload
 blockquote
 bolditalic
+certbot
 clsx
 commitlint
 esbuild
@@ -24,6 +25,7 @@ rehype
 Renovamen
 Roboto
 safecrlf
+semanage
 shiki
 tailwindcss
 Taskward
