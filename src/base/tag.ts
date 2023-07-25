@@ -9,6 +9,7 @@ export const TagList = <const>[
   'Git',
   'HTML',
   'JavaScript',
+  'MongoDB',
   'Naive UI',
   'Network',
   'Next.js',
