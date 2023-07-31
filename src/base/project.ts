@@ -6,6 +6,7 @@ export const TechList = <const>[
   'HTML',
   'JavaScript',
   'Naive UI',
+  'Nest.js',
   'Next.js',
   'Node.js',
   'Nuxt.js',
