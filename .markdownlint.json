@@ -1,7 +1,7 @@
 {
   "line-length": {
     "line_length": 120,
-    "code_block_line_length": 120
+    "code_block_line_length": 9999
   },
   "no-duplicate-heading": false,
   "no-bare-urls": false,

@@ -17,6 +17,7 @@ export const TagList = <const>[
   'Network',
   'Next.js',
   'Node.js',
+  'npm',
   'Nuxt.js',
   'PC',
   'PostgreSQL',
