@@ -46,6 +46,7 @@ tags:
 | eslint-config-airbnb              | 适用于 React 项目（因为其中包含了对 JSX 的校验规则） |          React           |
 | eslint-config-airbnb-base         | Airbnb JS 规范，适用于非 React 项目                  | 非 React 框架，如 Vue 等 |
 | eslint-config-airbnb-typescript   | Airbnb TS 规范，适用于 TypeScript 项目               |            TS            |
+| eslint-plugin-react               | 规范 React 语法，包含对 JSX 的校验规则               |          React           |
 | eslint-plugin-vue                 | 规范 Vue 语法                                        |           Vue            |
 | eslint-plugin-node                | 规范 Node 语法                                       |           Node           |
 | eslint-plugin-simple-import-sort  | 规范 import、export 语句的顺序                       |            \*            |
