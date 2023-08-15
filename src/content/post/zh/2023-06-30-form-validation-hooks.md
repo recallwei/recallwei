@@ -80,7 +80,10 @@ import { useForm } from './useForm'
 
 const schema = yup.object().shape({
   email: yup.string().email('请输入有效的邮箱地址').required('邮箱不能为空'),
-  password: yup.string().min(6, '密码长度至少为 6 个字符').required('密码不能为空')
+  password: yup
+    .string()
+    .min(6, '密码长度至少为 6 个字符')
+    .required('密码不能为空')
 })
 
 const { errors, registerField, validateForm, isValid } = useForm(schema)

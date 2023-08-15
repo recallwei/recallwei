@@ -34,7 +34,9 @@ const beforeUnloadHandler = (event) => {
 }
 
 onMounted(() => window.addEventListener('beforeunload', beforeUnloadHandler))
-onUnmounted(() => window.removeEventListener('beforeunload', beforeUnloadHandler))
+onUnmounted(() =>
+  window.removeEventListener('beforeunload', beforeUnloadHandler)
+)
 </script>
 ```
 

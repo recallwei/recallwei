@@ -1,4 +1,5 @@
-export const copyText = async (text: string) => navigator.clipboard.writeText(text)
+export const copyText = async (text: string) =>
+  navigator.clipboard.writeText(text)
 
 export const navigateTo = (href: string, type: 'inner' | 'outer' = 'inner') => {
   if (!href) {

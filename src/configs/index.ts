@@ -11,7 +11,8 @@ export const SITE_META = {
 
 export const THEME_META = {
   editLink: {
-    pattern: 'https://github.com/recallwei/recallwei/edit/main/src/content/post:path',
+    pattern:
+      'https://github.com/recallwei/recallwei/edit/main/src/content/post:path',
     text: 'Edit this page on GitHub'
   },
   lastUpdatedText: 'Last updated:'

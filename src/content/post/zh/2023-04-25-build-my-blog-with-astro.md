@@ -35,7 +35,9 @@ cspell "**"
 如何让 VSCode TailwindCSS IntelliSense 支持 Astro？
 
 ```json
-{ "tailwindCSS.classAttributes": ["class", "className", "ngClass", "class:list"] }
+{
+  "tailwindCSS.classAttributes": ["class", "className", "ngClass", "class:list"]
+}
 ```
 
 - 添加黑暗模式
