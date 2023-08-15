@@ -4,6 +4,7 @@ autocrlf
 beforeunload
 blockquote
 bolditalic
+brucesong
 certbot
 clsx
 commitlint

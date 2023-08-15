@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
 
-export default function useTheme(): {
+export const useTheme = (): {
   theme: 'light' | 'dark'
   selectDarkTheme: () => void
   selectLightTheme: () => void
-} {
+} => {
   const [theme, setTheme] = useState<'light' | 'dark'>('light')
 
   const selectDarkTheme = () => {
@@ -22,7 +22,8 @@ export default function useTheme(): {
   useEffect(() => {
     if (
       localStorage.theme === 'dark' ||
-      (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+      (!('theme' in localStorage) &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
     ) {
       setTheme('dark')
     } else {

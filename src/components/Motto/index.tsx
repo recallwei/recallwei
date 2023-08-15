@@ -10,7 +10,7 @@ export default function Motto(): JSX.Element {
     <blockquote>
       <p>{motto.text}</p>
       <p
-        className="hover:text-primary cursor-pointer text-right transition-all active:opacity-90"
+        className="cursor-pointer text-right transition-all hover:text-primary active:opacity-90"
         onClick={() => handleClick()}
       >
         {motto.fromText}

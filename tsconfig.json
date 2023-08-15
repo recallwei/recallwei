@@ -8,9 +8,18 @@
     "verbatimModuleSyntax": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": [
+        "src/*"
+      ]
     },
-    "types": ["unplugin-icons/types/astro"]
+    "types": [
+      "unplugin-icons/types/astro"
+    ]
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.astro", "astro.config.ts"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.astro",
+    "astro.config.ts"
+  ]
 }

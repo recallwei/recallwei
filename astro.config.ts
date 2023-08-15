@@ -8,7 +8,7 @@ import Icons from 'unplugin-icons/vite'
 import { rehypePlugins, remarkPlugins } from './plugins'
 
 export default defineConfig({
-  site: 'https://bruceworld.top',
+  site: 'https://brucesong.xyz',
   output: 'server',
   adapter: vercel({ analytics: true }),
   integrations: [react(), tailwind(), mdx()],

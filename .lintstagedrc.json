@@ -1,4 +1,11 @@
 {
-  "*.{js,jsx,ts,tsx,astro}": ["eslint --fix"],
-  "*.{js,jsx,ts,tsx,astro,html,css}": ["prettier --write --plugin-search-dir=."]
+  "*.{js,jsx,ts,tsx,astro}": [
+    "eslint --fix",
+    "prettier --write --plugin-search-dir=.",
+    "git add"
+  ],
+  "*.{html,css}": [
+    "prettier --write --plugin-search-dir=.",
+    "git add"
+  ]
 }

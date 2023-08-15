@@ -52,7 +52,7 @@ export default function Header(props: Props): JSX.Element {
       return (
         <li
           key={navItem.title}
-          className="text-muted cursor-pointer dark:text-white"
+          className="cursor-pointer text-muted dark:text-white"
           onClick={() => navigateTo(navItem.href)}
         >
           {navItem.icon}
@@ -65,7 +65,7 @@ export default function Header(props: Props): JSX.Element {
         {/* Mobile UI */}
         {!navItem.onlyLabel && (
           <li
-            className="text-muted cursor-pointer dark:text-white sm:hidden"
+            className="cursor-pointer text-muted dark:text-white sm:hidden"
             onClick={() => navigateTo(navItem.href)}
           >
             {navItem.icon}
@@ -75,7 +75,8 @@ export default function Header(props: Props): JSX.Element {
         <li
           className={clsx(
             'hidden cursor-pointer sm:block',
-            window.location.pathname === navItem.href || `/${window.location.pathname.split('/')[1]}` === navItem.href
+            window.location.pathname === navItem.href ||
+              `/${window.location.pathname.split('/')[1]}` === navItem.href
               ? 'text-primary underline decoration-wavy underline-offset-4'
               : 'text-muted dark:text-white'
           )}
@@ -90,7 +91,7 @@ export default function Header(props: Props): JSX.Element {
   const renderThemeSwitchIcon = () => (
     <li
       key="Theme"
-      className="text-muted cursor-pointer dark:text-white"
+      className="cursor-pointer text-muted dark:text-white"
     >
       {theme === 'light' ? (
         <div
@@ -118,7 +119,9 @@ export default function Header(props: Props): JSX.Element {
           window.location.href = '/'
         }}
       >
-        <span className="hover:text-primary text-xl transition-all active:opacity-75">{SITE_META.author}</span>
+        <span className="text-xl transition-all hover:text-primary active:opacity-75">
+          {SITE_META.author}
+        </span>
       </div>
 
       <ul className="flex items-center space-x-4 text-lg sm:space-x-6">

@@ -13,7 +13,7 @@ export default function ProjectCard(props: Props): JSX.Element {
     >
       <div className="h-full space-y-1">
         <span className="text-lg">{props.data.name}</span>
-        <div className="text-muted text-base">{props.data.description}</div>
+        <div className="text-base text-muted">{props.data.description}</div>
       </div>
       <div className="flex w-0 items-center justify-center"></div>
     </div>
