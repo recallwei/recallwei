@@ -53,8 +53,8 @@ dependencies:
 
 devDependencies:
   '@brucesong/eslint-config-astro':
-    specifier: ^0.0.10
-    version: 0.0.10(eslint@8.47.0)(tailwindcss@3.3.3)(typescript@5.1.6)
+    specifier: ^0.0.11
+    version: 0.0.11(eslint@8.47.0)(tailwindcss@3.3.3)(typescript@5.1.6)
   '@commitlint/cli':
     specifier: ^17.7.1
     version: 17.7.1
@@ -549,8 +549,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: false
 
-  /@brucesong/eslint-config-astro@0.0.10(eslint@8.47.0)(tailwindcss@3.3.3)(typescript@5.1.6):
-    resolution: {integrity: sha512-04AiV4xvg0hb/GwMSQa878rHBmvd9OSAHjsd2kpFDxIY8UDucYUYNikgu9Qk+67juTNgurkjqD8CpX6115726A==}
+  /@brucesong/eslint-config-astro@0.0.11(eslint@8.47.0)(tailwindcss@3.3.3)(typescript@5.1.6):
+    resolution: {integrity: sha512-WWwA/v6dvije+HP0x1i54DhQXOkEBbO5qkF5AF6EccprJ/J0/i29QdgudsyucOAr1u9/inUPI7FJvl8CIl7Ukw==}
     peerDependencies:
       eslint: '>=7.4.0'
       typescript: '>=3.9'

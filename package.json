@@ -34,7 +34,7 @@
     "remark-toc": "^8.0.1"
   },
   "devDependencies": {
-    "@brucesong/eslint-config-astro": "^0.0.10",
+    "@brucesong/eslint-config-astro": "^0.0.11",
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
     "@iconify-json/fluent": "^1.1.31",
