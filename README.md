@@ -28,6 +28,7 @@
 
 - _**[Dolphin Admin Vue](https://dolphin-admin.bit-ocean.studio)**_ : An elegant admin template based on _**`Vue 3`**_, _**`TypeScript`**_, _**`Naive UI`**_ and _**`TailwindCSS`**_.
 - _**[Dolphin Admin Nest](https://github.com/bit-ocean-studio/dolphin-admin-nest)**_ : Dolphin Admin API server based on _**`Nest.js`**_, _**`TypeScript`**_, _**`Prisma`**_ and _**`PostgreSQL`**_.
+- _**[Create Tornado](https://github.com/recallwei/tornado)**_ : A _**`CLI tool`**_ for scaffolding a project from an opinionated template for popular frameworks.
 - _**[ESLint Config](https://github.com/recallwei/eslint-config)**_ : A _**`ESLint`**_ config for _**`JavaScript`**_, _**`TypeScript`**_ projects, pulished to _**`npm`**_.
 - _**[Express Starter Template](https://github.com/recallwei/express-starter-template)**_ : A _**`Express`**_, _**`TypeScript`**_ template project.
 - _**[React Starter Template](https://github.com/recallwei/react-starter-template)**_ : A _**`React`**_, _**`TypeScript`**_ template project.
