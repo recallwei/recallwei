@@ -14,7 +14,8 @@
     "cspell:sort": "node ./scripts/cspell-sort.cjs",
     "eslint:check": "eslint . --ext .js,.jsx,.ts,.tsx,.astro",
     "eslint:fix": "eslint . --ext .js,.jsx,.ts,.tsx,.astro --fix",
-    "prettier:format": "prettier --write --plugin-search-dir=. ."
+    "prettier:check": "prettier --check --ignore-unknown .",
+    "prettier:fix": "prettier --write --ignore-unknown ."
   },
   "dependencies": {
     "@astrojs/markdown-remark": "^2.2.1",
