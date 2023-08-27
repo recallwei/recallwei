@@ -35,7 +35,7 @@
 - _**[Vue Starter Template](https://github.com/recallwei/vue-starter-template)**_ : A _**`Vue 3`**_, _**`TypeScript`**_ template project.
 - _**[Blog](https://brucesong.xyz)**_ : My personal blog to record something whatever I want. Based on _**`Astro`**_.
 - _**[Wiki](https://wiki.brucesong.xyz)**_ : Used to record various questions and knowledge points. Archived in the Show Case of _**`Docusaurus`**_.
-- _**[Taskward](https://taskward.brucesong.xyz)**_ : A Todo&Tasks web application. Based on _**`React`**_, _**`TypeScript`**_.
+- _**[Taskward](https://taskward.bit-ocean.studio)**_ : A Todo&Tasks web application. Based on _**`React`**_, _**`TypeScript`**_.
 - _**[Resume Generator](https://resume.brucesong.xyz)**_ : Use markdown to write your resume. Based on _**`Vue 3`**_, _**`TypeScript`**_.
 - _**[QRCode Generator](https://qrcode.brucesong.xyz)**_ : Generate QRCodes more easily by specific templates. Based on _**`Vue 3`**_, _**`TypeScript`**_.
 - _**[lidebiji](https://lidebiji-demo.brucesong.xyz/media)**_ : A demo of the enterprise website customized for **LiDeBiJi**. Based on _**`React`**_, _**`Gatsby`**_.
