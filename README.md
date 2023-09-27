@@ -14,6 +14,10 @@
 - 📫 You can also contact me with my email _**`recall4056@gmail.com`**_.
 - 💪 My tech stacks: _**`HTML`**_ | _**`CSS`**_ | _**`SCSS`**_ | _**`TailwindCSS`**_ | _**`JavaScript`**_ | _**`TypeScript`**_ | _**`React`**_ | _**`Vue`**_ | _**`Vite`**_ | _**`Next.js`**_ | _**`Nuxt.js`**_ | _**`Node.js`**_ | _**`Express.js`**_ | _**`Nest.js`**_ | _**`Socket.io`**_ | _**`Prisma`**_ | _**`PostgreSQL`**_ | _**`Docusaurus`**_ | _**`Gatsby`**_ | _**`Astro`**_
 
+## 🚀 Tech Stack
+
+[![My Skills](https://skillicons.dev/icons?i=js,ts,html,css,react,redux,vue,vite,sass,tailwind,nextjs,nuxtjs,gatsby,astro,nodejs,express,nestjs,postgres,prisma,tauri&theme=light&perline=10)](https://skillicons.dev)
+
 ## 🌱 Recent Activities
 
 - 🦁 Migrate my blog site from `Next.js` to `Astro`. ( Progress: 95% )
