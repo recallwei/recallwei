@@ -16,7 +16,9 @@
 
 ## 🚀 Tech Stack
 
-[![My Skills](https://skillicons.dev/icons?i=js,ts,html,css,react,redux,vue,vite,sass,tailwind,nextjs,nuxtjs,gatsby,astro,nodejs,express,nestjs,postgres,prisma,tauri&theme=light&perline=10)](https://skillicons.dev)
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=js,ts,html,css,react,redux,vue,vite,sass,tailwind,nextjs,nuxtjs,gatsby,astro,nodejs,express,nestjs,postgres,prisma,tauri&theme=light&perline=10" />
+</p>
 
 ## 🌱 Recent Activities
 
