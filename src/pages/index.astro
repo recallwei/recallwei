@@ -2,20 +2,41 @@
 import { ContentTitle, Motto } from '@/components'
 import { SITE_META } from '@/configs'
 import { BaseLayout } from '@/layouts'
+import TailwindCSSIcon from '~icons/devicon/tailwindcss'
 import AstroIcon from '~icons/logos/astro-icon'
+import DocusaurusIcon from '~icons/logos/docusaurus'
+import GatsbyIcon from '~icons/logos/gatsby'
 import JavaScriptIcon from '~icons/logos/javascript'
+import NestjsIcon from '~icons/logos/nestjs'
 import NextjsIcon from '~icons/logos/nextjs-icon'
 import NodejsIcon from '~icons/logos/nodejs-icon'
 import PostgresqlIcon from '~icons/logos/postgresql'
 import PrismaIcon from '~icons/logos/prisma'
 import ReactIcon from '~icons/logos/react'
+import SassIcon from '~icons/logos/sass'
+import SocketIoIcon from '~icons/logos/socket-io'
 import TypeScriptIcon from '~icons/logos/typescript-icon'
+import ViteIcon from '~icons/logos/vitejs'
 import VueIcon from '~icons/logos/vue'
+import ExpressjsIcon from '~icons/skill-icons/expressjs-light'
+import NuxtjsIcon from '~icons/vscode-icons/file-type-nuxt'
 
 const { author } = SITE_META
 
 const TITLE_TEXT = 'Home'
 const CONTENT_TITLE_TEXT = 'Profile'
+
+const profile = [
+  `👋 Hi, I'm ${author}, a Web Developer and Open-Source enthusiast.`,
+  "📖 I'm interested in reading different books and making something amazing.",
+  "🌱 I'm currently focusing on React, Vue, TypeScript, Nest.js and React Native.",
+  "💞️ I'm looking to collaborate on any Open-Source project.",
+  '🚀 I recently built an admin system named Dolphin Admin based on Vue 3, TypeScript, Naive UI and TailwindCSS.',
+  "🌐 I'm also good at building enterprise website with SSR/SSG framework such as Gatsby, Next.js and Nuxt.js",
+  '🍀 If you are interested in making open source projects together, please contact me with my WeChat Recall4056.',
+  '📫 You can contact me with my email recall4056@gmail.com.',
+  '💪 My tech stacks: HTML | CSS | SCSS | TailwindCSS | JavaScript | TypeScript | React | Vue | Vite | Next.js | Nuxt.js | Node.js | Express.js | Nest.js | Socket.io | Prisma | PostgreSQL | Docusaurus | Gatsby | Astro'
+]
 ---
 
 <BaseLayout
@@ -29,12 +50,7 @@ const CONTENT_TITLE_TEXT = 'Profile'
     About Me
   </ContentTitle>
   <ul class="space-y-2">
-    <li>👋 Hi, I'm {author}.</li>
-    <li>📖 I'm interested in reading different books.</li>
-    <li>🌱 I'm currently learning Vue and TypeScript.</li>
-    <li>💞️ I'm looking to collaborate on a React/Vue project.</li>
-    <li>🚀 I recently built a web app based on Vue 3, TypeScript.</li>
-    <li>📫 You can contact me with my email recall4056@gmail.com.</li>
+    {profile.map((item) => <li>{item}</li>)}
   </ul>
 
   <ContentTitle
@@ -56,11 +72,20 @@ const CONTENT_TITLE_TEXT = 'Profile'
     <TypeScriptIcon class="w-8" />
     <ReactIcon class="w-8" />
     <VueIcon class="w-8" />
+    <ViteIcon class="w-8" />
+    <SassIcon class="w-8" />
+    <TailwindCSSIcon class="w-8" />
     <NextjsIcon class="w-8" />
+    <NuxtjsIcon class="w-8" />
     <AstroIcon class="w-8" />
+    <GatsbyIcon class="w-8" />
+    <DocusaurusIcon class="w-8" />
     <NodejsIcon class="w-8" />
+    <ExpressjsIcon class="w-8" />
+    <NestjsIcon class="w-8" />
     <PrismaIcon class="w-8" />
     <PostgresqlIcon class="w-8" />
+    <SocketIoIcon class="w-8" />
   </div>
 
   <ContentTitle
@@ -79,7 +104,7 @@ const CONTENT_TITLE_TEXT = 'Profile'
     >
       `zxh.io`
     </a>
-     which the author is
+     which author is
     <a
       href="https://github.com/Renovamen"
       rel="noopener noreferrer"

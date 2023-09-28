@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import clsx from 'clsx'
 
 import { MoonIcon, SunIcon } from '@/components'
@@ -6,7 +7,7 @@ import { useTheme } from '@/hooks'
 import type { NavItem } from '@/types'
 import { navigateTo } from '@/utils'
 
-type Props = {
+interface Props {
   profileIcon?: astroHTML.JSX.Element
   postIcon?: astroHTML.JSX.Element
   tagIcon?: astroHTML.JSX.Element

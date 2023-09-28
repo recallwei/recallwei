@@ -1,4 +1,4 @@
-export const TechList = <const>[
+export const TechList = [
   'Astro',
   'CSS',
   'Docusaurus',
@@ -18,4 +18,4 @@ export const TechList = <const>[
   'TypeScript',
   'Vite',
   'Vue'
-]
+] as const

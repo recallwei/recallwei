@@ -6,32 +6,27 @@
 
 - 👋 Hi, I'm _**`Bruce Song`**_, a _**`Web Developer`**_ and _**`Open-Source enthusiast`**_.
 - 📖 I'm interested in reading different books and making something amazing.
-- 🌱 I'm currently focusing on _**`Vue 3`**_, _**`TypeScript`**_ and _**`Nest.js`**_.
+- 🌱 I'm currently focusing on _**`React`**_, _**`Vue`**_, _**`TypeScript`**_, _**`Nest.js`**_ and _**`React Native`**_.
 - 💞️ I'm looking to collaborate on any _**`Open-Source`**_ project.
-- 🚀 I'm recently built **[a web app named Dolphin Admin](https://dolphin-admin.bit-ocean.studio)** based on _**`Vue 3`**_, _**`TypeScript`**_, _**`Naive UI`**_ and _**`TailwindCSS`**_.
-- 🌐 I'm also good at building enterprise website with _**`SSR/SSG`**_ framework such as _**`Gatsby`**_, _**`Next.js`**_.
+- 🚀 I'm recently built **[an admin system named Dolphin Admin](https://dolphin-admin.bit-ocean.studio)** based on _**`Vue 3`**_, _**`TypeScript`**_, _**`Naive UI`**_ and _**`TailwindCSS`**_.
+- 🌐 I'm also good at building enterprise website with _**`SSR/SSG`**_ framework such as _**`Gatsby`**_, _**`Next.js`**_ and _**`Nuxt.js`**_.
 - 🍀 If you are interested in making open source projects together, please contact me with my WeChat _**`Recall4056`**_.
 - 📫 You can also contact me with my email _**`recall4056@gmail.com`**_.
 - 💪 My tech stacks: _**`HTML`**_ | _**`CSS`**_ | _**`SCSS`**_ | _**`TailwindCSS`**_ | _**`JavaScript`**_ | _**`TypeScript`**_ | _**`React`**_ | _**`Vue`**_ | _**`Vite`**_ | _**`Next.js`**_ | _**`Nuxt.js`**_ | _**`Node.js`**_ | _**`Express.js`**_ | _**`Nest.js`**_ | _**`Socket.io`**_ | _**`Prisma`**_ | _**`PostgreSQL`**_ | _**`Docusaurus`**_ | _**`Gatsby`**_ | _**`Astro`**_
-
-## 🚀 Tech Stack
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=js,ts,html,css,react,redux,vue,vite,sass,tailwind,nextjs,nuxtjs,gatsby,astro,nodejs,express,nestjs,postgres,prisma,tauri&theme=light&perline=10" />
-</p>
 
 ## 🌱 Recent Activities
 
 - 🦁 Migrate my blog site from `Next.js` to `Astro`. ( Progress: 95% )
 - 🐻 Build `Vue`, `Express` project starter templates. ( Progress: 100% )
-- 🐬 Build **Dolphin Admin** ( Admin template based on `Vue 3` + `TypeScript` + `NaiveUI` + `TailwindCSS` ). ( Progress: 75% )
-- 🦊 Refactor Taskward to `v2`. ( Progress: Not started yet )
-- 🐻‍❄️ Build `common utils` and `ESLint config` using `monorepo` and publish to `npm registry`. ( Progress: 10% )
-- 🐯 Looking for solutions to build hybrid applications on mobile terminals. ( Progress: Not started yet )
+- 🐬 Build **Dolphin Admin** ( Admin template based on `Vue 3` + `TypeScript` + `NaiveUI` + `TailwindCSS` ). ( Progress: 85% )
+- 🦊 Refactor Taskward to `v2`. ( Progress: 5% )
+- 🐻‍❄️ Build `common utils` and `ESLint config` using `monorepo` and publish to `npm registry`. ( Progress: 30% )
+- 🐯 Looking for solutions (React Native) to build hybrid applications on mobile terminals. ( Progress: 60% )
 - 🐶 Continuous learning: Full-stack architecture design, design patterns, best practices and so on. ( Progress: Always on the way )
 
 ## 🦄 Projects
 
+- _**[React Native Starter Template](https://github.com/recallwei/react-native-ts-starter-template)**_ : A _**`React Native`**_, _**`TypeScript`**_ template project.
 - _**[Dolphin Admin Vue](https://dolphin-admin.bit-ocean.studio)**_ : An elegant admin template based on _**`Vue 3`**_, _**`TypeScript`**_, _**`Naive UI`**_ and _**`TailwindCSS`**_.
 - _**[Dolphin Admin Nest](https://github.com/bit-ocean-studio/dolphin-admin-nest)**_ : Dolphin Admin API server based on _**`Nest.js`**_, _**`TypeScript`**_, _**`Prisma`**_ and _**`PostgreSQL`**_.
 - _**[Create Tornado](https://github.com/recallwei/tornado)**_ : A _**`CLI tool`**_ for scaffolding a project from an opinionated template for popular frameworks.
@@ -77,3 +72,9 @@ myLife().next()
 
 ![recallwei's GitHub stats](https://github-readme-stats.vercel.app/api?username=recallwei&count_private=true&theme=react)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=recallwei&layout=compact&theme=react)](https://github.com/recallwei)
+
+## 🚀 Tech Stack
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=js,ts,html,css,react,redux,vue,vite,sass,tailwind,nextjs,nuxtjs,gatsby,astro,nodejs,express,nestjs,postgres,prisma,tauri&theme=light&perline=10" />
+</p>

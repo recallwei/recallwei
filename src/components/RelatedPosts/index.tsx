@@ -1,6 +1,6 @@
 import type { CollectionEntry } from 'astro:content'
 
-type Props = {
+interface Props {
   data: CollectionEntry<'post'>[]
 }
 

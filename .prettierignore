@@ -1,8 +1,4 @@
-.cspell
 .husky
 .vercel
-dist
-build
 public
-node_modules
 pnpm-lock.yaml

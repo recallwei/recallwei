@@ -2,6 +2,7 @@ astro
 astrojs
 autocrlf
 beforeunload
+devicon
 blockquote
 bolditalic
 brucesong
@@ -9,6 +10,7 @@ certbot
 clsx
 commitlint
 esbuild
+expressjs
 fastify
 giscus
 iconify
@@ -22,6 +24,7 @@ noreferrer
 Noto
 nprogress
 nuxt
+Nuxtjs
 recallwei
 rehype
 Renovamen
@@ -34,4 +37,6 @@ Taskward
 tsconfigs
 typeof
 unplugin
+Vite
+vitejs
 worktree

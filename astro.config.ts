@@ -10,7 +10,14 @@ import { rehypePlugins, remarkPlugins } from './plugins'
 export default defineConfig({
   site: 'https://brucesong.xyz',
   output: 'server',
-  adapter: vercel({ analytics: true }),
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true
+    },
+    speedInsights: {
+      enabled: true
+    }
+  }),
   integrations: [react(), tailwind(), mdx()],
   markdown: {
     gfm: true,

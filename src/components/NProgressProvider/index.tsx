@@ -5,7 +5,7 @@ import { useEffect } from 'react'
 
 NProgress.configure({ showSpinner: false })
 
-type Props = {
+interface Props {
   children: React.ReactNode
 }
 

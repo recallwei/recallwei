@@ -8,18 +8,20 @@
   "dictionaryDefinitions": [
     {
       "name": "custom-words",
-      "path": "./.cspell/custom-words.txt",
+      "path": ".cspell.txt",
       "addWords": true
     }
   ],
   "ignorePaths": [
-    ".cspell",
-    ".vscode",
-    ".vercel",
-    "dist",
-    "build",
-    "node_modules",
-    "public",
+    ".cspell.txt",
+    ".github/workflows/**",
+    ".vscode/*.json",
+    "**/.vercel",
+    "**/dist/**",
+    "**/build/**",
+    "**/node_modules/**",
+    "**/**/CHANGELOG.md",
+    "**/**/CONTRIBUTORS.md",
     "pnpm-lock.yaml",
     "README.md"
   ],

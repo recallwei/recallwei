@@ -1,7 +1,7 @@
 import type { ProjectCard as ProjectCardType } from '@/types'
 import { navigateTo } from '@/utils'
 
-type Props = {
+interface Props {
   data: ProjectCardType
 }
 
@@ -15,7 +15,7 @@ export default function ProjectCard(props: Props): JSX.Element {
         <span className="text-lg">{props.data.name}</span>
         <div className="text-base text-muted">{props.data.description}</div>
       </div>
-      <div className="flex w-0 items-center justify-center"></div>
+      <div className="flex w-0 items-center justify-center" />
     </div>
   )
 }

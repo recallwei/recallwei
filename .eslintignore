@@ -1,10 +1,4 @@
-/.cspell
-/.husky
-/.vercel
-/dist
-/build
-/public
-node_modules
+.husky
+.vercel
+public
 pnpm-lock.yaml
-
-*.json
