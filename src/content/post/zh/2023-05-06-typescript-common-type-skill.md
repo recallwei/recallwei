@@ -2,6 +2,7 @@
 title: 'TypeScript 类型常用技巧'
 tags:
   - 'TypeScript'
+draft: true
 ---
 
 ## 字符串数组转字符串联合类型

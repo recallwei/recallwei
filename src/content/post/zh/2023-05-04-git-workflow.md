@@ -2,7 +2,6 @@
 title: 'Git 工作流'
 tags:
   - 'Git'
-draft: true
 ---
 
 ## 克隆仓库

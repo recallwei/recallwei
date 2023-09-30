@@ -2,7 +2,6 @@
 title: 'Git 工作树'
 tags:
   - 'Git'
-draft: true
 ---
 
 ## 创建

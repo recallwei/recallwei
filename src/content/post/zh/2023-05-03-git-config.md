@@ -2,7 +2,6 @@
 title: 'Git 设置'
 tags:
   - 'Git'
-draft: true
 ---
 
 Git 配置具有三个级别，依次是 **System**、**Global**、**Local**，后面的配置会覆盖前面的配置。

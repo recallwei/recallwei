@@ -10,7 +10,7 @@ import { navigateTo } from '@/utils'
 interface Props {
   profileIcon?: astroHTML.JSX.Element
   postIcon?: astroHTML.JSX.Element
-  tagIcon?: astroHTML.JSX.Element
+  // tagIcon?: astroHTML.JSX.Element
   projectIcon?: astroHTML.JSX.Element
   searchIcon?: astroHTML.JSX.Element
 }
@@ -28,11 +28,11 @@ export default function Header(props: Props): JSX.Element {
       href: '/posts',
       icon: props.postIcon
     },
-    {
-      title: 'Tags',
-      href: '/tags',
-      icon: props.tagIcon
-    },
+    // {
+    //   title: 'Tags',
+    //   href: '/tags',
+    //   icon: props.tagIcon
+    // },
     {
       title: 'Projects',
       href: '/projects',

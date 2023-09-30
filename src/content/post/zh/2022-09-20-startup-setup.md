@@ -2,6 +2,7 @@
 title: '装机设置'
 tags:
   - 'PC'
+draft: true
 ---
 
 ## 必装软件
