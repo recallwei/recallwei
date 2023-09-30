@@ -11,7 +11,7 @@ tags:
 
 ## 项目结构
 
-```plaintext
+```
 ├── node_modules
 ├── docs
 │   └── package.json
