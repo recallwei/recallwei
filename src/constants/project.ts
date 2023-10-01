@@ -111,6 +111,24 @@ export const GroupedProjects: ProjectsByGroup = {
       }
     ]
   },
+  utils: {
+    name: 'Utils',
+    projects: [
+      {
+        name: 'Create Tornado',
+        description:
+          'A prompt CLI tool to generate a project with GitHub template.',
+        href: 'https://tornado.bit-ocean.studio/',
+        techList: ['TypeScript', 'Node.js']
+      },
+      {
+        name: 'ESLint Config',
+        description: 'ESLint config for my projects.',
+        href: 'https://github.com/recallwei/eslint-config',
+        techList: ['JavaScript']
+      }
+    ]
+  },
   vscodeExts: {
     name: 'VSCode Extensions',
     projects: [
