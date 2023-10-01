@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import clsx from 'clsx'
 
+import { SITE_META } from '@/app.config'
 import { MoonIcon, SunIcon } from '@/components'
-import { SITE_META } from '@/configs'
 import { useTheme } from '@/hooks'
 import type { NavItem } from '@/types'
 import { navigateTo } from '@/utils'

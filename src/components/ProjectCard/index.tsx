@@ -1,6 +1,6 @@
 import { Icon } from '@iconify/react'
 
-import { TechIconNameMap } from '@/base'
+import { TechIconNameMap } from '@/constants'
 import type { ProjectCard as ProjectCardType } from '@/types'
 import { navigateTo } from '@/utils'
 

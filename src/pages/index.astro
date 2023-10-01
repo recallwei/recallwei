@@ -1,6 +1,6 @@
 ---
+import { SITE_META } from '@/app.config'
 import { ContentTitle, Motto } from '@/components'
-import { SITE_META } from '@/configs'
 import { BaseLayout } from '@/layouts'
 import TailwindCSSIcon from '~icons/devicon/tailwindcss'
 import AstroIcon from '~icons/logos/astro-icon'
@@ -87,32 +87,5 @@ const profile = [
     <PrismaIcon class="w-8" />
     <PostgresqlIcon class="w-8" />
     <SocketIoIcon class="w-8" />
-  </div>
-
-  <ContentTitle
-    class="mt-12"
-    fontSize="small"
-  >
-    Others
-  </ContentTitle>
-  <div>
-    My blog site is inspired by
-    <a
-      href="https://zxh.io"
-      rel="noopener noreferrer"
-      class="inline-block hover:text-primary hover:underline"
-      target="_blank"
-    >
-      `zxh.io`
-    </a>
-     which author is
-    <a
-      href="https://github.com/Renovamen"
-      rel="noopener noreferrer"
-      target="_blank"
-      class="inline-block hover:text-primary hover:underline"
-    >
-      `Renovamen`
-    </a>.
   </div>
 </BaseLayout>

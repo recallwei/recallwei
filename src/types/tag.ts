@@ -1,3 +1,3 @@
-import type { TagList } from '@/base'
+import type { TagList } from '@/constants'
 
 export type Tag = (typeof TagList)[number]

@@ -1,4 +1,4 @@
-import { SITE_META } from '@/configs'
+import { SITE_META } from '@/app.config'
 
 export default function Footer(): JSX.Element {
   const { email, copyright } = SITE_META

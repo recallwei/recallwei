@@ -1,8 +1,8 @@
 ---
 import { type CollectionEntry, getEntries } from 'astro:content'
 
+import { THEME_META } from '@/app.config'
 import { RelatedPosts } from '@/components'
-import { THEME_META } from '@/configs'
 import { TagHrefMap } from '@/constants'
 import { BaseLayout } from '@/layouts'
 import type { Lang } from '@/types'
@@ -45,7 +45,13 @@ const { title, tags } = post.data
   <div class="mb-4 text-lg font-medium text-muted dark:text-white">
     <div class="space-x-1 tracking-wider">
       <span>{releaseTime}</span>
-      {post.data.draft && <span class="text-primary">{lang === 'en' ? '[Draft]' : '【草稿】'}</span>}
+      {
+        post.data.draft && (
+          <span class="text-primary">
+            {lang === 'en' ? '[Draft]' : '【草稿】'}
+          </span>
+        )
+      }
     </div>
 
     {
@@ -54,7 +60,9 @@ const { title, tags } = post.data
           {tags.map((tag) => (
             <a
               class="block w-fit select-none rounded-sm bg-primary px-1 py-0.5 text-sm text-gray-950 dark:text-white"
-              href={`/posts${lang === 'zh' ? '/zh' : ''}?tag=${TagHrefMap.get(tag)}`}
+              href={`/posts${lang === 'zh' ? '/zh' : ''}?tag=${TagHrefMap.get(
+                tag
+              )}`}
             >
               {tag}
             </a>
@@ -91,7 +99,9 @@ const { title, tags } = post.data
         <span>{editLink}</span>
       </a>
     </div>
-    <div class="flex w-full items-center justify-start space-x-1 sm:w-1/2 sm:justify-end">
+    <div
+      class="flex w-full items-center justify-start space-x-1 sm:w-1/2 sm:justify-end"
+    >
       {
         lastUpdatedTime !== 'Invalid Date' && (
           <>

@@ -1,4 +1,4 @@
-import { SITE_META } from '@/configs'
+import { SITE_META } from '@/app.config'
 import { navigateTo } from '@/utils'
 
 export default function Motto(): JSX.Element {

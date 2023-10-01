@@ -1,4 +1,4 @@
-import type { TechList } from '@/base'
+import type { TechList } from '@/constants'
 
 export type Tech = (typeof TechList)[number]
 
