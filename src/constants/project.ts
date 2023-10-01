@@ -67,18 +67,18 @@ export const GroupedProjects: ProjectsByGroup = {
         ]
       },
       {
-        name: 'Blog',
+        name: 'QRCode Generator',
         description:
-          'My personal blog to record something what I want. Based on Astro.',
-        href: 'https://brucesong.xyz/',
-        techList: ['TypeScript', 'Astro', 'React', 'TailwindCSS']
+          'Generate QRCodes more easily by specific templates. Based on Vue 3, TypeScript.',
+        href: 'https://qrcode.brucesong.xyz/',
+        techList: ['TypeScript', 'Vue', 'Naive UI', 'TailwindCSS', 'Vite']
       },
       {
-        name: 'Wiki',
+        name: 'LiDeBiJi Enterprise Website Demo',
         description:
-          'Used to record various questions and knowledge points. Archived in the Show Case of Docusaurus.',
-        href: 'https://wiki.brucesong.xyz/',
-        techList: ['TypeScript', 'Docusaurus', 'React', 'SCSS']
+          'A demo of the enterprise website customized for LiDeBiJi. Based on React, Gatsby.',
+        href: 'https://lidebiji-demo.brucesong.xyz/media',
+        techList: ['JavaScript', 'Gatsby', 'React', 'TailwindCSS']
       },
       {
         name: 'Taskward',
@@ -96,18 +96,18 @@ export const GroupedProjects: ProjectsByGroup = {
         ]
       },
       {
-        name: 'QRCode Generator',
+        name: 'Blog',
         description:
-          'Generate QRCodes more easily by specific templates. Based on Vue 3, TypeScript.',
-        href: 'https://qrcode.brucesong.xyz/',
-        techList: ['TypeScript', 'Vue', 'Naive UI', 'TailwindCSS', 'Vite']
+          'My personal blog to record something what I want. Based on Astro.',
+        href: 'https://brucesong.xyz/',
+        techList: ['TypeScript', 'Astro', 'React', 'TailwindCSS']
       },
       {
-        name: '里德笔记',
+        name: 'Wiki',
         description:
-          'A demo of the enterprise website customized for LiDeBiJi. Based on React, Gatsby.',
-        href: 'https://lidebiji-demo.brucesong.xyz/media',
-        techList: ['JavaScript', 'Gatsby', 'React', 'TailwindCSS']
+          'Used to record various questions and knowledge points. Archived in the Show Case of Docusaurus.',
+        href: 'https://wiki.brucesong.xyz/',
+        techList: ['TypeScript', 'Docusaurus', 'React', 'SCSS']
       }
     ]
   },
