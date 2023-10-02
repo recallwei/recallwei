@@ -1,15 +1,13 @@
 import 'nprogress/nprogress.css'
 
 import NProgress from 'nprogress'
-import { useEffect } from 'react'
+import { type PropsWithChildren, useEffect } from 'react'
 
 NProgress.configure({ showSpinner: false })
 
-interface Props {
-  children: React.ReactNode
-}
-
-export default function NProgressProvider({ children }: Props): JSX.Element {
+export default function NProgressProvider({
+  children
+}: PropsWithChildren): React.JSX.Element {
   useEffect(() => {
     window.addEventListener('beforeunload', () => NProgress.start())
     window.addEventListener('DOMContentLoaded ', () => NProgress.done())

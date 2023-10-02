@@ -15,7 +15,7 @@ interface Props {
   searchIcon?: astroHTML.JSX.Element
 }
 
-export default function Header(props: Props): JSX.Element {
+export default function Header(props: Props): React.JSX.Element {
   const navList: NavItem[] = [
     {
       title: 'Profile',
