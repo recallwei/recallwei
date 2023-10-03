@@ -12,7 +12,7 @@
 - 🌐 I'm also good at building enterprise website with _**`SSR/SSG`**_ framework such as _**`Gatsby`**_, _**`Next.js`**_ and _**`Nuxt.js`**_.
 - 🍀 If you are interested in making open source projects together, please contact me with my WeChat _**`Recall4056`**_.
 - 📫 You can also contact me with my email _**`recall4056@gmail.com`**_.
-- 💪 My tech stacks: _**`HTML`**_ | _**`CSS`**_ | _**`SCSS`**_ | _**`TailwindCSS`**_ | _**`JavaScript`**_ | _**`TypeScript`**_ | _**`React`**_ | _**`Vue`**_ | _**`Vite`**_ | _**`Next.js`**_ | _**`Nuxt.js`**_ | _**`Node.js`**_ | _**`Express.js`**_ | _**`Nest.js`**_ | _**`Socket.io`**_ | _**`Prisma`**_ | _**`PostgreSQL`**_ | _**`Docusaurus`**_ | _**`Gatsby`**_ | _**`Astro`**_
+- 💪 My tech stacks: _**`HTML`**_ | _**`CSS`**_ | _**`SCSS`**_ | _**`TailwindCSS`**_ | _**`JavaScript`**_ | _**`TypeScript`**_ | _**`React`**_ | _**`Vue`**_ | _**`Svelte`**_ | _**`Vite`**_ | _**`Next.js`**_ | _**`Nuxt.js`**_ | _**`Node.js`**_ | _**`Express.js`**_ | _**`Nest.js`**_ | _**`Socket.io`**_ | _**`Prisma`**_ | _**`PostgreSQL`**_ | _**`Docusaurus`**_ | _**`Gatsby`**_ | _**`Astro`**_
 
 ## 🌱 Recent Activities
 
@@ -26,6 +26,7 @@
 
 ## 🦄 Projects
 
+- _**[What to eat?](https://github.com/recallwei/what-to-eat)**_: A _**`Svelte`**_, _**`TypeScript`**_ project.
 - _**[React Native Starter Template](https://github.com/recallwei/react-native-ts-starter-template)**_ : A _**`React Native`**_, _**`TypeScript`**_ template project.
 - _**[Dolphin Admin Vue](https://dolphin-admin.bit-ocean.studio)**_ : An elegant admin template based on _**`Vue 3`**_, _**`TypeScript`**_, _**`Naive UI`**_ and _**`TailwindCSS`**_.
 - _**[Dolphin Admin Nest](https://github.com/bit-ocean-studio/dolphin-admin-nest)**_ : Dolphin Admin API server based on _**`Nest.js`**_, _**`TypeScript`**_, _**`Prisma`**_ and _**`PostgreSQL`**_.
@@ -76,5 +77,5 @@ myLife().next()
 ## 🚀 Tech Stack
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=js,ts,html,css,react,redux,vue,vite,sass,tailwind,nextjs,nuxtjs,gatsby,astro,nodejs,express,nestjs,postgres,prisma,tauri&theme=light&perline=10" />
+  <img src="https://skillicons.dev/icons?i=js,ts,html,css,react,redux,vue,svelte,vite,sass,tailwind,nextjs,nuxtjs,gatsby,astro,nodejs,express,nestjs,postgres,prisma,tauri&theme=light&perline=10" />
 </p>
