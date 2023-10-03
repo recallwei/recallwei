@@ -30,6 +30,7 @@ export const TechList = [
   'ReactiveX',
   'SCSS',
   'Socket.IO',
+  'Svelte',
   'TailwindCSS',
   'Tamagui',
   'TypeScript',
@@ -69,9 +70,10 @@ export const TechIconNameMap = new Map<(typeof TechList)[number], string>([
   ['ReactiveX', 'logos:reactivex'],
   ['SCSS', 'logos:sass'],
   ['Socket.IO', 'devicon:socketio'],
+  ['Svelte', 'logos:svelte-icon'],
   ['TailwindCSS', 'devicon:tailwindcss'],
   ['Tamagui', 'vscode-icons:file-type-tamagui'],
-  ['TypeScript', 'logos:typescript-icon'],
+  ['TypeScript', 'devicon:typescript'],
   ['Vite', 'logos:vitejs'],
   ['VSCode', 'logos:visual-studio-code'],
   ['Vue', 'logos:vue'],
@@ -97,7 +99,15 @@ export const GroupedProjects: ProjectsByGroup = {
       {
         name: 'Soya Solar Enterprise Website',
         description: 'An enterprise website based on Next.js.',
-        techList: ['TypeScript', 'Next.js', 'TailwindCSS', 'SCSS'],
+        techList: ['TypeScript', 'Next.js', 'React', 'TailwindCSS', 'SCSS'],
+        inDevelopment: true
+      },
+      {
+        name: 'What to eat?',
+        description:
+          'For people with difficulty making choices, what to eat is a big problem in life!',
+        href: 'https://what-to-eat.brucesong.xyz/',
+        techList: ['TypeScript', 'Svelte', 'TailwindCSS', 'Vite'],
         inDevelopment: true
       },
       {
@@ -141,7 +151,7 @@ export const GroupedProjects: ProjectsByGroup = {
       {
         name: 'Dolphin Admin Docs',
         description: 'A tech documentation site for Dolphin Admin.',
-        techList: ['TypeScript', 'Nuxt.js', 'TailwindCSS', 'SCSS', 'Pinia'],
+        techList: ['Nuxt.js', 'TypeScript', 'TailwindCSS', 'SCSS', 'Pinia'],
         inDevelopment: true
       },
       {
