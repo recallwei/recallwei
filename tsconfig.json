@@ -16,6 +16,7 @@
     "src/**/*.ts",
     "src/**/*.tsx",
     "src/**/*.astro",
-    "astro.config.ts"
+    "astro.config.ts",
+    "@types/*.d.ts"
   ]
 }

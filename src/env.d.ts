@@ -1,3 +1,2 @@
-/// <reference path="../.astro/types.d.ts" />
 /// <reference types="astro/client" />
-/// <reference types="astro/astro-jsx" />
+/// <reference path="../.astro/types.d.ts" />
