@@ -1,4 +1,2 @@
 .husky
-.vercel
-public
 pnpm-lock.yaml

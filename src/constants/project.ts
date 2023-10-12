@@ -1,4 +1,5 @@
 import type { ProjectsByGroup } from '@/types'
+import { getUrl } from '@/utils'
 
 export const TechList = [
   'antd',
@@ -99,6 +100,7 @@ export const GroupedProjects: ProjectsByGroup = {
       {
         name: 'Soya Solar Enterprise Website',
         description: 'An enterprise website based on Next.js.',
+        href: '',
         techList: ['TypeScript', 'Next.js', 'React', 'TailwindCSS', 'SCSS'],
         inDevelopment: true
       },
@@ -106,14 +108,20 @@ export const GroupedProjects: ProjectsByGroup = {
         name: 'What to eat?',
         description:
           'For people with difficulty making choices, what to eat is a big problem in life!',
-        href: 'https://what-to-eat.brucesong.xyz/',
+        href: getUrl({
+          subDomain: 'what-to-eat',
+          type: 'Personal'
+        }),
         techList: ['TypeScript', 'Svelte', 'TailwindCSS', 'Vite'],
         inDevelopment: true
       },
       {
         name: 'Dolphin Admin React',
         description: '🐬 Dolphin Admin React version.',
-        // href: 'https://dolphin-admin.bit-ocean.studio/',
+        href: getUrl({
+          subDomain: 'dolphin-admin-react',
+          type: 'Bit Ocean'
+        }),
         techList: [
           'TypeScript',
           'React',
@@ -132,7 +140,10 @@ export const GroupedProjects: ProjectsByGroup = {
         name: 'Dolphin Admin Vue',
         description:
           '🐬 Dolphin Admin Vue is an open source, lightweight, out-of-the-box, elegant and exquisite, internationalized backend management template.',
-        href: 'https://dolphin-admin.bit-ocean.studio/',
+        href: getUrl({
+          subDomain: 'dolphin-admin-vue',
+          type: 'Bit Ocean'
+        }),
         techList: [
           'TypeScript',
           'Vue',
@@ -149,15 +160,12 @@ export const GroupedProjects: ProjectsByGroup = {
         ]
       },
       {
-        name: 'Dolphin Admin Docs',
-        description: 'A tech documentation site for Dolphin Admin.',
-        techList: ['Nuxt.js', 'TypeScript', 'TailwindCSS', 'SCSS', 'Pinia'],
-        inDevelopment: true
-      },
-      {
         name: 'QRCode Generator',
         description: 'Generate QRCodes more easily by specific templates.',
-        href: 'https://qrcode.brucesong.xyz/',
+        href: getUrl({
+          subDomain: 'qrcode',
+          type: 'Personal'
+        }),
         techList: [
           'TypeScript',
           'Vue',
@@ -173,7 +181,10 @@ export const GroupedProjects: ProjectsByGroup = {
       {
         name: 'Resume Generator',
         description: 'Use markdown to write your resume. ',
-        // href: 'https://resume.brucesong.xyz/',
+        href: getUrl({
+          subDomain: 'resume',
+          type: 'Personal'
+        }),
         techList: ['TypeScript', 'Vue', 'TailwindCSS', 'SCSS', 'Vite', 'Pinia'],
         inDevelopment: true
       },
@@ -181,13 +192,20 @@ export const GroupedProjects: ProjectsByGroup = {
         name: 'LiDeBiJi Enterprise Website Demo',
         description:
           'A demo of the enterprise website customized for LiDeBiJi.',
-        href: 'https://lidebiji-demo.brucesong.xyz/media',
+        href: getUrl({
+          subDomain: 'lidebiji-demo',
+          type: 'Personal',
+          path: 'media'
+        }),
         techList: ['JavaScript', 'Gatsby', 'React', 'TailwindCSS']
       },
       {
         name: 'Taskward',
         description: 'A Todo&Tasks web application.',
-        href: 'https://taskward.bit-ocean.studio/',
+        href: getUrl({
+          subDomain: 'taskward',
+          type: 'Bit Ocean'
+        }),
         techList: [
           'TypeScript',
           'React',
@@ -199,18 +217,63 @@ export const GroupedProjects: ProjectsByGroup = {
           'Prisma',
           'PostgreSQL'
         ]
+      }
+    ]
+  },
+  documentations: {
+    name: 'Documentations',
+    projects: [
+      {
+        name: 'Dolphin Admin Docs',
+        description: 'A tech documentation site for Dolphin Admin.',
+        techList: ['Nuxt.js', 'TypeScript', 'TailwindCSS', 'SCSS', 'Pinia'],
+        inDevelopment: true
+      },
+      {
+        name: 'Catopia UI Docs',
+        description: 'A minimalist style UI component library.',
+        href: getUrl({
+          subDomain: 'catopia-ui',
+          type: 'Bit Ocean'
+        }),
+        techList: ['Vite'],
+        inDevelopment: true
+      },
+      {
+        name: 'Tornado Docs',
+        description:
+          'An Opinionated front-end tooling makes building Web Apps faster.',
+        href: getUrl({
+          subDomain: 'tornado',
+          type: 'Bit Ocean'
+        }),
+        techList: ['Vite']
+      },
+      {
+        name: 'Code Snippets',
+        description: 'Universal config template code.',
+        href: getUrl({
+          subDomain: 'code',
+          type: 'Personal'
+        }),
+        techList: ['Vite']
       },
       {
         name: 'Blog',
         description: 'My personal blog to record something what I want.',
-        href: 'https://brucesong.xyz/',
+        href: getUrl({
+          type: 'Personal'
+        }),
         techList: ['TypeScript', 'Astro', 'React', 'TailwindCSS']
       },
       {
         name: 'Wiki',
         description:
           'Used to record various questions and knowledge points. Archived in the Show Case of Docusaurus.',
-        href: 'https://wiki.brucesong.xyz/',
+        href: getUrl({
+          subDomain: 'wiki',
+          type: 'Personal'
+        }),
         techList: ['TypeScript', 'Docusaurus', 'React', 'SCSS']
       }
     ]
@@ -222,7 +285,11 @@ export const GroupedProjects: ProjectsByGroup = {
         name: 'Create Tornado',
         description:
           'A prompt CLI tool to generate a project with GitHub template.',
-        href: 'https://tornado.bit-ocean.studio/',
+        href: getUrl({
+          subDomain: 'tornado',
+          type: 'Bit Ocean',
+          path: 'guide/create-tornado'
+        }),
         techList: ['TypeScript', 'Node.js', 'pnpm']
       },
       {

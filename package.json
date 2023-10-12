@@ -10,11 +10,12 @@
     "preview": "astro preview --host",
     "astro": "astro",
     "cspell:check": "cspell **",
-    "cspell:sort": "node ./scripts/cspell-sort.cjs",
     "eslint:check": "eslint . --ext .js,.jsx,.ts,.tsx,.astro",
     "eslint:fix": "eslint . --ext .js,.jsx,.ts,.tsx,.astro --fix",
     "prettier:check": "prettier --check --ignore-unknown .",
     "prettier:fix": "prettier --write --ignore-unknown .",
+    "cz": "git-cz",
+    "preinstall": "npx only-allow pnpm",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -22,11 +23,11 @@
     "@astrojs/markdown-remark": "^3.2.1",
     "@astrojs/mdx": "^1.1.1",
     "@astrojs/react": "^3.0.3",
-    "@astrojs/tailwind": "^5.0.1",
+    "@astrojs/tailwind": "^5.0.2",
     "@astrojs/vercel": "^5.0.2",
     "@iconify/react": "^4.1.1",
     "@types/cross-spawn": "^6.0.3",
-    "astro": "^3.2.3",
+    "astro": "^3.2.4",
     "clsx": "^2.0.0",
     "cross-spawn": "^7.0.3",
     "dayjs": "^1.11.10",
@@ -41,18 +42,25 @@
     "@brucesong/eslint-config-astro": "^1.0.14",
     "@commitlint/cli": "^17.7.2",
     "@commitlint/config-conventional": "^17.7.0",
-    "@iconify/json": "^2.2.126",
+    "@iconify/json": "^2.2.127",
     "@tailwindcss/typography": "^0.5.10",
     "@types/nprogress": "^0.2.1",
-    "@types/react": "^18.2.27",
-    "@types/react-dom": "^18.2.12",
+    "@types/react": "^18.2.28",
+    "@types/react-dom": "^18.2.13",
+    "commitizen": "^4.3.0",
     "cspell": "^7.3.7",
+    "cz-git": "^1.7.1",
     "eslint": "^8.51.0",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
     "tailwindcss": "^3.3.3",
     "unplugin-icons": "^0.17.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
   },
   "private": true,
   "license": "MIT"
