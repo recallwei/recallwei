@@ -1,4 +1,5 @@
 import mdx from '@astrojs/mdx'
+import prefetch from '@astrojs/prefetch'
 import react from '@astrojs/react'
 import tailwind from '@astrojs/tailwind'
 import vercel from '@astrojs/vercel/serverless'
@@ -7,6 +8,7 @@ import Icons from 'unplugin-icons/vite'
 
 import { rehypePlugins, remarkPlugins } from './plugins'
 
+// https://astro.build/config
 export default defineConfig({
   site: 'https://brucesong.xyz',
   output: 'server',
@@ -18,7 +20,7 @@ export default defineConfig({
       enabled: true
     }
   }),
-  integrations: [react(), tailwind(), mdx()],
+  integrations: [react(), tailwind(), mdx(), prefetch()],
   markdown: {
     gfm: true,
     smartypants: true,

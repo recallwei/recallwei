@@ -63,6 +63,7 @@ const { title, tags } = post.data
               href={`/posts${lang === 'zh' ? '/zh' : ''}?tag=${TagHrefMap.get(
                 tag
               )}`}
+              rel="prefetch"
             >
               {tag}
             </a>
@@ -92,7 +93,7 @@ const { title, tags } = post.data
       <a
         href={editURL}
         target="_blank"
-        rel="noopener noreferrer"
+        rel="noopener noreferrer prefetch"
         class="flex w-fit space-x-1 text-primary hover:underline"
       >
         <EditIcon class="mt-[1px]" />

@@ -9,7 +9,7 @@ export default function Footer(): React.JSX.Element {
         className="cursor-pointer text-gray-500 dark:text-white"
         href={`mailto:${email}`}
         target="_blank"
-        rel="noopener noreferrer"
+        rel="noopener noreferrer prefetch"
       >
         {copyright}
       </a>

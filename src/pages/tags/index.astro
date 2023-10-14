@@ -22,6 +22,7 @@ const tags = await getTags()
             <a
               href={`/posts?tag=${TagHrefMap.get(tag)}`}
               class="inline-block underline-offset-4  hover:underline"
+              rel="prefetch"
             >
               {tag}
             </a>

@@ -14,6 +14,7 @@ export default function RelatedPosts(props: Props): React.JSX.Element {
             <a
               href={`/posts/${post.slug}`}
               className="underline-offset-4 hover:underline"
+              rel="prefetch"
             >
               {post.data.title}
             </a>
