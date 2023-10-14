@@ -7,7 +7,7 @@ tags:
 ## 创建
 
 ```bash
-git worktree add <path> <branch>
+git worktree add -b <new-branch-name> <path> <branch-name>
 ```
 
 ## 修剪
