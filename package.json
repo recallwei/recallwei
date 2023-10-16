@@ -41,8 +41,8 @@
   },
   "devDependencies": {
     "@brucesong/eslint-config-astro": "^1.0.17",
-    "@commitlint/cli": "^17.7.2",
-    "@commitlint/config-conventional": "^17.7.0",
+    "@commitlint/cli": "^17.8.0",
+    "@commitlint/config-conventional": "^17.8.0",
     "@iconify/json": "^2.2.128",
     "@tailwindcss/typography": "^0.5.10",
     "@types/nprogress": "^0.2.1",
@@ -53,7 +53,7 @@
     "cz-git": "^1.7.1",
     "eslint": "^8.51.0",
     "husky": "^8.0.3",
-    "lint-staged": "^14.0.1",
+    "lint-staged": "^15.0.1",
     "prettier": "^3.0.3",
     "tailwindcss": "^3.3.3",
     "unplugin-icons": "^0.17.0"

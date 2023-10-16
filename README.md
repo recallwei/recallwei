@@ -8,21 +8,11 @@
 - 📖 I'm interested in reading different books and making something amazing.
 - 🌱 I'm currently focusing on _**`React`**_, _**`Vue`**_, _**`TypeScript`**_, _**`Nest.js`**_ and _**`React Native`**_.
 - 💞️ I'm looking to collaborate on any _**`Open-Source`**_ project.
-- 🚀 I'm recently built **[an admin system named Dolphin Admin](https://dolphin-admin.bit-ocean.studio)** based on _**`Vue 3`**_, _**`TypeScript`**_, _**`Naive UI`**_ and _**`TailwindCSS`**_.
-- 🌐 I'm also good at building enterprise website with _**`SSR/SSG`**_ framework such as _**`Gatsby`**_, _**`Next.js`**_ and _**`Nuxt.js`**_.
+- 🚀 I'm recently built **[an admin system named Dolphin Admin](https://dolphin-admin.bit-ocean.studio)** based on _**`Vue 3`**_, _**`TypeScript`**_, _**`Naive UI`**_ and _**`TailwindCSS`**_, also have a **[React Version](https://dolphin-admin-react.bit-ocean.studio)**.
+- 🌐 I'm also good at building _**`Node.js`**_ CLI tools and enterprise website with _**`SSR/SSG`**_ framework such as _**`Gatsby`**_, _**`Next.js`**_ and _**`Nuxt.js`**_.
 - 🍀 If you are interested in making open source projects together, please contact me with my WeChat _**`Recall4056`**_.
 - 📫 You can also contact me with my email _**`recall4056@gmail.com`**_.
 - 💪 My tech stacks: _**`HTML`**_ | _**`CSS`**_ | _**`SCSS`**_ | _**`TailwindCSS`**_ | _**`JavaScript`**_ | _**`TypeScript`**_ | _**`React`**_ | _**`Vue`**_ | _**`Svelte`**_ | _**`Vite`**_ | _**`Next.js`**_ | _**`Nuxt.js`**_ | _**`Node.js`**_ | _**`Express.js`**_ | _**`Nest.js`**_ | _**`Socket.io`**_ | _**`Prisma`**_ | _**`PostgreSQL`**_ | _**`Docusaurus`**_ | _**`Gatsby`**_ | _**`Astro`**_
-
-## 🌱 Recent Activities
-
-- 🦁 Migrate my blog site from `Next.js` to `Astro`. ( Progress: 95% )
-- 🐻 Build `Vue`, `Express` project starter templates. ( Progress: 100% )
-- 🐬 Build **Dolphin Admin** ( Admin template based on `Vue 3` + `TypeScript` + `NaiveUI` + `TailwindCSS` ). ( Progress: 85% )
-- 🦊 Refactor Taskward to `v2`. ( Progress: 5% )
-- 🐻‍❄️ Build `common utils` and `ESLint config` using `monorepo` and publish to `npm registry`. ( Progress: 30% )
-- 🐯 Looking for solutions (React Native) to build hybrid applications on mobile terminals. ( Progress: 60% )
-- 🐶 Continuous learning: Full-stack architecture design, design patterns, best practices and so on. ( Progress: Always on the way )
 
 ## 🦄 Projects
 
@@ -30,6 +20,7 @@
 - _**[React Native Starter Template](https://github.com/recallwei/react-native-ts-starter-template)**_ : A _**`React Native`**_, _**`TypeScript`**_ template project.
 - _**[Dolphin Admin Vue](https://dolphin-admin.bit-ocean.studio)**_ : An elegant admin template based on _**`Vue 3`**_, _**`TypeScript`**_, _**`Naive UI`**_ and _**`TailwindCSS`**_.
 - _**[Dolphin Admin Nest](https://github.com/bit-ocean-studio/dolphin-admin-nest)**_ : Dolphin Admin API server based on _**`Nest.js`**_, _**`TypeScript`**_, _**`Prisma`**_ and _**`PostgreSQL`**_.
+- _**[Tornado X](https://github.com/recallwei/tornado)**_: A _**`CLI tool`**_ for adding engineering suites for projects.
 - _**[Create Tornado](https://github.com/recallwei/tornado)**_ : A _**`CLI tool`**_ for scaffolding a project from an opinionated template for popular frameworks.
 - _**[ESLint Config](https://github.com/recallwei/eslint-config)**_ : A _**`ESLint`**_ for _**`JavaScript`**_, _**`TypeScript`**_ projects, pulished to _**`npm`**_.
 - _**[Express Starter Template](https://github.com/recallwei/express-starter-template)**_ : A _**`Express`**_, _**`TypeScript`**_ template project.

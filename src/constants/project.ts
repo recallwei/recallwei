@@ -15,6 +15,7 @@ export const TechList = [
   'JavaScript',
   'Naive UI',
   'Nest.js',
+  'Netlify',
   'Next.js',
   'Node.js',
   'Nuxt.js',
@@ -35,6 +36,7 @@ export const TechList = [
   'TailwindCSS',
   'Tamagui',
   'TypeScript',
+  'Vercel',
   'Vite',
   'VSCode',
   'Vue',
@@ -55,6 +57,7 @@ export const TechIconNameMap = new Map<(typeof TechList)[number], string>([
   ['JavaScript', 'logos:javascript'],
   ['Naive UI', 'logos:naiveui'],
   ['Nest.js', 'logos:nestjs'],
+  ['Netlify', 'logos:netlify-icon'],
   ['Next.js', 'logos:nextjs-icon'],
   ['Node.js', 'logos:nodejs-icon'],
   ['Nuxt.js', 'vscode-icons:file-type-nuxt'],
@@ -75,6 +78,7 @@ export const TechIconNameMap = new Map<(typeof TechList)[number], string>([
   ['TailwindCSS', 'devicon:tailwindcss'],
   ['Tamagui', 'vscode-icons:file-type-tamagui'],
   ['TypeScript', 'devicon:typescript'],
+  ['Vercel', 'logos:vercel-icon'],
   ['Vite', 'logos:vitejs'],
   ['VSCode', 'logos:visual-studio-code'],
   ['Vue', 'logos:vue'],
@@ -213,6 +217,7 @@ export const GroupedProjects: ProjectsByGroup = {
           'React Query',
           'TailwindCSS',
           'Vite',
+          'Vercel',
           'Express.js',
           'Prisma',
           'PostgreSQL'
@@ -247,7 +252,7 @@ export const GroupedProjects: ProjectsByGroup = {
           subDomain: 'tornado',
           type: 'Bit Ocean'
         }),
-        techList: ['Vite']
+        techList: ['Vite', 'Netlify']
       },
       {
         name: 'Code Snippets',
@@ -281,6 +286,16 @@ export const GroupedProjects: ProjectsByGroup = {
   utils: {
     name: 'Utils',
     projects: [
+      {
+        name: 'Tornado X',
+        description: 'Add engineering suites for your projects.',
+        href: getUrl({
+          subDomain: 'tornado',
+          type: 'Bit Ocean',
+          path: 'guide/tornado-x'
+        }),
+        techList: ['TypeScript', 'Node.js', 'pnpm']
+      },
       {
         name: 'Create Tornado',
         description:
