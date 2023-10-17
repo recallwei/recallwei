@@ -43,6 +43,7 @@ safecrlf
 semanage
 shiki
 socketio
+soyaenergy
 tailwindcss
 Tamagui
 Taskward
