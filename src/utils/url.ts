@@ -24,6 +24,6 @@ export const getUrl = ({
       return `${urlPrefix}${subDomain}.${PERSONAL_DOMAIN}/${path}`
     case 'Custom':
     default:
-      return `${urlPrefix}${subDomain}.${domain}/${path}`
+      return `${urlPrefix}${subDomain ? `${subDomain}.` : ''}${domain}/${path}`
   }
 }

@@ -106,7 +106,7 @@ export const GroupedProjects: ProjectsByGroup = {
         description: 'An enterprise website based on Next.js.',
         href: getUrl({
           type: 'Custom',
-          domain: 'soyaenergy.com/'
+          domain: 'soyaenergy.com'
         }),
         techList: ['TypeScript', 'Next.js', 'React', 'TailwindCSS', 'SCSS'],
         inDevelopment: true
