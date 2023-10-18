@@ -1,5 +1,6 @@
 export * from './content'
 export * from './header'
+export * from './link'
 export * from './project'
 export * from './tag'
 export * from './time'

@@ -1,11 +1,18 @@
 ---
 import '@/styles/base.css'
 
-import { ContentContainer, ContentTitle, Footer, Header, NProgressProvider } from '@/components'
+import {
+  ContentContainer,
+  ContentTitle,
+  Footer,
+  Header,
+  NProgressProvider
+} from '@/components'
 import ProfileIcon from '~icons/line-md/account'
 import ProjectIcon from '~icons/line-md/document-code'
 import TagIcon from '~icons/line-md/document-report'
 import PostIcon from '~icons/line-md/edit'
+import LinkIcon from '~icons/line-md/external-link'
 import SearchIcon from '~icons/line-md/search'
 
 export interface Props {
@@ -18,7 +25,7 @@ const { title, contentTitle } = Astro.props
 const getDocumentTitle = () => `${title} - Bruce Song`
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -54,7 +61,8 @@ const getDocumentTitle = () => `${title} - Bruce Song`
     ;(function () {
       if (
         localStorage.theme === 'dark' ||
-        (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+        (!('theme' in localStorage) &&
+          window.matchMedia('(prefers-color-scheme: dark)').matches)
       ) {
         document.documentElement.classList.add('dark')
         localStorage.setItem('theme', 'dark')
@@ -67,13 +75,16 @@ const getDocumentTitle = () => `${title} - Bruce Song`
 
   <body class="bg-[#F6F6F6] dark:bg-[#36393F]">
     <NProgressProvider client:only="react">
-      <main class="relative flex min-h-full flex-col px-4 py-20 font-sans dark:text-white">
+      <main
+        class="relative flex min-h-full flex-col px-4 py-20 font-sans dark:text-white"
+      >
         <Header client:only="react">
           <ProfileIcon slot="profileIcon" />
           <PostIcon slot="postIcon" />
           <TagIcon slot="tagIcon" />
           <ProjectIcon slot="projectIcon" />
           <SearchIcon slot="searchIcon" />
+          <LinkIcon slot="linkIcon" />
         </Header>
         <ContentContainer>
           {contentTitle && <ContentTitle>{contentTitle}</ContentTitle>}

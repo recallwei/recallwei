@@ -1,0 +1,23 @@
+---
+import { LinkCard } from '@/components'
+import { LinkList } from '@/constants'
+import { BaseLayout } from '@/layouts'
+
+const TITLE_TEXT = 'Links'
+---
+
+<BaseLayout
+  title={TITLE_TEXT}
+  contentTitle={TITLE_TEXT}
+>
+  <div class="mt-8 flex flex-col gap-y-4">
+    {
+      LinkList.map((linkItem) => (
+        <LinkCard
+          client:only="react"
+          data={linkItem}
+        />
+      ))
+    }
+  </div>
+</BaseLayout>

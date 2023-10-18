@@ -12,6 +12,7 @@ interface Props {
   postIcon?: astroHTML.JSX.Element
   // tagIcon?: astroHTML.JSX.Element
   projectIcon?: astroHTML.JSX.Element
+  linkIcon?: astroHTML.JSX.Element
   searchIcon?: astroHTML.JSX.Element
 }
 
@@ -37,6 +38,11 @@ export default function Header(props: Props): React.JSX.Element {
       title: 'Projects',
       href: '/projects',
       icon: props.projectIcon
+    },
+    {
+      title: 'Links',
+      href: '/links',
+      icon: props.linkIcon
     },
     {
       title: 'Search',
