@@ -34,23 +34,25 @@ export default function LinkCard(props: Props) {
         <p>{props.data.description}</p>
         <span className="flex w-fit space-x-0.5 self-end">
           <div
-            className="flex items-center justify-center rounded-full p-1 opacity-100 transition-all hover:bg-gray-300 active:opacity-90"
+            className="flex items-center justify-center rounded-full p-1 opacity-100 transition-all hover:bg-gray-300 active:opacity-90 hover:dark:bg-gray-800"
             onClick={() => handleLink(props.data.siteUrl)}
           >
             <HomeIcon
               width={20}
               height={20}
               color="#555555"
+              className="dark:text-white"
             />
           </div>
           <div
-            className="flex items-center justify-center rounded-full p-1 opacity-100 transition-all hover:bg-gray-300 active:opacity-90"
+            className="flex items-center justify-center rounded-full p-1 opacity-100 transition-all hover:bg-gray-300 active:opacity-90 hover:dark:bg-gray-800"
             onClick={() => handleLink(props.data.githubUrl)}
           >
             <GitHubIcon
               width={20}
               height={20}
               color="#555555"
+              className="dark:text-white"
             />
           </div>
         </span>
