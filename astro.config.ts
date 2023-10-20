@@ -8,7 +8,9 @@ import Icons from 'unplugin-icons/vite'
 
 import { rehypePlugins, remarkPlugins } from './plugins'
 
-// https://astro.build/config
+/**
+ * @see https://astro.build/config
+ */
 export default defineConfig({
   site: 'https://brucesong.xyz',
   output: 'server',
