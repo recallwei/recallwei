@@ -39,6 +39,7 @@ recallwei
 rehype
 Renovamen
 Roboto
+rspress
 safecrlf
 semanage
 shiki

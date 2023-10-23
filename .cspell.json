@@ -23,7 +23,9 @@
     "**/**/CHANGELOG.md",
     "**/**/CONTRIBUTORS.md",
     "pnpm-lock.yaml",
-    "README.md"
+    "README.md",
+    "doc_build",
+    "docs"
   ],
   "enableFiletypes": ["astro"]
 }
