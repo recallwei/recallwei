@@ -1,0 +1,12 @@
+[
+  {
+    "type": "file",
+    "name": "index"
+  },
+  {
+    "type": "dir",
+    "name": "build",
+    "label": "构建",
+    "collapsable": true
+  }
+]

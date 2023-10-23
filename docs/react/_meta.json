@@ -1,0 +1,12 @@
+[
+  {
+    "type": "file",
+    "name": "index"
+  },
+  {
+    "type": "dir",
+    "name": "hooks",
+    "label": "React Hooks",
+    "collapsable": true
+  }
+]

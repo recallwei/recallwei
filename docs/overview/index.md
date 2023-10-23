@@ -1,4 +1,4 @@
-# Markdown & MDX
+# 概览
 
 Rspress supports not only Markdown but also [MDX](https://mdxjs.com/), a powerful way to develop content.
 
@@ -127,22 +127,22 @@ You can use the \`\`\` syntax to create code blocks and support custom titles. F
 
 ````md
 ```js
-console.log('Hello World');
+console.log('Hello World')
 ```
 
 ```js title="hello.js"
-console.log('Hello World');
+console.log('Hello World')
 ```
 ````
 
 **Output:**
 
 ```js
-console.log('Hello World');
+console.log('Hello World')
 ```
 
 ```js title="hello.js"
-console.log('Hello World');
+console.log('Hello World')
 ```
 
 ### Show Line Numbers
@@ -153,9 +153,9 @@ If you want to display line numbers, you can enable the `showLineNumbers` option
 export default {
   // ...
   markdown: {
-    showLineNumbers: true,
-  },
-};
+    showLineNumbers: true
+  }
+}
 ```
 
 ### Line Highlighting
@@ -166,30 +166,30 @@ You can also apply line highlighting and code block title at the same time, for 
 
 ````md
 ```js title="hello.js" {1,3-5}
-console.log('Hello World');
+console.log('Hello World')
 
-const a = 1;
+const a = 1
 
-console.log(a);
+console.log(a)
 
-const b = 2;
+const b = 2
 
-console.log(b);
+console.log(b)
 ```
 ````
 
 **Ouput:**
 
 ```js title="hello.js" {1,3-5}
-console.log('Hello World');
+console.log('Hello World')
 
-const a = 1;
+const a = 1
 
-console.log(a);
+console.log(a)
 
-const b = 2;
+const b = 2
 
-console.log(b);
+console.log(b)
 ```
 
 ## Rustify MDX compiler

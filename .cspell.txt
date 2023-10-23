@@ -17,6 +17,7 @@ expressjs
 fastify
 giscus
 iconify
+juejin
 keyframes
 lidebiji
 naiveui
@@ -54,4 +55,5 @@ unplugin
 Vite
 vitejs
 vueuse
+weixin
 worktree

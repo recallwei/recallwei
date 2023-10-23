@@ -3,35 +3,35 @@ pageType: home
 
 hero:
   name: Web Dev Record
-  text: My personal web dev learning record.
-  tagline: Web Dev Record tagline
+  text:
+  tagline: My personal web dev learning record
   actions:
     - theme: brand
       text: Quick Start
-      link: /guide/
+      link: /overview/index
     - theme: alt
       text: Github
-      link: https://github.com/web-infra-dev/rspress
+      link: https://github.com/recallwei
   image:
-    src: /rspress-icon.png
+    src: /bit-ocean.png
     alt: Web Dev Record Logo
 features:
-  - title: Blazing fast build speed
-    details: The core compilation module is based on the Rust front-end toolchain, providing a more ultimate development experience.
-    icon: 🏃🏻‍♀️
-  - title: Support for MDX content writing
-    details: MDX is a powerful way to write content, allowing you to use React components in Markdown.
-    icon: 📦
-  - title: Built-in full-text search
-    details: Automatically generates a full-text search index for you during construction, providing out-of-the-box full-text search capabilities.
-    icon: 🎨
-  - title: Simpler I18n solution
-    details: With the built-in I18n solution, you can easily provide multi-language support for documents or components.
-    icon: 🌍
-  - title: Static site generation
-    details: In production, it automatically builds into static HTML files, which can be easily deployed anywhere.
-    icon: 🌈
-  - title: Providing multiple custom capabilities
-    details: Through its extension mechanism, you can easily extend theme UI and build process.
-    icon: 🔥
+  - title: React + TypeScript
+    details: Currently focus on React and TypeScript.
+    icon: ⚛️
+  - title: React Native
+    details: Currently built an App named Soya. Based on React Native CLI.
+    icon: 📱
+  - title: Next.js
+    details: Currently built an enterprise website for Soya.
+    icon: 🦁
+  - title: Nest.js
+    details: Built Nest API for Dolphin Admin server.
+    icon: 🐱
+  - title: Dolphin Admin
+    details: Built Vue and React, TypeScript and JavaScript version.
+    icon: 🐬
+  - title: Taskward
+    details: Refactor to V2 version.
+    icon: ✅
 ---
