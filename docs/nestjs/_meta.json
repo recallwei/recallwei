@@ -1,9 +1,0 @@
-[
-  "index",
-  {
-    "type": "dir",
-    "name": "deploy",
-    "label": "部署",
-    "collapsable": true
-  }
-]
