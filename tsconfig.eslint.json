@@ -1,4 +1,9 @@
 {
   "extends": "./tsconfig.json",
-  "include": ["src/**/*", "astro.config.ts", "rspress.config.ts"]
+  "include": [
+    "src/**/*",
+    "astro.config.ts",
+    "rspress.config.ts",
+    "components/**/*.tsx"
+  ]
 }

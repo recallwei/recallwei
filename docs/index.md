@@ -3,12 +3,13 @@ pageType: home
 
 hero:
   name: Web Dev Record
-  text:
-  tagline: My personal web dev learning record
+  # text: Now focusing on React and TypeScript
+  # tagline: My personal web dev learning records
+  tagline: Now focusing on React and TypeScript
   actions:
     - theme: brand
       text: Quick Start
-      link: /overview/index
+      link: /overview/
     - theme: alt
       text: Github
       link: https://github.com/recallwei

@@ -1,8 +1,5 @@
 [
-  {
-    "type": "file",
-    "name": "index"
-  },
+  "index",
   {
     "type": "dir",
     "name": "build",

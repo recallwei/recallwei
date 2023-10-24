@@ -1,27 +1,28 @@
 [
+  "index",
   {
-    "type": "file",
-    "name": "index",
-    "label": "概览"
+    "type": "custom-link",
+    "label": "TypeScript",
+    "link": "/typescript/"
   },
   {
     "type": "custom-link",
     "label": "React",
-    "link": "/react/index"
+    "link": "/react/"
   },
   {
     "type": "custom-link",
     "label": "Next.js",
-    "link": "/nextjs/index"
+    "link": "/nextjs/"
   },
   {
     "type": "custom-link",
     "label": "React Native",
-    "link": "/react-native/index"
+    "link": "/react-native/"
   },
   {
     "type": "custom-link",
     "label": "Nest.js",
-    "link": "/nestjs/index"
+    "link": "/nestjs/"
   }
 ]
