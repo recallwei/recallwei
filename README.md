@@ -1,4 +1,4 @@
-# 🦁 Bruce Song
+<a href="https://git.io/typing-svg" align="center"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&random=false&center=true&width=1000&lines=Hi%2C+there.+I'm+Bruce+Song.+A+Web+Developer+and+Open-Source+enthusiast!" alt="Typing SVG" /></a>
 
 ![PROFILE VIEWS](https://komarev.com/ghpvc/?username=recallwei&label=PROFILE+VIEWS)
 
