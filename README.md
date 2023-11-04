@@ -68,5 +68,5 @@ myLife().next()
 ## 🚀 Tech Stack
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=js,ts,html,css,react,redux,vue,svelte,vite,sass,tailwind,nextjs,nuxtjs,gatsby,astro,nodejs,express,nestjs,postgres,prisma,tauri&theme=light&perline=10" />
+  <img src="https://skillicons.dev/icons?i=js,ts,html,css,react,redux,vue,svelte,vite,sass,tailwind,nextjs,nuxtjs,gatsby,astro,nodejs,express,nestjs,postgres,prisma,tauri,mongodb,redis,docker,linux,nginx&theme=light&perline=10" />
 </p>
