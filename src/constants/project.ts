@@ -123,6 +123,19 @@ export const GroupedProjects: ProjectsByGroup = {
         inDevelopment: true
       },
       {
+        name: 'Dolphin Admin Nest',
+        description: '🐬 Dolphin Admin back-end service.',
+        href: 'https://github.com/bit-ocean-studio/dolphin-admin-nest',
+        techList: [
+          'TypeScript',
+          'Nest.js',
+          'Prisma',
+          'PostgreSQL',
+          'Socket.IO'
+        ],
+        inDevelopment: true
+      },
+      {
         name: 'Dolphin Admin React',
         description: '🐬 Dolphin Admin React version.',
         href: getUrl({
@@ -135,11 +148,7 @@ export const GroupedProjects: ProjectsByGroup = {
           'React Query',
           'antd',
           'TailwindCSS',
-          'Vite',
-          'Nest.js',
-          'Prisma',
-          'PostgreSQL',
-          'Socket.IO'
+          'Vite'
         ],
         inDevelopment: true
       },
@@ -159,11 +168,7 @@ export const GroupedProjects: ProjectsByGroup = {
           'SCSS',
           'Vite',
           'Pinia',
-          'Vue Use',
-          'Nest.js',
-          'Prisma',
-          'PostgreSQL',
-          'Socket.IO'
+          'Vue Use'
         ]
       },
       {
@@ -289,6 +294,13 @@ export const GroupedProjects: ProjectsByGroup = {
   utils: {
     name: 'Utils',
     projects: [
+      {
+        name: 'unplugin-auto-import-antd',
+        description: 'Automatically import antd components.',
+        href: 'https://github.com/recallwei/unplugin-auto-import-antd',
+        techList: ['TypeScript', 'Vite', 'pnpm']
+      },
+
       {
         name: 'Tornado X',
         description: 'Add engineering suites for your projects.',
