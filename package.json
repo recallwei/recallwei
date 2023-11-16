@@ -41,8 +41,8 @@
   },
   "devDependencies": {
     "@brucesong/eslint-config-astro": "^1.0.21",
-    "@commitlint/cli": "^18.4.1",
-    "@commitlint/config-conventional": "^18.4.0",
+    "@commitlint/cli": "^18.4.2",
+    "@commitlint/config-conventional": "^18.4.2",
     "@iconify/json": "^2.2.142",
     "@tailwindcss/typography": "^0.5.10",
     "@types/node": "^20.9.0",

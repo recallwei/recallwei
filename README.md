@@ -18,6 +18,7 @@
 
 - _**Soya Energy App**_: A modern business app both on iOS & Android platform, based on _**`React Native`**_, _**`TypeScript`**_ and _**`Tamagui`**_.
 - _**Soya Energy Website**_: A modern business website based on _**`Next.js`**_, _**`TypeScript`**_, _**`Turbopack`**_ and _**`TailwindCSS`**_.
+- _**[unplugin-auto-import-ahooks](https://github.com/recallwei/unplugin-auto-import-ahooks)**_: A resolver for auto import _**`ahooks`**_ based on _**`unplugin-auto-ahooks`**_.
 - _**[unplugin-auto-import-antd](https://github.com/recallwei/unplugin-auto-import-antd)**_: A resolver for auto import _**`antd`**_ components based on _**`unplugin-auto-import`**_.
 - _**[What to eat?](https://github.com/recallwei/what-to-eat)**_: A _**`Svelte`**_, _**`TypeScript`**_ project.
 - _**[Dolphin Admin Core](https://github.com/bit-ocean-studio/dolphin-admin-core)**_: Universe core utils and plugins for Dolphin Admin.

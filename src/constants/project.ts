@@ -295,12 +295,17 @@ export const GroupedProjects: ProjectsByGroup = {
     name: 'Utils',
     projects: [
       {
+        name: 'unplugin-auto-import-ahooks',
+        description: 'Automatically import ahooks.',
+        href: 'https://github.com/recallwei/unplugin-auto-import-ahooks',
+        techList: ['TypeScript', 'Vite', 'pnpm']
+      },
+      {
         name: 'unplugin-auto-import-antd',
         description: 'Automatically import antd components.',
         href: 'https://github.com/recallwei/unplugin-auto-import-antd',
         techList: ['TypeScript', 'Vite', 'pnpm']
       },
-
       {
         name: 'Tornado X',
         description: 'Add engineering suites for your projects.',
