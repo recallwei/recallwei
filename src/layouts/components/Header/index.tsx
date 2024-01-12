@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import clsx from 'clsx'
 
 import { SITE_META } from '@/app.config'
@@ -14,6 +13,7 @@ interface Props {
   projectIcon?: astroHTML.JSX.Element
   linkIcon?: astroHTML.JSX.Element
   searchIcon?: astroHTML.JSX.Element
+  githubIcon?: astroHTML.JSX.Element
 }
 
 export default function Header(props: Props): React.JSX.Element {
@@ -43,6 +43,12 @@ export default function Header(props: Props): React.JSX.Element {
       title: 'Links',
       href: '/links',
       icon: props.linkIcon
+    },
+    {
+      title: 'GitHub',
+      href: 'https://github.com/recallwei',
+      icon: props.githubIcon,
+      onlyIcon: true
     },
     {
       title: 'Search',
