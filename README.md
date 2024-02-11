@@ -16,6 +16,7 @@
 
 ## 🦄 Projects
 
+- _**raipiot infra**_: raipiot infrastracture.
 - _**Soya Energy App**_: A modern business app both on iOS & Android platform, based on _**`React Native`**_, _**`TypeScript`**_ and _**`Tamagui`**_.
 - _**Soya Energy Website**_: A modern business website based on _**`Next.js`**_, _**`TypeScript`**_, _**`Turbopack`**_ and _**`TailwindCSS`**_.
 - _**[unplugin-auto-import-ahooks](https://github.com/recallwei/unplugin-auto-import-ahooks)**_: A resolver for auto import _**`ahooks`**_ based on _**`unplugin-auto-ahooks`**_.
