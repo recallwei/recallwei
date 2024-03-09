@@ -1,3 +1,4 @@
+/** @type {import("prettier").Config} */
 module.exports = {
   arrowParens: 'always',
   bracketSameLine: false,
@@ -24,5 +25,13 @@ module.exports = {
       }
     }
   ],
-  plugins: [require.resolve('prettier-plugin-astro')]
+  plugins: [require.resolve('prettier-plugin-astro')],
+  overrides: [
+    {
+      files: '*.astro',
+      options: {
+        parser: 'astro',
+      },
+    },
+  ],
 }
