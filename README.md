@@ -12,12 +12,13 @@
 - 🌐 I'm also good at building _**`Node.js`**_ CLI tools and enterprise website with _**`SSR/SSG`**_ framework such as _**`Gatsby`**_, _**`Next.js`**_ and _**`Nuxt.js`**_.
 - 🍀 If you are interested in making open source projects together, please contact me with my WeChat _**`Recall4056`**_.
 - 📫 You can also contact me with my email _**`recall4056@gmail.com`**_.
-- 💪 My tech stacks: _**`HTML`**_ | _**`CSS`**_ | _**`SCSS`**_ | _**`TailwindCSS`**_ | _**`JavaScript`**_ | _**`TypeScript`**_ | _**`React`**_ | _**`Vue`**_ | _**`Svelte`**_ | _**`Vite`**_ | _**`Next.js`**_ | _**`Nuxt.js`**_ | _**`Node.js`**_ | _**`Express.js`**_ | _**`Nest.js`**_ | _**`Socket.io`**_ | _**`Prisma`**_ | _**`PostgreSQL`**_ | _**`Docusaurus`**_ | _**`Gatsby`**_ | _**`Astro`**_ | _**`React Native`**_
+- 💪 My tech stacks: _**`HTML`**_ | _**`CSS`**_ | _**`SCSS`**_ | _**`TailwindCSS`**_ | _**`JavaScript`**_ | _**`TypeScript`**_ | _**`React`**_ | _**`Vue`**_ | _**`Svelte`**_ | _**`Vite`**_ | _**`Next.js`**_ | _**`Nuxt.js`**_ | _**`Node.js`**_ | _**`Express.js`**_ | _**`Nest.js`**_ | _**`Socket.io`**_ | _**`Prisma`**_ | _**`PostgreSQL`**_ | _**`Docusaurus`**_ | _**`Gatsby`**_ | _**`Astro`**_ | _**`React Native`**_ | _**`Stroybook`**_ | _**`Turbo Repo`**_ | _**`Nx`**_ | _**`Changesets`**_ | _**`Front-end FSD Architecture`**_
 
 ## 🦄 Projects
 
+- _**[Bit Ocean Infra](https://github.com/bit-ocean-studio/infra)**_: 🚀 Built reliable infrastructure for Bit Ocean.
 - _**raipiot 2F**_: raipiot 2F SaaS product, with admin PaaS, a shopping website and an SSO site.
-- _**raipiot infra**_: raipiot infrastracture.
+- _**raipiot Infra**_: raipiot infrastracture.
 - _**Soya Energy App**_: A modern business app both on iOS & Android platform, based on _**`React Native`**_, _**`TypeScript`**_ and _**`Tamagui`**_.
 - _**Soya Energy Website**_: A modern business website based on _**`Next.js`**_, _**`TypeScript`**_, _**`Turbopack`**_ and _**`TailwindCSS`**_.
 - _**[unplugin-auto-import-ahooks](https://github.com/recallwei/unplugin-auto-import-ahooks)**_: A resolver for auto import _**`ahooks`**_ based on _**`unplugin-auto-ahooks`**_.
