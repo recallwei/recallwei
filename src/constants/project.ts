@@ -215,7 +215,7 @@ export const GroupedProjects: ProjectsByGroup = {
         name: 'Taskward',
         description: 'A Todo&Tasks web application.',
         href: getUrl({
-          subDomain: 'taskward',
+          subDomain: 'taskward-v1',
           type: 'Bit Ocean'
         }),
         techList: [
