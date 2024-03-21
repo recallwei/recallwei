@@ -31,5 +31,12 @@ export const LinkList: LinkItem[] = [
     avatarUrl: 'https://avatars.githubusercontent.com/u/43068756?v=4',
     githubUrl: 'https://github.com/Knight174',
     siteUrl: 'https://astro-blog.ericchenart.com/'
+  },
+  {
+    name: '秋夜 の ブログ',
+    description: 'Just shoot your love.',
+    avatarUrl: 'https://qiuyedx.com/wp-content/uploads/2022/07/leaf_2.png',
+    githubUrl: 'https://github.com/QiuYeDx',
+    siteUrl: 'https://qiuyedx.com'
   }
 ]
