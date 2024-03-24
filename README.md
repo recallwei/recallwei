@@ -76,6 +76,9 @@ myLife().next()
 ![](https://raw.githubusercontent.com/recallwei/github-stats/master/generated/overview.svg#gh-dark-mode-only)
 ![](https://raw.githubusercontent.com/recallwei/github-stats/master/generated/languages.svg#gh-dark-mode-only)
 
+![recallwei's GitHub stats](https://github-readme-stats.vercel.app/api?username=recallwei&count_private=true&theme=react)  
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=recallwei&layout=compact&theme=react)](https://github.com/recallwei)
+
 ## 🚀 Tech Stack
 
 <p align="left">
