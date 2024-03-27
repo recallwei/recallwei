@@ -2,6 +2,7 @@ export const TagList = [
   'Astro',
   'Axios',
   'CSS',
+  'Design Patterns',
   'Docusaurus',
   'ESLint',
   'Express',
