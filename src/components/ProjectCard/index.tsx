@@ -20,7 +20,7 @@ export default function ProjectCard(props: Props): React.JSX.Element {
       onClick={handleLink}
       className="flex cursor-pointer select-none items-center rounded-sm border border-solid border-gray-300 p-4 transition-all hover:bg-gray-200 active:opacity-75 dark:border-gray-600 dark:hover:bg-gray-600"
     >
-      <div className="h-full w-full space-y-2">
+      <div className="size-full space-y-2">
         <div className="flex w-full items-center justify-between">
           <span className="text-lg">{props.data.name}</span>
           {props.data.inDevelopment && (
