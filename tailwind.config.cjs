@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       fontFamily: {
         default: [DEFAULT_FONTS],
-        sans: ['Computer Modern Sans', DEFAULT_FONTS]
+        sans: ['Computer Modern Sans', 'LXGW WenKai', DEFAULT_FONTS]
       },
       textColor: {
         primary: '#2AC2AC',

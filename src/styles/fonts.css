@@ -27,3 +27,24 @@
   font-weight: bold;
   src: url('/fonts/cmu-sans/bolditalic.woff') format('woff');
 }
+
+@font-face {
+  font-family: 'LXGW WenKai';
+  font-style: normal;
+  font-weight: light;
+  src: url('/fonts/lxgw/light.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'LXGW WenKai';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/lxgw/regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'LXGW WenKai';
+  font-style: normal;
+  font-weight: bold;
+  src: url('/fonts/lxgw/bold.ttf') format('ttf');
+}
