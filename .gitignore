@@ -31,3 +31,5 @@ coverage
 *.sln
 *.sw?
 *.zip
+
+.cspellcache

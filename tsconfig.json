@@ -1,22 +1,13 @@
 {
-  "extends": "astro/tsconfigs/strict",
+  "extends": "@bit-ocean/tsconfig/base",
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "react",
-    "skipLibCheck": true,
-    "strict": true,
-    "verbatimModuleSyntax": true,
-    "esModuleInterop": true,
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
     },
     "types": ["unplugin-icons/types/astro"]
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.astro",
-    "astro.config.ts"
-  ]
+  "include": ["src", "astro.config.ts"]
 }
