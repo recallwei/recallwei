@@ -10,7 +10,7 @@
 - 💞️ I'm looking to collaborate on any _**`Open-Source`**_ project.
 - 🚀 I'm recently built **[an admin system named Dolphin Admin](https://dolphin-admin.bit-ocean.studio)** based on _**`Vue 3`**_, _**`TypeScript`**_, _**`Naive UI`**_ and _**`TailwindCSS`**_, also have a **[React Version](https://dolphin-admin-react.bit-ocean.studio)**.
 - 🌐 I'm also good at building _**`Node.js`**_ CLI tools and enterprise website with _**`SSR/SSG`**_ framework such as _**`Gatsby`**_, _**`Next.js`**_ and _**`Nuxt.js`**_.
-- 🍀 If you are interested in making open source projects together, please contact me with my WeChat _**`Recall4056`**_.
+- 🍀 If you are interested in making open source projects together, please contact me with my WeChat _**`Chiyo_1227`**_.
 - 📫 You can also contact me with my email _**`recall4056@gmail.com`**_.
 - 💪 My tech stacks: _**`HTML`**_ | _**`CSS`**_ | _**`SCSS`**_ | _**`TailwindCSS`**_ | _**`JavaScript`**_ | _**`TypeScript`**_ | _**`React`**_ | _**`Vue`**_ | _**`Svelte`**_ | _**`Vite`**_ | _**`Next.js`**_ | _**`Nuxt.js`**_ | _**`Node.js`**_ | _**`Express.js`**_ | _**`Nest.js`**_ | _**`Socket.io`**_ | _**`Prisma`**_ | _**`PostgreSQL`**_ | _**`Docusaurus`**_ | _**`Gatsby`**_ | _**`Astro`**_ | _**`React Native`**_ | _**`Stroybook`**_ | _**`Turbo Repo`**_ | _**`Nx`**_ | _**`Changesets`**_ | _**`Front-end FSD Architecture`**_
 
